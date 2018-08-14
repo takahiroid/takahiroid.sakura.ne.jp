@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	font-family: MS Sans Serif,sans-serif,Osaka,"ＭＳ Ｐゴシック",  "ヒラギノ角ゴ Pro W3";
+	line-height:1.4em;
+	color: #666666;
+}
+
+img,p,div{
+	border:none;
+}
+a {
+	color:#CC3366;
+}
+a:hover {
+	color: #0bf;
+}
+
+
+html, body {
+	text-align: center;
+}	
+
+body{	
+	background-color: #fff;
+}
+
+.red{
+	color: #CF0BFF;
+	font-size:0.9em;
+	}
+
+.bold{
+	font-weight:bold;
+}
+.top_news{
+	margin:0 0 0 20px ;
+	}
+.top_news a{
+	font-size:11px;
+	}
+.top_news a{
+	font-size:11px;
+	color: #666666;
+	}
+.top_news a:hover{
+	font-size:11px;
+	color: #0bf;
+	}
+
+
+	
+	
+.wrapper {
+	width: 820px;
+	margin: 50px auto 0px;
+	font-size: 0.9em;
+	text-align: left;
+	position:relative;
+
+}
+
+.header ul li{
+	list-style: none;
+	float: left;
+}
+
+
+.contents{
+	clear:both;
+	width: 820px;
+	margin: 0;
+}
+
+
+.bio_left{
+	float: left;
+	width:523px;
+	margin:20px 0 30px;
+
+}
+
+.bio_right{
+	float: left;
+	width:294px;
+	margin:20px 0 30px;
+}
+
+.bio_right p{
+	margin:10px 18px;
+	font-size:10px;
+}
+
+
+
+.blog{
+	margin:30px 0 30px;
+}
+
+
+
+
+.news_left{
+	float: left;
+	width:587px;
+	margin:40px 0 30px;
+
+}
+
+.news_right{
+	float: right;
+	width:214px;
+	margin:40px 0 30px;
+
+}
+
+.news_left p{
+	margin:0 20px 0 10px;
+}
+
+.news_left a {
+	font-size:1em;
+}
+
+/*.news_link2 {
+	color: #0bf;
+	font-size:8px;
+}*/
+
+
+
+
+.links_left{
+	float: left;
+	width:466px;
+	margin:138px 0;
+
+}
+
+.links_right{
+	float: right;
+	width:354px;
+}
+
+.links_left p{
+	font-size:10px;
+}
+
+.links_left a {
+	padding-left:50px;
+
+}
+
+
+
+
+.tickets_left{
+	float: left;
+	width:486px;
+	margin:50px 0 30px 20px;
+
+}
+
+.tickets_right{
+	float:right;
+	width:314px;
+	margin:50px 0 30px;
+
+}
+
+.tickets_left p{
+	font-size:11px;
+}
+
+.tickets_left ul{
+	font-size:10px;
+	margin:0 10px 0 30px;
+}
+
+
+
+.blog h2 a{
+	font-size:16px;
+	padding:50px 0 0 0 ;
+	
+}
+
+
+/*  WORKS  */
+.works_right ul li{
+	list-style: none;
+}
+
+.works_left{
+	text-align:left;
+	width:504px;
+	float:left;
+	margin-top:50px;
+}
+.works_right{
+	text-align:right;
+	width:270px;
+	float:right;
+	margin-top:40px;
+}
+
+.works_left table{
+	color:#333333;
+}
+.works_left table tr td{
+	padding-bottom:20px;
+
+	
+}
+.works_left table tr td span.songtxt{
+	margin:0 0 0 18px;
+	font-size:1em;
+	line-height:1.4em;;
+}
+
+.cdtitle{
+	margin-bottom:8px;
+	padding-left:5px;
+	color:#CC3366;
+	font-weight:bold;
+	font-size:1.1em;
+	border-bottom:#CC3333 1px solid;
+}
+
+
+
+
+
+
+
+.footer{
+	clear:both;
+	width: 820px;
+	height: 50px;
+}
+.banner{
+	position:absolute;	
+	right:2px;
+	bottom:6px;
+}
+
+#ninjya{
+	position:absolute;
+	left:-9999px;
+	bottom:100px;
+	}	
+
+
+	

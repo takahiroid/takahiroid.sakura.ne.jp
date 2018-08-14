@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.block_live{
+	margin-top:30px;
+	color:#000; 
+	font-size:15px;
+}
+.block_live .date{
+	font-weight:bold; 
+	font-size:23px;
+	color:#E60012
+}
+.block_live .ttl{
+	font-weight:bold; 
+	font-size:18px;
+	
+}
+.block_live .txt{
+	margin-top:10px;
+}

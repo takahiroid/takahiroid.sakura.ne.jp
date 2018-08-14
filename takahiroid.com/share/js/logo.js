@@ -1,0 +1,1 @@
+// JavaScript Document document.write('<EMBED src="images/logo.swf" loop=true quality=high bgcolor=#990000 WIDTH="239" HEIGHT="51" NAME="logo" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>'); 

@@ -1,0 +1,443 @@
+@charset "utf-8";
+/* CSS Document */
+/*-------------------------------
+__Default style clear
+-------------------------------*/
+/*html,body,div,dl,dt,dd,ul,li,ol,img,table,tr,td,th,caption,h1,h2,h3,h4,h5,h6,p,a,em,strong,span,
+form,fieldset,legend,pre,blockquote,textarea,input{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}*/
+html,body,div,dl,dt,dd,ul,li,ol,img,table,tr,td,th,caption,h1,h2,h4,h5,h6,p,a,em,strong,span,
+form,fieldset,legend,pre,blockquote,textarea,input{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img{
+	border:none;
+}
+/* ====test tool==== */
+/*div { border:1px red dashed; }*/
+/*-------------------------------
+__BASIC style
+-------------------------------*/
+html {
+	height:100%;
+}
+body {
+	height:100%;
+	background-color:#FFF200;
+}
+* html div#container {
+	height:100%;
+}
+div#container {
+	position:relative;
+	min-height: 100%;
+}
+body > #container {
+	height: auto;
+}
+/*#contents {
+	padding-bottom: 98px;
+}*/
+#main_top_wrap {
+	width: 1100px;
+	margin:0px auto;
+	background:url(../share/images/top_bg_large.png) no-repeat;
+}
+
+#main {
+	width: 842px;
+	margin:0px auto;
+}
+
+
+#header{
+	width: 100%;
+	height:98px;
+	background:url(../share/images/header_bg.png) no-repeat;
+}
+
+
+/*#footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 98px;
+}
+#footer_main{
+	width: 842px;
+	height: 98px;
+	margin:0px auto;
+	position:relative;
+	background:url(../share/images/footer_bg.png) no-repeat;
+}*/
+.clear{
+	clear:both;
+}
+
+/*-------------------------------
+__FONT指定
+-------------------------------*/
+body {
+    font:13px "ＭＳ Ｐゴシック",arial,helvetica,clean,sans-serif;
+    *font-size:small;
+    *font:x-small;
+	line-height:1.4; 
+}
+a{
+	color:#0358c1;
+	text-decoration:none;
+/* FireFox リンク選択時の点線を消す　*/
+    overflow: hidden;
+    outline: none;	
+}
+a.normal{
+	color:#000;
+}
+a:hover{
+	color:#e14040;
+}
+/*.text10 { font-size:77%; }10pixel
+.text11 { font-size:85%; }11pixel
+.text12 { font-size:93%; }12pixel
+.text13 { font-size:100%; }13pixel
+.text14 { font-size:108%; }14pixel
+.text15 { font-size:116%; }15pixel
+.text16 { font-size:123.1%; }16pixel
+.text17 { font-size:131%; }17pixel
+.text18 { font-size:138.5%; }18pixel
+.text19 { font-size:146.5%; }19pixel
+.text20 { font-size:153.9%; }20pixel
+.text21 { font-size:161.6%; }21pixel
+.text22 { font-size:167%; }22pixel
+.text23 { font-size:174%; }23pixel
+.text24 { font-size:182%; }24pixel
+.text25 { font-size:189%; }25pixel
+.text26 { font-size:197%; }26pixel
+*/
+/*-------------------------------
+__HEADER
+-------------------------------*/
+#menu ul{
+	padding-top:20px;
+	margin-left:39px;
+}
+#menu ul li {
+	float:left;
+	height:px;
+
+}
+#menu ul li.m_1{
+	width:101px;
+}
+#menu ul li.m_2{
+	width:150px;
+}
+#menu ul li.m_3{
+	width:111px;
+}
+#menu ul li.m_4{
+	width:108px;
+}
+#menu ul li.m_5{
+	width:83px;
+}
+#menu ul li.m_6{
+	width:72px;
+}
+
+#menu ul li a{
+	height:56px;
+	display: block;
+	text-indent:-10000px;	
+}
+#menu li.m_1 a{
+	background: url(../share/images/menu_1.png) no-repeat left top;
+}
+#menu li.m_1 a:hover{
+	background: url(../share/images/menu_1.png) no-repeat left bottom ;
+}
+#menu li.m_2 a{
+	background: url(../share/images/menu_2.png) no-repeat left top;
+}
+#menu li.m_2 a:hover{
+	background: url(../share/images/menu_2.png) no-repeat left bottom ;
+}
+#menu li.m_3 a{
+	background: url(../share/images/menu_3.png) no-repeat left top;
+}
+#menu li.m_3 a:hover{
+	background: url(../share/images/menu_3.png) no-repeat left bottom ;
+}
+#menu li.m_4 a{
+	background: url(../share/images/menu_4.png) no-repeat left top;
+}
+#menu li.m_4 a:hover{
+	background: url(../share/images/menu_4.png) no-repeat left bottom ;
+}
+#menu li.m_5 a{
+	background: url(../share/images/menu_5.png) no-repeat left top;
+}
+#menu li.m_5 a:hover{
+	background: url(../share/images/menu_5.png) no-repeat left bottom ;
+}
+#menu li.m_6 a{
+	background: url(../share/images/menu_6.png) no-repeat left top;
+}
+#menu li.m_6 a:hover{
+	background: url(../share/images/menu_6.png) no-repeat  left bottom ;
+}
+
+/*-------------------------------
+__top
+-------------------------------*/
+.top_contents{
+	/*background: url(../share/images/top_bg.png) no-repeat;*/
+	height:620px;
+}
+.top_contents .left{
+	width:492px;
+	float:left;
+	position:relative;
+}
+.top_contents .left .main_photo{
+	left:82px;
+	top:53px;
+}
+.top_contents .right{
+	width:309px;
+	float:left;
+	position:relative;
+}
+
+.top_contents .right .news_list{
+	margin:0 0 0 17px;
+}
+.top_contents .right .news_list ul{
+	font-size:93%;
+	margin:5px 0 0 0;
+}
+
+#menu_top{
+margin-top:40px;
+}
+#menu_top ul{
+margin-top:0px;
+}
+#menu_top ul li {
+	float:left;
+	height:56px;
+
+}
+#menu_top ul li.m_1{
+	width:101px;
+}
+#menu_top ul li.m_2{
+	width:150px;
+}
+#menu_top ul li.m_3{
+	width:111px;
+}
+#menu_top ul li.m_4{
+	width:108px;
+}
+#menu_top ul li.m_5{
+	width:83px;
+}
+#menu_top ul li.m_6{
+	width:72px;
+}
+
+#menu_top ul li a{
+	height:56px;
+	display: block;
+	text-indent:-10000px;	
+}
+#menu_top li.m_1 a{
+	background: url(../share/images/menu_1.png) no-repeat left top;
+}
+#menu_top li.m_1 a:hover{
+	background: url(../share/images/menu_1.png) no-repeat left bottom ;
+}
+#menu_top li.m_2 a{
+	background: url(../share/images/menu_2.png) no-repeat left top;
+}
+#menu_top li.m_2 a:hover{
+	background: url(../share/images/menu_2.png) no-repeat left bottom ;
+}
+#menu_top li.m_3 a{
+	background: url(../share/images/menu_3.png) no-repeat left top;
+}
+#menu_top li.m_3 a:hover{
+	background: url(../share/images/menu_3.png) no-repeat left bottom ;
+}
+#menu_top li.m_4 a{
+	background: url(../share/images/menu_4.png) no-repeat left top;
+}
+#menu_top li.m_4 a:hover{
+	background: url(../share/images/menu_4.png) no-repeat left bottom ;
+}
+#menu_top li.m_5 a{
+	background: url(../share/images/menu_5.png) no-repeat left top;
+}
+#menu_top li.m_5 a:hover{
+	background: url(../share/images/menu_5.png) no-repeat left bottom ;
+}
+#menu_top li.m_6 a{
+	background: url(../share/images/menu_6.png) no-repeat left top;
+}
+#menu_top li.m_6 a:hover{
+	background: url(../share/images/menu_6.png) no-repeat  left bottom ;
+}
+
+/*-------------------------------
+__profile
+-------------------------------*/
+.profile_contents{
+	position:relative;
+}
+#kazuo_anime{
+	width:135px;
+	height:124px;
+	position:absolute;
+	top:170px;
+	left:290px;
+	
+}
+
+.profile_contents p.profile_hukidasi{
+	margin:40px 0 0 100px;
+}
+.profile_contents p.history_hukidasi{
+	margin:24px 0 0 60px;
+}
+.profile_contents .history_txt{
+	margin:10px 0 0 100px;
+	font-size:93%;
+	line-height:1.6em;
+	width:570px;
+}
+.profile_contents .history_txt .red{
+	color:#F00;
+	font-weight:bold;
+}
+.profile_contents .history_txt .blue{
+	color:#00F;
+	font-weight:bold;
+}
+.profile_contents .history_txt .pink{
+	color:#f25bb4;
+	font-weight:bold;
+}
+.profile_contents .history_txt a{
+	text-decoration:underline;
+	color:#f25bb4;
+}
+
+
+
+/*-------------------------------
+__disc
+-------------------------------*/
+.disc_contents .box{
+	width:800px;
+	height:300px;
+	margin:0 0 0 20px;
+	margin-bottom:20px;
+}
+.disc_contents .box .photo{
+	width:249px;
+	height:300px;
+	float:left
+}
+.disc_contents .box .txt{
+	width:521px;
+	height:300px;
+	float:left;
+	margin-left:20px;
+}
+.disc_contents .box .txt .title{
+	float:left;
+	height:25px;
+	background-color:#FFFFFF;
+	margin-right:5px;
+	line-height:25px;
+	padding:0 5px;
+	font-size:77%;
+}
+.disc_contents .box .txt .title1{
+	float:left;
+	height:25px;
+	background-color:#FFFFFF;
+	margin-right:5px;
+	line-height:25px;
+	padding:0 5px;
+	font-size:85%;
+	font-weight:bold;
+}
+.disc_contents .box .txt .song_list{
+	padding:10px 0 0 10px;
+	font-size:85%;
+}
+
+/*-------------------------------
+__LIVE
+-------------------------------*/
+.live_contents .left{
+float:left;
+margin:20px 0 0 43px;
+width:339x;
+
+}
+
+.live_contents .right{
+float:left;
+margin:20px 0 0 30px;
+width:455px;
+height:450px;
+/*background:url(../live/images/live_01.png) no-repeat right bottom;*/
+}
+
+.live_contents .right .live_txt{
+margin:20px 0 20px 0;
+padding-top:20px;
+font-size:93%;
+border-top:1px dotted;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

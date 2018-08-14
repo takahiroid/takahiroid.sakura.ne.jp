@@ -1,0 +1,131 @@
+#common_nav .main_nav #nav_prof a{
+    color:#960135;
+}
+
+.page_head h1{
+    line-height: 1.2em;
+}
+.profile_wrapper{
+    font-family: 'Quicksand', sans-serif , "Yu Gothic", "游ゴシック", YuGothic;
+    line-height: 2.3em;
+}
+.contents_wrapper{
+    width:100%;
+    margin:0 auto;
+}
+.profile_title{
+    text-align: center;
+}
+.profile_title .name{
+    font-size: 2em;
+    font-weight: 700;
+}
+.profile_info_1 h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+.profile_info_1 h4{
+    font-weight: 700;
+    margin-top: 0.8em;
+}
+.sentence_1{
+    margin-top: 1em;
+    font-weight:lighter;
+    padding-bottom: 10%;
+}
+.profile_info_2{
+    width:90%;
+    color:white;
+    background-image: url(../img/profile_02.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 40% 0;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+.profile_inner{
+    flex: 1;
+    display: flex;
+    width:100%;
+    height:auto;
+}
+.inner-left{
+    width:40%;
+    background-color: #EFEFEF;
+}
+.inner-left img{
+    width:100%;
+}
+.inner-right{
+    width:40%;
+    padding-top: 78px;
+    padding-left:6%;
+}
+.sentence_2{
+    width:40%;
+    height:auto;
+    font-weight:lighter;
+}
+.underline{
+    text-decoration-line: underline;
+}
+
+
+@media screen and (max-width:768px){
+
+    /***インナースマホ設定***/
+
+    .profile_inner{
+        flex: 0;
+        display: block;
+        width:100%;
+        height:auto;
+    }
+    .inner-left{
+        width:100%;
+        background-color: #EFEFEF;
+    }
+    .inner-left img{
+        width:80%;
+        margin: 0 10%;
+    }
+    .inner-right{
+        width:90%;
+        padding:5%;
+    }
+    .profile_wrapper{
+        line-height: 1.7em;
+    }
+    .profile_title .name{
+        font-size: 1.4em;
+    }
+    .profile_info_1 h3{
+        font-size: 1em;
+        text-align: center;
+    }
+    .profile_info_1 h4{
+        font-size:0.9em;
+        text-align: center;
+    }
+    .sentence_1{
+        font-size:1em;
+        padding-bottom: 0;
+    }
+    .profile_info_2{
+        width:90%;
+        padding:5%;
+        background-size: 200%;
+        background-position: right bottom;
+        background-color: black;
+    }
+    .sentence_2{
+        width:100%;
+        font-size:1em;
+        padding-bottom: 90%;
+    }
+    .underline{
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	font-family: MS Sans Serif,sans-serif,Osaka,"ＭＳ Ｐゴシック",  "ヒラギノ角ゴ Pro W3";
+	line-height:1.4em;
+	color: #666666;
+}
+
+img,p,div{
+	border:none;
+}
+a {
+	color:#CC3366;
+}
+a:hover {
+	color: #0bf;
+}
+a:hover img.hoverImg{
+	opacity:0.60;
+	filter:alpha(opacity=60);
+	-ms-filter: "alpha( opacity=60 )";
+	cursor: pointer;
+}
+
+html, body {
+	text-align: center;
+}
+
+body{
+	background-color: #fff;
+}
+
+.red{
+	color: #CF0BFF;
+	font-size:0.9em;
+	}
+
+.bold{
+	font-weight:bold;
+}
+.top_news{
+	margin:20px 0 0 50px ;
+	padding-bottom: 50px;
+	}
+
+.top_news a{
+	font-size:14px;
+	line-height:2em;
+	font-family: 'Quicksand', sans-serif;
+	color: #777;
+	}
+.top_news a:hover{
+	color: #0bf;
+	}
+.top_news span{
+	color:#CC3366;
+}
+
+
+
+.wrapper {
+	width: 820px;
+	margin: 50px auto 0px;
+	font-size: 0.9em;
+	text-align: left;
+	position:relative;
+
+}
+/*HEADER*/
+.header{
+}
+	.header a.ttl_main{
+		font-family: 'Quicksand', sans-serif;
+		font-size: 60px;
+		font-weight: 400;
+		letter-spacing: -3px;
+		color: #000;
+		text-decoration: none;
+		padding: 0;
+		line-height: 1em;
+	}
+	.header .ttl_main:hover{
+		color: #b5b6b6;
+	}
+.header .ttl_sub{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	padding: 5px 5px 0 5px;
+}
+.header ul{
+	margin-top: 10px;
+	margin-left: 5px;
+}
+	.header ul li{
+		list-style: none;
+		float: left;
+		height: 30px;
+		padding: 0 10px;
+		border-right:1px solid #d8d8d8;
+	}
+		.header ul li.news_btn{
+			padding-left: 0;
+		}
+			.header ul li a{
+				text-decoration: none;
+				font-size:25px;
+				font-family: 'Dosis', sans-serif;
+				letter-spacing: 1px;
+				line-height: 1;
+			}
+				.header ul li.news_btn a{
+					color: #0bf;
+				}
+				.header ul li.works_btn a{
+					color:#70b539;
+
+				}
+				.header ul li.bio_btn a{
+					color:#f39806;
+				}
+				.header ul li.blog_btn a{
+					color:#e60617;
+				}
+				.header ul li.twitter_btn a{
+					color:#920783;
+				}
+/*				.header ul li.facebook_btn a{
+					color:#920783;
+				}*/
+					.header ul li a:hover{
+						opacity:0.50;
+						filter:alpha(opacity=50);
+						-ms-filter: "alpha( opacity=50 )";
+					}
+
+
+.contents{
+	clear:both;
+	width: 820px;
+	margin: 0;
+}
+/*#pageTitle{
+	font-size:65px;
+	font-family: 'Dosis', sans-serif;
+	color: #727171;
+	letter-spacing: 5px;
+	text-align: center;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}*/
+
+/*TOP*/
+.top_left{
+	float: left;
+	width:500px;
+	margin:20px 0 30px 0;
+
+}
+.top_right{
+	float: right;
+	width:294px;
+	margin:10px 0 30px;
+}
+	.top_right .profTxt{
+		background: #f9f9f9;
+		margin-top: 10px;
+		padding: 10px 18px 30px;
+		height: 620px;
+	}
+		.top_right .name{
+			font-size:16px;
+			font-weight: 700;
+			line-height: 1.4;
+
+		}
+			.top_right .name span{
+				font-size:24px;
+				/*font-family: 'Roboto', sans-serif;*/
+				font-family: 'Quicksand', sans-serif;
+				font-weight: 700;
+			}
+		.top_right .credit{
+			margin-top: 20px;
+			font-size:16px;
+			color: #000;
+			line-height: 1.2em;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 400;
+		}
+		.top_right .txt{
+			margin-top: 20px;
+			font-size:12px;
+			line-height:1.6em;
+		}
+			.top_right .link{
+			}
+				.top_right .office{
+					margin-top: 40px;
+				}
+				.top_right .band{
+					margin-top: 20px;
+				}
+				.top_right .link .itoi{
+					font-size:16px;
+					line-height: 1.6em;
+					font-family: 'Quicksand', sans-serif;
+					font-weight: 400;
+					color: #000;
+				}
+			.top_right .hyakka{
+				padding-top: 20px;
+				text-align: center;
+				font-size:16px;
+				line-height: 1.6em;
+				font-family: 'Quicksand', sans-serif;
+				font-weight: 400;
+
+				}
+				.top_right .hyakka .ttl{
+					margin-bottom: 7px;
+				}
+					.top_right .hyakka .ttl a{
+						color: #666;
+						text-decoration: none;
+					}
+
+
+/*TOP*/
+.bio_left{
+	float: right;
+	width:300px;
+	margin:30px 0 0 0;
+	text-align: right;
+}
+	.bio_left #pageTitle{
+		font-family: 'Quicksand', sans-serif;
+		font-size: 60px;
+		font-weight: 400;
+		letter-spacing: -3px;
+		color: #000;
+		text-decoration: none;
+		padding: 0;
+		line-height: 1.5em;
+		text-align: left
+	}
+	.bio_left .spaceman{
+		padding-top: 100px;
+	}
+.bio_right{
+	float: left;
+	width:480px;
+	margin:25px 0 30px;
+}
+
+	.bio_right .profTxt{
+		padding: 10px 0px 30px;
+	}
+		.bio_right .name{
+			color: #000;
+			font-size:20px;
+			font-weight: bold;
+			font-family: 'Droid Serif', serif;
+		}
+			.bio_right .name span{
+				color: #000;
+				font-size:25px;
+				font-family: 'Droid Serif', serif;
+				font-weight: 400;
+				font-style: italic;
+			}
+		.bio_right .credit{
+			margin-top: 8px;
+			font-size:14px;
+			color: #000;
+			line-height: 1.4em;
+		}
+		.bio_right .txtBox{
+			margin-top: 50px;
+		}
+			.bio_right .txt,
+			.bio_right .txt a{
+				color: #666666;
+				padding-bottom: 12px;
+				font-size:13px;
+				line-height:1.5em;
+/*				font-family: “Times New Roman”, “游明朝”, YuMincho, “ヒラギノ明朝 ProN W3″, “Hiragino Mincho ProN”, “HG明朝E”, “メイリオ”, Meiryo, serif;*/
+			}
+			.bio_right .txt a:hover{
+				text-decoration: none;
+			}
+			.bio_right .link{
+			}
+				.bio_right .office{
+					margin-top: 10px;
+				}
+				.bio_right .link .itoi{
+					font-size:13px;
+					line-height: 1.6em;
+					font-family: 'Quicksand', sans-serif;
+					font-weight: 400;
+					color: #000;
+				}
+					.bio_right .link .itoi:hover{
+						text-decoration: none;
+					}
+			.bio_right .hyakka{
+				padding-top: 15px;
+				text-align: left;
+				line-height: 1.6em;
+				}
+				.bio_right .hyakka .ttl{
+					margin-bottom: 7px;
+				}
+					.bio_right .hyakka .ttl a{
+						font-size:13px;
+						font-family: 'Quicksand', sans-serif;
+						font-weight: 400;
+						color: #000;
+					}
+						.bio_right .hyakka .ttl a:hover{
+							text-decoration: none;
+						}
+
+.blog{
+	margin:30px 0 30px;
+}
+
+
+/*  WORKS  */
+.works_right ul li{
+	list-style: none;
+}
+.works_left{
+	float: left;
+	width:550px;
+	margin:40px 0 30px;
+}
+.works_right{
+	text-align:right;
+	width:270px;
+	float:right;
+	margin-top:40px;
+}
+
+.works_left table{
+	color:#333333;
+}
+	.works_left table tr td{
+		padding-bottom:30px;
+
+	}
+		.works_left table tr td span.songtxt{
+			margin:0 0 0 18px;
+			font-size:1em;
+			line-height:1.4em;;
+		}
+
+		.works_left .cdtitle{
+			margin-bottom:15px;
+			padding-left:5px;
+			padding-bottom: 5px;
+			color: #666;
+			font-weight:bold;
+			font-size:1.1em;
+			font-size: 15px;
+			border-bottom:#666 1px solid;
+		}
+		.works_left .cdtitle span{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 15px;
+			color: #e60617;
+
+		}
+		.works_left .txtBloc{
+			margin: 0 10px 0 10px;
+			font-size: 13px;
+			line-height: 1.8em;
+		}
+
+	.songTxtList{
+	margin:10px 0 0 15px;
+	}
+	.songTxtList li{
+	 list-style-type:none;
+	}
+/*NEWS---------------------------*/
+.news_left{
+	float: left;
+	width:550px;
+	margin:40px 0 30px;
+}
+.news_right{
+	float: right;
+	width:214px;
+	margin:40px 0 30px;
+}
+.news_left table{
+	color:#333333;
+	width: 550px;
+}
+	.news_left table tr td{
+		padding-bottom:50px;
+
+	}
+		.news_left table tr td span.songtxt{
+			margin:0 0 0 18px;
+			font-size:1em;
+			line-height:1.4em;;
+		}
+
+		.news_left .cdtitle{
+			margin-bottom:15px;
+			padding-bottom: 5px;
+			padding-left:5px;
+			color: #666;
+			font-weight:bold;
+			font-size:1.1em;
+			font-size: 15px;
+			border-bottom:#666 1px solid;
+
+		}
+		.news_left .cdtitle span{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 15px;
+			color: #e60617;
+
+		}
+		.news_left .txtBloc{
+			margin: 0 10px 0 10px;
+			font-size: 13px;
+			line-height: 1.7em;
+		}
+			.news_left .txtBloc .ttl{
+				margin-top:10px;
+				font-size:14px;
+				font-weight:bold;
+			}
+				.news_left .txtBloc .ttl a{
+					font-size:14px;
+					font-weight:bold;
+				}
+			.news_left .txtBloc .txt{
+				margin-top:10px;
+				font-size: 13px;
+				line-height: 1.6em;
+			}
+
+.past_live_txt{
+	line-height: 1.7em;
+}
+
+/*MUSIC--------------------------*/
+#MUSIC .contents{
+	padding: 40px 10px;
+}
+
+
+
+
+
+
+.blog h2 a{
+	font-size:16px;
+	padding:50px 0 0 0 ;
+
+}
+
+
+
+
+
+
+
+.footer{
+	clear:both;
+	width: 820px;
+	height: 50px;
+	border-top: 1px solid #666666;
+	padding-top: 5px;
+	color: #666;
+	font-size: 12px;
+	font-family: 'Quicksand', sans-serif;
+	text-align: right;
+}
+.banner{
+	position:absolute;
+	right:2px;
+	bottom:6px;
+}
+
+#ninjya{
+	position:absolute;
+	left:-9999px;
+	bottom:100px;
+	}
+
+
+

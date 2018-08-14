@@ -1,0 +1,304 @@
+
+#common_nav .main_nav #nav_disco a{
+    color:#960135;
+}
+
+#disc_main{
+    max-width: 980px;
+    padding:63px 0;
+    margin: 0 auto;
+}
+    #disc_main #main_contents .lead_top a, #disc_main #main_contents #shop_area a{
+        color: #022597;
+        text-decoration: underline;
+    }
+      #disc_main #main_contents .lead_top a:hover{
+          text-decoration: none;
+      }
+        .lead_top{
+            padding: 0 20px;
+            font-size:1rem;
+            line-height: 2em;
+        }
+        .box_disc{
+            margin-top: 56px;
+        }
+            .box_disc .title{
+                padding-bottom: 16px;
+                padding-left: 15px;
+                border-bottom: 2px solid #000;
+                font-size: 170%;
+                font-weight: 500;
+                font-family: 'Quicksand';
+            }
+            .box_disc .wrap_disc{
+                padding:50px 22px 0;
+            }
+                .box_disc .wrap_disc .left{
+                    float: left;
+                    width: 49%;
+                }
+                .box_disc .wrap_disc .right{
+                    float: right;
+                    width: 45%;
+                }
+                    .box_disc .wrap_disc .left img{
+                        width: 100%;
+                    }
+                    .box_disc .wrap_disc .left p{
+                        padding-top: 1em;
+                        font-size:0.85rem;
+                        line-height: 1.7em;
+                    }
+                    .box_disc .wrap_disc .right .ttl{
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 2;
+                    }
+                    .box_disc .wrap_disc .right ul li{
+                        font-size: 1em;
+                        line-height: 2em;
+                        list-style-type: decimal;
+                        list-style-position: inside;
+                    }
+                    .box_disc .btn_detail{
+                        margin-top: 51px;
+                        text-align: right;
+                    }
+                        .box_disc .btn_detail a{
+                            width: 70%;
+                            float: right;
+                            border:2px solid #9c0832;
+                            background: url(../img/discography/arrow_btn_detail.jpg) 90% center no-repeat;
+                            text-align: center;
+                            display: block;
+                            font-size: 1em;
+                            font-weight: bold;
+                            color: #9c0832;
+                            padding-top: 1em;
+                            padding-bottom: 1em;
+                            text-decoration: none;
+                        }
+                        .box_disc .btn_detail a:hover{
+                                filter:alpha(opacity=70);
+                                opacity:0.7;
+                                -moz-opacity: 0.7;
+                        }
+        #shop_area{
+            margin-top: 95px;
+            background-color: #f4f1f1;
+        }
+            #shop_area .inner{
+                padding: 40px;
+            }
+                #shop_area .ttl_shop{
+                    font-weight: bold;
+                    font-size: 1.2em;
+                }
+                #shop_area .ttl{
+                    padding-top: 2em;
+                    line-height: 2em;
+                    font-weight: bold;
+                }
+                #shop_area .txt{
+                    line-height: 2;
+                }
+
+/*詳細ページ*/
+.disc_detail{
+
+}
+    .disc_detail .disc_title{
+        padding-bottom: 16px;
+        padding-left: 15px;
+        border-bottom: 2px solid #000;
+        font-size: 170%;
+        font-weight: 500;
+        font-family: 'Quicksand';
+    }
+    .disc_detail .block1{
+        padding: 33px 0 0 2%;
+        line-height: 2em
+    }
+        .disc_detail .block1 .left{
+            float: left;
+            width: 30%;
+        }
+        .disc_detail .block1 .right{
+            float: right;
+            width: 65%;
+        }
+            .disc_detail .block1 .left img{
+                width: 100%;
+            }
+            .box_grey{
+                margin-top: 20px;
+                background-color: #f4f1f1;
+            }
+                .box_grey .inner{
+                    padding: 20px 30px;
+                }
+                    .ttl_red{
+                        font-weight: bold;
+                        color: #9c0832;
+                    }
+    .disc_detail .block2{
+        padding: 0 0 40px 2%;
+        line-height: 2.2em
+    }
+        .disc_detail .block2 .ttl_black{
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 0.2em;
+        }
+            .disc_detail .block2 .ttl_black a{
+                font-weight: normal;
+            }
+
+    .disc_detail .block3{
+        border-top:1px solid #000;
+        padding-top: 50px;
+    }
+        .disc_detail .block3 .ttl_black{
+            padding-left: 33px;
+            font-size:120%;
+            font-weight: bold;
+            line-height: 1em;
+        }
+        .disc_detail .block3 .box{
+            margin-top: 55px;
+            line-height: 2.3em;
+        }
+            .disc_detail .block3 .box .inner{
+
+            }
+                .icon1_area{
+                    float: left;
+                    width: 4%;
+                }
+                .icon2_area{
+                    float: right;
+                    width: 4%;
+                }
+                    .icon1_area img,.icon2_area img{
+                        width: 100%;
+                    }
+                .disc_detail .block3 .txt_area{
+                    float: left;
+                    width: 92%;
+                }
+                    .disc_detail .block3 .txt_area_inner{
+                        width: 92%;
+                        margin:0 auto;
+                    }
+                    .disc_detail .block3 .txt_area_inner .ttl{
+                        color:#9c0832;
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                    }
+
+    .btn_back {
+        margin-top: 70px;
+    }
+    .btn_back a{
+        width: 17%;
+        margin:0 auto;
+        border:2px solid #9c0832;
+        background: url(../img/discography/arrow_btn_detail.jpg) 90% center no-repeat;
+        text-align: center;
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+        color: #9c0832;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-decoration: none;
+    }
+        .btn_back a:hover{
+            filter:alpha(opacity=60);
+            opacity:0.6;
+            -moz-opacity: 0.6;
+        }
+
+
+
+@media screen and (max-width: 768px){
+
+    /*INDEX*/
+    .box_disc .wrap_disc .left{
+        float: none;
+        width: 100%;
+    }
+    .box_disc .wrap_disc .right{
+        float: none;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .box_disc .btn_detail{
+        margin-top: 1em;
+    }
+        .box_disc .btn_detail a{
+            width: 100%;
+            float: none;
+        }
+    #shop_area{
+        width: 96%;
+        margin:3em auto;
+    }
+/*        #shop_area .inner{
+            padding: 40px;
+        }
+            #shop_area .ttl_shop{
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            #shop_area .ttl{
+                padding-top: 2em;
+                line-height: 2;
+                font-weight: bold;
+            }
+            #shop_area .txt{
+                line-height: 2;
+            }*/
+
+    /*詳細*/
+    .disc_detail .block1 .left{
+        float: none;
+        width: 96%;
+        margin:0 auto;
+    }
+    .disc_detail .block1 .right{
+        float: none;
+        width: 96%;
+        margin:1em auto 0;
+    }
+
+    .disc_detail .block2{
+        width: 96%;
+        margin:0 auto 0;
+    }
+        .disc_detail .block2 .ttl_black{
+            font-weight: bold;
+            margin-top: 40px;
+        }
+            .disc_detail .block2 .ttl_black a{
+                font-weight: normal;
+            }
+
+    .disc_detail .block3{
+    }
+        .disc_detail .block3 .box{
+            width: 96%;
+            margin:0 auto;
+            margin-top: 2em;
+            line-height: 2.5em;
+        }
+    .btn_back {
+        margin-top: 2em;
+    }
+    .btn_back a{
+        width: 80%;
+    }
+    
+    
+}

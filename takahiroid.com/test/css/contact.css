@@ -1,0 +1,22 @@
+#contact_main #main_contents a{
+    color: #022597;
+    text-decoration: underline;
+}
+    #contact_main #main_contents a:hover{
+        text-decoration: none;
+    }
+#common_nav .main_nav #nav_contact a{
+    color:#960135;
+}
+#contact_main{
+    max-width: 980px;
+    padding:96px 0;
+    margin: 0 auto;
+}
+    #contact_main #main_contents {
+        padding: 0 40px;
+    }
+        #contact_main .text{
+            font-size:1rem;
+            line-height: 2em;
+        }

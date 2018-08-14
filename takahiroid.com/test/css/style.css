@@ -1,0 +1,456 @@
+img{
+    vertical-align:bottom;
+    border:none;
+    background:transparent;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover img.hoverImg {
+    filter:alpha(opacity=70);
+    opacity:0.7;
+    -moz-opacity: 0.7;
+}
+/* Hides from IE Mac */
+* html .clearfix{
+    height: 1%;
+}
+.clearfix{
+    display:block;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    font-size:0;
+    clear: both;
+    visibility:hidden;
+}
+
+/*-----pc,sp切り替え------*/
+.pc{
+    display: block;
+}
+.sp{
+    display: none;
+}
+@media screen and (max-width:768px){
+.sp{
+    display: block;
+}
+.pc{
+    display: none;
+}
+}
+
+/***** 共通nav（top page以外）*****/
+
+header #nav{
+    display:none;
+}
+#common_header{
+    width:100%;
+    height:90px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+#common_nav{
+    max-width: 980px;
+    margin: 0 auto;
+}
+#common_nav li{
+    float: left;
+    text-align: center;
+}
+#common_header:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#common_nav .main_nav{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    padding-right:1em;
+    font-size;16px;
+    letter-spacing: 0.1em;
+}
+#common_nav .main_nav a{
+    text-decoration: none;
+    color:black;
+}
+#common_nav .nav_title{
+    padding:1em;
+    padding-top:0.5em;
+    margin-top: 2em;
+}
+#common_nav .logo_nav{
+    float: left;
+    width:47px;
+    margin-left: 1em;
+}
+#common_nav .sns_nav{
+    float: right;
+    width:100px;
+    margin-top:-20px;
+}
+#common_nav .main_nav{
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#common_nav .icon_fb, #common_nav .icon_yt{
+    display: none;
+}
+#common_nav .scroll_icon_fb, #common_nav .scroll_icon_yt{
+    display: block;
+    margin-left:10px;
+}
+#common_nav .scroll_icon_fb a:hover, #common_nav .scroll_icon_yt a:hover{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+#common_nav .scroll_icon_fb{
+    display: block;
+    width:33px;
+    height:32px;
+    background-image: url(../img/facebook_head_hover.png);
+    background-repeat: no-repeat;
+    background-size: 81%;
+    background-position: center;
+    margin-top: 50px;
+    margin-left:7%;
+}
+#common_nav .scroll_icon_yt{
+    display: block;
+    width:33px;
+    height:32px;
+    background-image: url(../img/youtube_head_hover.png);
+    background-repeat: no-repeat;
+    background-size: 81%;
+    background-position: center;
+    margin-top: 50px;
+}
+#common_nav a:hover{
+    color: #9B0137;
+}
+
+#nav-toggle{
+    display: none;
+    position: absolute;
+    right:15px;
+    top:22px;
+    width: 30px;
+    height: 40px;
+    cursor:pointer;
+}
+
+#nav-toggle span{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: white;
+    left:0;
+    transition: s ease=in=out;
+}
+#nav-toggle span:nth-child(1){
+    top:0;
+}
+#nav-toggle span:nth-child(2){
+    top:11px;
+}
+#nav-toggle span:nth-child(3){
+    top:22px;
+}
+
+/**共通ページヘッド**/
+.page_head{
+    margin-top:90px;
+    width: 100%;
+    height: 135px;
+    text-align: center;
+    background-color: black;
+    padding-top: 35px;
+}
+    .page_head h1{
+        font-family: 'Satisfy', cursive;
+        font-size:4.5em;
+        font-weight: 400;
+        color: white;
+    }
+.foot_img img{
+    width: 100%;
+}
+
+
+/***共通フッター***/
+
+.footer_main{
+    width:100%;
+    height:auto;
+    position: relative;
+}
+.footer_main #foot_img img{
+    width:100%;
+    height:auto;
+}
+footer #foot_content{
+    width:100%;
+    padding: 0;
+    background-color: #960135;
+}
+.footer_main #foot_content .footer_link{
+    max-width: 980px;
+    margin:0 auto;
+}
+.footer_main #foot_content .footer_link:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.footer_main #foot_content .footer_link img{
+    float:left;
+    margin-left:2em;
+}
+footer .footer_link .line{
+    display: none;
+}
+.footer_main #foot_content .footer_link .footer_fb{
+    margin-left:0;
+}
+.footer_main #foot_content .footer_link .footer_fb_link{
+    width:67px;
+    height:82px;
+    margin-top:30px;
+    margin-left:60px;
+    float:left;
+}
+.footer_main #foot_content .footer_link .footer_yt{
+    width:54px;
+    height:auto;
+    margin-left:0;
+}
+.footer_main #foot_content .footer_link .footer_yt_link{
+    width:54px;
+    height:65px;
+    margin-top:42px;
+    margin-left:41px;
+    float: left;
+}
+.footer_main #foot_content .footer_text{
+    padding-top: 30px;
+    text-align: center;
+    color:white;
+}
+.footer_main #foot_content .gotop{
+    position:absolute;
+    bottom:155px;
+    right:2em;
+}
+
+.footer_main #foot_content{
+    height: 200px;
+}
+.footer_main  #foot_content .footer_link{
+    padding:0;
+}
+.footer_main  #foot_content .footer_link .footer_fb_link{
+    margin-left:75%;
+}
+.footer_main  #foot_content .footer_text p{
+    font-family: 'Quicksand', sans-serif , "Yu Gothic", "游ゴシック", YuGothic;
+    letter-spacing: 1px;
+    font-size:0.8em;
+}
+
+
+
+@media screen and (min-width:961px){
+    #sp ul{
+        display: none;
+    }
+}
+@media screen and (max-width:960px){
+    
+    .page_head {
+        height: 2em;
+        padding: 1em 0;
+    }
+        .page_head h1{
+            font-size:2em;
+            line-height: 1em;
+        }
+      
+    
+/******スマホ用nav*****/
+    .page_head{
+        margin-top: 0;
+    }
+    #common_header{
+        display: none;
+    }
+    #sp{
+        position: absolute;
+        top:0;
+        right:0;
+        width:100%;
+        height:auto;
+        z-index: 500;
+    }
+    #sp, .fixed{
+        display: none;
+    }
+
+    #sp #sp_nav{
+        background-color: #970135;
+        margin-top: 0;
+        margin-left: 0;
+        padding:0.5em;
+        padding-bottom: 2em;
+        width:100%;
+    }
+    #sp #sp_nav a{
+        color:white;
+    }
+    #sp li{
+        float: none;
+        text-align: left;
+    }
+    #sp .sp_nav_title{
+        margin-top:0;
+    }
+    #sp .sp_main_nav{
+        font-family: 'Quicksand', sans-serif;
+        margin: 0.5em 1em;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+    }
+    #sp .sp_main_nav li{
+        padding:0.5em;
+    }
+    #sp .sp_sns_nav li{
+        float: left;
+    }
+    #sp .sp_sns_nav{
+        float: right;
+        margin-top: -80px;
+        margin-right: -3em;
+    }
+    #sp .sp_sns_nav .sp_icon_fb, #sp .sp_sns_nav .sp_icon_yt{
+        width:20%;
+        margin-left:2px;
+    }
+    #sp .sp_sns_nav img{
+        width:100%;
+        height: auto;
+    }
+    .sp_logo img{
+        width:70px;
+        height:auto;
+    }
+
+    #nav-toggle{
+            display: block;
+            z-index: 1000;
+    }
+    .active#nav-toggle span:nth-child(1){
+            top:11px;transform: rotate(315deg);
+    }
+        .active#nav-toggle span:nth-child(2){
+            width: 0;left:50%;
+    }
+        .active#nav-toggle span:nth-child(3){
+            top:11px;transform: rotate(-315deg);
+    }
+
+    header #nav{
+        margin-top:1em;
+        margin-left:1em;
+    }
+    header #nav .main_nav{
+        display:none;
+    }
+    header .logo{
+        margin-right:1em;
+    }
+    header .icon_fb, header .icon_yt{
+        margin-top:0;
+    }
+
+}
+
+
+    @media screen and (max-width:768px){
+        
+    /***共通フッタースマホ***/
+     
+    .footer_main #foot_content{
+        height: auto;
+        padding:2em 0 0;
+    }
+    .footer_main #foot_content .footer_link img{
+        width:50%;
+        height:auto;
+        margin-left: 1.5em;
+    }
+    .footer_main #foot_content .footer_link .line{
+        display: block;
+    }
+    footer .footer_link .footer_sns_icon{
+        padding:2em;
+    }
+    .footer_main #foot_content .footer_link .footer_yt{
+        width:72%;
+        margin-bottom:1px;
+    }
+    .footer_main #foot_content .footer_link .footer_fb{
+        width:75%;
+    }
+    .footer_main #foot_content .footer_link .footer_fb_link{
+        margin-top:-0.6em;
+        margin-left:0.8em;
+        height:auto;
+    }
+    .footer_main #foot_content .footer_link .footer_yt_link{
+        margin-top:0;
+        margin-left:-1em;
+    }
+    footer .br{
+        display: block;
+    }
+    footer #foot_content{
+        height:auto;
+    }
+    footer .gotop img{
+        width:65%;
+    }
+    .footer_main #foot_content .gotop{
+        top:-29px;
+        right:-1em;
+    }
+    .footer_main #foot_content .footer_text{
+        padding-top:0.5em;
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    
+/*
+    #sp{
+        right:0;
+    }
+    #sp #sp_nav{
+        width:100%;
+    }
+    #sp .sp_main_nav{
+        font-size:1.2em;
+    }
+*/
+}

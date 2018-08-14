@@ -1,0 +1,71 @@
+#common_nav .main_nav #nav_schedule a{
+    color:#960135;
+}
+.schedule_inner_wrap{
+    max-width: 980px;
+    margin: 80px auto;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    line-height: 2.5em;
+}
+.schedule_title{
+    padding:5px;
+    padding-left:20px;
+    font-size:1.4em;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.schedule_info{
+    padding:20px 20px 0;
+}
+    .schedule_info p.ttl_red{
+        color:#970135;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    .schedule_info ul{
+        margin-bottom:60px;
+    }
+        .schedule_info li .date{
+            float: left;
+        }
+        .schedule_info li .txt{
+            float: left;
+            padding-left: 1em;
+        }
+    .schedule_info span{
+        font-size: 14px;
+    }
+.foot_img img{
+    width: 100%;
+    height:auto;
+}
+footer .footer_link .line{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+
+    .schedule_inner_wrap{
+        width: 96%;
+        margin: 1.5em auto;
+        line-height: 2em;
+    }
+    .schedule_info{
+        padding:1em 0;
+    }
+    .schedule_title{
+        padding-left:0;
+    }
+        .schedule_info ul{
+            margin-bottom:2em;
+        }
+        .schedule_info li .date,
+        .schedule_info li .txt{
+            float: none;
+        }
+        .schedule_info li .date{
+            margin-top: 1em;
+        }
+
+}
+

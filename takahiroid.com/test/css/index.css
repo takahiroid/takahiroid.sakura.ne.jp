@@ -1,0 +1,500 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/*-----indexのヘッダー、nav------*/
+
+header #nav a{
+    color:white;
+}
+body{
+    position:relative;
+    width:100%;
+}
+header{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+header .logo{
+    margin-right:30px;
+}
+header #nav .scroll_logo{
+    display:none;
+}
+header #nav{
+    display: block;
+    margin-top:28px;
+    margin-left:40px;
+    z-index:100;
+}
+header #nav:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+header #nav .main_nav{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    padding-right:1em;
+    font-size;16px;
+    letter-spacing: 0.1em;
+}
+header li{
+    float: left;
+    text-align: center;
+}
+header .nav_title{
+    padding:1em;
+    padding-top:0.5em;
+    margin-top: 50px;
+}
+header .nav_title a:hover{
+    border-bottom:2px solid white;
+}
+header .icon_fb, header .icon_yt{
+    width:33px;
+    height:32px;
+    padding:0.2em;
+    margin-top:50px;
+}
+header .icon_fb{
+    display: block;
+    width:33px;
+    height:32px;
+    background-image: url(../img/facebook_head_hover.png);
+    background-repeat: no-repeat;
+    background-size: 81%;
+    background-position: center;
+}
+header .icon_yt{
+    display: block;
+    width:33px;
+    height:32px;
+    background-image: url(../img/youtube_head_hover.png);
+    background-repeat: no-repeat;
+    background-size: 81%;
+    background-position: center;
+}
+header .scroll_icon_fb, header .scroll_icon_yt{
+    display: none;
+}
+header .icon_fb img:hover, header .icon_yt img:hover{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+/***** スクロール後のnav *****/
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+}
+.fixed #nav{
+    max-width: 980px;
+    margin:-20px auto 0;
+}
+.fixed #nav a{
+    color:black;
+    font-weight: 500;
+}
+.fixed #nav .logo{
+    display: none;
+}
+.fixed .logo_nav{
+    float: left;
+    width:47px;
+}
+.fixed .sns_nav{
+    float: right;
+    width:100px;
+}
+.fixed #nav .scroll_logo{
+    display: block;
+    margin-top: 20px;
+    margin-left: 1em;
+}
+.fixed #nav .main_nav{
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fixed #nav .icon_fb, .fixed #nav .icon_yt{
+    display: none;
+}
+.fixed .scroll_icon_fb, .fixed .scroll_icon_yt{
+    display: block;
+    margin-left:10px;
+}
+.fixed .scroll_icon_fb a:hover, .fixed .scroll_icon_yt a:hover{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+.fixed .scroll_icon_fb{
+    display: block;
+    width:33px;
+    height:32px;
+    background-image: url(../img/facebook_head_hover.png);
+    background-repeat: no-repeat;
+    background-size: 81%;
+    background-position: center;
+    margin-top: 50px;
+    margin-left:7%;
+}
+.fixed .scroll_icon_yt{
+    display: block;
+    width:33px;
+    height:32px;
+    background-image: url(../img/youtube_head_hover.png);
+    background-repeat: no-repeat;
+    background-size: 81%;
+    background-position: center;
+    margin-top: 50px;
+}
+.fixed #nav a:hover{
+    color: #9B0137;
+}
+
+/*メインビジュアル*/
+#main_visual{
+  width:100%;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  /*background-image:url(../img/index/top_01.jpg);*/
+}
+@media screen and (max-width: 768px){
+/*    #main_visual{
+        height: 50px;
+    }*/
+}
+    #main_logo{
+      width: 94%;
+      height: auto;
+      position:absolute;
+        top:3%;
+    }
+    #scroll_mark{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+    }
+/*#main_logo_sp{
+    display: none;
+}*/
+
+/*ニュース*/
+#news{
+    margin:0 auto;
+    margin-bottom:70px;
+    width:100%;
+}
+#news #news_head{
+    padding:60px;
+}
+    #news_title{
+        width:100%;
+        text-align: center;
+        font-size:4.5em;
+        font-weight: 400;
+        font-family: 'Satisfy', cursive;
+    }
+    #news .news-contents{
+        margin:0 auto;
+        max-width: 980px;
+        background-color: white;
+
+        /* boxレイアウトの指定 */
+        display: box;
+        display: -webkit-box;
+        display: -moz-box;
+
+        /* 配置したボックスを左右中央寄せにする */
+        box-pack: center;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+
+    }
+#news .news-contents .news_box{
+    width: 30%;
+    margin: 2%;
+}
+
+#news .news-contents .news_box .news_data{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 400;
+    font-family: 'Satisfy', cursive;
+    line-height: 0.5em;
+    display:flex;
+}
+    #news .news-contents .news_box .news_data:before,
+    #news .news-contents .news_box .news_data:after{
+        border-top:1px solid #B8B2B4;
+        content:"";
+        flex-grow:1;
+    }
+    #news .news-contents .news_box .news_data:before{
+        margin-right:1em;
+    }
+    #news .news-contents .news_box .news_data:after{
+        margin-left:1em;
+    }
+    #news .news-contents .news_box .news_inner{
+        background-color: #F5F1F2;
+    }
+        #news .news-contents .news_box .news_inner:hover{
+            background-color: #E9CECE;
+        }
+    #news .news-contents .news_box .news_inner{
+        padding:8%;
+        margin-top:1em;
+    }
+        .news_box .news_inner .ttl{
+            text-align: center;
+            font-weight: bold;
+            font-family: YuGothicM,YuGothicM,Meiryo,sans-serif;
+        }
+       .news_box .news_inner .txt{
+            padding-top: 1.5em;
+            font-family: YuGothicM,YuGothicM,Meiryo,sans-serif;
+            font-weight: 400;
+            word-break: break-all;
+        }
+            .news_box .news_inner .txt .firstImg{
+                width: 80%;
+                margin:0 auto;
+            }
+                .news_box .news_inner .txt .firstImg img{
+                    width: 100%;
+                }
+        .news_box .news_inner .read_more{
+            margin-top: 1.5em;
+            text-align: right;
+            font-family: 'Playball', cursive;
+            font-size:20px;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+        #news .news-contents .news_box .news_inner .read_more a{
+            color:black;
+        }
+        #news .news-contents .news_box .news_inner .read_more a:hover{
+            opacity: 0.5;
+            transition-property: opacity;
+            transition-duration: 0.5s;
+        }
+
+    #news .read_the_news{
+        max-width: 980px;
+        margin:0 auto;
+        text-align: center;
+        padding-top: 54px;
+    }
+
+/*フッター*/
+#foot_visual img{
+    width:100%;
+}
+
+footer#footer_top{
+    width:100%;
+    position: relative;
+}
+    footer#footer_top #foot_content{
+        width:100%;
+        padding: 50px 0;
+        background-color: #960135;
+    }
+    footer#footer_top .footer_link{
+        max-width: 980px;
+        margin:0 auto;
+    }
+    footer#footer_top .footer_link img{
+        float:left;
+        margin-left: 2em;
+    }
+    footer .footer_link .line{
+        display: block;
+    }
+    footer#footer_top .footer_link .footer_fb{
+        margin-left:0;
+    }
+    footer#footer_top .footer_link .footer_fb_link{
+        width:67px;
+        height:82px;
+        margin-top:30px;
+        margin-left:56px;
+        float:left;
+    }
+    footer#footer_top .footer_link .footer_yt{
+        width:54px;
+    }
+    footer#footer_top .footer_link .footer_yt_link{
+        width:54px;
+        margin-top:42px;
+        float: left;
+    }
+    footer#footer_top .footer_text{
+        padding-top: 30px;
+        text-align: center;
+        color:white;
+    }
+    footer#footer_top .gotop{
+        width:60px;
+        position:absolute;
+        top:-45px;
+        right:4.5em;
+    }
+footer#footer_top .footer_text p {
+       font-family: Quicksand, sans-serif, "Yu Gothic", 游ゴシック, YuGothic;
+       letter-spacing: 1px;
+       font-size: 1em;
+}
+
+@media screen and (max-width:960px){
+
+    header #nav{
+        margin-top:2%;
+        margin-left:1%;
+    }
+    header .logo{
+        margin-right: -1em;
+    }
+    header .logo img{
+        width:70%;
+    }
+    header .icon_fb, header .icon_yt{
+        margin-top: 0;
+    }
+    #scroll_mark{
+        display: none;
+    }
+    #main_logo{
+        top:0;
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+
+/*    #main_visual{
+        display:none!important;
+    }
+    #main_visual_sp{
+        width:100%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top;
+        min-height: 100%;
+        background-image:url(../img/sp/top_01.jpg);
+    }
+    #main_logo_sp{
+        display: block;
+        width: 80%;
+        position:absolute;
+        left: 2%;
+        top:-18%;
+    }*/
+
+    #news_title{
+        font-size:3em;
+    }
+
+    #news #news_head{
+        padding:2em;
+    }
+    #news .news-contents{
+        width:100%;
+        height:auto;
+        display:block;
+    }
+    #news .news-contents .news_box{
+        width: 90%;
+        margin:0 auto 4em;
+    }
+    #news .read_the_news{
+        padding-top:0;
+    }
+
+    /***フッタースマホ***/
+    footer#footer_top #foot_content{
+        padding:2em 0;
+    }
+    footer#footer_top .footer_link img{
+        width:50%;
+        height:auto;
+        margin-left: 1.5em;
+    }
+    footer#footer_top .footer_link .footer_sns_icon{
+        padding:2em;
+    }
+    footer#footer_top .footer_link .footer_yt{
+        width:72%;
+        margin-bottom:1px;
+    }
+    footer#footer_top .footer_link .footer_fb{
+        width:75%;
+    }
+    footer#footer_top .footer_link .footer_fb_link{
+        margin-top:-0.6em;
+        margin-left:1.4em;
+    }
+    footer#footer_top .footer_link .footer_yt_link{
+        margin-top:0;
+        margin-left:-2em;
+    }
+    footer#footer_top .br{
+        display: block;
+    }
+    footer #foot_content{
+        height:auto;
+    }
+    footer#footer_top .gotop img{
+        width:100%;
+    }
+    footer#footer_top .gotop{
+        width:58px;
+        top:-29px;
+        right:1em;
+    }
+    footer#footer_top .footer_text{
+        padding-top:0.5em;
+    }
+    footer#footer_top .footer_text p {
+        font-size:0.8em;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+/*    #main_visual_sp{
+        min-height: 60%;
+    }
+
+    #main_logo_sp{
+        display: block;
+        width: 100%;
+        position:absolute;
+        left: 0;
+        top:20%;
+    }*/
+
+}
