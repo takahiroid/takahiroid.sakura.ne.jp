@@ -25,104 +25,26 @@ include("../menu.php");
 
 <table width="500" border="0">
 
-     <tr>
+      <tr>
       <td>
-        <p class="cdtitle"><span>【LIVE】</span>餃子大王</p>
+        <p class="cdtitle"><span>【LIVE】</span>グリムロッカーズ（永井ルイ、小畑ポンプ、松本タカヒロ）</p>
 
         <div class="txtBloc">
-        <p class="ttl">2018年8月19日(土) <a href="http://www.ukproject.com/que/" target="_blank">下北沢 CLUB Que（東京）</a></p>
+        <p class="ttl">2018年 10月6日(土) <a href="http://absol.blue/" target="_blank">池袋 Absolute Blue（東京）</a></p>
 <br>
-<p class="ttl">餃子大王ワンマン35周年ディズニーランドと同い年！お昼だよ！全員集合！<br>松本タカヒロバースデイパーティ！</p>
+<p class="ttl">CLUB251 25th Anniversary<br>
+ライブDVD発売記念<br>
+『Clock Strikes Ten ～ 今夜はかえさへん ～』</p>
 <p class="txt">
-【出演】　餃子大王(ワンマン)<br>
-【会場】　下北沢 CLUB Que<br>
-【時間】　OPEN 12:00／START 12:30<br>
-【チケット】　前売 ￥2,000／当日 ￥2,300 [1D(500円)別]<br>
-　Queおよびe+にて前売発売。<br>
-</p>
-        </div>
+●時間 ： 開場 17:30 / 開演 18:00<br>
 
-      </td>
-  </tr>
+●出演 ： GlimRockers(永井ルイ / 松本タカヒロ / 小畑ポンプ)<br>
 
-   <tr>
-      <td>
-        <p class="cdtitle"><span>【LIVE】</span>ハモロックス（松本タカヒロ・梶原健生・山田アンソニー・松本淳）</p>
+●料金 ： 前売り￥3,000(＋1drink) / 当日￥3,500(＋1drink)<br>
 
-        <div class="txtBloc">
-        <p class="ttl">2018年8月24日(金曜日) <a href="http://www.showboat1993.com/" target="_blank">高円寺ShowBoat（東京）</a></p>
-<p class="ttl">『Epic Motion』</p>
-<p class="txt">
-●出演 : <br>
-【ハモロックス】<br>
-Vo,Gt/松本タカヒロ (ザ・タートルズ,Glimrockers,世良公則)<br>
-Gt/梶原健生 (越路姉妹,GARNiDELiA)<br>
-Ba/山田アンソニー (Gueen)<br>
-Dr/松本淳<br>
-<br>
-【Headrocks】<br>
-Vo/ヒルマ弘 (The Trophys,よこわけズ)<br>
-Gt/木村建 (安室奈美恵,globe,ゆず)<br>
-Ba/堀川マリオ (EXILE TRIBE)<br>
-Dr/松本淳<br>
-<br>
-【プラズマ11】<br>
-Vo/Datchy☆<br>
-Gt/長井ちえ (永井真理子,小比類巻かほる)<br>
-Ba/林由恭 (ミサイルイノベーション,族音二重奏)<br>
-Dr/松本淳<br>
-<br>
-●時間 : 開場 19:00 / 開演 19:30<br>
-●料金 : 予約/¥3000 当日/¥3500 (ドリンク代別)<br>
-●お問い合わせ :
-<a href="http://www.showboat1993.com/" target="_blank">高円寺ShowBoat</a><br>
-東京都杉並区高円寺北 3-17-2 オークヒル高円寺 B1<br>
-03-3337-5745(14:00～23:00)<br>
-info@showboat.co.jp
-</p>
-        </div>
+●予約 ： <a href="mailto:ore@obatapump.com">こちらのアドレス</a>に・お名前・枚数(制限なし)を記載の上メールにてご予約ください。<br>
 
-      </td>
-  </tr>
-
-       <tr>
-      <td>
-        <p class="cdtitle"><span>【LIVE】</span>Rolly & GLimrockers</p>
-
-        <div class="txtBloc">
-        <p class="ttl">2018年9月7日(金) <a href="http://hearts-web.net/hearts/" target="_blank">西川口ハーツ（埼玉）</a></p>
-<br>
-<p class="ttl">西川口魔境伝</p>
-<p class="txt">
-【出演】　ROLLY & Glimrockers / 銀幕一楼とTIMECAFE<br>
-【会場】　西川口ハーツ<br>
-【時間】　開場　18:30 開演　19:00<br>
-【チケット】　前売 ¥3,500／当日 ¥4,000 [1D(500円)別]<br>
-　店頭、e+<br>
-【問い合わせ】 Live House Hearts TEL : 048-254-3345
-</p>
-        </div>
-
-      </td>
-  </tr>
-
-
-     <tr>
-      <td>
-        <p class="cdtitle"><span>【LIVE】</span>世良公則×JET ROX</p>
-
-        <div class="txtBloc">
-        <p class="ttl">2018年9月22日(土) <a href="http://www.namba-hatch.com/acs.html" target="_blank">なんばHatch（大阪）</a></p>
-<br>
-<p class="ttl">世良公則 x JET ROX LIVE 2018</p>
-<p class="txt">
-●出演 : 世良公則×JET ROX<br>
-●時間 : 開場17:30/開演18:30<br>
-●料金 :  6,500円 (税込・ご入場時、別途ドリンク代が必要です)<br>
-　（親子割引有り・公演日当日開場時に身分証明書提示にて3,000円キャッシュバック）<br>
-　6歳未満入場不可<br>
-●チケット発売 : 2018年7月28日（土）<br>
-●お問い合わせ : キョードーインフォメーション　0570-200-888(毎日10:00～18:00)
+＊メール件名を「10月6日池袋予約」としていただければ助かります。<br>
 </p>
         </div>
 
@@ -153,15 +75,41 @@ info@showboat.co.jp
 
        <tr>
       <td>
-        <p class="cdtitle"><span>【LIVE】</span>松酒屋（酒井ミキオ・松本タカヒロ・ha-j）</p>
+        <p class="cdtitle"><span>【LIVE】</span>松酒屋（酒井ミキオ・松本タカヒロ・ha-j）昼夜2公演！</p>
 
         <div class="txtBloc">
         <p class="ttl">2018年11月10日(土) <a href="http://www.sactsow.com/" target="_blank">新宿 SACT!（東京）</a></p>
 <br>
-<p class="ttl">松酒屋 ~ 第八幕 ~</p>
+<p class="ttl">昼の部『松酒屋～昼下がりの役員会～』<br></p>
 <p class="txt">
-【出演】　松酒屋（酒井ミキオ・松本タカヒロ・ha-j）<br><br>
-詳細は近日発表いたします。
+●出演【社長】 酒井ミキオ/【副社長】松本タカヒロ/【専務】ha-j/<br>
+●時間:open13:00/start13:30<br>
+●料金:adv.2500yen/door3000yen 1drink別<br>
+●～内容～<br>
+ライブ＆トーク。<br>
+パワーポイントを導入し、あなたの視覚と聴覚を刺激する（笑）！！<br>
+我々の過去の写真（もしかしたら動画！？）と共に様々な楽曲を振り返ります。<br>
+新たなる展開に我々役員も昇天中です。<br>
+<a href=https://tiget.net/events/36589" target="_blank">
+→ 昼の部『松酒屋～昼下がりの役員会～』チケット購入サイト
+</a><br>
+<br>
+
+<p class="ttl">夜の部『松酒屋 ~ 第八幕』</p>
+<p class="txt">
+●出演【社長】 酒井ミキオ/【副社長】松本タカヒロ/【専務】ha-j/<br>
+
+●時間:open18:00/start18:30<br>
+●料金:adv.4000yen/door4500yen 1drink別<br>
+●～内容～<br>
+八度目の社員総会。遅刻欠勤は減給です。<br>
+毎回大賑わいの総会は、いつものように新曲攻め、メドレー攻め、迷曲攻めで<br>
+社員のみなさんのハートをグリグリ突っつきます。<br>
+乞うご期待！<br>
+<a href=https://tiget.net/events/36591" target="_blank" >→ 夜の部『松酒屋 ~ 第八幕』チケット購入サイト</a><br>
+
+
+
 </p>
         </div>
 

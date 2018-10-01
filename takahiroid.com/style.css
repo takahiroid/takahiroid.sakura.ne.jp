@@ -393,6 +393,7 @@ body{
 	float: left;
 	width:550px;
 	margin:40px 0 30px;
+
 }
 .news_right{
 	float: right;
@@ -432,13 +433,13 @@ body{
 		}
 		.news_left .txtBloc{
 			margin: 0 10px 0 10px;
-			font-size: 13px;
-			line-height: 1.7em;
+			font-size: 15px;
 		}
 			.news_left .txtBloc .ttl{
 				margin-top:10px;
-				font-size:14px;
+				font-size:15px;
 				font-weight:bold;
+				line-height: 1.7;
 			}
 				.news_left .txtBloc .ttl a{
 					font-size:14px;
@@ -446,9 +447,13 @@ body{
 				}
 			.news_left .txtBloc .txt{
 				margin-top:10px;
-				font-size: 13px;
-				line-height: 1.6em;
+				font-size: 14px;
+				line-height: 1.7;
 			}
+				.news_left .txtBloc .txt a{
+					font-size:14px;
+					font-weight:bold;
+				}
 
 .past_live_txt{
 	line-height: 1.7em;

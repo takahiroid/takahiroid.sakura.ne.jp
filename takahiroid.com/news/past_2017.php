@@ -39,7 +39,7 @@ include("../menu.php");
 <strong>枕本バンド / 水戸華之介&amp;枕本バンド</strong>『Makuramoto Tokuro Birthday Party』<br>　2017.04.06(木) @下北沢CUB Que<br><br>
 <strong>本田恭章</strong>『本田恭章　Birthday Live』<br>　2017.05.02(火) @下北沢  GARDEN<br><br>
 <strong>Glimrockers</strong>『JAM FES 2017 石塚明彦 店長 presents　新宿JAM 征服宣言』<br>　2017年5月4日（木・祝） @新宿JAM （東京）<br><br>
-<strong>ザ・タートルズ</strong>『デビュー20周年記念ライブ』MOTT THE TURTLE〜すべての若きカメたちへ<br>　2017年6月17日（土） @渋谷B.Y.G （東京）<br><br>
+<strong>ザ・タートルズ</strong>『デビュー20周年記念ライブ』MOTT THE TURTLE〜すべての若きカメたちへ<br>　2017年6月17日（土） @下北沢251 （東京）<br><br>
 <strong>大槻ケンヂ with Glimrockers</strong>『Glimrock Hour vol.3』<br>　2017年6月3日（土） @渋谷B.Y.G<br><br>
 <strong>世良公則</strong>『世良公則 × JETROX with kamimoto TOUR 2017』
 <br>　2017年6月23日（金）@東京　赤坂BLITZ （<br>

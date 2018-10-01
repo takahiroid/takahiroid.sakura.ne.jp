@@ -50,6 +50,33 @@ Mｒ.MONDO（THE NEATBEATS）・棚田竜太（Monoral Zombie）・MANAMI(THE ST
 出演 : ゴダイゴ ・ 世良公則×JET ROX ・ 杉山清貴＆馬場俊英 with "Ba Band"
 <br><br>
 
+2018年8月19日(土) @下北沢CUB Que<br><strong>餃子大王『ワンマン35周年ディズニーランドと同い年！お昼だよ！全員集合！<br>松本タカヒロバースデイパーティ！』</strong><br><br>
+
+2018年8月24日(金曜日)  @ 高円寺ShowBoat（東京）<br><strong>ハモロックス（松本タカヒロ・梶原健生・山田アンソニー・松本淳）</strong><br>
+共演 : <br>
+【Headrocks】<br>
+Vo/ヒルマ弘 (The Trophys,よこわけズ)<br>
+Gt/木村建 (安室奈美恵,globe,ゆず)<br>
+Ba/堀川マリオ (EXILE TRIBE)<br>
+Dr/松本淳<br>
+<br>
+【プラズマ11】<br>
+Vo/Datchy☆<br>
+Gt/長井ちえ (永井真理子,小比類巻かほる)<br>
+Ba/林由恭 (ミサイルイノベーション,族音二重奏)<br>
+Dr/松本淳<br>
+<br><br>
+
+2018年9月2日(日) @ Knave（東京）<br><strong>餃子大王『ワンマン35周年ディズニーランドと同い年！お昼だよ！全員集合！』</strong><br><br>
+
+2018年9月7日(金) @ 西川口ハーツ（埼玉）<br><strong>Rolly & GLimrockers『西川口魔境伝』</strong><br>
+共演：銀幕一楼とTIMECAFE
+<br><br>
+
+2018年9月22日(土) @ なんばHatch（大阪）<br><strong>FM COCOLO「オーディナリー・ナイト」 presents オーディナリー・ナイト スペシャルライブ</strong><br>
+出演 : ゴダイゴ ・ 世良公則×JET ROX ・ 杉山清貴＆馬場俊英 with "Ba Band"
+<br><br>
+
 
 		</div>
 	</div>
