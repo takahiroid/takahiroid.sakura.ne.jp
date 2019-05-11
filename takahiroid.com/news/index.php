@@ -27,22 +27,70 @@ include("../menu.php");
 
 <table width="500" border="0">
 
+
 <tr>
   <td>
-        <p class="cdtitle"><span>【TV】</span>世良公則『フジテレビ　名曲お宝音楽祭』</p>
-        <div class="txtBloc">
-    <p class="ttl">2019年4月6日(土)19:00〜23:10『フジテレビ　名曲お宝音楽祭』</p>
-    <p class="txt">
-
-世良公則さんバンドLIVEにギタリストして参加させていただきます。<br>
-放送日：2019年4月6日(土)19:00〜23:10<br>
-番組ホームページ：<a href="https://www.fujitv.co.jp/otakara/caststaff.html" target="_blank">https://www.fujitv.co.jp/otakara/caststaff.html</a><br>
-    <br><br>
-    </p>
-      </div>
+<p class="cdtitle"><span>【LIVE】</span>「松酒屋」～昼下がりの役員会～『そして都会へ編』（昼公演）</p>
+<div class="txtBloc">
+<p class="ttl"><a href="http://www.sactsow.com/" target="_blank">2019年6月29日（土）新宿Sact!</a></p>
+<p style="padding-top:0.5rem;"><b>昼の部はトーク&ライブ。<br>
+役員3人の歴史を画像（時に映像）を観ながら辿りつつ、往年のヒット曲をカバー&ハモり倒します。</b><p><br>
+<p class="txt">
+■会場：<a href="http://www.sactsow.com/" target="_blank">新宿Sact!</a><br>
+■出演：松酒屋（【社長】 酒井ミキオ/【副社長】松本タカヒロ/【専務】ha-j）<br>
+■時間:open13:00/start13:30 <br>
+■料金:adv.3000yen/door3500yen 1drink別<br>
+</p>
+</div>
+<div class="txtBloc">
+■【チケット販売】<br>
+  ▷<a href="https://passmarket.yahoo.co.jp/event/show/detail/01f0ih108aw3u.html?fbclid=IwAR1nMV8RFgw9i3A1kC7lB1mmib_UXVtceEbjfhHKL1iHzMN-cwahBwCIpkU" target="_blank">Yahoo Pass Market</a>（昼の部専用：Yahoo!アカウントが必要になります）<br>
+  ▷メール予約：
+   <div style="padding-left: 1em;">
+下記アドレスまで予約メールをお送り下さい。<br>
+「<a href="mailto:office.matsuzakaya@gmail.com">office.matsuzakaya@gmail.com</a>」<br>
+・公演日時（昼の部 or 夜の部）<br>
+・チケットの枚数<br>
+・お客様のお名前<br>
+・お客様のメールアドレス<br>
+※応募多数の公演の場合は、ご予約をお取りすることができない場合がございますのであらかじめご了承くさだい。
+  </div>
+</div>
+      
   </td>
 </tr>
+
 <tr>
+  <td>
+<p class="cdtitle"><span>【LIVE】</span>「松酒屋」〜九幕〜『告発』（夜公演）</p>
+<div class="txtBloc">
+<div class="txtBloc">
+<p class="ttl"><a href="http://www.sactsow.com/" target="_blank">2019年6月29日（土）新宿Sact!</a></p>
+<p style="padding-top:0.5rem;"><b>夜公演は数々のオリジナル楽曲と地獄メドレーでお送りする至極の2時間</b><p><br>
+<p class="txt">
+■会場：<a href="http://www.sactsow.com/" target="_blank">新宿Sact!</a><br>
+■出演：松酒屋（【社長】 酒井ミキオ/【副社長】松本タカヒロ/【専務】ha-j）<br>
+■時間:open18:30/start19:00<br>
+■料金:adv.4000yen/door4500yen 1drink別<br>
+</p>
+</div>
+<div class="txtBloc">
+■【チケット販売】<br>
+  ▷<a href="https://passmarket.yahoo.co.jp/event/show/detail/01jccq108ayvd.html?fbclid=IwAR1irlTK-r88G9H6gMpWR-rDe7JY007K5NNwjWTxvZ4c7lviG7bDLNtqtY8" target="_blank">Yahoo Pass Market</a>（夜の部専用：Yahoo!アカウントが必要になります）<br>
+  ▷メール予約：
+   <div style="padding-left: 1em;">
+下記アドレスまで予約メールをお送り下さい。<br>
+「<a href="mailto:office.matsuzakaya@gmail.com">office.matsuzakaya@gmail.com</a>」<br>
+・公演日時（昼の部 or 夜の部）<br>
+・チケットの枚数<br>
+・お客様のお名前<br>
+・お客様のメールアドレス<br>
+※応募多数の公演の場合は、ご予約をお取りすることができない場合がございますのであらかじめご了承くさだい。
+  </div>
+</div>
+      
+  </td>
+</tr>
 
 
 <tr>
@@ -74,6 +122,7 @@ https://t.livepocket.jp/e/1odb_musafes69</a>
       </div>
   </td>
 </tr>
+
 <tr>
       <td>
         <p class="cdtitle"><span>【LIVE】</span>＜ROLLY'S ROCK SHOW TOUR 2019＞</p>
