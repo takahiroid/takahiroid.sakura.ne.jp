@@ -263,15 +263,15 @@ body{
 		.bio_right .name{
 			color: #000;
 			font-size:20px;
-			font-weight: bold;
-			font-family: 'Droid Serif', serif;
+			/*font-weight: bold;*/
+			/*font-family: 'Droid Serif', serif;*/
 		}
 			.bio_right .name span{
 				color: #000;
-				font-size:25px;
-				font-family: 'Droid Serif', serif;
-				font-weight: 400;
-				font-style: italic;
+				font-size:20px;
+				/*font-family: 'Droid Serif', serif;*/
+				/*font-weight: 400;*/
+				/*font-style: italic;*/
 			}
 		.bio_right .credit{
 			margin-top: 8px;
@@ -284,10 +284,10 @@ body{
 		}
 			.bio_right .txt,
 			.bio_right .txt a{
-				color: #666666;
-				padding-bottom: 12px;
-				font-size:13px;
-				line-height:1.5em;
+				color: #000;
+				padding-bottom: 1.5rem;
+				font-size:14px;
+				line-height:1.7em;
 /*				font-family: “Times New Roman”, “游明朝”, YuMincho, “ヒラギノ明朝 ProN W3″, “Hiragino Mincho ProN”, “HG明朝E”, “メイリオ”, Meiryo, serif;*/
 			}
 			.bio_right .txt a:hover{
@@ -299,11 +299,11 @@ body{
 					margin-top: 10px;
 				}
 				.bio_right .link .itoi{
-					font-size:13px;
+					font-size:15px;
 					line-height: 1.6em;
 					font-family: 'Quicksand', sans-serif;
 					font-weight: 400;
-					color: #000;
+					/*color: #000;*/
 				}
 					.bio_right .link .itoi:hover{
 						text-decoration: none;
@@ -317,10 +317,10 @@ body{
 					margin-bottom: 7px;
 				}
 					.bio_right .hyakka .ttl a{
-						font-size:13px;
+						font-size:15px;
 						font-family: 'Quicksand', sans-serif;
 						font-weight: 400;
-						color: #000;
+						/*color: #000;*/
 					}
 						.bio_right .hyakka .ttl a:hover{
 							text-decoration: none;
@@ -393,7 +393,6 @@ body{
 	float: left;
 	width:550px;
 	margin:40px 0 30px;
-
 }
 .news_right{
 	float: right;
@@ -433,13 +432,13 @@ body{
 		}
 		.news_left .txtBloc{
 			margin: 0 10px 0 10px;
-			font-size: 15px;
+			font-size: 13px;
+			line-height: 1.7em;
 		}
 			.news_left .txtBloc .ttl{
 				margin-top:10px;
-				font-size:15px;
+				font-size:14px;
 				font-weight:bold;
-				line-height: 1.7;
 			}
 				.news_left .txtBloc .ttl a{
 					font-size:14px;
@@ -447,13 +446,9 @@ body{
 				}
 			.news_left .txtBloc .txt{
 				margin-top:10px;
-				font-size: 14px;
-				line-height: 1.7;
+				font-size: 13px;
+				line-height: 1.6em;
 			}
-				.news_left .txtBloc .txt a{
-					font-size:14px;
-					font-weight:bold;
-				}
 
 .past_live_txt{
 	line-height: 1.7em;

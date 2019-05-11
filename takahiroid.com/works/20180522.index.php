@@ -14,7 +14,7 @@
 
 <div class="wrapper">
 
-<?php
+<?
 include("../menu.php");
 ?>
 
@@ -27,71 +27,14 @@ include("../menu.php");
 
 <tr>
     <td>
-        <p class="cdtitle"><span>ジャニーズWEST Album「WESTV」</span>【作詞・作曲】</p>
-        <div class="txtBloc">
-　「考えるな、燃えろ!!」（作詞・作曲）2018.12.5
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <p class="cdtitle"><span>「また来てマチ子の、恋はもうたくさんよ」Blu-ray・BOX</span>【劇判音楽】</p>
-        <div class="txtBloc">
-　　劇判音楽 全曲 2018.12.5
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <p class="cdtitle"><span>山下智久 Album「UNLEASHED」</span>【ギター】</p>
-        <div class="txtBloc">
-　「Right Moves」（ギター）2018.11.28
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <p class="cdtitle"><span>ゴッドタン マジ歌ライブ2018 in横浜アリーナ～今夜一発いくかい？～ DVD</span>【編曲】</p>
-        <div class="txtBloc">
-　岩井勇気（ハライチ）「忘れねえからな」（編曲）2018.10.31
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <p class="cdtitle"><span>テレビ東京「ゴッドタン マジ歌選手権」</span>【楽曲制作】</p>
-        <div class="txtBloc">
-　岩井勇気（ハライチ）「ゴッドタンマジ歌選手権 - 忘れねえからな」（編曲）2018
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <p class="cdtitle"><span>高崎美佳</span>【作曲・編曲】</p>
-        <div class="txtBloc">
-　「MIKA」（作曲・編曲）2018<br />
-　「夜の雨は寂しすぎて」（編曲）2018<br />
-　「ミカヅキ」（編曲）2018<br />
-　「置き手紙」（編曲）2018<br />
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
         <p class="cdtitle"><span>ドラマ 「また来てマチ子の、恋はもうたくさんよ」</span>【劇判音楽】</p>
         <div class="txtBloc">
-　音楽を担当いたしました。<br /><br />
-　主演：小林歌穂（私立恵比寿中学）<br />
-　脚本：土屋亮一（シベリア少女鉄道）、福田晶平<br />
-　演出・編集：金井純一<br /><br />
-　tvk：2018年1月11日 毎週木曜23:00〜23:30スタート<br />
-　GYAO!：木曜23:30（放送直後に見逃し配信）<br />
+        音楽を担当いたしました。<br /><br />
+        主演：小林歌穂（私立恵比寿中学）<br />
+        脚本：土屋亮一（シベリア少女鉄道）、福田晶平<br />
+        演出・編集：金井純一<br /><br />
+        tvk：2018年1月11日 毎週木曜23:00〜23:30スタート<br />
+        GYAO!：木曜23:30（放送直後に見逃し配信）<br />
         </div>
     </td>
 </tr>
@@ -118,17 +61,6 @@ include("../menu.php");
         作詞・作曲：PA-NON・ha-j・松本タカヒロ<br />
         編曲：ha-j<br /><br />
         2017.11.22 Release
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <p class="cdtitle"><span>ギンギン♂ガールズ</span>【作曲・編曲】</p>
-        <div class="txtBloc">
-　「Are You GinGin?」（作曲・編曲）2016<br />
-　「ギンギンハリケーン」（作曲・編曲）2017<br />
-　「今夜はPush It!」2017（作曲・編曲）2017<br />
         </div>
     </td>
 </tr>

@@ -13,7 +13,7 @@
 
 <div class="wrapper">
 
-<?
+<?php
 include("../menu.php");
 ?>
 
@@ -23,7 +23,7 @@ include("../menu.php");
 
   <div class="bio_left">
 
-    <img src="img/photo_6.jpg" />
+    <!-- <img src="img/photo_6.jpg" /> -->
     <p id="pageTitle">Biography</p>
     <div class="spaceman spaceman_bio">
       <div align="right">
@@ -38,38 +38,58 @@ include("../menu.php");
 
   <div class="bio_right">
 
+    <img src="img/097.jpg" width="400px" />
+
     <div class="profTxt">
       <p class="name"><span>Takahiro Matsumoto</span> / 松本タカヒロ</p>
       <p class="credit">ソングライター・アレンジャー・ギタリスト・ボーカリスト</p>
       <div class="txtBox">
 
         <p class="txt">
-          幼少の頃よりエレクトーンを始め、15歳よりギターを始める。
-        </p>
-        <p class="txt">
-          1997年ソニーレコードよりバブルガムPOPバンド「<a href="http://turtles-web.com/" target="_blank">ザ・タートルズ</a>」としてデビュー。ボーカル・ギター・作詞・作曲を担当。
-        </p>
-        <p class="txt">
-          以降、様々なアーティストへの楽曲・歌詞の提供、数々の作品にプロデュース・アレンジで参加。<br>
-          近年は映画音楽制作、ギタリスト、俳優など多岐に渡り精力的に活動中。
-        </p>
-        <p class="txt">
-          自身のバンドの他に『世良公則 x JET ROX』『Rolly&amp;Glimrockers』のギタリストとしても活動中。
+          1997年 バンド『ザ・タートルズ』のVocal＆Guitarとして、Sony Recordよりデビュー。
+          <br><br>
+          楽曲提供、プロデュース・アレンジ・ギター、テレビドラマ・映画・バラエティ番組などのサウンドトラック・俳優などその活躍は多岐に渡る。<br><br>
+          あるときはエバーグリーンなポップ、そしてあるときはぎらぎらとしたグラマラスなポップ、またあるときは昔のSF映画のようなエレクトニカルなポップ、ベクトルは違えど、あからさまに「ポップでユーモアある」がコンセプト。
         </p>
 
-        <div class="link office">
+<p class="txt">
+[ 楽曲提供・編曲 ]<br>
+ジャニーズWEST・舞祭組・さくら学院・國府田マリ子・おジャ魔女どれみ 他
+</p>
+
+<p class="txt">
+[ LIVE・REC ]<br>
+鈴木茂・世良公則・山下智久・大槻ケンヂ・高橋優・舞祭組 他
+</p>
+
+<p class="txt">
+[ TV・映画  ]<br>
+テレビ東京「ゴッドタン」・ドラマ「また来てマチ子の、恋はもうたくさんよ」・映画「さよならケーキとふしぎなランプ」・映画「やまない雨はない」 他
+</p>
+
+
+
+<p class="txt">
+[ 俳優 ]<br>
+映画「あんてるさんの花」
+</p>
+
+<p class="txt">
+[ 参加バンド・ユニット ]<br>
+ザ・タートルズ・
+Rolly&amp;Glimrockers・
+世良公則 x JET ROX・
+SPARKY・
+松酒屋・
+餃子大王
+</p>
+
+<!--         <div class="link office">
           <p><a href="/works/" class="itoi" >→ WORKS LIST</a></p>
-        </div>
-<!--         <div class="link office">
-          <p><a href="http://www.i2i-music.com/" target="_blank"  class="itoi" >→ OFFICE</a></p>
-        </div> -->
-<!--         <div class="link office">
-          <p><a href="mailto:mail@takahiroid.com" target="_blank"  class="itoi" >→ E-MAIL</a></p>
         </div> -->
 
         <div class="hyakka">
-          <p class="ttl"><a href="http://www.takahiroid.com/40sbook.pdf" target="_blank">→ 松本タカヒロ大百科</a></p>
-          <!-- <a href="http://www.takahiroid.com/40sbook.pdf" target="_blank"><img src="../news/img/40icon.png" width="100" class="hoverImg" /></a> -->
+          <p class="ttl"><a href="http://www.takahiroid.com/40sbook.pdf" target="_blank">→ 松本タカヒロ大百科（2010年版ダウンロード）</a></p>
         </div>
       </div>
       <!-- /txt -->

@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="wrapper">
 
-<?
+<?php
 include("menu.php");
 ?>
 

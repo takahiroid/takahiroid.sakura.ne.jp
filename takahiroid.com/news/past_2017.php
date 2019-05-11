@@ -17,7 +17,7 @@
 
 <body id="NEWS">
 <div class="wrapper">
-  <?
+  <?php
 include("../menu.php");
 ?>
   <div class="contents">

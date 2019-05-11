@@ -17,109 +17,218 @@
 
 <body>
 <div class="wrapper">
-  <?
+
+<?php
 include("../menu.php");
 ?>
+
   <div class="contents">
     <div class="news_left">
 
 <table width="500" border="0">
 
-      <tr>
-      <td>
-        <p class="cdtitle"><span>【LIVE】</span>グリムロッカーズ（永井ルイ、小畑ポンプ、松本タカヒロ）</p>
-
+<tr>
+  <td>
+        <p class="cdtitle"><span>【TV】</span>世良公則『フジテレビ　名曲お宝音楽祭』</p>
         <div class="txtBloc">
-        <p class="ttl">2018年 10月6日(土) <a href="http://absol.blue/" target="_blank">池袋 Absolute Blue（東京）</a></p>
+    <p class="ttl">2019年4月6日(土)19:00〜23:10『フジテレビ　名曲お宝音楽祭』</p>
+    <p class="txt">
+
+世良公則さんバンドLIVEにギタリストして参加させていただきます。<br>
+放送日：2019年4月6日(土)19:00〜23:10<br>
+番組ホームページ：<a href="https://www.fujitv.co.jp/otakara/caststaff.html" target="_blank">https://www.fujitv.co.jp/otakara/caststaff.html</a><br>
+    <br><br>
+    </p>
+      </div>
+  </td>
+</tr>
+<tr>
+
+
+<tr>
+  <td>
+        <p class="cdtitle"><span>【LIVE】</span>ROLLY ＆ GlimRockers</p>
+        <div class="txtBloc">
+    <p class="ttl">2019年5月18日(土) 武蔵野音楽祭　蓮の音カーニバル2019（東京）</p>
+    <p class="txt">
+
+    会場：吉祥寺　CLUB SEATA、 STAR PINE’S CAFE、PLANET K、WARP、シルバーエレファント、
+    SHUFFLE、BLACK&BLUE、曼荼羅、SCARAB、Days、eos BASEMENT、ichibee、DAY DREAM　<br><br>
+
+    ●OPEN 11:30　START　12：30　<br>
+    ●ADV ￥4,000 DOOR ￥4,500 ＋1DRINK<br>
+    ●チケット：会場店頭 / e+<br><br>
+
+■LivePocketTickets : <a href="https://t.livepocket.jp/e/1odb_musafes69" target="_blank">
+https://t.livepocket.jp/e/1odb_musafes69</a>
 <br>
-<p class="ttl">CLUB251 25th Anniversary<br>
-ライブDVD発売記念<br>
-『Clock Strikes Ten ～ 今夜はかえさへん ～』</p>
-<p class="txt">
-●時間 ： 開場 17:30 / 開演 18:00<br>
+■e＋ : <a href="https://eplus.jp/sf/detail/2859570001-P0030001" target="_blank">https://eplus.jp/sf/detail/2859570001-P0030001</a><br>
+■手売りチケット<br>
+武蔵野音楽祭会場及び出演バンド物販<br>
+※手売りチケットを取り扱っていない出演者もいます。詳しくは、主催者までお問合せください。<br>
+入場順<br>
+①早割手売りチケット・早割りe＋（並列）　②一般手売りチケット　③一般LivePocketTickets　④一般e＋　⑤当日券<br>
 
-●出演 ： GlimRockers(永井ルイ / 松本タカヒロ / 小畑ポンプ)<br>
+    <br><br>
+    </p>
+      </div>
+  </td>
+</tr>
+<tr>
+      <td>
+        <p class="cdtitle"><span>【LIVE】</span>＜ROLLY'S ROCK SHOW TOUR 2019＞</p>
+        <div class="txtBloc">
 
-●料金 ： 前売り￥3,000(＋1drink) / 当日￥3,500(＋1drink)<br>
+<b>ROLLY ＆ GlimRockers（Rolly、永井ルイ、小畑ポンプ、松本タカヒロ）</b><br><br>
 
-●予約 ： <a href="mailto:ore@obatapump.com">こちらのアドレス</a>に・お名前・枚数(制限なし)を記載の上メールにてご予約ください。<br>
+■2019年6月9日 （日）<br>
+仙台MACANA　～ロックの日記念日～<br>
+OPEN 17:00/ START 17:30<br>
+前売¥4,800 当日¥5,300 <br>
+オールスタンディング/ 税込/入場整理No付/ドリンク代600別<br>
+チケット取り扱い: ぴあP: 147-694、ローソンチケットL: 21762、e+<br>
+チケット発売日: 4月27日<br>
+問い合わせ先　ニュース・プロモーション　TEL: 022-266-7555(平日11:00-18:00)<br><br>
 
-＊メール件名を「10月6日池袋予約」としていただければ助かります。<br>
-</p>
+■2019年6月15日（土） <br>
+千葉　LOOK<br>
+OPEN 17:00/ START 17:30 <br>
+前売¥4,800　当日¥5,300 <br>
+オールスタンディング/ 税込/入場整理No付/ドリンク代600別<br>
+チケット取り扱い: ローソンチケットL: 7558、店頭※予約不可<br>
+チケット発売日: 4月27日<br>
+問い合わせ先　千葉LOOK　TEL: 043-225-8828（15:00〜22:00）　<br><br>
+
+■2019年6月22日（土）<br>
+F. A. D yokohama <br>
+OPEN 17:00/ START 17:30 <br>
+前売¥4,800　当日¥5,300 <br>
+オールスタンディング/ 税込/入場整理No付/ドリンク代別<br>
+チケット取り扱い:ローソンチケットL: ????、e+<br>
+チケット発売日: 4月27日<br>
+問い合わせ先　横浜F.A.D　045-663-3842 [14:00-23:00]<br><br>
+
+■2019年7月25日（木）<br>
+京都磔磔<br>
+OPEN 18:00 / START 19:00 <br>
+前売¥4,800　当日¥5,300 <br>
+全席自由/ 整理NO付/ 税込/ ドリンク代別 <br>
+チケット取り扱い: ぴあ、e+、店頭<br>
+チケット発売日: 4月27日<br>
+問い合わせ先　京都磔磔075-351-1321<br><br>
+
+■2019年7月26日（金）<br>
+岡山Desperado <br>
+対バン：Neo Fantastic <br>
+OPEN 18:30 / START 19:00 <br>
+前売¥4,800　当日¥5,300<br>
+全自/ 整理NO付/ 税込/ ドリンク代別 <br>
+チケット取り扱い: ローソンチケットL: 61949、e+、店頭<br>
+チケット発売日: 4月27日<br>
+問い合わせ先　岡山Desperado TEL: 086-225-5044<br><br>
+
+■2019年7月27日（土）<br>
+広島Back Beat<br>
+対バン：Neo Fantastic <br>
+OPEN 17:00 / START 17:30<br>
+前売¥4,800　当日¥5,300 <br>
+全自/ 整理NO付/ 税込/ ドリンク代別<br>
+チケット取り扱い: ぴあ、ローソンチケットL: 61949、e+<br>
+チケット発売日: 4月27日<br>
+問い合わせ先　夢番地(広島): 082-249-3571 <平日11:00〜19:00><br><br>
+
+■2019年7月28日（日）<br>
+博多CB <br>
+対バン：Neo Fantastic <br>
+OPEN 16:30 / START 17:00　※終演20時00頃 <br>
+前売¥4,800　当日¥5,300<br>
+オールスタンディング/ 税込/ 入場整理No付/ドリンク代別<br>
+チケット取り扱い: <br>
+チケット発売日: 4月27日<br>
+問い合わせ先　博多CB 092-732-7575<br><br>
+
+■2019年8月17日（土）<br>
+大阪　心斎橋JANUS<br>
+OPEN 17:00 / START 17:30<br>
+前売¥4,800　当日¥5,300<br>
+全席自由/整理NOアリ/ 税込/入場整理No付/ドリンク代別<br>
+チケット取り扱い: ぴあP: 147-723、ローソンチケットL: 54049、e+、店頭<br>
+チケット発売日: 6月22日<br>
+問い合わせ先　キョードーインフォメーション 0570-200-888(10:00～18:00)<br><br>
+
+■2019年8月23日（金） <br>
+渋谷 CLUB QUATTRO<br>
+OPEN 18：15 / START 19：00<br>
+前売¥4,800　当日¥5,300<br>
+全席自由/整理NOアリ/ 税込/入場整理No付/ドリンク代\600別<br>
+チケット取り扱い: ぴあ、ローソンチケット、e+、店頭<br>
+チケット発売日: 6月22日<br>
+問い合わせ先　CLUB QUATTRO　03-3477-8750 http://www.club-quattro.com/<br><br>
+
+■2019年8月25日（日） <br>
+名古屋TOKUZO<br>
+OPEN 16:30 / START 17:30<br>
+前売¥4,800　当日¥5,300 <br>
+全自由/整理付き、客席後方一部立ち見/ 税込/ドリンク代別<br>
+チケット取り扱い: ぴあ、ローソンチケット、e+<br>
+チケット発売日: 6月22日<br>
+問い合わせ先　JAILHOUSE　052-936-6041　www.jailhouse.jp<br><br>
+
         </div>
 
       </td>
   </tr>
 
-      <tr>
-      <td>
-        <p class="cdtitle"><span>【LIVE】</span>ザ・タートルズ</p>
+<tr>
+<td>
+<p class="cdtitle"><span>【LIVE】</span>世良公則＜JET ROX TOUR 2019＞</p>
+<div class="txtBloc">
 
-        <div class="txtBloc">
-        <p class="ttl">2018年10月12日(金) <a href="http://www.club251.com" target="_blank">下北沢 CLUB 251（東京）</a></p>
-<br>
-<p class="ttl">CLUB251 25th Anniversary<br>
-ライブDVD発売記念<br>
-『Clock Strikes Ten ～ 今夜はかえさへん ～』</p>
-<p class="txt">
-●出演 : ザ・タートルズ<br>
-●時間 : 開場18:30/開演19:00<br>
-●料金 : 前売り ¥3900 当日：¥4400<br>
-●チケット発売 : 2018年8月18日（土）プレイガイド（e＋、ローソン）・251店頭<br>
-●お問い合わせ : 下北沢 CLUB 251  03-5481-4141
-</p>
-        </div>
+<b>世良公則(Vo, G)・松本タカヒロ(Ｇ)・島本道太郎(B)・國分建臣(Dr)・(特別参加) 神本宗幸(key)</b> <br><br>
 
-      </td>
-  </tr>
+■東京公演<br>
+公演日程：2019年10月6日(日曜日)<br>
+時間：開場16:30 / 開演17:00<br>
+会場：品川インターシティホール<br>
+http://sic-hall.com/<br>
+公演に関するお問い合わせ先：ディスクガレージ 050-5533-0888 (平日12:00-19:00)<br><br>
 
-       <tr>
-      <td>
-        <p class="cdtitle"><span>【LIVE】</span>松酒屋（酒井ミキオ・松本タカヒロ・ha-j）昼夜2公演！</p>
+■名古屋公演<br>
+公演日程：2019年10月13日(日曜日)<br>
+時間：開場16:30 / 開演17:00<br>
+会場：名古屋ダイヤモンドホール<br>
+http://diamond.sflag.co.jp/<br>
+公演に関するお問い合わせ先：サンデーフォークプロモーション 052-320-9100(毎日10:00−18:00)<br><br>
 
-        <div class="txtBloc">
-        <p class="ttl">2018年11月10日(土) <a href="http://www.sactsow.com/" target="_blank">新宿 SACT!（東京）</a></p>
-<br>
-<p class="ttl">昼の部『松酒屋～昼下がりの役員会～』<br></p>
-<p class="txt">
-●出演【社長】 酒井ミキオ/【副社長】松本タカヒロ/【専務】ha-j/<br>
-●時間:open13:00/start13:30<br>
-●料金:adv.2500yen/door3000yen 1drink別<br>
-●～内容～<br>
-ライブ＆トーク。<br>
-パワーポイントを導入し、あなたの視覚と聴覚を刺激する（笑）！！<br>
-我々の過去の写真（もしかしたら動画！？）と共に様々な楽曲を振り返ります。<br>
-新たなる展開に我々役員も昇天中です。<br>
-<a href=https://tiget.net/events/36589" target="_blank">
-→ 昼の部『松酒屋～昼下がりの役員会～』チケット購入サイト
-</a><br>
-<br>
+■大阪公演<br>
+公演日程：2019年10月14日(月曜日・祝日)<br>
+時間：開場16:30／開演17:00<br>
+会場：なんばHatch<br>
+http://www.namba-hatch.com/<br>
+公演に関するお問い合わせ先：キョードーインフォメーション 0570-200-888(毎日10:00～18:00)<br><br
 
-<p class="ttl">夜の部『松酒屋 ~ 第八幕』</p>
-<p class="txt">
-●出演【社長】 酒井ミキオ/【副社長】松本タカヒロ/【専務】ha-j/<br>
+▽各公演共通情報<br>
+・チケット料金：全席指定6,500円(税込・入場時に別途ドリンク代が必要となります)<br>
+・親子割引有り：一般チケット購入後、公演日当日開場時に身分証明書提示にて差額3,000円キャッシュバック。終演後のキャッシュバック不可。保護者同伴のお子様(小中学生、何名でも可)対象<br>
+・一般発売日：2019年7月27日(土曜日) 10:00より各プレイガイドにて<br>
+・6歳未満入場不可<br>
 
-●時間:open18:00/start18:30<br>
-●料金:adv.4000yen/door4500yen 1drink別<br>
-●～内容～<br>
-八度目の社員総会。遅刻欠勤は減給です。<br>
-毎回大賑わいの総会は、いつものように新曲攻め、メドレー攻め、迷曲攻めで<br>
-社員のみなさんのハートをグリグリ突っつきます。<br>
-乞うご期待！<br>
-<a href=https://tiget.net/events/36591" target="_blank" >→ 夜の部『松酒屋 ~ 第八幕』チケット購入サイト</a><br>
+▽HP先行販売受付詳細<br>
+本先行販売はイープラスのプレオーダーシステムを使ったエントリー抽選方式となり、Web(PC)<br>及びモバイルにて申し込むことが出来ます。また申し込み順ではありませんので焦らず確実にお申し込み下さい。イープラスの会員登録（無料）が必要となります。御了承下さい。<br><br>
 
+▽先行受付期間：2019年3月16日(土曜日)21:00～3月24日(日曜日)23:59まで<br>
+受付URL：https://eplus.jp/sera-jethp/<br>
 
+</div>
+</td>
+</tr>
 
-</p>
-        </div>
-
-      </td>
-  </tr>
 
 
 
 </table>
-<a href="past.php">→過去のライブ - 2018年</a><br>
+<a href="past.php">→過去のライブ - 2019年</a><br>
+<a href="past_2018.php">→過去のライブ - 2018年</a><br>
 <a href="past_2017.php">→過去のライブ - 2017年</a><br>
 <a href="past_2016.php">→過去のライブ - 2016年</a>
 
