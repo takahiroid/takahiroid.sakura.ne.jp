@@ -27,6 +27,36 @@ include("../menu.php");
 
 <tr>
     <td>
+        <p class="cdtitle"><span>Vtuber 響木アオ</span>【編曲】</p>
+        <div class="txtBloc">
+Vtuber 響木アオ「ユメスクリーム」（編曲）2019<br>
+テレビ朝日系全国放送musicるTV「トップライナーをさがせ！」タイアップ楽曲<br>
+<a href="https://www.youtube.com/watch?v=5wSb6I_Btpk" target="_blank">https://www.youtube.com/watch?v=5wSb6I_Btpk</a>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p class="cdtitle"><span>テレビ東京「ゴッドタン マジ歌選手権」</span>【楽曲制作】</p>
+        <div class="txtBloc">
+岩井勇気（ハライチ）「やめちまえよ」（編曲）2018<br>
+角田 晃広（東京03）「手に入らないもの」（編曲）2018
+        </div>
+    </td>
+</tr>
+
+  <tr>
+    <td>
+      <p class="cdtitle"><span>【Live Support Guitar】</span></p>
+      <div class="txtBloc">
+        鈴木茂 ・ 世良公則 ・ 大槻ケンヂ ・ 本田恭章 ・ 高橋優
+      </div>
+  </td>
+  </tr>
+
+
+<tr>
+    <td>
         <p class="cdtitle"><span>ジャニーズWEST Album「WESTV」</span>【作詞・作曲】</p>
         <div class="txtBloc">
 　「考えるな、燃えろ!!」（作詞・作曲）2018.12.5
@@ -57,6 +87,7 @@ include("../menu.php");
         <p class="cdtitle"><span>ゴッドタン マジ歌ライブ2018 in横浜アリーナ～今夜一発いくかい？～ DVD</span>【編曲】</p>
         <div class="txtBloc">
 　岩井勇気（ハライチ）「忘れねえからな」（編曲）2018.10.31
+<div><img src="./img/732.jpg" width="200px;"></div>
         </div>
     </td>
 </tr>
@@ -92,6 +123,8 @@ include("../menu.php");
 　演出・編集：金井純一<br /><br />
 　tvk：2018年1月11日 毎週木曜23:00〜23:30スタート<br />
 　GYAO!：木曜23:30（放送直後に見逃し配信）<br />
+  <a href="http://www.tvk-yokohama.com/machiko/" target="_blank">http://www.tvk-yokohama.com/machiko/</a><br><br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ybn9n2OsYrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </td>
 </tr>
@@ -138,7 +171,9 @@ include("../menu.php");
         <p class="cdtitle"><span>短編映画「Cycle Cycle」</span>【劇判音楽】</p>
         <div class="txtBloc">
         音楽を担当いたしました。<br />
-        ドイツ映画祭「<a href="http://www.b3biennale.de/id/7975/B3-BEN-AWARD-2017-Congratulations-to-the-winner/ target="_blank">B3 biennale short film 2017</a>」ノミネート最優秀賞受賞<br /><br />
+        ドイツ映画祭「<a href="http://www.b3biennale.de/id/7975/B3-BEN-AWARD-2017-Congratulations-to-the-winner/ target="_blank">B3 biennale short film 2017</a>」ノミネート最優秀賞受賞
+        <br>
+        大阪アジアン映画祭 《芳泉短編賞》受賞<br><br>
         出演：M!LK<br />
         監督・脚本：金井純一<br />
         2017年
@@ -159,15 +194,6 @@ include("../menu.php");
         </div>
     </td>
 </tr>
-
-  <tr>
-    <td>
-      <p class="cdtitle"><span>【Live Support Guitar】</span></p>
-      <div class="txtBloc">
-        鈴木茂 ・ 世良公則 ・ 大槻ケンヂ ・ 本田恭章 ・ 高橋優
-      </div>
-  </td>
-  </tr>
 
 <tr>
     <td>

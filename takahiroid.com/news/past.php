@@ -30,8 +30,13 @@ include("../menu.php");
 2018.01.13（日）@大塚　Live House Hearts Next<br><strong>GlimRockers（永井ルイ、小畑ポンプ、松本タカヒロ）『輝く!Glitter☆ Sparky☆ Festival』</strong><br>
 共演：マルベリーズ/The Blue Scream/カホリ/THE ORION/らいむらいと/BINJU/ムードブレイカーズ<br>
 
-2019年4月6日(土)19:00〜23:10<br><strong>世良公則『フジテレビ　名曲お宝音楽祭』ギター演奏</strong><br><br>
-
+2019年4月6日(土)19:00〜23:10<br><strong>世良公則『フジテレビ　名曲お宝音楽祭』ギター演奏</strong>
+<br><br>
+2019年5月18日(土) STAR PINE’S CAFE（東京）<br><strong>Rolly & GLimrockers「武蔵野音楽祭　蓮の音カーニバル2019」</strong><br>
+共演：銀幕一楼とTIMECAFE
+<br><br>
+2019年6月29日(土) @新宿SACT!（東京）<br><strong>「松酒屋」～昼下がりの役員会～『そして都会へ編』（昼公演）</strong><br><br>
+2019年6月29日(土) @新宿SACT!（東京）<br><strong>〜「松酒屋」〜九幕〜『告発』（夜公演）</strong><br><br>
 
 		</div>
 	</div>

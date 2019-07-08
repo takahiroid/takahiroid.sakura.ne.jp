@@ -449,6 +449,22 @@ body{
 				font-size: 13px;
 				line-height: 1.6em;
 			}
+			span.complete{
+				margin-top:10px;
+				font-size: 13px;
+				line-height: 1.6em;
+/*				text-decoration: line-through;*/
+background-image:url(/news/img/border_w_red.png);
+background-repeat:repeat-x;
+background-position: center;
+
+			}
+			span.thankyou{
+				margin-top:10px;
+				font-size: 13px;
+				line-height: 1.6em;
+				color: #F00;
+			}
 
 .past_live_txt{
 	line-height: 1.7em;
