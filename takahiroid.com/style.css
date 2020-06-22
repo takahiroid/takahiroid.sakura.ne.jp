@@ -4,7 +4,7 @@
 *{
 	margin:0px;
 	padding:0px;
-	font-size:12px;
+	font-size:15px;
 	font-family: MS Sans Serif,sans-serif,Osaka,"ＭＳ Ｐゴシック",  "ヒラギノ角ゴ Pro W3";
 	line-height:1.4em;
 	color: #666666;
@@ -60,18 +60,18 @@ body{
 	color:#CC3366;
 }
 
-
-
 .wrapper {
-	width: 820px;
-	margin: 50px auto 0px;
-	font-size: 0.9em;
+	margin: 20px auto 0px;
 	text-align: left;
+	max-width:1000px;
 	position:relative;
-
+	box-sizing:border-box;
 }
+/*--------------------------------*/
 /*HEADER*/
+/*--------------------------------*/
 .header{
+
 }
 	.header a.ttl_main{
 		font-family: 'Quicksand', sans-serif;
@@ -139,35 +139,31 @@ body{
 
 
 .contents{
-	clear:both;
-	width: 820px;
+	width: 100%;
 	margin: 0;
 }
-/*#pageTitle{
-	font-size:65px;
-	font-family: 'Dosis', sans-serif;
-	color: #727171;
-	letter-spacing: 5px;
-	text-align: center;
-	line-height: 1;
-	padding: 0;
-	margin: 0;
-}*/
+.wrap_area{
+	display: flex;
+	justify-content:space-between;
+	width: 100%;
+}
 
 /*TOP*/
 .top_left{
 	float: left;
-	width:500px;
-	margin:20px 0 30px 0;
-
+	width:60%;
+	margin:20px 0 20px 0;
+}
+.top_left img{
+	width: 100%;
+	max-width: 100%;
 }
 .top_right{
 	float: right;
-	width:294px;
+	width:40%;
 	margin:10px 0 30px;
 }
 	.top_right .profTxt{
-		background: #f9f9f9;
 		margin-top: 10px;
 		padding: 10px 18px 30px;
 		height: 620px;
@@ -176,11 +172,9 @@ body{
 			font-size:16px;
 			font-weight: 700;
 			line-height: 1.4;
-
 		}
 			.top_right .name span{
 				font-size:24px;
-				/*font-family: 'Roboto', sans-serif;*/
 				font-family: 'Quicksand', sans-serif;
 				font-weight: 700;
 			}
@@ -213,8 +207,7 @@ body{
 					color: #000;
 				}
 			.top_right .hyakka{
-				padding-top: 20px;
-				text-align: center;
+				padding-top: 3rem;
 				font-size:16px;
 				line-height: 1.6em;
 				font-family: 'Quicksand', sans-serif;
@@ -388,26 +381,27 @@ body{
 	.songTxtList li{
 	 list-style-type:none;
 	}
-/*NEWS---------------------------*/
+
+/*------------------------------------------------------
+NEWS
+------------------------------------------------------*/
 .news_left{
-	float: left;
-	width:550px;
+	width: 75%;
 	margin:40px 0 30px;
 }
 .news_right{
-	float: right;
-	width:214px;
+	width: 20%;
 	margin:40px 0 30px;
 }
-.news_left table{
+.news_left .news_table{
 	color:#333333;
-	width: 550px;
+	width: 100%;
 }
-	.news_left table tr td{
-		padding-bottom:50px;
+	.news_left .news_table tr td{
+		padding-bottom:2rem;
 
 	}
-		.news_left table tr td span.songtxt{
+		.news_left .news_table tr td span.songtxt{
 			margin:0 0 0 18px;
 			font-size:1em;
 			line-height:1.4em;;
@@ -420,38 +414,38 @@ body{
 			color: #666;
 			font-weight:bold;
 			font-size:1.1em;
-			font-size: 15px;
+			font-size: 17px;
 			border-bottom:#666 1px solid;
 
 		}
 		.news_left .cdtitle span{
 			font-family: 'Quicksand', sans-serif;
-			font-size: 15px;
+			font-size: 17px;
 			color: #e60617;
 
 		}
 		.news_left .txtBloc{
 			margin: 0 10px 0 10px;
-			font-size: 13px;
+			font-size: 15px;
 			line-height: 1.7em;
 		}
 			.news_left .txtBloc .ttl{
 				margin-top:10px;
-				font-size:14px;
+				font-size:15px;
 				font-weight:bold;
 			}
 				.news_left .txtBloc .ttl a{
-					font-size:14px;
+					font-size:15px;
 					font-weight:bold;
 				}
 			.news_left .txtBloc .txt{
 				margin-top:10px;
-				font-size: 13px;
+				font-size: 14px;
 				line-height: 1.6em;
 			}
 			span.complete{
 				margin-top:10px;
-				font-size: 13px;
+				font-size: 14px;
 				line-height: 1.6em;
 /*				text-decoration: line-through;*/
 background-image:url(/news/img/border_w_red.png);
@@ -461,7 +455,7 @@ background-position: center;
 			}
 			span.thankyou{
 				margin-top:10px;
-				font-size: 13px;
+				font-size: 14px;
 				line-height: 1.6em;
 				color: #F00;
 			}
@@ -469,6 +463,20 @@ background-position: center;
 .past_live_txt{
 	line-height: 1.7em;
 }
+
+
+	.news_right .page_ttl{
+		width: 100%;
+		max-width: 214px;
+	}
+	.news_right .spaceman{
+		width: 100%;
+		max-width: 190px;
+	}
+		.news_right img{
+		width: 100%;
+
+		}
 
 /*MUSIC--------------------------*/
 #MUSIC .contents{
@@ -494,7 +502,7 @@ background-position: center;
 
 .footer{
 	clear:both;
-	width: 820px;
+	width: 100%;
 	height: 50px;
 	border-top: 1px solid #666666;
 	padding-top: 5px;

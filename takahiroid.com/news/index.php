@@ -1,10 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="Keywords" content="まつもと,マツモト,タカヒロ,松本タカヒロ,タートルズ,ザ・タートルズ,turtles,餃子大王,sparky,まっちゃん" />
-<link rel="stylesheet" href="../style.css" type="text/css" media="screen,tv" />
-<link rel="stylesheet" href="../style_sp.css" type="text/css" media="screen,tv" />
+<link rel="stylesheet" href="../style.css" type="text/css" />
+<link rel="stylesheet" href="../style_sp.css" type="text/css" />
 <script type="text/javascript" src="../js/minmax.js"></script>
 <script src="../share/js/rollover.js" type="text/javascript"></script>
 <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
@@ -23,7 +24,7 @@
 </style>
 </head>
 
-<body>
+<body id="news">
 <div class="wrapper">
 
 <?php
@@ -31,9 +32,10 @@ include("../menu.php");
 ?>
 
   <div class="contents">
-    <div class="news_left">
+    <div class="wrap_area">
+      <div class="news_left">
 
-<table width="500" border="0" class="news_table">
+<table border="0" class="news_table">
 
 
 <tr>
@@ -135,8 +137,6 @@ Rolly & Glimrockers7月公演開催について<br><br>
       </td>
 </tr>
 
-
-
 </table>
 <a href="past_2020.php">→過去のライブ - 2020年</a><br>
 <a href="past_2019.php">→過去のライブ - 2019年</a><br>
@@ -144,24 +144,18 @@ Rolly & Glimrockers7月公演開催について<br><br>
 <a href="past_2017.php">→過去のライブ - 2017年</a><br>
 <a href="past_2016.php">→過去のライブ - 2016年</a>
 
-</div>
+      </div>
 
-    <div class="news_right">
-      <img src="img/news.gif" alt="NEWS" width="214" /><br />
-      <div class="spaceman">
-        <div align="right">
-          <p>
-            <img src="/share/img/spaceman.gif">
-          </p>
+      <div class="news_right">
+        <img src="img/news.gif" alt="NEWS" class="page_ttl" /><br />
+        <div class="spaceman">
+          <img src="/share/img/spaceman.gif">
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer">
-copyright(c)2015 takahiroid all right reserved.
-</div><!--フッターEND-->
-  <!--フッターEND-->
 
+  </div>
+  <?php include("../share/inc/footer.php"); ?>
 
   </div>
 </div>
