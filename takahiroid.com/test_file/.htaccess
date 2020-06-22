@@ -1,0 +1,4 @@
+<ifModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule test.php test2.php [L]
+</ifModule>

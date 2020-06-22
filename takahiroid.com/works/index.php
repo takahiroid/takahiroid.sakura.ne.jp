@@ -26,6 +26,28 @@ include("../menu.php");
 <table width="" border="0">
 
 <tr>
+  <td>
+    <p class="cdtitle"><span>【Live Guitar Play】</span></p>
+    <div class="txtBloc">
+      世良公則＜JET ROX TOUR 2019＞<br>
+      世良公則 feat. マーティ・フリードマン＜フジテレビ　名曲お宝音楽祭＞<br>
+      ROLLY＜2019 ROLLY'S ROCK SHOW TOUR 2019＞<br>
+      鈴木茂 with Glimrockers＜HALLOWEEN NIGHT TOUR 2017＞<br>
+    </div>
+</td>
+</tr>
+
+<tr>
+    <td>
+        <p class="cdtitle"><span>テレビ東京「ゴッドタン マジ歌選手権」</span>【楽曲制作】</p>
+        <div class="txtBloc">
+岩井勇気（ハライチ）「逃がさねぇからな」（編曲）2020<br>
+ダイノジ＆EXIT「俺の生き様」（編曲）2020
+        </div>
+    </td>
+</tr>
+
+<tr>
     <td>
         <p class="cdtitle"><span>Vtuber 響木アオ</span>【編曲】</p>
         <div class="txtBloc">
@@ -47,7 +69,7 @@ Vtuber 響木アオ「ユメスクリーム」（編曲）2019<br>
 
   <tr>
     <td>
-      <p class="cdtitle"><span>【Live Support Guitar】</span></p>
+      <p class="cdtitle"><span>【Live Guitar Play】</span></p>
       <div class="txtBloc">
         鈴木茂 ・ 世良公則 ・ 大槻ケンヂ ・ 本田恭章 ・ 高橋優
       </div>

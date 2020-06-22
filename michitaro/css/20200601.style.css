@@ -9,8 +9,6 @@ body, html{
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a;
-
-	font-size: 16px;
 }
 
 h1{
@@ -35,11 +33,9 @@ h5{
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 20px;
-	font-size: 16px;
 }
 p{
 	font-family: 'Open Sans', sans-serif;
-	line-height: 1.8;
 }
 .normal{
 text-transform: none;
@@ -104,7 +100,7 @@ font-weight: 700;
 #tf-menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #FFF;
-	font-size: 16px;
+	font-size: 12px;
 	letter-spacing: 1px;
 }
 .on {
@@ -306,11 +302,7 @@ img.img-circle.team-img {
 
 /* Services Section */
 #tf-services{
-	padding: 50px 0;
-}
-
-#tf-services .section-title.center{
-	padding-bottom:0;
+	padding: 140px 0;
 }
 
 .space{
@@ -338,20 +330,6 @@ img.img-circle.team-img {
 	color: #ffffff;
 }
 
-#tf-services h3{
-	color:  #5a5a5a;
-	font-size: 22px;
-  border-bottom: 1px solid #5a5a5a;
-  padding-bottom: 0.5rem;
-}
-#tf-services h4 a{
-	font-size: 23px;
-}
-#tf-services p.txt{
-	color: #333;
-}
-
-
 /* Clients Section */
 #tf-clients{
 	background: url(../img/04.jpg);
@@ -370,7 +348,7 @@ img.img-circle.team-img {
 	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
-	padding: 5rem 0;
+	padding: 80px 0;
 	background-attachment: fixed;
 }
 
@@ -380,9 +358,9 @@ img.img-circle.team-img {
     color: #FFF;
     text-align: center;
 }
-/*#tf-clients .container{
+#tf-clients .container{
 	padding: 50px 0;
-}*/
+}
 /* Gallery Section
 ==============================*/
 #tf-works{
