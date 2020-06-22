@@ -40,7 +40,7 @@ include("../menu.php");
 
 <tr>
       <td>
-        <p class="cdtitle"><span>【LIVE】</span>松酒屋（酒井ミキオ・松本タカヒロ・ha-j）</p>
+        <p class="cdtitle"><span>【LIVE】</span><br class="sp">松酒屋（酒井ミキオ・松本タカヒロ・ha-j）</p>
         <div class="txtBloc">
 
           <p class="ttl">2020年7月12日(日) <a href="http://www.sactsow.com" target="_blank">新宿SACT! </a></p>
@@ -61,7 +61,7 @@ include("../menu.php");
 
 <tr>
       <td>
-        <p class="cdtitle"><span>【LIVE】</span>ザ・タートルズ</p>
+        <p class="cdtitle"><span>【LIVE】</span><br class="sp">ザ・タートルズ</p>
         <div class="txtBloc">
           <p class="ttl">2020年8月19日(水) 都内某所</a></p>
           <p class="ttl">「松本タカヒロ50歳記念ライブー燃えるタカヒロナイト（仮称）」</p>
@@ -74,7 +74,7 @@ include("../menu.php");
 
 <tr>
       <td>
-        <p class="cdtitle"><span>【LIVE TOUR】</span>ROLLY ＆ GlimRockers（公演延期）</p>
+        <p class="cdtitle"><span>【LIVE TOUR】</span><br class="sp">ROLLY ＆ GlimRockers（公演延期）</p>
 
 <div class="alert">
 Rolly & Glimrockers7月公演開催について<br><br>

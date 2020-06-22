@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
+.sp{
+	display: none;
+}
 
 *{
 	margin:0px;
@@ -33,6 +36,7 @@ html, body {
 body{
 	background-color: #fff;
 }
+
 
 .red{
 	color: #CF0BFF;

@@ -1,4 +1,9 @@
 @media screen and (max-width: 896px) {
+
+.sp{
+	display: block;
+}
+
 .wrapper {
 	margin: 20px auto 0px;
 	max-width:100%;
@@ -16,74 +21,85 @@
 /*--------------------------------*/
 /*HEADER*/
 /*--------------------------------*/
-/*.header{
-	background: #CCC
+.header{
 }
 	.header a.ttl_main{
+		font-size: 25px;
+		letter-spacing: 0px;
+		font-weight: 500;
 	}
-	.header .ttl_main:hover{
-		color: #b5b6b6;
+	.header .ttl_sub{
+		font-size: 14px;
+		padding: 5px 5px 0 5px;
 	}
-.header .ttl_sub{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 13px;
-	padding: 5px 5px 0 5px;
-}
-.header ul{
-	margin-top: 10px;
-	margin-left: 5px;
-}
 	.header ul li{
-		list-style: none;
-		float: left;
 		height: 30px;
-		padding: 0 10px;
-		border-right:1px solid #d8d8d8;
+		padding: 0 7px;
 	}
-		.header ul li.news_btn{
-			padding-left: 0;
-		}
 			.header ul li a{
-				text-decoration: none;
-				font-size:25px;
-				font-family: 'Dosis', sans-serif;
-				letter-spacing: 1px;
-				line-height: 1;
+				font-size:15px;
 			}
-				.header ul li.news_btn a{
-					color: #0bf;
-				}
-				.header ul li.works_btn a{
-					color:#70b539;
 
-				}
-				.header ul li.bio_btn a{
-					color:#f39806;
-				}
-				.header ul li.blog_btn a{
-					color:#e60617;
-				}
-				.header ul li.twitter_btn a{
-					color:#920783;
-				}
-					.header ul li a:hover{
-						opacity:0.50;
-						filter:alpha(opacity=50);
-						-ms-filter: "alpha( opacity=50 )";
-					}
-*/
-
-
-
-	.wrap_area{
+	#news .wrap_area{
 		display: block;
 	}
 	.news_left{
 		width: 100%;
+		margin-top: 0
 	}
 	.news_right{
 		width: 50%;
+		margin-top: 0
 	}
+/*--------------------------------*/
+/*NEWS*/
+/*--------------------------------*/
+
+		.news_left .cdtitle{
+			font-size: 15px;
+		}
+		.news_left .cdtitle span{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 15px;
+			color: #e60617;
+
+		}
+		.news_left .txtBloc{
+			margin: 0 10px 0 10px;
+			font-size: 14px;
+			line-height: 1.7em;
+		}
+			.news_left .txtBloc .ttl{
+				margin-top:10px;
+				font-size:14px;
+				font-weight:bold;
+			}
+				.news_left .txtBloc .ttl a{
+					font-size:14px;
+					font-weight:bold;
+				}
+			.news_left .txtBloc .txt{
+				margin-top:10px;
+				font-size: 14px;
+				line-height: 1.6em;
+			}
+			span.complete{
+				margin-top:10px;
+				font-size: 14px;
+				line-height: 1.6em;
+/*				text-decoration: line-through;*/
+background-image:url(/news/img/border_w_red.png);
+background-repeat:repeat-x;
+background-position: center;
+
+			}
+			span.thankyou{
+				margin-top:10px;
+				font-size: 14px;
+				line-height: 1.6em;
+				color: #F00;
+			}
+
 
 }
 
