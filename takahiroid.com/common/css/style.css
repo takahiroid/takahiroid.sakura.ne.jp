@@ -1,13 +1,20 @@
 @charset "UTF-8";
 /* CSS Document */
+.sp{
+	display: none;
+}
+.pc{
+	display: block;
+}
 
 *{
 	margin:0px;
 	padding:0px;
-	font-size:12px;
+	font-size:15px;
+	font-weight: normal;
 	font-family: MS Sans Serif,sans-serif,Osaka,"ＭＳ Ｐゴシック",  "ヒラギノ角ゴ Pro W3";
 	line-height:1.4em;
-	color: #666666;
+	color: #3c3c3c;
 }
 
 img,p,div{
@@ -33,6 +40,7 @@ html, body {
 body{
 	background-color: #fff;
 }
+
 
 .red{
 	color: #CF0BFF;
@@ -60,18 +68,18 @@ body{
 	color:#CC3366;
 }
 
-
-
 .wrapper {
-	width: 820px;
-	margin: 50px auto 0px;
-	font-size: 0.9em;
+	margin: 20px auto 0px;
 	text-align: left;
+	max-width:1000px;
 	position:relative;
-
+	box-sizing:border-box;
 }
+/*--------------------------------*/
 /*HEADER*/
+/*--------------------------------*/
 .header{
+
 }
 	.header a.ttl_main{
 		font-family: 'Quicksand', sans-serif;
@@ -89,49 +97,50 @@ body{
 .header .ttl_sub{
 	font-family: 'Quicksand', sans-serif;
 	font-size: 13px;
+	color: #666
 	padding: 5px 5px 0 5px;
 }
-.header ul{
+.header ul.gnavi_pc{
 	margin-top: 10px;
 	margin-left: 5px;
 }
-	.header ul li{
+	.header ul.gnavi_pc li{
 		list-style: none;
 		float: left;
 		height: 30px;
 		padding: 0 10px;
 		border-right:1px solid #d8d8d8;
 	}
-		.header ul li.news_btn{
+		.header ul.gnavi_pc li.news_btn{
 			padding-left: 0;
 		}
-			.header ul li a{
+			.header ul.gnavi_pc li a{
 				text-decoration: none;
 				font-size:25px;
 				font-family: 'Dosis', sans-serif;
 				letter-spacing: 1px;
 				line-height: 1;
 			}
-				.header ul li.news_btn a{
+				.header ul.gnavi_pc li.news_btn a{
 					color: #0bf;
 				}
-				.header ul li.works_btn a{
+				.header ul.gnavi_pc li.works_btn a{
 					color:#70b539;
 
 				}
-				.header ul li.bio_btn a{
+				.header ul.gnavi_pc li.bio_btn a{
 					color:#f39806;
 				}
-				.header ul li.blog_btn a{
+				.header ul.gnavi_pc li.blog_btn a{
 					color:#e60617;
 				}
-				.header ul li.twitter_btn a{
+				.header ul.gnavi_pc li.twitter_btn a{
 					color:#920783;
 				}
-/*				.header ul li.facebook_btn a{
+/*				.header ul.gnavi_pc li.facebook_btn a{
 					color:#920783;
 				}*/
-					.header ul li a:hover{
+					.header ul.gnavi_pc li a:hover{
 						opacity:0.50;
 						filter:alpha(opacity=50);
 						-ms-filter: "alpha( opacity=50 )";
@@ -139,35 +148,33 @@ body{
 
 
 .contents{
-	clear:both;
-	width: 820px;
+	width: 100%;
 	margin: 0;
 }
-/*#pageTitle{
-	font-size:65px;
-	font-family: 'Dosis', sans-serif;
-	color: #727171;
-	letter-spacing: 5px;
-	text-align: center;
-	line-height: 1;
-	padding: 0;
-	margin: 0;
-}*/
+.wrap_area{
+	display: flex;
+	justify-content:space-between;
+	width: 100%;
+}
 
+/*--------------------------------*/
 /*TOP*/
+/*--------------------------------*/
 .top_left{
-	float: left;
-	width:500px;
-	margin:20px 0 30px 0;
-
+/*	float: left;*/
+	width:60%;
+	margin:20px 0 20px 0;
+}
+.top_left img{
+	width: 100%;
+	max-width: 100%;
 }
 .top_right{
-	float: right;
-	width:294px;
+/*	float: right;*/
+	width:40%;
 	margin:10px 0 30px;
 }
 	.top_right .profTxt{
-		background: #f9f9f9;
 		margin-top: 10px;
 		padding: 10px 18px 30px;
 		height: 620px;
@@ -176,11 +183,9 @@ body{
 			font-size:16px;
 			font-weight: 700;
 			line-height: 1.4;
-
 		}
 			.top_right .name span{
 				font-size:24px;
-				/*font-family: 'Roboto', sans-serif;*/
 				font-family: 'Quicksand', sans-serif;
 				font-weight: 700;
 			}
@@ -213,8 +218,7 @@ body{
 					color: #000;
 				}
 			.top_right .hyakka{
-				padding-top: 20px;
-				text-align: center;
+				padding-top: 3rem;
 				font-size:16px;
 				line-height: 1.6em;
 				font-family: 'Quicksand', sans-serif;
@@ -229,20 +233,22 @@ body{
 						text-decoration: none;
 					}
 
-
-/*TOP*/
+/*------------------------------------------------------
+BIO
+------------------------------------------------------*/
 .bio_left{
-	float: right;
-	width:300px;
-	margin:30px 0 0 0;
-	text-align: right;
+	width:30%;
+	margin:40px 0 30px;
+}
+.bio_right{
+	width:60%;
+	margin:40px 0 30px;
 }
 	.bio_left #pageTitle{
 		font-family: 'Quicksand', sans-serif;
 		font-size: 60px;
 		font-weight: 400;
 		letter-spacing: -3px;
-		color: #000;
 		text-decoration: none;
 		padding: 0;
 		line-height: 1.5em;
@@ -251,63 +257,45 @@ body{
 	.bio_left .spaceman{
 		padding-top: 100px;
 	}
-.bio_right{
-	float: left;
-	width:480px;
-	margin:25px 0 30px;
-}
 
+	#bio .photo{
+		width: 100%;
+	}
+		#bio .photo img{
+			width: 100%;
+		}
 	.bio_right .profTxt{
 		padding: 10px 0px 30px;
 	}
 		.bio_right .name{
-			color: #000;
-			font-size:18px;
-			font-weight: bold;
-			font-family: “Times New Roman”, “游明朝”, YuMincho, “ヒラギノ明朝 ProN W3″, “Hiragino Mincho ProN”, “HG明朝E”, “メイリオ”, Meiryo, serif;
+			font-size:20px;
 		}
 			.bio_right .name span{
-				color: #000;
-				font-size:28px;
-				padding-right: 20px;
-				font-family: 'Droid Serif', serif;
-				font-weight: 400;
-				font-style: italic;
+				font-size:20px;
 			}
 		.bio_right .credit{
-			margin-top: 10px;
-			font-size:15px;
-			color: #000;
+			margin-top: 8px;
 			line-height: 1.4em;
-			font-family: 'Droid Serif', serif;
-			font-weight: 400;
-			font-style: italic
 		}
 		.bio_right .txtBox{
-			margin-top: 20px;
+			margin-top: 2rem;
 		}
 			.bio_right .txt,
 			.bio_right .txt a{
-				color: #666666;
-				padding-bottom: 20px;
-				font-size:13px;
+				padding-bottom: 2rem;
 				line-height:1.7em;
-				font-family: “Times New Roman”, “游明朝”, YuMincho, “ヒラギノ明朝 ProN W3″, “Hiragino Mincho ProN”, “HG明朝E”, “メイリオ”, Meiryo, serif;
 			}
 			.bio_right .txt a:hover{
 				text-decoration: none;
-			}
-			.bio_right .link{
 			}
 				.bio_right .office{
 					margin-top: 10px;
 				}
 				.bio_right .link .itoi{
-					font-size:13px;
+					font-size:15px;
 					line-height: 1.6em;
 					font-family: 'Quicksand', sans-serif;
 					font-weight: 400;
-					color: #000;
 				}
 					.bio_right .link .itoi:hover{
 						text-decoration: none;
@@ -321,41 +309,47 @@ body{
 					margin-bottom: 7px;
 				}
 					.bio_right .hyakka .ttl a{
-						font-size:13px;
+						font-size:15px;
 						font-family: 'Quicksand', sans-serif;
 						font-weight: 400;
-						color: #000;
 					}
 						.bio_right .hyakka .ttl a:hover{
 							text-decoration: none;
 						}
+		.bio_right .icon{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 14px;
+			background-color: #777;
+			color: #FFF;
+			display: inline-block;
+			position: relative;
+			top: -0.1rem;
+			padding: 0.5rem 1rem 0.5rem 1rem;
+			line-height: 1;
+			margin-right:0.7rem;
+		}
 
-.blog{
-	margin:30px 0 30px;
-}
-
-
-/*  WORKS  */
+/*------------------------------------------------------
+WORKS
+------------------------------------------------------*/
 .works_right ul li{
 	list-style: none;
 }
+
 .works_left{
-	float: left;
-	width:550px;
+	width: 75%;
 	margin:40px 0 30px;
 }
 .works_right{
-	text-align:right;
-	width:270px;
-	float:right;
-	margin-top:40px;
+	width: 20%;
+	margin:40px 0 30px;
 }
 
 .works_left table{
-	color:#333333;
+	width: 100%;
 }
 	.works_left table tr td{
-		padding-bottom:60px;
+		padding-bottom:30px;
 
 	}
 		.works_left table tr td span.songtxt{
@@ -368,8 +362,7 @@ body{
 			margin-bottom:15px;
 			padding-left:5px;
 			padding-bottom: 5px;
-			color: #666;
-			font-weight:bold;
+			/*font-weight:bold;*/
 			font-size:1.1em;
 			font-size: 15px;
 			border-bottom:#666 1px solid;
@@ -383,7 +376,7 @@ body{
 		.works_left .txtBloc{
 			margin: 0 10px 0 10px;
 			font-size: 13px;
-			line-height: 1.6em;
+			line-height: 1.8em;
 		}
 
 	.songTxtList{
@@ -392,27 +385,31 @@ body{
 	.songTxtList li{
 	 list-style-type:none;
 	}
-/*NEWS---------------------------*/
+
+	.works_left table tr td iframe{
+		width: 560px;
+		height: 315px;
+	}
+
+
+/*------------------------------------------------------
+NEWS
+------------------------------------------------------*/
 .news_left{
-	float: left;
-	width:550px;
+	width: 75%;
 	margin:40px 0 30px;
 }
 .news_right{
-	float: right;
-	width:214px;
+	width: 20%;
 	margin:40px 0 30px;
-
 }
-.news_left table{
-	color:#333333;
-	width: 550px;
+.news_left .news_table{
+	width: 100%;
 }
-	.news_left table tr td{
-		padding-bottom:50px;
-
+	.news_left .news_table tr td{
+		padding-bottom:4rem;
 	}
-		.news_left table tr td span.songtxt{
+		.news_left .news_table tr td span.songtxt{
 			margin:0 0 0 18px;
 			font-size:1em;
 			line-height:1.4em;;
@@ -422,39 +419,93 @@ body{
 			margin-bottom:15px;
 			padding-bottom: 5px;
 			padding-left:5px;
-			color: #666;
-			font-weight:bold;
-			font-size:1.1em;
-			font-size: 15px;
+			font-size: 16px;
+			font-weight: bold;
 			border-bottom:#666 1px solid;
-
 		}
 		.news_left .cdtitle span{
 			font-family: 'Quicksand', sans-serif;
-			font-size: 15px;
-			color: #e60617;
-
+			font-size: 14px;
+			background-color: #ff0000;
+			border-radius: 0.4em;
+			color: #FFF;
+			display: inline-block;
+			position: relative;
+			top: -0.1rem;
+			padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+			line-height: 1;
+			margin-right:0.7rem;
 		}
 		.news_left .txtBloc{
 			margin: 0 10px 0 10px;
-			font-size: 13px;
-			line-height: 1.6em;
 		}
 			.news_left .txtBloc .ttl{
-				margin-top:10px;
-				font-size:14px;
-				font-weight:bold;
+				font-size:15px;
+				line-height: 1.7;
 			}
 				.news_left .txtBloc .ttl a{
-					font-size:14px;
-					font-weight:bold;
+					font-size:15px;
 				}
 			.news_left .txtBloc .txt{
 				margin-top:10px;
 				font-size: 13px;
-				line-height: 1.5em;
+				line-height: 1.6em;
 			}
+			span.complete{
+				margin-top:10px;
+				font-size: 13px;
+				line-height: 1.6em;
+/*				text-decoration: line-through;*/
+background-image:url(/news/img/border_w_red.png);
+background-repeat:repeat-x;
+background-position: center;
 
+			}
+			span.thankyou{
+				margin-top:10px;
+				font-size: 13px;
+				line-height: 1.6em;
+				color: #F00;
+			}
+	.news_right .page_ttl{
+		width: 100%;
+		max-width: 214px;
+	}
+	.news_right .spaceman{
+		width: 100%;
+		max-width: 190px;
+	}
+		.news_right img{
+		width: 100%;
+
+		}
+
+/*------------------------------------------------------
+NEWS（アーカイブ）
+------------------------------------------------------*/
+.ttl_year{
+			font-family: 'Quicksand', sans-serif;
+			/*font-size: 14px;*/
+			color: #fff;
+			background-color: #ff0000;
+			border-radius: 0.4em;
+			color: #FFF;
+			display: inline-block;
+			padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+			line-height: 1;
+			margin-bottom:1rem;
+}
+
+.boxPastLive{
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	line-height:2
+}
+	.boxPastLive strong{
+		font-weight: bold;
+		color: #CC3366
+	}
 
 /*MUSIC--------------------------*/
 #MUSIC .contents{
@@ -480,7 +531,7 @@ body{
 
 .footer{
 	clear:both;
-	width: 820px;
+	width: 100%;
 	height: 50px;
 	border-top: 1px solid #666666;
 	padding-top: 5px;
