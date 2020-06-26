@@ -36,7 +36,11 @@ a:hover img.hoverImg{
 html, body {
 	text-align: center;
 }
-
+/*html{
+  scroll-behavior: smooth;
+      height: 100vh;
+    overflow-y: scroll;
+}*/
 body{
 	background-color: #fff;
 }
@@ -155,6 +159,33 @@ body{
 	display: flex;
 	justify-content:space-between;
 	width: 100%;
+}
+
+
+/*--------------------------------*/
+/*back-top */
+/*--------------------------------*/
+#back-top {
+  position: fixed;
+  bottom: 2rem;
+  right:1rem;
+  z-index:99999;
+  display:none;
+}
+#back-top a {
+  width: 3rem;
+  display: block;
+  text-decoration: none;
+  color: #bbb;
+}
+#back-top a:hover {
+  color: #000;
+}
+#back-top span {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  background: url(/common/img/btn_top.png) center center /contain no-repeat;
 }
 
 /*--------------------------------*/

@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="/common/css/style.css" type="text/css"/>
 <link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
 <script src="../common/js/rollover.js" type="text/javascript"></script>
+<!-- PAGE TOPに戻るボタン -->
+<script type="text/javascript" src="../common/js/back_top.js"></script>
 <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
 </head>
 <body id="bio">

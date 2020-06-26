@@ -9,15 +9,21 @@
 <link rel="stylesheet" href="/common/css/style.css" type="text/css"/>
 <link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
 <script src="../common/js/rollover.js" type="text/javascript"></script>
+
+
+<!-- PAGE TOPに戻るボタン -->
+<script type="text/javascript" src="../common/js/back_top.js"></script>
+
 <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
 <style type="text/css">
 .alert{
-  font-size: 14px;
+  font-size: 16px;
   border:2px solid #ff0000;
   border-radius: 4px;
   padding:1rem;
-  width: 94%;
+  width: 98%;
   margin:0 auto;
+  box-sizing: border-box;
 }
 </style>
 </head>
@@ -39,17 +45,13 @@
       <td>
         <p class="cdtitle"><span>LIVE</span><br class="sp">松酒屋「番外編」</p>
         <div class="txtBloc">
-
-          <p class="ttl">2020年7月12日(日) <a href="http://www.sactsow.com" target="_blank">新宿SACT! </a></p>
-          <p class="ttl">「松酒屋番外編　さらば新宿SACT! 〜愛の戦士たち〜」</p>
+          <p class="ttl">2020年7月12日(日) <a href="http://www.sactsow.com" target="_blank">新宿SACT! </a><br>
+          「松酒屋番外編　さらば新宿SACT! 〜愛の戦士たち〜」</p>
           <p class="txt">
           ●出演 : 松酒屋（【社長】 酒井ミキオ【副社長】松本タカヒロ【専務】ha-j）<br>
           ●時間 : 開場 17：30 開演 18:00<br>
           ●料金　前売り：¥3,900(別途1drink)<br>
-          ●チケット予約<br>
-
-【予約方法】SACT！にメールのみ(完全22名様限定)<br>
-【Mail】<a href="mailto:reservesow2009@sactsow.com" target="_blank">reservesow2009@sactsow.com</a>
+          ●チケット予約：SOLD OUT（予定枚数終了）
 
           </p>
         </div>
@@ -60,10 +62,10 @@
       <td>
         <p class="cdtitle"><span>LIVE</span><br class="sp">ザ・タートルズ「燃えるタカヒロナイト」</p>
         <div class="txtBloc">
-          <p class="ttl">2020年8月19日(水) 都内某所</a></p>
-          <p class="ttl">「松本タカヒロ50歳記念ライブー燃えるタカヒロナイト（仮称）」</p>
+          <p class="ttl">2020年8月19日(水) 都内某所</a><br>
+          「松本タカヒロ50歳記念ライブー燃えるタカヒロナイト（仮称）」</p>
           <p class="txt">
-詳細は7月に発表いたします。
+※詳細は7月に発表いたします。
           </p>
         </div>
       </td>
@@ -143,7 +145,7 @@ Rolly & Glimrockers7月公演開催について<br><br>
 
       </div>
 
-      <div class="news_right">
+      <div class="news_right pc">
         <img src="img/news.gif" alt="NEWS" class="page_ttl" /><br />
         <div class="spaceman">
           <img src="/common/img/spaceman.gif">

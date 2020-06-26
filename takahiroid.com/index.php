@@ -8,6 +8,8 @@
 <script type="text/javascript" src="/common/js/common.js"></script>
 <link rel="stylesheet" href="/common/css/style.css" type="text/css"/>
 <link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
+<!-- PAGE TOPに戻るボタン -->
+<script type="text/javascript" src="/common/js/back_top.js"></script>
 <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
 <!-- <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script> -->
 </head>
@@ -60,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </div>
 
-    <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/82747181&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+    <iframe class="soundcloud" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/82747181&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
     <div class="spaceman pc">
       <div align="right">
         <p>
