@@ -477,11 +477,12 @@ NEWS
 				.news_left .txtBloc .ttl a{
 					font-size:15px;
 				}
-			.news_left .txtBloc .txt{
+			.news_left .txtBloc .txt,.news_left .txtBloc .txt a{
 				margin-top:10px;
 				font-size: 13px;
 				line-height: 1.6em;
 			}
+
 			span.complete{
 				margin-top:10px;
 				font-size: 13px;

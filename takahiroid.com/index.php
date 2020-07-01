@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
 <!-- PAGE TOPに戻るボタン -->
 <script type="text/javascript" src="/common/js/back_top.js"></script>
+  <link rel="icon" href="/favicon.ico">
 <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
-<!-- <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script> -->
 </head>
 
 <body id="top">
