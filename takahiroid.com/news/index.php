@@ -41,7 +41,7 @@
 <table border="0" class="news_table">
 
 
-<tr>
+<!-- <tr>
       <td>
         <p class="cdtitle"><span>LIVE</span><br class="sp">松酒屋「番外編」LIVE＆配信LIVE</p>
         <div class="txtBloc">
@@ -57,11 +57,11 @@
           </p>
         </div>
       </td>
-</tr>
+</tr> -->
 
 <tr>
       <td>
-        <p class="cdtitle"><span>LIVE</span><br class="sp">ザ・タートルズ「燃えるタカヒロナイト」</p>
+        <p class="cdtitle"><span>LIVE&生配信</span><br class="sp">ザ・タートルズ「燃えるタカヒロナイト」</p>
         <div class="txtBloc">
           <p class="ttl">
             <a href="http://www.club251.com/" target="_blank" class="bold">2020年8月19日(水) 東京・下北沢 CLUB251</a><br>
@@ -73,6 +73,8 @@
           ●料金　前売り：¥4,500(ドリンク代込み)<br>
           ●チケット発売：<a href="https://eplus.jp/" target="_blank">イープラス</a>（7/11〜）<br>
           ●問い合わせ：<a href="http://www.club251.com/" target="_blank">下北沢 CLUB251</a>（TEL：03-5481-4141）<br>
+          ●ZAIKO 有料配信チケット：¥1,800<br>
+チケットの購入はこちら→<a href="https://club251.zaiko.io/_buy/1nt0:Rx:25286" target="_blank">ZAIKO</a>（8/22までアーカイブ視聴可能）
           </p>
           <p class="txt" style="color: #ff0000">
           ・感染予防のためドリンク代はチケット料金に含まれています。<br>
@@ -84,7 +86,7 @@
 
 <tr>
       <td>
-        <p class="cdtitle"><span>LIVE TOUR</span><br class="sp">ROLLY ＆ GlimRockers（公演延期）</p>
+        <p class="cdtitle"><span>LIVE TOUR</span><br class="sp">ROLLY ＆ GlimRockers（公演延期のお知らせ）</p>
 
 <div class="alert">
 Rolly & Glimrockers7月公演開催について<br><br>
