@@ -72,7 +72,7 @@
           ●時間 : 開場 18:30  開演 19:30<br>
           ●料金　前売り：¥4,500(ドリンク代込み)<br>
           ●チケット発売：<a href="https://eplus.jp/" target="_blank">イープラス</a>（7/11〜）<br>
-          ●問い合わせ：<a href="http://www.club251.com/" target="_blank">下北沢 CLUB251</a>（TEL：03-5481-4141）<br>
+          ●問い合わせ：<a href="http://www.club251.com/" target="_blank">下北沢 CLUB251</a>（TEL：03-5481-4141）<br><br />
           ●ZAIKO 有料配信チケット：¥1,800<br>
 チケットの購入はこちら→<a href="https://club251.zaiko.io/_buy/1nt0:Rx:25286" target="_blank">ZAIKO</a>（8/22までアーカイブ視聴可能）
           </p>
