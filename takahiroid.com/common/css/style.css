@@ -135,15 +135,15 @@ body{
 				.header ul.gnavi_pc li.bio_btn a{
 					color:#f39806;
 				}
-				.header ul.gnavi_pc li.blog_btn a{
-					color:#e60617;
+				.header ul.gnavi_pc li.insta_btn a{
+					color:#CC3366;
 				}
 				.header ul.gnavi_pc li.twitter_btn a{
-					color:#920783;
+					color: rgba(29,161,242,1.00);
 				}
-/*				.header ul.gnavi_pc li.facebook_btn a{
-					color:#920783;
-				}*/
+				.header ul.gnavi_pc li.shop_btn a{
+					color:#e60617;
+				}
 					.header ul.gnavi_pc li a:hover{
 						opacity:0.50;
 						filter:alpha(opacity=50);
@@ -511,6 +511,11 @@ background-position: center;
 		width: 100%;
 
 		}
+p.alert_txt{
+	font-size: 12px;
+	border-top:1px dotted #CCC;
+	border-bottom:1px dotted #CCC;
+}
 
 /*------------------------------------------------------
 NEWS（アーカイブ）

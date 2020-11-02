@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
+a.hover:hover img {
+	opacity: 0.7
+}
 .clearfix:after {
     content: ".";
     display: block;
@@ -190,7 +193,11 @@ body {
 	color:#f00;
 	text-decoration:underline;
 }
-
+p.alert_txt{
+	font-size: 12px;
+	border-top:1px dotted #CCC;
+	border-bottom:1px dotted #CCC;
+}
 
 .YouTube{
 	margin:25px 0 0 15px;

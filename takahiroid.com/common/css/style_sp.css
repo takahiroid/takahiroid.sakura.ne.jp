@@ -151,13 +151,12 @@
 				}
 				.gnavi_sp .menu li.works_btn a{
 					color:#70b539;
-
 				}
 				.gnavi_sp .menu li.bio_btn a{
 					color:#f39806;
 				}
-				.gnavi_sp .menu li.blog_btn a{
-					color:#e60617;
+				.gnavi_sp .menu li.insta_btn a{
+					color:#CC3366;
 				}
 				.gnavi_sp .menu li.twitter_btn a{
 					color: rgba(29,161,242,1.00);
@@ -166,7 +165,9 @@
 					color:#920783;
 					padding-bottom: 20px;
 				}
-
+				.gnavi_sp .menu li.shop_btn a{
+					color:#e60617;
+				}
 		.active.menu-trigger span:nth-child(1) {
 		    top: 11px;
 		    transform: rotate(315deg);
