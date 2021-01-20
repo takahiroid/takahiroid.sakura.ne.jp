@@ -40,135 +40,84 @@
 
 <table border="0" class="news_table">
 
-
-<!-- <tr>
-      <td>
-        <p class="cdtitle"><span>LIVE</span><br class="sp">松酒屋「番外編」LIVE＆配信LIVE</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="http://www.sactsow.com" target="_blank" class="bold">2020年7月12日(日) 新宿SACT! </a><br>
-          「松酒屋番外編　さらば新宿SACT! 〜愛の戦士たち〜」</p>
-          <p class="txt">
-          ●出演 : 松酒屋（【社長】 酒井ミキオ【副社長】松本タカヒロ【専務】ha-j）<br>
-          ●時間 : 開場 17：30 開演 18:00<br>
-          ●料金　前売り：¥3,900(別途1drink)<br>
-          ●通常チケット：予定枚数終了<br>
-          ●ツイキャス有料配信チケット：¥1,500<br>
-          チケットの購入はこちら→<a href="https://twitcasting.tv/matsuzakaya1970/shopcart/11880" target="_blank">ツイキャス</a>
-          </p>
-        </div>
-      </td>
-</tr> -->
-
 <tr>
       <td>
-        <p class="cdtitle"><span>LIVE&生配信</span><br class="sp">ザ・タートルズ「燃えるタカヒロナイト」</p>
-        <div class="txtBloc">
-          <p class="ttl">
-            <a href="http://www.club251.com/" target="_blank" class="bold">2020年8月19日(水) 東京・下北沢 CLUB251</a><br>
-          『燃えるタカヒロ・ナイト　夢見る 50歳(フィフティー)<br>〜実際 ライブするのってタイミング 見逃せない♪〜』
-          </p>
-          <p class="txt">
-          ●出演 : ザ・タートルズ<br>
-          ●時間 : 開場 18:30  開演 19:30<br>
-          ●料金　前売り：¥4,500(ドリンク代込み)<br>
-          ●チケット発売：SOLD OUT<br>
-          ●問い合わせ：<a href="http://www.club251.com/" target="_blank">下北沢 CLUB251</a>（TEL：03-5481-4141）<br><br />
-          ●ZAIKO 有料配信チケット：¥1,800<br>
-チケットの購入はこちら→<a href="https://club251.zaiko.io/_buy/1nt0:Rx:25286" target="_blank">ZAIKO</a>（8/22までアーカイブ視聴可能）
-          </p>
-<br />
-<p class="alert_txt" >
-  <br>
-本公演では、コロナウイルス感染予防に十分に取り組み公演を実施させて頂きます。つきましてはご来場されるお客様におかれましても、感染予防および拡散防止のため注意事項をよくお読みの上、ご理解とご協力をお願いします。<br>
-<br>
-■以下の方は、入場をお断りさせて頂きます。<br>
-・公演当日の体温が37.5℃以上の発熱のある方<br>
-・倦怠感等体調に不安のある方<br>
-・マスクを着用されていない方<br>
-・公演日２週間以内に政府の定める入国制限されている国・エリアへの渡航歴がある方<br>
-・同居家族など身近に新型コロナウイルス感染者がいる方、新型コロナウイルス感染者と接触があった方<br>
-<br>
-
-■ご来場者様へのお願い<br>
-・新型コロナウイルス接触確認アプリ(COCOA)のダウンロードにご協力をお願い致します。<br>
-・入場時及びチケット購入(分配)時にご登録いただいたお名前、ご連絡先を、政府の要請に基づき保健所等の公共機関へ提供させていただく可能性があります。<br>
-・入場時、検温を実施いたします。37.5℃以上のお客様を検知した場合は入場をお断りさせて頂きます。<br>
-・入場列はソーシャルディスタンスを確保した形で整列をお願いします。<br>
-・マスクをご持参頂き、公演中もマスクをご着用の上ご鑑賞ください。<br>
-・入場口等に消毒剤を設置致します。こまめな消毒にご協力ください。<br>
-<br>
-</p>
-
-
-
-        </div>
-      </td>
-</tr>
-
-<tr>
-      <td>
-        <p class="cdtitle"><span>LIVE TOUR</span><br class="sp">ROLLY ＆ GlimRockers（公演延期のお知らせ）</p>
+        <p class="cdtitle"><span>LIVE TOUR</span><br class="sp">ROLLY ＆ GlimRockers</p>
 
 <div class="alert">
-Rolly & Glimrockers7月公演開催について<br><br>
+  <div class="txtBloc">
+    <p class="ttl">12月8日(火) 大阪南堀江 knave</p>
+    <p class="txt">
+    <a href="http://dragon.pump-annex.vivian.jp/?eid=1108582" target="_blank">公演中止・払い戻し方法のお知らせ</a>
 
-メンバー・スタッフ・お店で開催の可否について検討を重ねてまいりましたが、各会場以下のように延期とさせていただきます。<br><br>
+    
+    </p>
+    <br>
+    <p class="ttl">12月11日(金) 吉祥寺スターパインズカフェ</p>
+    <p class="txt">
+      Streaming+ 配信ライブに変更となりました。→
+      <a href="http://dragon.pump-annex.vivian.jp/?eid=1108582" target="_blank">チケット払い戻し方法のお知らせ</a>
+    </p>
+<br>
 
-▼西川口Hearts<br>
-7/18(土)→12/10(木)<br>
-※平日公演に変更ですので、開場開演時間を開場 18:15 開演 19:00　に変更いたします。<br><br>
 
-▼吉祥寺スターパインズカフェ　<br>
-7/19(日)→12/11(金)<br>
-※本公演は対バンでマルベリーズを予定しておりましたが出演無しとなりました。Rolly & Glimrockers単独での公演となります。<br><br>
+<p class="cdtitle">12月11日(金) Streaming+ 配信ライブ</p>
+        <p class="txt">
 
-▼名古屋タイトロープ<br>
-7/21(火)→12/7(月)<br><br>
+開演：19:00<br>
+お申し込みURL：<a href="https://eplus.jp/sf/detail/3353480001-P0030001" target="_blank">https://eplus.jp/sf/detail/3353480001-P0030001</a><br>
+受付開始日時    2020/12/04(金) 10:00～<br>
+視聴券：¥3,000<br>
+クレジットカード：申込完了時に決済します。<br>
+コンビニ／ＡＴＭ： 申込み時に表示される期限までにお支払いください。<br>
+ファミリーマート/セブン-イレブン/ローソン/ミニストップ<br>
+<br>
+【注意事項】<br>    
+配信開始日時:2020/12/11(金)19:00<br>
+視聴可能期間:2020/12/17(木)23:59まで<br>
+<br>
+　(ライブ配信後に再配信処理を行いますのでご覧いただけない時間がございます)<br>
+※ライブ配信時間:120分予定(変更になる場合がございます。予めご了承ください)<br>
+※途中から視聴した場合はその時点からのライブ配信となり、巻き戻しての再生はできません<br>
+※視聴方法:ご入金確認後メールで視聴URLをお知らせしますので<br>
+　(または申込状況照会より「QRチケット表示」を押す)、<br>
+ 購入時のイープラスID/PWでログインしてください<br>
+※本コンテンツは、著作権法などの諸法令により保護されています。
+<br>
+　インターネット上への無断転載等を行った場合、法的責任に問われる場合がございます。マナーを守ってお楽しみください。
+        </p>
 
-▼大阪knave<br>
-7/22(水)→12/8(火)<br><br>
 
-詳細は、以下URLをご確認ください。<br>
-<a href="http://dragon.pump-annex.vivian.jp/?eid=1108570" target="_blank">http://dragon.pump-annex.vivian.jp/?eid=1108570</a>
+  </div>
 </div>
+</td>
+</tr>
 
-
+<tr>
+      <td>
+        <p class="cdtitle"><span>LIVE</span><br class="sp">世良公則 x JETROX</p>
         <div class="txtBloc">
+          <p class="ttl"><a href="http://www.namba-hatch.com/index.php" target="_blank" class="bold">2021年3月13日(土) なんばHatch（大阪市） </a></p>
+          <p class="txt">
+開場：16:00  開演17:00<br>
+前売料金：7,500円 (税込・ご入場時、別途ドリンク代が必要です)<br>
+＊6歳未満入場不可<br>
 <br>
-<p class="ttl">【Rolly & Glimrockers LIVE 2020】</p>
-<p class="ttl">7/18(土) 西川口 Hearts</p>
-<p class="txt">
-●時間 : 開場 16：30 開演 17:00<br>
-●料金　前売り：¥4,400(別途1drink) 当日：¥4,900(別途1drink)<br>
-●チケット発売 : HPチケット予約
-</p>
+一般発売日：2021年2月6日（土）各プレイガイドにて<br>
 <br>
-
-<p class="ttl">7/19(日) 吉祥寺スターパインズカフェ</p>
-<p class="txt">
-●共演：マルベリーズ<br>
-●時間 : 開場 18:15 開演 19:00<br>
-●料金　前売り：¥4,400(別途1drink) 当日：¥4,900(別途1drink)<br>
-●チケット発売 : HPチケット予約
-</p>
+・公演に関するお問い合わせ先：<br>
+キョードーインフォメーション　0570-200-888（月-土11:00～16:00） <br>
 <br>
-
-<p class="ttl">7/21(火) 名古屋 TightRope</p>
-<p class="txt">
-●時間 : 開場 18:00 開演 18:30<br>
-●料金　前売り：¥4,400(別途1drink) 当日：¥4,900(別途1drink)<br>
-●チケット発売 : HPチケット予約
-</p>
-<br>
-
-<p class="ttl">7/22(水)  大阪南堀江 knave</p>
-<p class="txt">
-●時間 : 開場 18:30 開演 19:00<br>
-●料金　前売り：¥4,400(別途1drink) 当日：¥4,900(別途1drink)<br>
-●チケット発売 : HPチケット予約
-</p>
+・[HP先行受付方法]<br>
+イープラスWEB/モバイルにて期間内にお申し込み頂いた中より抽選で当落が決まります。先着順ではありませんので慌てずにお申し込み下さい。<br>
+受付期間：2020年12月19日土曜20:00～2020年12月27日日曜23:59まで <br>
+受付URL:　<a href="https://eplus.jp/smjr-hp0313" target="_blank">https://eplus.jp/smjr-hp0313/</a><br>
+なお、イープラスの無料会員登録が必要です。<br>
+          </p>
+        </div>
       </td>
 </tr>
+
 
 </table>
 <a href="past_2020.php">→過去のライブ - 2020年</a><br>

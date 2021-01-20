@@ -29,7 +29,13 @@
 
 		<div class="past_live_txt">
 <div class="boxPastLive">
-2019.01.05（日）@下北沢CUB Que<br><strong>餃子大王『お昼の大新年会!　東京編』</strong>
+2019.01.05（日）@東京・下北沢CUB Que<br><strong>餃子大王『お昼の大新年会!　東京編』</strong>
+</div>
+<div class="boxPastLive">
+2020.07.12(日) @東京・新宿SACT!<br><strong>松酒屋「番外編」LIVE＆配信LIVE「松酒屋番外編　さらば新宿SACT! 〜愛の戦士たち〜」</strong>
+</div>
+<div class="boxPastLive">
+2020.08.19(水) @東京・下北沢 CLUB251<br><strong>ザ・タートルズ『燃えるタカヒロ・ナイト　夢見る 50歳(フィフティー)<br>〜実際 ライブするのってタイミング 見逃せない♪〜』</strong>
 </div>
 		</div>
 	</div>
