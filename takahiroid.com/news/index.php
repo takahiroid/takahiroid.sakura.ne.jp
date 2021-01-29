@@ -42,55 +42,72 @@
 
 <tr>
       <td>
-        <p class="cdtitle"><span>LIVE TOUR</span><br class="sp">ROLLY ＆ GlimRockers</p>
+        <p class="cdtitle"><span>LIVE配信</span><br class="sp">ROLLY QUATTRO SHOW2021</p>
+        <div class="txtBloc">
+          <p class="ttl"><a href="https://www.rollynet.com/news/index.php#id92254" target="_blank" class="bold">2021年2月10日(水) 「ROLLY QUATTRO SHOW2021」</a></p>
+          <p class="txt">
+■公演名「ROLLY QUATTRO SHOW2021」<br><br>
 
-<div class="alert">
-  <div class="txtBloc">
-    <p class="ttl">12月8日(火) 大阪南堀江 knave</p>
-    <p class="txt">
-    <a href="http://dragon.pump-annex.vivian.jp/?eid=1108582" target="_blank">公演中止・払い戻し方法のお知らせ</a>
-
-    
-    </p>
-    <br>
-    <p class="ttl">12月11日(金) 吉祥寺スターパインズカフェ</p>
-    <p class="txt">
-      Streaming+ 配信ライブに変更となりました。→
-      <a href="http://dragon.pump-annex.vivian.jp/?eid=1108582" target="_blank">チケット払い戻し方法のお知らせ</a>
-    </p>
+■ROLLYオールスターズ<br>
+メンバー：ROLLY(Vo& Gt), 小畑ポンプ(Ds& Cho), 永井ルイ(Ba& Cho), 松本淳、松本タカヒロ、村原康介<br>
 <br>
-
-
-<p class="cdtitle">12月11日(金) Streaming+ 配信ライブ</p>
-        <p class="txt">
-
-開演：19:00<br>
-お申し込みURL：<a href="https://eplus.jp/sf/detail/3353480001-P0030001" target="_blank">https://eplus.jp/sf/detail/3353480001-P0030001</a><br>
-受付開始日時    2020/12/04(金) 10:00～<br>
-視聴券：¥3,000<br>
-クレジットカード：申込完了時に決済します。<br>
-コンビニ／ＡＴＭ： 申込み時に表示される期限までにお支払いください。<br>
-ファミリーマート/セブン-イレブン/ローソン/ミニストップ<br>
+■ 公演日程<br>
+2021年2月10日(水) 20:00 START<br>
+※アーカイブ視聴：2月17日(水)23:00まで<br>
 <br>
-【注意事項】<br>    
-配信開始日時:2020/12/11(金)19:00<br>
-視聴可能期間:2020/12/17(木)23:59まで<br>
+■お楽しみ券(視聴券)料金  ￥3,500(税込)<br>
 <br>
-　(ライブ配信後に再配信処理を行いますのでご覧いただけない時間がございます)<br>
-※ライブ配信時間:120分予定(変更になる場合がございます。予めご了承ください)<br>
-※途中から視聴した場合はその時点からのライブ配信となり、巻き戻しての再生はできません<br>
-※視聴方法:ご入金確認後メールで視聴URLをお知らせしますので<br>
-　(または申込状況照会より「QRチケット表示」を押す)、<br>
- 購入時のイープラスID/PWでログインしてください<br>
-※本コンテンツは、著作権法などの諸法令により保護されています。
+■ チケット発売日<br>
+　2021年1月22日(金) 12:00<br>
+　e+　https://eplus.jp/rolly-s/<br>
 <br>
-　インターネット上への無断転載等を行った場合、法的責任に問われる場合がございます。マナーを守ってお楽しみください。
-        </p>
+■アーカイブ視聴期間<br>
+　配信終了後〜2月17日(水)23:00<br>
+　※視聴チケットは2月17日(水)21:00まで販売予定<br>
+<br>
+【注意事項】<br>
+・チケットの購入・動画の視聴にはイープラスへの会員登録（無料）が必要となります<br>
+・配信日2日前からはカード決済のみでの販売となります<br>
+・視聴チケットに関するチケット購入から視聴までの流れ<br>
+①チケットは下記イープラスのWEBサイトから購入可能です<br>
+②チケット購入後にメールで視聴URLをお送りします<br>
+③ 視聴時に購入時のイープラスの会員ID/パスワードでログイン<br>
+④ 開演時間になったら視聴スタート（PC、スマホ、タブレット端末から視聴可能）<br>
+その他詳細は下記【Streaming＋視聴者ご利用ガイド】からご確認ください<br>
+<br>
+Streaming＋視聴者ご利用ガイド<br>
+<a href="https://eplus.jp/sf/guide/streamingplus-userguide" target="_blank">https://eplus.jp/sf/guide/streamingplus-userguide</a><br>
+<br>
+■ 配信にチケットに関するお問い合せ<br>
+ウドー音楽事務所　03-3402-5999(火曜・金曜 12:00-14:00)　 <a href="http://udo.jp/" target="_blank">http://udo.jp/</a><br>
+<br>
+■U+LIVEの公演情報<br>
+<a href="https://upluslive.udo.jp/schedule/20210210.html" target="_blank">https://upluslive.udo.jp/schedule/20210210.html</a><br>
+<br>
+          </p>
+        </div>
+      </td>
+</tr>
 
+<tr>
+      <td>
+        <p class="cdtitle"><span>LIVE & 配信</span><br class="sp">松酒屋</p>
+        <div class="txtBloc">
+          <p class="ttl"><a href="https://www.mahocast.com/" target="_blank" class="bold">2021年2月27日(土) 新宿Sact!（東京） </a></p>
+          <p class="txt">
+「松酒屋番外編　復活！新宿SACT！ 〜新たなる旅立ち〜」<br><br>
+【時間】開場：17:30　開演：18:00<br>
+【料金（会場）】¥3900（ドリンク代¥600円別）<br>
+【料金（配信）】¥2000<br><br>
 
-  </div>
-</div>
-</td>
+【チケット（会場）】<a href="https://tiget.net/events/117574" target='_blank'>TIGET</a>（発売中）<br>
+【チケット（配信）】<a href="https://www.mahocast.com/at/live/1140/6290" target='_blank'>mahocast</a>（発売中・アーカイブ付き）<br><br>
+
+【お問合せ】<a href="sact.0108@gmail.com" target="_blank">sact.0108@gmail.com</a><br>
+<br>
+          </p>
+        </div>
+      </td>
 </tr>
 
 <tr>

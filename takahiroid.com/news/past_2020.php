@@ -37,6 +37,9 @@
 <div class="boxPastLive">
 2020.08.19(水) @東京・下北沢 CLUB251<br><strong>ザ・タートルズ『燃えるタカヒロ・ナイト　夢見る 50歳(フィフティー)<br>〜実際 ライブするのってタイミング 見逃せない♪〜』</strong>
 </div>
+<div class="boxPastLive">
+12月11日(金) Streaming+ 配信ライブ@吉祥寺スターパインズカフェ<br><strong>ROLLY ＆ GlimRockers</strong>
+</div>
 		</div>
 	</div>
 

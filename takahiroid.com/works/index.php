@@ -38,11 +38,27 @@
         </tr>
 
         <tr>
+          <td>
+            <p class="cdtitle"><span>ギター指導</span></p>
+            <div class="txtBloc">
+             コンサート『ジャニーズWEST LIVE TOUR 2020 W trouble』(2020)<br>
+             舞台『正しいロックバンドの作り方 夏』(2020)<br>
+            </div>
+        </td>
+        </tr>
+
+        <tr>
             <td>
                 <p class="cdtitle"><span>テレビ東京「ゴッドタン マジ歌選手権」</span>【楽曲制作】</p>
                 <div class="txtBloc">
-        岩井勇気（ハライチ）「逃がさねぇからな」（編曲）2020<br>
-        ダイノジ＆EXIT「俺の生き様」（編曲）2020
+        岩井勇気（ハライチ）「ありがとうテレビマン」（楽曲制作）(2020)<br>
+        阿佐谷姉妹「頑張れ北口商店街」（楽曲制作）(2020)<br>
+        ほしのディスコ「僕の幸せ」（楽曲制作）(2020)<br>
+        岩井勇気（ハライチ）「逃がさねぇからな」（楽曲制作）(2020)<br>
+        ダイノジ＆EXIT「俺の生き様」（楽曲制作）2020<br>
+        岩井勇気（ハライチ）「やめちまえよ」（楽曲制作）(2019)<br>
+        角田 晃広（東京03）「手に入らないもの」（楽曲制作）(2019)<br>
+        岩井勇気（ハライチ）「ゴッドタンマジ歌選手権 - 忘れねえからな」（楽曲制作）(2018)
                 </div>
             </td>
         </tr>
@@ -54,15 +70,6 @@
         Vtuber 響木アオ「ユメスクリーム」（編曲）2019<br>
         テレビ朝日系全国放送musicるTV「トップライナーをさがせ！」タイアップ楽曲<br>
         <a href="https://www.youtube.com/watch?v=5wSb6I_Btpk" target="_blank">https://www.youtube.com/watch?v=5wSb6I_Btpk</a>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p class="cdtitle"><span>テレビ東京「ゴッドタン マジ歌選手権」</span>【楽曲制作】</p>
-                <div class="txtBloc">
-        岩井勇気（ハライチ）「やめちまえよ」（編曲）2018<br>
-        角田 晃広（東京03）「手に入らないもの」（編曲）2018
                 </div>
             </td>
         </tr>
@@ -100,25 +107,6 @@
                 <p class="cdtitle"><span>山下智久 Album「UNLEASHED」</span>【ギター】</p>
                 <div class="txtBloc">
         　「Right Moves」（ギター）2018.11.28
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <p class="cdtitle"><span>ゴッドタン マジ歌ライブ2018 in横浜アリーナ～今夜一発いくかい？～ DVD</span>【編曲】</p>
-                <div class="txtBloc">
-        　岩井勇気（ハライチ）「忘れねえからな」（編曲）2018.10.31
-        <div><img src="./img/732.jpg" width="200px;"></div>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <p class="cdtitle"><span>テレビ東京「ゴッドタン マジ歌選手権」</span>【楽曲制作】</p>
-                <div class="txtBloc">
-        　岩井勇気（ハライチ）「ゴッドタンマジ歌選手権 - 忘れねえからな」（編曲）2018
                 </div>
             </td>
         </tr>
