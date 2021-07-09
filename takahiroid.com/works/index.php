@@ -27,12 +27,14 @@
         <table border="0">
         <tr>
           <td>
-            <p class="cdtitle"><span>Live Guitar Play</span></p>
+            <p class="cdtitle"><span>Recent Live REC Guitar Play</span></p>
             <div class="txtBloc">
-              世良公則＜JET ROX TOUR 2019＞<br>
+            	ROLLY ALL STARS＜2021＞<br>
+              世良公則＜JET ROX TOUR 2011〜2021＞<br>
               世良公則 feat. マーティ・フリードマン＜フジテレビ　名曲お宝音楽祭＞<br>
               ROLLY＜2019 ROLLY'S ROCK SHOW TOUR 2019＞<br>
               鈴木茂 with Glimrockers＜HALLOWEEN NIGHT TOUR 2017＞<br>
+              大槻ｹﾝｼﾞwith Glimrockers<br>山下智久<br>
             </div>
         </td>
         </tr>
@@ -74,14 +76,14 @@
             </td>
         </tr>
 
-          <tr>
+<!--           <tr>
             <td>
               <p class="cdtitle"><span>【Live Guitar Play】</span></p>
               <div class="txtBloc">
                 鈴木茂 ・ 世良公則 ・ 大槻ケンヂ ・ 本田恭章 ・ 高橋優
               </div>
           </td>
-          </tr>
+          </tr> -->
 
 
         <tr>

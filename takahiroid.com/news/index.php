@@ -42,66 +42,17 @@
 
 <tr>
       <td>
-        <p class="cdtitle"><span>LIVE配信</span><br class="sp">ROLLY QUATTRO SHOW2021</p>
+        <p class="cdtitle"><span>LIVE & 配信</span><br class="sp">松酒屋（酒井ミキオ(社長)・松本タカヒロ(副社長)・ha-j(専務)）</p>
         <div class="txtBloc">
-          <p class="ttl"><a href="https://www.rollynet.com/news/index.php#id92254" target="_blank" class="bold">2021年2月10日(水) 「ROLLY QUATTRO SHOW2021」</a></p>
+          <p class="ttl"><a href="http://www.sactsow.com/index.html" target="_blank" class="bold">2021年8月21日(土) 新宿Sact!（東京） </a><br>『松酒屋 役員生誕祭』〜まだまだ番外編〜</p>
           <p class="txt">
-■公演名「ROLLY QUATTRO SHOW2021」<br><br>
-
-■ROLLYオールスターズ<br>
-メンバー：ROLLY(Vo& Gt), 小畑ポンプ(Ds& Cho), 永井ルイ(Ba& Cho), 松本淳、松本タカヒロ、村原康介<br>
-<br>
-■ 公演日程<br>
-2021年2月10日(水) 20:00 START<br>
-※アーカイブ視聴：2月17日(水)23:00まで<br>
-<br>
-■お楽しみ券(視聴券)料金  ￥3,500(税込)<br>
-<br>
-■ チケット発売日<br>
-　2021年1月22日(金) 12:00<br>
-　e+　https://eplus.jp/rolly-s/<br>
-<br>
-■アーカイブ視聴期間<br>
-　配信終了後〜2月17日(水)23:00<br>
-　※視聴チケットは2月17日(水)21:00まで販売予定<br>
-<br>
-【注意事項】<br>
-・チケットの購入・動画の視聴にはイープラスへの会員登録（無料）が必要となります<br>
-・配信日2日前からはカード決済のみでの販売となります<br>
-・視聴チケットに関するチケット購入から視聴までの流れ<br>
-①チケットは下記イープラスのWEBサイトから購入可能です<br>
-②チケット購入後にメールで視聴URLをお送りします<br>
-③ 視聴時に購入時のイープラスの会員ID/パスワードでログイン<br>
-④ 開演時間になったら視聴スタート（PC、スマホ、タブレット端末から視聴可能）<br>
-その他詳細は下記【Streaming＋視聴者ご利用ガイド】からご確認ください<br>
-<br>
-Streaming＋視聴者ご利用ガイド<br>
-<a href="https://eplus.jp/sf/guide/streamingplus-userguide" target="_blank">https://eplus.jp/sf/guide/streamingplus-userguide</a><br>
-<br>
-■ 配信にチケットに関するお問い合せ<br>
-ウドー音楽事務所　03-3402-5999(火曜・金曜 12:00-14:00)　 <a href="http://udo.jp/" target="_blank">http://udo.jp/</a><br>
-<br>
-■U+LIVEの公演情報<br>
-<a href="https://upluslive.udo.jp/schedule/20210210.html" target="_blank">https://upluslive.udo.jp/schedule/20210210.html</a><br>
-<br>
-          </p>
-        </div>
-      </td>
-</tr>
-
-<tr>
-      <td>
-        <p class="cdtitle"><span>LIVE & 配信</span><br class="sp">松酒屋</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="https://www.mahocast.com/" target="_blank" class="bold">2021年2月27日(土) 新宿Sact!（東京） </a></p>
-          <p class="txt">
-「松酒屋番外編　復活！新宿SACT！ 〜新たなる旅立ち〜」<br><br>
-【時間】開場：17:30　開演：18:00<br>
-【料金（会場）】¥3900（ドリンク代¥600円別）<br>
+【出演】松酒屋<br>
+【時間】開場：18:3¥00　開演：18:30<br>
+【料金（会場）】¥4,000+1drink<br>
 【料金（配信）】¥2000<br><br>
 
-【チケット（会場）】<a href="https://tiget.net/events/117574" target='_blank'>TIGET</a>（発売中）<br>
-【チケット（配信）】<a href="https://www.mahocast.com/at/live/1140/6290" target='_blank'>mahocast</a>（発売中・アーカイブ付き）<br><br>
+【チケット（会場）】<a href="https://tiget.net/events/135730" target='_blank'>TIGET</a>（発売中）<br>
+【チケット（配信）】<a href="https://www.mahocast.com/at/live/1140/7074" target='_blank'>mahocast</a>（発売中・アーカイブ付き）<br><br>
 
 【お問合せ】<a href="sact.0108@gmail.com" target="_blank">sact.0108@gmail.com</a><br>
 <br>
@@ -110,33 +61,56 @@ Streaming＋視聴者ご利用ガイド<br>
       </td>
 </tr>
 
-<tr>
+<!-- <tr>
       <td>
-        <p class="cdtitle"><span>LIVE</span><br class="sp">世良公則 x JETROX</p>
+        <p class="cdtitle"><span>ROLLY ALL STARTS</span><br class="sp">4/24心斎橋JANUS公演　中止のお知らせ</p>
         <div class="txtBloc">
-          <p class="ttl"><a href="http://www.namba-hatch.com/index.php" target="_blank" class="bold">2021年3月13日(土) なんばHatch（大阪市） </a></p>
+          <p class="ttl"><a href="http://www.arm-live.com/janus/" target="_blank" class="bold">
+          2021年4月24日(土) 大阪 心斎橋JANUS</a><br>
+          ROLLY ALL STARTS「GO TO ROLLY ALL STARS！」</p>
           <p class="txt">
-開場：16:00  開演17:00<br>
-前売料金：7,500円 (税込・ご入場時、別途ドリンク代が必要です)<br>
-＊6歳未満入場不可<br>
+こちらの公演は<br>
+このたびの新型コロナウイルスの感染拡大の状況を鑑み、やむなく公演の開催を中止することとなりました。<br>
 <br>
-一般発売日：2021年2月6日（土）各プレイガイドにて<br>
+これまで新型コロナウイルスに関する政府発表や国内の状況を注視しながら、開催に向けて準備を進めておりましたが、現状の感染状況についての見通しが定かでないことから、ご来場いただくお客さまの健康と安全を最優先に考え、今回の決定に至りました。<br>
+開催を楽しみにされていた皆様には、直前でのご報告となってしまい、誠に申し訳ございません。<br>
 <br>
-・公演に関するお問い合わせ先：<br>
-キョードーインフォメーション　0570-200-888（月-土11:00～16:00） <br>
+何卒ご理解を賜りますようお願い申し上げます。<br>
 <br>
-・[HP先行受付方法]<br>
-イープラスWEB/モバイルにて期間内にお申し込み頂いた中より抽選で当落が決まります。先着順ではありませんので慌てずにお申し込み下さい。<br>
-受付期間：2020年12月19日土曜20:00～2020年12月27日日曜23:59まで <br>
-受付URL:　<a href="https://eplus.jp/smjr-hp0313" target="_blank">https://eplus.jp/smjr-hp0313/</a><br>
-なお、イープラスの無料会員登録が必要です。<br>
+なお、ご購入済のチケットは払い戻しを承ります。払い戻し詳細については以下をご確認ください。<br>
+　<br>
+【払い戻し期間】<br>
+2021年4月27日(火)10:00〜　5/23（日）23:59まで<br>
+<br>
+【払い戻し方法】<br>
+●e+(イープラス)にてご購入されたお客様<br>
+払戻方法は、チケットの受取方法や支払方法などにより異なります。<br>
+下記URLよりどの払戻方法になるのか確認してください。<br>
+公演中止 払戻方法確認チャートhttps://eplus.jp/refund1/<br>
+【お問い合わせ】　https://eplus.jp/qa/<br>
+<br>
+●チケットぴあにてご購入されたお客様<br>
+払戻方法は、チケットの受取方法や支払方法などにより異なります。<br>
+下記URLよりどの払戻方法になるのか確認してください。<br>
+http://t.pia.jp/guide/refund.jsp<br>
+【お問合せ】チケットぴあ：0570-02-9111（オペレーター対応：10:00～18:00）<br>
+<br>
+●ローソンチケットにてご購入されたお客様<br>
+ローソン、ミニストップ店舗にて直接払戻しをさせていただきます。<br>
+ローソンで発券された方はローソンへ、ミニストップで発券された方はミニストップへお手持ちの未使用チケットをお持ちの上、ご来店ください。<br>
+※配送引取されたお客様は最寄りのローソン店舗で払戻しをさせていただきます。<br>
+http://l-tike.com/oc/lt/haraimodoshi/<br>
+【お問合せ】ローソンチケット：https://l-tike.com/contact/<br>
+<br>
+【お問い合わせ】　キョードーインフォメーション 0570-200-888(月～土 11:00～16:00)<br>
           </p>
         </div>
       </td>
-</tr>
+</tr> -->
 
 
 </table>
+<a href="past_2021.php">→過去のライブ - 2021年</a><br>
 <a href="past_2020.php">→過去のライブ - 2020年</a><br>
 <a href="past_2019.php">→過去のライブ - 2019年</a><br>
 <a href="past_2018.php">→過去のライブ - 2018年</a><br>
