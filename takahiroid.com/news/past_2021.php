@@ -47,6 +47,15 @@
 with：メトロノーム、オケミス、中野テルヲ
 </div>
 
+<div class="boxPastLive">
+2021年8月14日(土) 下北沢CLUB251（東京）<br>
+<strong>ザ・タートルズ<br>ワンマン『GO TWO 51!!』</strong><br>
+</div>
+
+<div class="boxPastLive">
+2021年8月21日(土) 新宿Sact!（東京）<br>
+<strong>松酒屋（酒井ミキオ(社長)・松本タカヒロ(副社長)・ha-j(専務)）<br>『松酒屋 役員生誕祭』〜まだまだ番外編〜</strong><br>
+</div>
 
 		</div>
 	</div>

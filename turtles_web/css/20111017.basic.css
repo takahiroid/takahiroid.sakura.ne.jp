@@ -123,8 +123,8 @@ body {
 }
 #Top #Right{
 	width:440px;
-	float:left;
-	margin-left:35px;
+	float:right;
+	
 }
 
 /* ================================================= */
@@ -155,14 +155,8 @@ body {
 .txtNewsTitle{
 	font-weight:bold;
 	font-size:14px;
-	/*color:#ff5a00;*/
-	color:#FFF;
+	color:#ff5a00;
 	margin:10px 0 10px 0;
-	width:415px;;
-	display:block;
-	padding:3px 7px;
-	line-height:2em;
-	background-color:#F90;
 }
 .txtBlogTitle{
 	font-size:12px;
@@ -183,7 +177,7 @@ body {
 	margin:25px 0 0 15px;
 }
 .borderHalf{
-	border-bottom:dotted 1px #999;
+	border-bottom:solid 2px #FC0;
 }
 
 /* ================================================= */

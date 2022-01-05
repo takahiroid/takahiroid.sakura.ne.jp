@@ -32,7 +32,7 @@
 <div class="wrapper">
 <?php include("../common/inc/header.php"); ?>
 
-  <div class="sp_title sp"><p>Live</p></div>
+  <div class="sp_title sp"><p>Live&Media</p></div>
 
   <div class="contents">
     <div class="wrap_area">
@@ -42,24 +42,48 @@
 
 <tr>
       <td>
-        <p class="cdtitle"><span>LIVE & 配信</span><br class="sp">松酒屋（酒井ミキオ(社長)・松本タカヒロ(副社長)・ha-j(専務)）</p>
+        <p class="cdtitle"><span style="background-color:#70b539">TV出演</span><br class="sp">世良公則 - NHK「第21回 わが心の大阪メロディー」</p>
         <div class="txtBloc">
-          <p class="ttl"><a href="http://www.sactsow.com/index.html" target="_blank" class="bold">2021年8月21日(土) 新宿Sact!（東京） </a><br>『松酒屋 役員生誕祭』〜まだまだ番外編〜</p>
+          <p class="ttl"><a href="https://www.nhk.jp/p/waga/ts/5PVQGJJGQ6/" target="_blank" class="bold">2021年10月26日(火）午後7:30～ </a></p>
+          <p class="ttl bold" style="margin-top: 0.5rem">NHK「第21回 わが心の大阪メロディー」</p>
           <p class="txt">
-【出演】松酒屋<br>
-【時間】開場：18:3¥00　開演：18:30<br>
-【料金（会場）】¥4,000+1drink<br>
-【料金（配信）】¥2000<br><br>
-
-【チケット（会場）】<a href="https://tiget.net/events/135730" target='_blank'>TIGET</a>（発売中）<br>
-【チケット（配信）】<a href="https://www.mahocast.com/at/live/1140/7074" target='_blank'>mahocast</a>（発売中・アーカイブ付き）<br><br>
-
-【お問合せ】<a href="sact.0108@gmail.com" target="_blank">sact.0108@gmail.com</a><br>
-<br>
+世良公則さんのバンド「JETROX」のギタリストとして出演します。<br><br>
+NHK「第21回 わが心の大阪メロディー」<br>
+【放送時間】<br>
+［総合］10月26日(火）　午後7:30～<br>
+番組ホームページ：<a href="https://www.nhk.jp/p/waga/ts/5PVQGJJGQ6/" target="_blank" >https://www.nhk.jp/p/waga/ts/5PVQGJJGQ6/</a><br>
           </p>
         </div>
       </td>
 </tr>
+
+<tr>
+      <td>
+        <p class="cdtitle"><span style="background-color:#70b539">SHOP・GOODS</span><br>ヴィレッジヴァンガードの新型ショッピングプラットホーム「voon」にて「松本タカヒロ」書き下ろしキャラのセレクトショップがスタートしました</p>
+        <div class="txtBloc">
+          <p class="ttl"><a href="https://voon.shop/users/12896fc9-3ed3-44b8-85db-71d6c5e267df" target="_blank" class="bold">Village Vangurd 「voon」</a></p>
+          <p class="ttl bold" style="margin-top: 0.5rem"></p>
+          <p class="txt">
+以前にSNSで公開した落書きキャラ。なんと！<br>
+ヴィレッジヴァンガードさんから、商品化のオファーを頂きました。<br>
+<br>
+ヴィレヴァンの新型ショッピングプラットホーム「voon」にて<br>
+松本タカヒロオリジナルキャラクターのセレクトショップがスタートしました<br>
+今回の為に描き下ろしました、是非ヴィレヴァンでチェックしてねー
+<br><br>
+サイトはこちら<br>
+<a href="https://voon.shop/users/12896fc9-3ed3-44b8-85db-71d6c5e267df" target="_blank">Village Vangurd 「voon」</a>
+<br>
+
+          </p>
+          <div style="width: 100%;"><img src="img/voon.jpeg" style="width: 100%;"></div>
+        </div>
+      </td>
+</tr>
+
+
+
+
 
 <!-- <tr>
       <td>
