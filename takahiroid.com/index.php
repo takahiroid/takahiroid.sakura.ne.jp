@@ -44,7 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <div class="link band">
             <p>E-MAIL<span class="pc">（お仕事のご依頼・お手紙など）</span></p>
-             <a href="mailto:mail@takahiroid.com" class="itoi">mail@takahiroid.com</a>
+             <a href="mailto:takahiroid@gmail.com" class="itoi">takahiroid@gmail.com</a>
           </div>
 
           <div class="hyakka pc">

@@ -24,42 +24,21 @@
       <div class="news_left">
 
         <div class="txtBack sp"><a href="/news">←BACK</a></div>
-        <h4 class="ttl_year">-- 2021 LIVE --</h4><br>
+        <h4 class="ttl_year">-- 2022 LIVE --</h4><br>
 
 
 		<div class="past_live_txt">
 <div class="boxPastLive">
-2021年2月10日(水) @東京・Club Quattro（Streaming+配信ライブ）<br><strong>ROLLYオールスターズ（ROLLY(Vo& Gt), 小畑ポンプ(Ds& Cho), 永井ルイ(Ba& Cho), 松本淳、松本タカヒロ、村原康介）
-  <br>『ROLLY QUATTRO SHOW2021』</strong>
-</div>
-<div class="boxPastLive">
-2021年2月27日(土) @東京・新宿Sact!（有観客＆mahocast配信ライブ）<br><strong>松酒屋（酒井ミキオ・松本タカヒロ・ha-j）<br>「松酒屋番外編　復活！新宿SACT！ 〜新たなる旅立ち〜」</strong>
+2022年02月22日(火）TV・ギター演奏<br>
+<strong>世良公則 - NHKうたコン【生放送!カムカム特集▽川栄・AI・世良・濱田マリ・氷川】<br></strong>
 </div>
 
 <div class="boxPastLive">
-2021年3月13日(土) なんばHatch（大阪市）<br>
-<strong>世良公則 x JETROX</strong>
+2022年3月26日（土） @大阪・なんばHatc<br><strong>世良公則 x JETROX</strong>
 </div>
 
 <div class="boxPastLive">
-2021/04/11(日) 神奈川県 YOKOHAMA BAYHALL（無観客配信）<br>
-<strong>ROLLYオールスターズ（ROLLY(Vo& Gt), 小畑ポンプ(Ds& Cho), 永井ルイ(Ba& Cho), 松本淳、松本タカヒロ、村原康介）<br>「CRUSH OF MODE春の祭典</strong><br>
-with：メトロノーム、オケミス、中野テルヲ
-</div>
-
-<div class="boxPastLive">
-2021年8月14日(土) 下北沢CLUB251（東京）<br>
-<strong>ザ・タートルズ<br>ワンマン『GO TWO 51!!』</strong><br>
-</div>
-
-<div class="boxPastLive">
-2021年8月21日(土) 新宿Sact!（東京）<br>
-<strong>松酒屋（酒井ミキオ(社長)・松本タカヒロ(副社長)・ha-j(専務)）<br>『松酒屋 役員生誕祭』〜まだまだ番外編〜</strong><br>
-</div>
-
-<div class="boxPastLive">
-2021年10月26日(火）TV<br>
-<strong>世良公則 - NHK「第21回 わが心の大阪メロディー」<br></strong>
+2022年5月3日（火・祝） @大阪・OSAKA MUSE<br><strong>餃子大王 vs ザ・タートルズ 〜すっかり大人になったのね〜</strong>
 </div>
 
 		</div>

@@ -40,22 +40,45 @@
 
 <table border="0" class="news_table">
 
+
 <tr>
       <td>
-        <p class="cdtitle"><span style="background-color:#70b539">TV出演</span><br class="sp">世良公則 - NHK「第21回 わが心の大阪メロディー」</p>
+        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">お久しぶり！3人Glimrockersのライブ決定！</p>
         <div class="txtBloc">
-          <p class="ttl"><a href="https://www.nhk.jp/p/waga/ts/5PVQGJJGQ6/" target="_blank" class="bold">2021年10月26日(火）午後7:30～ </a></p>
-          <p class="ttl bold" style="margin-top: 0.5rem">NHK「第21回 わが心の大阪メロディー」</p>
+          <p class="ttl"><a href="https://absol.blue/" target="_blank" class="bold">2022年6月4日（土）池袋 Absolute Blue </a></p>
+<!--           <p class="ttl bold" style="margin-top: 0.5rem">JETROX LIVE 2022</p> -->
           <p class="txt">
-世良公則さんのバンド「JETROX」のギタリストとして出演します。<br><br>
-NHK「第21回 わが心の大阪メロディー」<br>
-【放送時間】<br>
-［総合］10月26日(火）　午後7:30～<br>
-番組ホームページ：<a href="https://www.nhk.jp/p/waga/ts/5PVQGJJGQ6/" target="_blank" >https://www.nhk.jp/p/waga/ts/5PVQGJJGQ6/</a><br>
+出演：Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）<br>
+日時：2022年6月4日（土）<br>
+開場：16:30 ／開演：17:00<br>
+会場：池袋 Absolute Blue <br>
+<br>
+￥4,000(ドリンク別)
+<br>
+ご予約は
+<a href="mailto:obatatakahiko@mac.com?subject=%E3%82%B0%E3%83%AA%E3%83%A0%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E4%BA%88%E7%B4%84%EF%BC%882022%2F6%2F4%EF%BC%89">obatatakahiko@mac.com</a>
+まで　お名前・枚数をメールにて
           </p>
         </div>
       </td>
 </tr>
+
+<tr>
+      <td>
+        <p class="cdtitle"><span style="background-color:#70b539">TV出演</span><br class="sp">NHK・BS「歌える！J-POP黄金のヒットパレード決定版！#６」</p>
+        <div class="txtBloc">
+          <p class="ttl"><a href="https://www.nhk.jp/p/ts/MKXRVY8G61" target="_blank" class="bold">2022年5月21日(土）午後9:00～10:59 NHK BSプレミアム・4K同時 </a></p>
+          <p class="txt">
+世良公則さんバンドのギタリストとして出演します。是非ご覧ください。<br>
+<br>
+番組ホームページ：<a href="https://www.nhk.jp/p/ts/MKXRVY8G61" target="_blank">https://www.nhk.jp/p/ts/MKXRVY8G61/</a><br>
+（＊お知らせの「歌える！J-POP黄金のヒットパレード決定版！#６」放送予定のお知らせ」をクリックまたはタップ）
+
+          </p>
+        </div>
+      </td>
+</tr>
+
 
 <tr>
       <td>
@@ -83,57 +106,8 @@ NHK「第21回 わが心の大阪メロディー」<br>
 
 
 
-
-
-<!-- <tr>
-      <td>
-        <p class="cdtitle"><span>ROLLY ALL STARTS</span><br class="sp">4/24心斎橋JANUS公演　中止のお知らせ</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="http://www.arm-live.com/janus/" target="_blank" class="bold">
-          2021年4月24日(土) 大阪 心斎橋JANUS</a><br>
-          ROLLY ALL STARTS「GO TO ROLLY ALL STARS！」</p>
-          <p class="txt">
-こちらの公演は<br>
-このたびの新型コロナウイルスの感染拡大の状況を鑑み、やむなく公演の開催を中止することとなりました。<br>
-<br>
-これまで新型コロナウイルスに関する政府発表や国内の状況を注視しながら、開催に向けて準備を進めておりましたが、現状の感染状況についての見通しが定かでないことから、ご来場いただくお客さまの健康と安全を最優先に考え、今回の決定に至りました。<br>
-開催を楽しみにされていた皆様には、直前でのご報告となってしまい、誠に申し訳ございません。<br>
-<br>
-何卒ご理解を賜りますようお願い申し上げます。<br>
-<br>
-なお、ご購入済のチケットは払い戻しを承ります。払い戻し詳細については以下をご確認ください。<br>
-　<br>
-【払い戻し期間】<br>
-2021年4月27日(火)10:00〜　5/23（日）23:59まで<br>
-<br>
-【払い戻し方法】<br>
-●e+(イープラス)にてご購入されたお客様<br>
-払戻方法は、チケットの受取方法や支払方法などにより異なります。<br>
-下記URLよりどの払戻方法になるのか確認してください。<br>
-公演中止 払戻方法確認チャートhttps://eplus.jp/refund1/<br>
-【お問い合わせ】　https://eplus.jp/qa/<br>
-<br>
-●チケットぴあにてご購入されたお客様<br>
-払戻方法は、チケットの受取方法や支払方法などにより異なります。<br>
-下記URLよりどの払戻方法になるのか確認してください。<br>
-http://t.pia.jp/guide/refund.jsp<br>
-【お問合せ】チケットぴあ：0570-02-9111（オペレーター対応：10:00～18:00）<br>
-<br>
-●ローソンチケットにてご購入されたお客様<br>
-ローソン、ミニストップ店舗にて直接払戻しをさせていただきます。<br>
-ローソンで発券された方はローソンへ、ミニストップで発券された方はミニストップへお手持ちの未使用チケットをお持ちの上、ご来店ください。<br>
-※配送引取されたお客様は最寄りのローソン店舗で払戻しをさせていただきます。<br>
-http://l-tike.com/oc/lt/haraimodoshi/<br>
-【お問合せ】ローソンチケット：https://l-tike.com/contact/<br>
-<br>
-【お問い合わせ】　キョードーインフォメーション 0570-200-888(月～土 11:00～16:00)<br>
-          </p>
-        </div>
-      </td>
-</tr> -->
-
-
 </table>
+<a href="past_2022.php">→過去のライブ - 2022年</a><br>
 <a href="past_2021.php">→過去のライブ - 2021年</a><br>
 <a href="past_2020.php">→過去のライブ - 2020年</a><br>
 <a href="past_2019.php">→過去のライブ - 2019年</a><br>
