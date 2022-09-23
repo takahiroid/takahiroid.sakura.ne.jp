@@ -41,6 +41,24 @@
 2022年5月3日（火・祝） @大阪・OSAKA MUSE<br><strong>餃子大王 vs ザ・タートルズ 〜すっかり大人になったのね〜</strong>
 </div>
 
+<div class="boxPastLive">
+2022年5月21日(土）TV・ギター演奏<br>
+<strong>世良公則 - NHK・BS「歌える！J-POP黄金のヒットパレード決定版！#６」<br></strong>
+</div>
+
+<div class="boxPastLive">
+2022年6月4日（土） @池袋 Absolute Blue <br><strong>Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）</strong>
+</div>
+
+<div class="boxPastLive">
+2022年7月30日（土） @池袋 Absolute Blue <br><strong>Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）ゲスト：おおくぼけい from アーバンギャルド (Key)</strong>
+</div>
+
+<div class="boxPastLive">
+2022年9月10日（土）新宿SACT!『The十幕祭』〜いでよ！社員達！〜 <br>
+<strong>松酒屋 酒井ミキオ(社長) / 松本タカヒロ(副社長) / ha-j(専務)</strong>
+</div>
+
 		</div>
 	</div>
 

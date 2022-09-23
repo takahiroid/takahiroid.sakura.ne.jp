@@ -43,6 +43,7 @@
           <td>
             <p class="cdtitle"><span>ギター指導</span></p>
             <div class="txtBloc">
+             コンサート『ジャニーズWEST LIVE TOUR 2022 Mixed Juice』(2022)<br>
              コンサート『ジャニーズWEST LIVE TOUR 2020 W trouble』(2020)<br>
              舞台『正しいロックバンドの作り方 夏』(2020)<br>
             </div>

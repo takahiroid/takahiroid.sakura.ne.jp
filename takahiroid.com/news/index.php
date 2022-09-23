@@ -43,13 +43,31 @@
 
 <tr>
       <td>
-        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">お久しぶり！3人Glimrockersのライブ決定！</p>
+        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">餃子大王</p>
         <div class="txtBloc">
-          <p class="ttl"><a href="https://absol.blue/" target="_blank" class="bold">2022年6月4日（土）池袋 Absolute Blue </a></p>
-<!--           <p class="ttl bold" style="margin-top: 0.5rem">JETROX LIVE 2022</p> -->
+          <p class="ttl"><a href="http://www.ukproject.com/que/" target="_blank" class="bold">2022 年9月25日(日)　東京・下北沢クラブQUE</a></p>
+          <p class="ttl bold" style="margin-top: 0.5rem">「どっこい生きてた餃子大王」2年9ヶ月ぶり東京ワンマン</p>
           <p class="txt">
-出演：Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）<br>
-日時：2022年6月4日（土）<br>
+
+■OPEN　12:00／START12:30 <br>
+■前売り2000円／当日2300円（ワンドリンク600円別）<br>
+■チケット発売　Que店頭 6/26 16:00～ , イープラス 6/27 10:00～ , バンド売り<br>
+■問い合わせクラブQue03-5433-2500<br>
+<br>
+チケット予約は<br><a href="mailto:gyozadaiojun@jcom.zaq.ne.jp">gyozadaiojun@jcom.zaq.ne.jp</a><br>まで、お名前・枚数をメールにて。
+
+        </div>
+      </td>
+</tr>
+<!-- 
+<tr>
+      <td>
+        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">Glimrockers</p>
+        <div class="txtBloc">
+          <p class="ttl"><a href="https://absol.blue/" target="_blank" class="bold">2022年7月30日（土）池袋 Absolute Blue </a></p>
+          <p class="txt">
+出演：Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）<br>ゲスト：おおくぼけい from アーバンギャルド (Key)<br>
+日時：2022年7月30日（土）<br>
 開場：16:30 ／開演：17:00<br>
 会場：池袋 Absolute Blue <br>
 <br>
@@ -62,24 +80,7 @@
         </div>
       </td>
 </tr>
-
-<tr>
-      <td>
-        <p class="cdtitle"><span style="background-color:#70b539">TV出演</span><br class="sp">NHK・BS「歌える！J-POP黄金のヒットパレード決定版！#６」</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="https://www.nhk.jp/p/ts/MKXRVY8G61" target="_blank" class="bold">2022年5月21日(土）午後9:00～10:59 NHK BSプレミアム・4K同時 </a></p>
-          <p class="txt">
-世良公則さんバンドのギタリストとして出演します。是非ご覧ください。<br>
-<br>
-番組ホームページ：<a href="https://www.nhk.jp/p/ts/MKXRVY8G61" target="_blank">https://www.nhk.jp/p/ts/MKXRVY8G61/</a><br>
-（＊お知らせの「歌える！J-POP黄金のヒットパレード決定版！#６」放送予定のお知らせ」をクリックまたはタップ）
-
-          </p>
-        </div>
-      </td>
-</tr>
-
-
+ -->
 <tr>
       <td>
         <p class="cdtitle"><span style="background-color:#70b539">SHOP・GOODS</span><br>ヴィレッジヴァンガードの新型ショッピングプラットホーム「voon」にて「松本タカヒロ」書き下ろしキャラのセレクトショップがスタートしました</p>
