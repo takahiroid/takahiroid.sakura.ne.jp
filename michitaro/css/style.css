@@ -207,6 +207,11 @@ a.fa.fa-angle-down:hover{
 		width: 40px;
 		padding-top: 10px;
 	}
+	.tw img{
+		width: 40px;
+		padding-top: 10px;
+		margin-left: 5px;
+	}
 
 /* Team Section */
 #tf-team{

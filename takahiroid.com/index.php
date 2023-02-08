@@ -28,6 +28,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="wrapper">
   <?php include("common/inc/header.php"); ?>
   <div class="contents">
+
+<!--       <div style="width: 100%; margin-bottom: 2rem;">
+        <img src="news/img/2022.12.16.png" style="max-width:100%;">
+      </div> -->
     <div class="wrap_area">
       <div class="top_left">
         <img src="bio/img/photo_5.jpg">

@@ -59,6 +59,16 @@
 <strong>松酒屋 酒井ミキオ(社長) / 松本タカヒロ(副社長) / ha-j(専務)</strong>
 </div>
 
+<div class="boxPastLive">
+2022年9月25日(日)下北沢クラブQUE「どっこい生きてた餃子大王」2年9ヶ月ぶり東京ワンマン<br>
+<strong>餃子大王</strong>
+</div>
+
+<div class="boxPastLive">
+2022年12月16日(金) 下北沢 ニュー風知空知「SPACELAB 2022」<br>
+<strong>松本タカヒロ ソロワンマンLIVE</strong>
+</div>
+
 		</div>
 	</div>
 

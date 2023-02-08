@@ -41,46 +41,84 @@
 <table border="0" class="news_table">
 
 
+<!-- <tr>
+      <td>
+        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">初のソロワンマンLIV決定！</p>
+        <div class="txtBloc">
+          <p class="ttl"><a href="https://new-fu-chi-ku-chi.jp/" target="_blank" class="bold">2022年12月16日(金)　東京・下北沢 ニュー風知空知</a></p>
+          <p class="ttl bold" style="margin-top: 0.5rem">松本タカヒロ（ザ・タートルズ）ソロワンマンLIVE<br>「SPACELAB 2022」</p>
+          <p class="txt">
+
+■OPEN 19:00／START 19:30 <br>
+■前売予約（おまけ付）4,000円／当日 4,500円（共にドリンク代¥600別）<br>
+■チケット予約：2022/10/23(sun) 12:00〜 <a href="https://tiget.net/events/209628">TIGETにて</a><br>
+■問い合わせ ニュー風知空知 03-5433-2191<br>
+<br>
+チケット予約はこちら<a href="https://tiget.net/events/209628">TIGET</a>
+          <div style="margin-top:10px">
+          <img src="img/2022.12.16.png" style="width: 100%;">
+          </div>
+        </div>
+        
+      </td>
+</tr> -->
+
 <tr>
       <td>
         <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">餃子大王</p>
         <div class="txtBloc">
-          <p class="ttl"><a href="http://www.ukproject.com/que/" target="_blank" class="bold">2022 年9月25日(日)　東京・下北沢クラブQUE</a></p>
-          <p class="ttl bold" style="margin-top: 0.5rem">「どっこい生きてた餃子大王」2年9ヶ月ぶり東京ワンマン</p>
+          <p class="ttl"><a href="http://www.ukproject.com/que/" target="_blank" class="bold">2023年1月8日（日）下北沢 CLUB Que </a></p>
+          <p class="ttl bold" style="margin-top: 0.5rem">餃子大王-oneman-<br>「40周年プレシーズン～餃子はまもなく40歳～餃子大王東京ワンマン」</p>
           <p class="txt">
-
-■OPEN　12:00／START12:30 <br>
-■前売り2000円／当日2300円（ワンドリンク600円別）<br>
-■チケット発売　Que店頭 6/26 16:00～ , イープラス 6/27 10:00～ , バンド売り<br>
-■問い合わせクラブQue03-5433-2500<br>
+開場 12:00 / 開演 12:30<br>
+前売 ￥2,000 / 当日 ￥2,300 ＋1D<br>
 <br>
-チケット予約は<br><a href="mailto:gyozadaiojun@jcom.zaq.ne.jp">gyozadaiojun@jcom.zaq.ne.jp</a><br>まで、お名前・枚数をメールにて。
-
-        </div>
-      </td>
-</tr>
-<!-- 
-<tr>
-      <td>
-        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">Glimrockers</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="https://absol.blue/" target="_blank" class="bold">2022年7月30日（土）池袋 Absolute Blue </a></p>
-          <p class="txt">
-出演：Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）<br>ゲスト：おおくぼけい from アーバンギャルド (Key)<br>
-日時：2022年7月30日（土）<br>
-開場：16:30 ／開演：17:00<br>
-会場：池袋 Absolute Blue <br>
-<br>
-￥4,000(ドリンク別)
-<br>
-ご予約は
-<a href="mailto:obatatakahiko@mac.com?subject=%E3%82%B0%E3%83%AA%E3%83%A0%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E4%BA%88%E7%B4%84%EF%BC%882022%2F6%2F4%EF%BC%89">obatatakahiko@mac.com</a>
-まで　お名前・枚数をメールにて
+【チケット】<br>
+Que店頭 , <a href="https://eplus.jp/sf/detail/3750910001-P0030001" target="_blank" >イープラス<br>
           </p>
         </div>
       </td>
 </tr>
- -->
+
+<tr>
+      <td>
+        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）</p>
+        <div class="txtBloc">
+          <p class="ttl"><a href="https://topbeatclub.com" target="_blank" class="bold">2023年2月24日（土）東京 荻窪　Top Beat Club </a></p>
+          <p class="ttl bold" style="margin-top: 0.5rem">「The Grand Year Of Top Beat ~Cum On Feel The Roll＃1~」</p>
+          <p class="txt">
+出演：The HIGH / ザ・キャプテンズ / グリムロッカーズ<br>
+開場 18:00 / 開演 19:00<br>
+前売 ¥3,600 ＋1D<br>
+<br>
+【チケット】<br>
+1月7日 10:00〜発売開始<br>
+<a href="https://peatix.com/event/3456339" target="_blank">https://peatix.com/event/3456339</a><br>
+          </p>
+        </div>
+      </td>
+</tr>
+
+<tr>
+      <td>
+        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">餃子大王</p>
+        <div class="txtBloc">
+          <p class="ttl"><a href="https://janusosaka.com/" target="_blank" class="bold">2023年3月19日（日）心斎橋ＪＡＮＵＳ (大阪府) </a></p>
+          <p class="ttl bold" style="margin-top: 0.5rem">「よせばいいのに　～　モダチョキｖｓ餃子大王」</p>
+          <p class="txt">
+出演：モダンチョキチョキズ featuring 濱田マリ/餃子大王<br>
+開場 16:30 / 開演 17:00<br>
+前売 ¥4,400 ＋1D<br>
+<br>
+【チケット】<br>
+各プレイガイドにて先行予約受付中！<br>
+1/21発売　ぴあ・ローソン・e+・CN
+          </p>
+        </div>
+      </td>
+</tr>
+
+
 <tr>
       <td>
         <p class="cdtitle"><span style="background-color:#70b539">SHOP・GOODS</span><br>ヴィレッジヴァンガードの新型ショッピングプラットホーム「voon」にて「松本タカヒロ」書き下ろしキャラのセレクトショップがスタートしました</p>
