@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* スクロールバーの有無によるズレ対策 */
+html {
+	overflow-y: scroll;
+}
+
+/*---ForFireFoxLink------------------*/
+a:focus{outline:none;}
+
+
+body{
+	font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+}
+
+
+/*---------------------------------------------------------------
+Header
+---------------------------------------------------------------*/
+#Header{
+	width:100%;
+	height:80px;
+	background:url(../img/header/bg_header.gif) 0 0;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:10000;
+}
+	* html div#Header    {     
+	    position: absolute;     
+	    top: expression(eval(document.documentElement.scrollTop+0));  
+	} 
+
+	#header_main{
+		width:1080px;
+		height:80px;
+		margin:0 auto;
+	}
+		#header_main .inner{
+			width:1080px;
+			margin:0 auto;
+			text-align:left;
+			position:relative;
+		}
+		#header_main .inner #logo{
+			margin-left:47px;
+		}
+		
+	#navi_main{
+		position:absolute;
+		top:19px;
+		left:434px;
+	}
+		#navi_main li.btn{
+			float:left;
+		}
+			#navi_main li.btn a{
+				height:42px;
+				display: block;	
+				text-indent:-10000px;				
+			}	
+			#navi_main li.btn_01 a{
+				width:152px;
+				background: url(../img/header/navi.gif) 0 0 no-repeat;
+			}
+			#navi_main li.btn_01 a:hover{
+				background-position:0 bottom;
+			}
+			#navi_main li.btn_02 a{
+				width:137px;
+				background: url(../img/header/navi.gif) -152px 0 no-repeat;
+			}
+			#navi_main li.btn_02 a:hover{
+				background-position:-152px bottom;
+			}
+			#navi_main li.btn_03 a{
+				width:164px;
+				background: url(../img/header/navi.gif) -289px 0 no-repeat;
+			}
+			#navi_main li.btn_03 a:hover{
+				background-position:-289px bottom;
+			}
+			
+	#navi_sns{
+		position:absolute;
+		top:19px;
+		left:938px;
+	}
+		#navi_sns li.btn{
+			float:left;
+		}
+			#navi_sns li.btn a{
+				height:42px;
+				display: block;	
+				text-indent:-10000px;				
+			}	
+			#navi_sns li.btn_01 a{
+				width:40px;
+				background: url(../img/header/navi_sns.gif) 0 0 no-repeat;
+			}
+			#navi_sns li.btn_01 a:hover{
+				background-position:0 bottom;
+			}
+			#navi_sns li.btn_02 a{
+				width:41px;
+				background: url(../img/header/navi_sns.gif) -40px 0 no-repeat;
+			}
+			#navi_sns li.btn_02 a:hover{
+				background-position:-40px bottom;
+			}			
+/*---------------------------------------------------------------
+footer
+---------------------------------------------------------------*/
+#footer{
+	width:100%;
+	height:287px;
+	background:url(../img/header/bg_header.gif) 0 0;
+}
+#footer_main{
+	width:1080px;
+	margin:0 auto 0 auto;
+	padding-top:31px;
+	text-align:center;
+}
+
+/*---------------------------------------------------------------
+メイン
+---------------------------------------------------------------*/
+#mainArea{
+	width:960px;
+	margin:0 auto 0 auto;
+	padding-top:80px;
+	
+	position: relative;
+}
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	margin-left: 985px;
+}
+#back-top a {
+	width: 100px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin-bottom: 7px;
+	background: url(../img/icon_pagetop.png) no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #f1efef;
+}
+
+/*プロフィール*/
+#profArea{
+}
+	#profArea .Left{
+		float:left;
+		width:350px;
+	}
+	#profArea .Right{
+		float:right;
+		width:540px;
+	}
+		#profArea .Right .txt{
+			line-height:1.6em;
+		}
+		#profArea .Right .txt p{
+			margin-bottom:19px;
+		}
+			#profArea .Right .txt a{
+				color:#006699;
+			}
+			#profArea .Right .txt a:hover{
+				text-decoration:none;
+			}
+/*インフォ*/		
+#infoArea{
+}	
+	#infoArea .Left{
+		float:left;
+		width:480px;
+	}
+	#infoArea .Right{
+		float:right;
+		width:420px;
+	}	
+	#infoArea p{
+		line-height:1.6em;
+	}	
+		#infoArea p a{
+			color:#006699;
+		}
+		#infoArea p a:hover{
+			text-decoration:none;
+		}	
+/*チケット*/		
+#ticketArea{
+}	
+	 #ticketArea .inner{
+		 text-align:center;
+		 padding-top:35px;
+	 }
+	 #ticketArea .inner p{
+		 line-height:1.7em;
+	 } 
+		 #ticketArea .inner p.ttl{
+			 font-weight:bold;
+			 font-size:116%;
+		 } 
+		 #ticketArea .inner p.txt{
+			 padding-top:20px;
+			 font-size:93%;
+		 } 
+				#ticketArea .txt a{
+					color:#006699;
+				}
+				#ticketArea .txt a:hover{
+					text-decoration:none;
+				}
+		
+/*メッセージ*/	
+	.mesBox{
+		margin-top:80px;
+	}
+  		.mesBoxL .Left{
+			width:419px;
+		}
+		.mesBoxL .Right{
+			width:480px;
+		}
+		.mesBoxR .Left{
+			width:480px;
+		}
+		.mesBoxR .Right{
+			width:419px;
+		}
+	.mesBox .Left{
+		float:left;
+	}
+	.mesBox .Right{
+		float:right;
+	}
+	
+		.mesBox .txt{
+			margin-top:17px;
+			line-height:1.7em;
+			font-size:93%;
+		}
+		.mesBox .webLink{
+			margin-top:18px;
+			line-height:1.7em;
+			font-weight:bold;
+		}	
+			.mesBox .webLink a{
+				color:#006699;
+			}
+			.mesBox .webLink a:hover{
+				text-decoration:none;
+			}
+		
+	
+	
+	
+	
+	
+	
+	
+
+
