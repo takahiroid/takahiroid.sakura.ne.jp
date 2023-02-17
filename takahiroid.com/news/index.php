@@ -63,22 +63,7 @@
       </td>
 </tr> -->
 
-<tr>
-      <td>
-        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">餃子大王</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="http://www.ukproject.com/que/" target="_blank" class="bold">2023年1月8日（日）下北沢 CLUB Que </a></p>
-          <p class="ttl bold" style="margin-top: 0.5rem">餃子大王-oneman-<br>「40周年プレシーズン～餃子はまもなく40歳～餃子大王東京ワンマン」</p>
-          <p class="txt">
-開場 12:00 / 開演 12:30<br>
-前売 ￥2,000 / 当日 ￥2,300 ＋1D<br>
-<br>
-【チケット】<br>
-Que店頭 , <a href="https://eplus.jp/sf/detail/3750910001-P0030001" target="_blank" >イープラス<br>
-          </p>
-        </div>
-      </td>
-</tr>
+
 
 <tr>
       <td>
@@ -118,6 +103,42 @@ Que店頭 , <a href="https://eplus.jp/sf/detail/3750910001-P0030001" target="_bl
       </td>
 </tr>
 
+<tr>
+      <td>
+        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">松酒屋</p>
+        <div class="txtBloc">
+          <p class="ttl"><a href="https://sactone.com/index" target="_blank" class="bold">2023年03月25日(土) 新宿Sact!</a></p>
+          <p class="ttl bold" style="margin-top: 0.5rem">『松酒屋〜十一幕〜』〜春一番〜</p>
+          <p class="txt">
+開場 18:00 / 開演 18:30<br>
+前売り：¥4,000+1drink代600円別<br>
+当日：¥4,500+1drink代600円別<br>
+<br>
+出演：<br>
+酒井ミキオ(社長)<br>
+松本タカヒロ(副社長)<br>
+ha-j(専務)<br>
+<br>
+【チケット】<br>
+チケット情報：TIGET<br>
+※予約受付開始日 / 1月25日(水)22:00〜<br>
+<br>
+◎チケット予約→TIGET<br>
+ <a href="https://tiget.net/events/225844" target="_blank" >https://tiget.net/events/225844</a><br>
+<br>
+【チケット予約に関するお問い合わせ】<br>
+lnfosow@sactco.jp<br>
+＊チケット代は当日会場での支払いとなります。<br>
+<br>
+＊入場は番号順となります。<br>
+TIGET→ SACT!メール→当日<br>
+＊開場15分前整列、開場後は来場順の入場となります。<br>
+
+          </p>
+        </div>
+      </td>
+</tr>
+
 
 <tr>
       <td>
@@ -146,6 +167,7 @@ Que店頭 , <a href="https://eplus.jp/sf/detail/3750910001-P0030001" target="_bl
 
 
 </table>
+<a href="past_2023.php">→過去のライブ - 2023年</a><br>
 <a href="past_2022.php">→過去のライブ - 2022年</a><br>
 <a href="past_2021.php">→過去のライブ - 2021年</a><br>
 <a href="past_2020.php">→過去のライブ - 2020年</a><br>
