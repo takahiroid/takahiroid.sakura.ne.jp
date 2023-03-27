@@ -69,7 +69,7 @@
       <td>
         <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）</p>
         <div class="txtBloc">
-          <p class="ttl"><a href="https://topbeatclub.com" target="_blank" class="bold">2023年2月24日（土）東京 荻窪　Top Beat Club </a></p>
+          <p class="ttl"><a href="https://topbeatclub.com" target="_blank" class="bold">2023年2月24日（金）東京 荻窪　Top Beat Club </a></p>
           <p class="ttl bold" style="margin-top: 0.5rem">「The Grand Year Of Top Beat ~Cum On Feel The Roll＃1~」</p>
           <p class="txt">
 出演：The HIGH / ザ・キャプテンズ / グリムロッカーズ<br>
