@@ -27,14 +27,37 @@
         <h4 class="ttl_year">-- 2023 LIVE --</h4><br>
 
 
-		<div class="past_live_txt">
+<div class="past_live_txt">
 <div class="boxPastLive">
-2023年1月8日（日）下北沢 CLUB Que<br>「40周年プレシーズン～餃子はまもなく40歳～餃子大王東京ワンマン」<br>
-<strong>餃子大王</strong>
+  <strong>餃子大王</strong><br>
+2023年1月8日（日）下北沢 CLUB Que<br>「40周年プレシーズン～餃子はまもなく40歳～餃子大王東京ワンマン」
+</div>
 </div>
 
-		</div>
-	</div>
+<div class="past_live_txt">
+<div class="boxPastLive">
+<strong>Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）</strong><br>
+2023年2月24日（金）東京 荻窪　Top Beat Club<br>The Grand Year Of Top Beat ~Cum On Feel The Roll＃1~」<br>
+出演：The HIGH / ザ・キャプテンズ / グリムロッカーズ
+</div>
+</div>
+
+<div class="past_live_txt">
+<div class="boxPastLive">
+<strong>餃子大王</strong><br>
+2023年3月19日（日）心斎橋ＪＡＮＵＳ (大阪府) <br>「よせばいいのに　～　モダチョキｖｓ餃子大王」
+</div>
+</div>
+
+<div class="past_live_txt">
+<div class="boxPastLive">
+<strong>松酒屋</strong><br>
+2023年03月25日(土) 新宿Sact<br>
+『松酒屋〜十一幕〜』〜春一番〜<br>
+出演：酒井ミキオ(社長)・松本タカヒロ(副社長)・ha-j(専務)
+</div>
+</div>
+	   </div>
 
       <div class="news_right">
         <img src="img/news.gif" alt="NEWS" class="page_ttl" /><br />

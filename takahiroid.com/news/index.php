@@ -41,104 +41,83 @@
 <table border="0" class="news_table">
 
 
-<!-- <tr>
-      <td>
-        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">初のソロワンマンLIV決定！</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="https://new-fu-chi-ku-chi.jp/" target="_blank" class="bold">2022年12月16日(金)　東京・下北沢 ニュー風知空知</a></p>
-          <p class="ttl bold" style="margin-top: 0.5rem">松本タカヒロ（ザ・タートルズ）ソロワンマンLIVE<br>「SPACELAB 2022」</p>
-          <p class="txt">
-
-■OPEN 19:00／START 19:30 <br>
-■前売予約（おまけ付）4,000円／当日 4,500円（共にドリンク代¥600別）<br>
-■チケット予約：2022/10/23(sun) 12:00〜 <a href="https://tiget.net/events/209628">TIGETにて</a><br>
-■問い合わせ ニュー風知空知 03-5433-2191<br>
-<br>
-チケット予約はこちら<a href="https://tiget.net/events/209628">TIGET</a>
-          <div style="margin-top:10px">
-          <img src="img/2022.12.16.png" style="width: 100%;">
-          </div>
-        </div>
-        
-      </td>
-</tr> -->
-
-
-
 <tr>
-      <td>
-        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">Glimrockers （小畑ポンプ、松本タカヒロ、永井ルイ）</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="https://topbeatclub.com" target="_blank" class="bold">2023年2月24日（金）東京 荻窪　Top Beat Club </a></p>
-          <p class="ttl bold" style="margin-top: 0.5rem">「The Grand Year Of Top Beat ~Cum On Feel The Roll＃1~」</p>
-          <p class="txt">
-出演：The HIGH / ザ・キャプテンズ / グリムロッカーズ<br>
-開場 18:00 / 開演 19:00<br>
-前売 ¥3,600 ＋1D<br>
-<br>
-【チケット】<br>
-1月7日 10:00〜発売開始<br>
-<a href="https://peatix.com/event/3456339" target="_blank">https://peatix.com/event/3456339</a><br>
-          </p>
-        </div>
-      </td>
+  <td>
+    <p class="cdtitle">
+      <span style="background-color:#70b539">LIVE</span>
+      <br class="sp">餃子大王
+    </p>
+    <div class="txtBloc">
+      <p class="ttl"><a href="https://clubque.net/" target="_blank" class="bold">2023/07/16 (Sun)　東京・下北沢 CLUB Que</a></p>
+      <p class="ttl bold" style="margin-top: 0.5rem">“おかげサマーで40周年 餃子大王夏ワンマン”<br>餃子大王 -oneman-</p>
+      <p class="txt">
+
+■開場 12:00／開演 12:30 <br>
+■料金 前売 2,000円／当日 2,300円（1D別）<br>
+■チケット：Que店頭 3/25 16:00～ , イープラス 4/1 10:00～<br>
+    </div>
+  </td>
 </tr>
 
 <tr>
-      <td>
-        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">餃子大王</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="https://janusosaka.com/" target="_blank" class="bold">2023年3月19日（日）心斎橋ＪＡＮＵＳ (大阪府) </a></p>
-          <p class="ttl bold" style="margin-top: 0.5rem">「よせばいいのに　～　モダチョキｖｓ餃子大王」</p>
-          <p class="txt">
-出演：モダンチョキチョキズ featuring 濱田マリ/餃子大王<br>
-開場 16:30 / 開演 17:00<br>
-前売 ¥4,400 ＋1D<br>
-<br>
-【チケット】<br>
-各プレイガイドにて先行予約受付中！<br>
-1/21発売　ぴあ・ローソン・e+・CN
-          </p>
-        </div>
-      </td>
+  <td>
+    <p class="cdtitle">
+      <span style="background-color:#70b539">LIVE</span>
+      <br class="sp">枕本バンド
+    </p>
+    <div class="txtBloc">
+      <p class="ttl"><a href="http://www.chelseahotel.jp/" target="_blank" class="bold">2023.08.26(土)　東京・渋谷CHELSEA HOTEL</a></p>
+      <p class="ttl bold" style="margin-top: 0.5rem">”スキップカウズ presents イマフェス★オリンピックPURE”</p>
+      <p class="txt">
+■出演：スキップカウズ / ダイナマイト☆ナオキ / ザ・キャプテンズ / 枕本トクロウ / THE まっすぐ(大森洋平×染谷俊×野崎真助) / ニーネ / Magical Sixx / Empty Black Box / 逆EDGE
+■開場 13:00／開演 13:30 <br>
+■料金 前売 3,500円／当日 4,000円（1D別）<br>
+■チケット：<br>
+<a href="https://eplus.jp/sf/detail/3829220001-P0030001" target="_blank">https://eplus.jp/sf/detail/3829220001-P0030001</a><br>
+<a href="https://t.livepocket.jp/e/eyl2c" target="_blank">https://t.livepocket.jp/e/eyl2c</a><br>
+    </div>
+  </td>
 </tr>
 
 <tr>
-      <td>
-        <p class="cdtitle"><span style="background-color:#70b539">LIVE</span><br class="sp">松酒屋</p>
-        <div class="txtBloc">
-          <p class="ttl"><a href="https://sactone.com/index" target="_blank" class="bold">2023年03月25日(土) 新宿Sact!</a></p>
-          <p class="ttl bold" style="margin-top: 0.5rem">『松酒屋〜十一幕〜』〜春一番〜</p>
-          <p class="txt">
-開場 18:00 / 開演 18:30<br>
-前売り：¥4,000+1drink代600円別<br>
-当日：¥4,500+1drink代600円別<br>
-<br>
-出演：<br>
-酒井ミキオ(社長)<br>
-松本タカヒロ(副社長)<br>
-ha-j(専務)<br>
-<br>
-【チケット】<br>
-チケット情報：TIGET<br>
-※予約受付開始日 / 1月25日(水)22:00〜<br>
-<br>
-◎チケット予約→TIGET<br>
- <a href="https://tiget.net/events/225844" target="_blank" >https://tiget.net/events/225844</a><br>
-<br>
-【チケット予約に関するお問い合わせ】<br>
-lnfosow@sactco.jp<br>
-＊チケット代は当日会場での支払いとなります。<br>
-<br>
-＊入場は番号順となります。<br>
-TIGET→ SACT!メール→当日<br>
-＊開場15分前整列、開場後は来場順の入場となります。<br>
-
-          </p>
-        </div>
-      </td>
+  <td>
+    <p class="cdtitle">
+      <span style="background-color:#70b539">LIVE</span>
+      <br class="sp">モダンチョキチョキズ / 餃子大王
+    </p>
+    <div class="txtBloc">
+      <p class="ttl"><a href="https://shibuya-o.com/west/" target="_blank" class="bold">2023/9/10(日)　Ｓｐｏｔｉｆｙ　Ｏ－ＷＥＳＴ (東京都)</a></p>
+      <p class="ttl bold" style="margin-top: 0.5rem">よせばいいのに　～　モダチョキｖｓ餃子大王　東京編</p>
+      <p class="txt">
+■出演：モダンチョキチョキズ / 餃子大王<br>
+■開場14:30／開演 15:00 <br>
+■料金 1Fスタンディング¥5,400　2F自由席¥5,400（1D別）<br>
+■チケット：<br>
+チケットぴあ (Pコード:244-944)<br>
+ローソンチケット(Lコード:70470)<br>
+イープラス<br>
+CNプレイガイド　0570-08-9999<br>
+    </div>
+  </td>
 </tr>
 
+<tr>
+  <td>
+    <p class="cdtitle">
+      <span style="background-color:#70b539">LIVE</span>
+      <br class="sp">世良公則 x JETROX
+    </p>
+    <div class="txtBloc">
+      <p class="ttl"><a href="http://www.namba-hatch.com/index.php" target="_blank" class="bold">2023/10/08(日)　なんばHatch (大阪)</a></p>
+      <p class="ttl bold" style="margin-top: 0.5rem">JETROX LIVE2023</p>
+      <p class="txt">
+■開場16:00／開演17:00 <br>
+■料金 8,800円 (税込・入場時別途ドリンク代必要) ※6歳未満入場不可<br>
+■チケット：2023年8月26日（土曜日）10:00より各プレイガイドにて<br>
+■お問合せ：キョードーインフォメイション【電話】0570-200-888（月-土11:00～16:00）<br>
+    </div>
+  </td>
+</tr>
 
 <tr>
       <td>
