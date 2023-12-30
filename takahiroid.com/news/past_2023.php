@@ -106,6 +106,24 @@
             </div>
           </div>
 
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>NOB FROM CURIO・松本タカヒロ</strong><br>
+              2023/11/18(土)　梅田ＢａｎａｎａＨａｌｌ (大阪府)<br>
+              ロック道連れフェスティバル<br>
+              ■出演：太陽の塔 / ドミンゴス / スキップカウズ / プロペラ / ザ・カスタネッツ / ＮＯＢ / 森山公一 / 松本タカヒロ<
+            </div>
+          </div>
+
+          <div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>松酒屋</strong><br>
+              2023/12/9(土) 新宿Sact<br>
+              松酒屋 ～十二幕～「師走の松酒屋」<br>
+              出演：酒井ミキオ(社長)・松本タカヒロ(副社長)・ha-j(専務)
+            </div>
+          </div>					
+
         </div>
 
         <div class="news_right">
