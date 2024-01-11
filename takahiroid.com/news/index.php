@@ -43,6 +43,24 @@
 
           <table border="0" class="news_table">
 
+					<tr>
+              <td>
+                <p class="cdtitle">
+                  <span style="background-color:#70b539">LIVE・GUITAR</span>
+                  <br class="sp">NOB FROM CURIO ワンマン
+                </p>
+                <div class="txtBloc">
+                  <p class="ttl"><a href="https://rockplacemolto.com" target="_blank" class="bold">2023/02/24（土）ROCKPLACE molto (石川県)</a></p>
+                  <!-- <p class="ttl bold" style="margin-top: 0.5rem">『ザ・タートルズ 30th Anniversary LIVE』<br>〜応答せよ！こちらタートル号〜</p>
+                  <p class="txt"> -->
+                    ■出演：NOB FROM CURIO <br>
+                    ■開場：16:15／開演17:00 <br>
+                    ■チケット：SOLD OUT
+                  </p>
+                </div>
+              </td>
+            </tr>
+
             <tr>
               <td>
                 <p class="cdtitle">
@@ -110,7 +128,8 @@
 
 
           </table>
-          <a href="past_2023.php">→過去のライブ - 2023年</a><br>
+          <a href="past_2024.php">→過去のライブ - 2024年</a><br>
+					<a href="past_2023.php">→過去のライブ - 2023年</a><br>
           <a href="past_2022.php">→過去のライブ - 2022年</a><br>
           <a href="past_2021.php">→過去のライブ - 2021年</a><br>
           <a href="past_2020.php">→過去のライブ - 2020年</a><br>
