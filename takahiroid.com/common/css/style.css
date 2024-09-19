@@ -45,7 +45,11 @@ body{
 	background-color: #fff;
 }
 
-
+.text-red{
+	color:#ff0000;
+	font-size:0.9em;
+	font-weight: bold;
+}
 .red{
 	color: #CF0BFF;
 	font-size:0.9em;
@@ -517,7 +521,7 @@ p.alert_txt{
 	border-bottom:1px dotted #CCC;
 }
 .newsimg{
-	width: 50%;
+	width:70%;
 }
 
 /*------------------------------------------------------

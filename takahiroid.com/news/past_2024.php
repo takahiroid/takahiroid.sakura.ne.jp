@@ -38,6 +38,28 @@
             </div>
           </div>
 
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>NOB FROM CURIO</strong><br>
+              2023/02/24（土）ROCKPLACE molto (石川県)
+            </div>
+          </div>
+
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>ザ・タートルズ 〜結成30周年記念 第一弾〜</strong><br>
+              2024/03/09(土)　Top  Beat Club (東京都)<br>「〜1st Anniversary of Top Beat Club〜Pop Trip」<br>
+							出演：ザ・カスタネッツ／ザ・タートルズ<br>
+            </div>
+          </div>
+
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>ザ・タートルズ 〜結成30周年記念 第二弾〜</strong><br>
+              2023/04/07（日）下北沢CLUB251 (東京都)<br>『ザ・タートルズ 30th Anniversary LIVE』〜応答せよ！こちらタートル号〜
+            </div>
+          </div>
+
 		
         </div>
 
