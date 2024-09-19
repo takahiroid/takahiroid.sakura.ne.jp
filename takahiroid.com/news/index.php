@@ -87,10 +87,29 @@
               <td>
                 <p class="cdtitle">
                   <span style="background-color:#70b539">LIVE・GUITAR</span>
+                  <br class="sp">NOB FROM CURIO
+                </p>
+                <div class="txtBloc">
+                  <p class="ttl"><a href="https://footrock.jp/" target="_blank" class="bold">2024年10月27日（日）心斎橋FootRock&BEERS（大阪）</a></p>
+                  <p class="ttl bold" style="margin-top: 0.5rem">NOB FROM CURIO デビュー1周年まつりフェスタ祭</p>
+                  <p class="txt">
+										■出演：NOB FROM CURIO<br> 
+                    ■open11:00/start12:00<br>
+										■料金: ￥5500+D/￥6000+D。小学生以下入場無料<br>
+                    ■チケット: <a href="https://passmarket.yahoo.co.jp/event/show/detail/02xq65k1jby31.html" target="_blank">PassMarket</a><br>
+                  </p>
+                </div>
+              </td>
+            </tr>
+
+						<tr>
+              <td>
+                <p class="cdtitle">
+                  <span style="background-color:#70b539">LIVE・GUITAR</span>
                   <br class="sp">枕本バンド
                 </p>
                 <div class="txtBloc">
-                  <p class="ttl"><a href="https://www.lamama.net/" target="_blank" class="bold">2024年10月5日(土)渋谷ラママ（東京）</a></p>
+                  <p class="ttl"><a href="https://www.lamama.net/" target="_blank" class="bold">2024年10月5日（土）渋谷ラママ（東京）</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">スキップカウズpresents<br>"イマフェス★スタジアム2024"</p>
                   <p class="txt">
 										■出演：スキップカウズ / Empty Black Box / ダイナマイト★ナオキ / 逆EDGE / ザ・キャプテンズ / 枕本バンド / Theまっすぐ / ウラニーノ / Magical Sixx / ニーネ / PHONOPHONE<br> 
