@@ -27,11 +27,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="wrapper">
   <?php include("common/inc/header.php"); ?>
-  <div class="contents">
-
-<!--       <div style="width: 100%; margin-bottom: 2rem;">
-        <img src="news/img/2022.12.16.png" style="max-width:100%;">
-      </div> -->
+  <div class="contents" >
+		<div class="mainvisual">
+			<a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank"><img src="/news/img/rockstar.jpg" style="width: 100%;"></a>
+		</div>
     <div class="wrap_area">
       <div class="top_left">
         <img src="bio/img/photo_5.jpg">
@@ -44,7 +43,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="link band">
             <p>BAND</p>
             <a href="http://turtles-web.com/" target="_blank" class="itoi">The Turtles</a><br>
-            <a href="http://glimrockers.com/" target="_blank" class="itoi">Rolly & Glimrockers</a>
+            Rolly & Glimrockers<br>
+						SPARKY
           </div>
           <div class="link band">
             <p>E-MAIL<span class="pc">（お仕事のご依頼・お手紙など）</span></p>
@@ -66,7 +66,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </div>
 
-    <iframe class="soundcloud" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/82747181&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
+    <!-- <iframe class="soundcloud" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/82747181&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe> -->
     <div class="spaceman pc">
       <div align="right">
         <p>

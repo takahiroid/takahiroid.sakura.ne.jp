@@ -39,14 +39,32 @@
 
         <div class="profTxt">
           <p class="name"><span>Takahiro Matsumoto</span> / 松本タカヒロ</p>
-          <p class="credit">ソングライター・アレンジャー・ギタリスト・ボーカリスト</p>
+          <p class="credit">Produce / Compose / Arrangement / Lyrics / Guitar / Vocal</p>
           <div class="txtBox">
 
             <p class="txt">
-              1997年 バンド『ザ・タートルズ』のVocal＆Guitarとして、Sony Recordよりデビュー。
-              楽曲提供、プロデュース・アレンジ・ギター、テレビドラマ・映画・バラエティ番組などのサウンドトラック・俳優などその活躍は多岐に渡る。<br>
+              1997年 バンド『ザ・タートルズ』のVocal＆Guitarとして、Sony Recordよりデビュー。<br><br>
+							2001年　バンド『SPARKY』結成。初期メンバーには、イワイエイキチ（Ba／2004年脱退）、皆川真人（Syn）、BRITAIN（Dr）という、ジャンルを横断する高い音楽性を持つ面々が揃い、その幅広いアプローチとスペーシーなエレクトロサウンドで、多くの音楽リスナーを魅了した。<br><br>
+              現在は楽曲提供、プロデュース・アレンジ・ギター、テレビドラマ・映画・バラエティ番組などのサウンドトラック・俳優などその活躍は多岐に渡る。<br><br>
               あるときはエバーグリーンなポップ、そしてあるときはぎらぎらとしたグラマラスなポップ、またあるときは昔のSF映画のようなエレクトニカルなポップ、ベクトルは違えど、あからさまに「ポップでユーモアある」がコンセプト。
             </p>
+						<p class="txt">
+						In 1997, he debuted as the Vocal & Guitar of the band "The Turtles" under Sony Records.<br><br>
+
+In 2001, he formed the band "SPARKY." The early members included Eikichi Iwai (Ba, who left in 2004), Makoto Minagawa (Syn), and Britain (Dr), a group of highly musical individuals crossing genres. Their wide-ranging approach and spacey electronic sounds captivated many music listeners.<br><br>
+
+Currently, he is active in various fields such as providing songs, producing, arranging, playing guitar, and composing soundtracks for TV dramas, movies, and variety shows, as well as acting.<br><br>
+
+At times, his music is evergreen pop, at other times, it’s glittering glamorous pop, and sometimes it’s electronic pop reminiscent of old sci-fi movies. Though the vectors differ, the concept is always clearly "pop with humor."
+
+
+
+
+
+
+
+
+
 
             <p class="txt">
             <span class="icon">主な楽曲提供・編曲</span><br>

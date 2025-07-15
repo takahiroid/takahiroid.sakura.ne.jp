@@ -27,7 +27,7 @@
         <div class="news_left">
 
           <div class="txtBack sp"><a href="/news">←BACK</a></div>
-          <h4 class="ttl_year">-- 2023 LIVE --</h4><br>
+          <h4 class="ttl_year">-- 2024 LIVE --</h4><br>
 
 
           <div class="past_live_txt">
@@ -60,6 +60,20 @@
             </div>
           </div>
 
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>ソロライブ〜</strong><br>
+              2023/08/19（月）下北沢　風知空知 (東京都)<br>「Spacelab 2024」
+            </div>
+          </div>					
+
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>枕本バンド</strong><br>
+              2024年10月5日（土）渋谷ラママ（東京）<br>「イマフェス」<br>
+							出演：スキップカウズ / Empty Black Box / ダイナマイト★ナオキ / 逆EDGE / ザ・キャプテンズ / 枕本バンド / Theまっすぐ / ウラニーノ / Magical Sixx / ニーネ / PHONOPHONE
+            </div>
+          </div>					
 		
         </div>
 

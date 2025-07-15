@@ -105,7 +105,7 @@ body{
 .header .ttl_sub{
 	font-family: 'Quicksand', sans-serif;
 	font-size: 13px;
-	color: #666
+	color: #666;
 	padding: 5px 5px 0 5px;
 }
 .header ul.gnavi_pc{
@@ -158,6 +158,7 @@ body{
 .contents{
 	width: 100%;
 	margin: 0;
+	padding-top: 20px;
 }
 .wrap_area{
 	display: flex;
@@ -195,6 +196,14 @@ body{
 /*--------------------------------*/
 /*TOP*/
 /*--------------------------------*/
+.mainvisual{
+	width: 100%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.mainvisual img{
+	width: 100%;
+}
 .top_left{
 /*	float: left;*/
 	width:60%;
@@ -480,6 +489,7 @@ NEWS
 			}
 				.news_left .txtBloc .ttl a{
 					font-size:15px;
+					line-height: 1.7;
 				}
 			.news_left .txtBloc .txt,.news_left .txtBloc .txt a{
 				margin-top:10px;

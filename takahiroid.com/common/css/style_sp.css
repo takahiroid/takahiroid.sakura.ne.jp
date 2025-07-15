@@ -15,6 +15,7 @@
 .contents{
 	width: 96%;
 	margin:0 auto;
+	padding-top: 0;
 }
 .wrap_area{
 	display: flex;
@@ -196,7 +197,11 @@
 /*TOP*/
 /*--------------------------------*/
 #top .contents{
-	padding-top:1rem;
+	padding-top:0;
+}
+.mainvisual {
+	margin-top: 1rem;
+	margin-bottom: 1rem!important;
 }
 .top_left{
 	float: none;
