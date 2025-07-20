@@ -43,28 +43,13 @@
           <div class="txtBox">
 
             <p class="txt">
-              1997年 バンド『ザ・タートルズ』のVocal＆Guitarとして、Sony Recordよりデビュー。<br><br>
-							2001年　バンド『SPARKY』結成。初期メンバーには、イワイエイキチ（Ba／2004年脱退）、皆川真人（Syn）、BRITAIN（Dr）という、ジャンルを横断する高い音楽性を持つ面々が揃い、その幅広いアプローチとスペーシーなエレクトロサウンドで、多くの音楽リスナーを魅了した。<br><br>
-              現在は楽曲提供、プロデュース・アレンジ・ギター、テレビドラマ・映画・バラエティ番組などのサウンドトラック・俳優などその活躍は多岐に渡る。<br><br>
-              あるときはエバーグリーンなポップ、そしてあるときはぎらぎらとしたグラマラスなポップ、またあるときは昔のSF映画のようなエレクトニカルなポップ、ベクトルは違えど、あからさまに「ポップでユーモアある」がコンセプト。
+						バンド『ザ・タートルズ』のVocal＆Guitar。2001年『SPARKY』結成後、ジャンルを超えたエレクトロサウンドで注目を集める。『ROLLY&GLIMROCKERS』『世良公則 x JETROX』他、多数在籍。作詞・作曲・編曲、プロデュース、ギター演奏、俳優業など幅広く「ポップでユーモアある」活動を展開中。<br>
+						2025年7月、ソロプロジェクト「TAKAHIROID」が始動！
             </p>
 						<p class="txt">
-						In 1997, he debuted as the Vocal & Guitar of the band "The Turtles" under Sony Records.<br><br>
-
-In 2001, he formed the band "SPARKY." The early members included Eikichi Iwai (Ba, who left in 2004), Makoto Minagawa (Syn), and Britain (Dr), a group of highly musical individuals crossing genres. Their wide-ranging approach and spacey electronic sounds captivated many music listeners.<br><br>
-
-Currently, he is active in various fields such as providing songs, producing, arranging, playing guitar, and composing soundtracks for TV dramas, movies, and variety shows, as well as acting.<br><br>
-
-At times, his music is evergreen pop, at other times, it’s glittering glamorous pop, and sometimes it’s electronic pop reminiscent of old sci-fi movies. Though the vectors differ, the concept is always clearly "pop with humor."
-
-
-
-
-
-
-
-
-
+						Vocal & Guitar for the band "The Turtles". After forming "SPARKY" in 2001, he gained attention with his genre-transcending electronic sound. He has been a member of numerous bands including "ROLLY&GLIMROCKERS" and "Seranori x JETROX". He is currently engaged in a wide range of "pop and humorous" activities including songwriting, composition, arrangement, production, guitar performance, and acting.<br>
+						In August 2025, the solo project "TAKAHIROID" launched!
+						</p>
 
             <p class="txt">
             <span class="icon">主な楽曲提供・編曲</span><br>
@@ -78,7 +63,7 @@ At times, his music is evergreen pop, at other times, it’s glittering glamorou
 
             <p class="txt">
             <span class="icon">TV・映画</span><br>
-            テレビ東京「ゴッドタン」・ドラマ「また来てマチ子の、恋はもうたくさんよ」・映画「さよならケーキとふしぎなランプ」・映画「やまない雨はない」 他
+            テレビ東京「ゴッドタン」マジ歌選手権・ドラマ「また来てマチ子の、恋はもうたくさんよ」・映画「さよならケーキとふしぎなランプ」・映画「やまない雨はない」 他
             </p>
 
             <p class="txt">
@@ -87,12 +72,11 @@ At times, his music is evergreen pop, at other times, it’s glittering glamorou
             </p>
 
             <p class="txt">
-            <span class="icon">参加バンド・ユニット</span><br>
+            <span class="icon">主な参加バンド</span><br>
             ザ・タートルズ・
             Rolly&amp;Glimrockers・
             世良公則 x JET ROX・
             SPARKY・
-            松酒屋・
             餃子大王
             </p>
 

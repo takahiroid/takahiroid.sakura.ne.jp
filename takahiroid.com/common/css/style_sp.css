@@ -157,17 +157,24 @@
 					color:#f39806;
 				}
 				.gnavi_sp .menu li.insta_btn a{
-					color:#CC3366;
+					color: #000;
 				}
 				.gnavi_sp .menu li.twitter_btn a{
 					color: #000;
+				}
+				.gnavi_sp .menu li.youtube_btn a{
+					color: #CC0000;
+				}
+				.gnavi_sp .menu li.youtube_btn .youtube-icon{
+					font-size: 0.8em;
+					margin-right: 2px;
 				}
 				.gnavi_sp .menu li.inst_btn a{
 					color:#920783;
 					padding-bottom: 20px;
 				}
 				.gnavi_sp .menu li.shop_btn a{
-					color:#e60617;
+					color:#cc6600;
 				}
 		.active.menu-trigger span:nth-child(1) {
 		    top: 11px;
@@ -202,6 +209,14 @@
 .mainvisual {
 	margin-top: 1rem;
 	margin-bottom: 1rem!important;
+}
+.mainvisual .ttl {
+	font-size: 14px;
+	font-weight: normal;
+}
+.mainvisual .ttl a {
+	font-size: 14px;
+	font-weight: normal;
 }
 .top_left{
 	float: none;

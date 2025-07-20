@@ -142,11 +142,27 @@ body{
 				.header ul.gnavi_pc li.insta_btn a{
 					color:#CC3366;
 				}
-				.header ul.gnavi_pc li.twitter_btn a{
+				.header ul.gnavi_pc li.twitter_btn a,
+				.header ul.gnavi_pc li.insta_btn a{
 					color: #000;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				.header ul.gnavi_pc li.twitter_btn a img,
+				.header ul.gnavi_pc li.insta_btn a img{
+					vertical-align: middle;
+					padding-top: 2px;
+				}
+				.header ul.gnavi_pc li.youtube_btn a{
+					color: #ff0000;
+				}
+				.header ul.gnavi_pc li.youtube_btn .youtube-icon{
+					font-size: 0.8em;
+					margin-right: 2px;
 				}
 				.header ul.gnavi_pc li.shop_btn a{
-					color:#e60617;
+					color:#cc6600;
 				}
 					.header ul.gnavi_pc li a:hover{
 						opacity:0.50;
@@ -203,6 +219,21 @@ body{
 }
 .mainvisual img{
 	width: 100%;
+	transition: opacity 0.3s ease;
+}
+.mainvisual a:hover img{
+	opacity: 0.8;
+	cursor: pointer;
+}
+.mainvisual .ttl a{
+	transition: all 0.3s ease;
+	color: #ff6b6b;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.mainvisual .ttl a:hover{
+	opacity: 0.7;
+	transform: translateY(-2px);
 }
 .top_left{
 /*	float: left;*/

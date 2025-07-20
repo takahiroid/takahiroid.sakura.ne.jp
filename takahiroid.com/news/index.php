@@ -95,6 +95,8 @@
 								<span style="background-color:#70b539">You Tube</span>
 								<br class="sp">■ TAKAHIROID 新曲 YouTubeプレミア公開決定！
 							</p>
+							<p style="color: #666; font-size: 12px; margin: 5px 0;">2025/07/15</p>
+							<p></p>
 							<div class="txtBloc">
 								<p class="txt">									
 								松本タカヒロのソロプロジェクト「TAKAHIROID」<br>
@@ -108,12 +110,13 @@
 							</div>
 						</td>
 					</tr>
-					<tr>
+					<tr id="turtles-live">
 					<td>
 							<p class="cdtitle">
 								<span style="background-color:#70b539">LIVE</span>
 								<br class="sp">ザ・タートルズ ワンマンライブ決定！
 							</p>
+							<p style="color: #666; font-size: 12px; margin: 5px 0;">2025/07/12</p>
 							<div class="txtBloc">
 								<p class="ttl"><a href="https://club251.com/" target="_blank" class="bold">2025年10月5日（日）下北沢CLUB251（東京）</a></p>
 								<p class="ttl bold" style="margin-top: 0.5rem">ザ•タートルズ ワンマンライブ<br>
@@ -128,12 +131,13 @@
 						</td>
 					</tr>
 
-					<tr>
+					<tr id="ukp-radio">
               <td>
                 <p class="cdtitle">
                   <span style="background-color:#70b539">ラジオ出演</span>
 									<br class="sp">松本タカヒロがラジオ出演しました
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2025/06/30</p>
                 <div class="txtBloc">
                   <p class="txt">
 									UK.PROJECT「UKPラジオ」にゲスト出演しました。<br>各種サービスにて絶賛配信中です。ぜひお聴きください。<br><br>
@@ -143,12 +147,13 @@
               </td>
             </tr>
 
-					<tr>
+					<tr id="solo-live">
 						<td>
 							<p class="cdtitle">
 								<span style="background-color:#70b539">ワンマンLIVE</span>
 								<br class="sp">誕生日にソロワンマンライブ決定！Magixxとバンド編成でやります！
 							</p>
+							<p style="color: #666; font-size: 12px; margin: 5px 0;">2025年6月2日</p>
 							<div class="txtBloc">
 								<p class="ttl"><a href="https://topbeatclub.com/" target="_blank" class="bold">2025年8月19日（火）荻窪 Top Beat Club（東京）</a></p>
 								<p class="ttl bold" style="margin-top: 0.5rem">松本タカヒロ 55th Anniversary <br>「ゴー！ゴー！マッチャン！」</p>
@@ -181,6 +186,7 @@
                 <p class="cdtitle">
                   <span style="background-color:#70b539">RELEASE</span>SPARKYのアルバム『spacelab』が5/21より待望のサブスク解禁！
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2025年5月21日</p>
                 <div class="txtBloc">
                   <p class="txt">
                     ▼配信開始日：2025年5月21日（水）<br>
@@ -222,6 +228,7 @@
                 <p class="cdtitle">
                   <span style="background-color:#70b539">ROLLYさんと松本タカヒロの2マンライブ決定！バンドメンバーも豪華です！</span>
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2025年2月28日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="https://topbeatclub.com/" target="_blank" class="bold">2025年4月28日（月）荻窪 Top Beat Club（東京）</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">「Double Fantasy」</p>
@@ -249,6 +256,7 @@
                   <span style="background-color:#70b539">LIVE・GUITAR</span>
                   <br class="sp">NOB FROM CURIO
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2025年1月19日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="https://club251.com/" target="_blank" class="bold">2025年3月22日（土）下北沢 CLUB 251</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">SサミットVol.10</p>
@@ -269,6 +277,7 @@
                   <span style="background-color:#70b539">LIVE・GUITAR</span>
                   <br class="sp">NOB FROM CURIO
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2024年12月15日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="https://www.lamama.net/" target="_blank" class="bold">2025年1月5日（日）渋谷La.ma.ma</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">スキップカウズpresents
@@ -290,6 +299,7 @@
                 <p class="cdtitle">
                   <span style="background-color:#70b539">大阪での初のソロライブ開催決定！</span>
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2024年10月19日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="https://brightmoon.bar/" target="_blank" class="bold">2024年12月21日（土）心斎橋 bright moon（大阪）</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">松本タカヒロ（ザ・タートルズ ）ソロワンマンLIVE<br>「SPACELAB 2024 in OSAKA」</p>
@@ -316,6 +326,7 @@
                   <span style="background-color:#70b539">LIVE</span>
                   <br class="sp">松酒屋（ワンマン）
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2024年9月28日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="https://sactone.com/index/" target="_blank" class="bold">2024/11/24（日）新宿Sact!</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">松酒屋 創立三百十年記念式典 〜大謝恩〜</p>
@@ -339,6 +350,7 @@
                   <span style="background-color:#70b539">LIVE・GUITAR</span>
                   <br class="sp">世良公則 x JETROX（ゲスト：トータス松本）
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2024年9月7日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="http://www.namba-hatch.com/index.php" target="_blank" class="bold">2024/11/2（土）なんばHatch（大阪）</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">世良公則 x JETROX TOUR 2024</p>
@@ -358,6 +370,7 @@
                   <span style="background-color:#70b539">LIVE・GUITAR</span>
                   <br class="sp">世良公則 x JETROX（ゲスト：つるの剛士）
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2024年9月7日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="https://www.zepp.co.jp/hall/shinjuku/" target="_blank" class="bold">2024/11/4（月）Zepp Shinjuku（東京）</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">世良公則 x JETROX TOUR 2024</p>
@@ -379,6 +392,7 @@
                   <span style="background-color:#70b539">LIVE・GUITAR</span>
                   <br class="sp">NOB FROM CURIO
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2024年9月15日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="https://footrock.jp/" target="_blank" class="bold">2024年10月27日（日）心斎橋FootRock&BEERS（大阪）</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">NOB FROM CURIO デビュー1周年まつりフェスタ祭</p>
@@ -398,6 +412,7 @@
                   <span style="background-color:#70b539">SOLO・LIVE</span>
                   <br class="sp">誕生日にソロワンマンLIVE決定！！
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2024年7月7日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="https://new-fu-chi-ku-chi.jp/" target="_blank" class="bold">2024年8月19日（月）ニュー風知空知（東京・下北沢）</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">松本タカヒロ ソロワンマンLIVE <br>「SPACELAB 2024 」</p>
@@ -429,6 +444,7 @@
                   <span style="background-color:#70b539">LIVE・GUITAR</span>
                   <br class="sp">NOB FROM CURIO
                 </p>
+                <p style="color: #666; font-size: 12px; margin: 5px 0;">2024年6月15日</p>
                 <div class="txtBloc">
                   <p class="ttl"><a href="https://www.lamama.net/" target="_blank" class="bold">2024/7/28（日）渋谷La.mama（東京）</a></p>
                   <p class="ttl bold" style="margin-top: 0.5rem">"La.mamaで昼間のONE-MAN-SHOW!!” </p>
