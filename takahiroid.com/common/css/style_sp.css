@@ -237,6 +237,15 @@
 		padding: 0;
 		height: auto;
 	}
+	.top_right .name {
+		font-size:16px;
+		padding-bottom: 1rem;
+	}
+	.top_right .name span{
+		font-size:16px;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 700;
+	}
 		.top_right .credit{
 			margin-top: 0;
 			font-size:16px;

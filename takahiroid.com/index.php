@@ -42,22 +42,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
       <div class="top_right">
         <div class="profTxt">
-          <p class="name pc"><span>Takahiro Matsumoto</span> <br> 松本タカヒロ</p>
+          <p class="name"><span>Takahiro Matsumoto</span> <br> 松本タカヒロ</p>
           <p class="credit">Produce / Compose / Arrangement / Lyrics / Guitar / Vocal</p>
           <div class="txt">
-          <div class="link band">
-            <p>BAND</p>
-            <a href="http://turtles-web.com/" target="_blank" class="itoi">The Turtles</a><br>
-            Rolly & Glimrockers<br>
-						SPARKY
-          </div>
-          <div class="link band">
-            <p>E-MAIL<span class="pc">（お仕事のご依頼・お手紙など）</span></p>
-             <a href="mailto:takahiroid@gmail.com" class="itoi">takahiroid@gmail.com</a>
-          </div>
+          <!-- <div class="link band">
+            <p>E-MAIL：<a href="mailto:takahiroid@gmail.com" class="itoi">takahiroid@gmail.com</a></p>
+          </div> -->
 
           <div class="hyakka pc">
-            <p class="ttl"><a href="http://www.takahiroid.com/40sbook.pdf" target="_blank">「松本タカヒロ大百科 2010年版」<br>Free Download</a></p>
+            <p class="ttl"><a href="http://www.takahiroid.com/40sbook.pdf" target="_blank">「松本タカヒロ大百科 2010年版」Free Download</a></p>
             <a href="http://www.takahiroid.com/40sbook.pdf" target="_blank"><img src="../news/img/40icon.png" class="hoverImg"  width="100"/></a>
           </div>
 
@@ -72,12 +65,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 
     <!-- <iframe class="soundcloud" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/82747181&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe> -->
-    <div class="spaceman pc">
+    <!-- <div class="spaceman pc">
       <div align="right">
         <p>
           <img src="/common/img/spaceman.gif">
       </div>
-    </div>
+    </div> -->
   </div>
   <?php include("common/inc/footer.php"); ?>
 
