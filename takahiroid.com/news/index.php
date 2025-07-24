@@ -89,21 +89,48 @@
         <div class="news_left">
 
           <table border="0" class="news_table">
+
+					<td>
+							<p class="cdtitle">
+								<span style="background-color:#70b539">EVENT</span>
+								<br class="sp">みなさんのおかげで55才！感謝を込めてBARの1日店長を務めます
+							</p>
+							<p style="color: #666; font-size: 12px; margin: 5px 0;">2025/07/22</p>
+							<div class="txtBloc">
+								<p class="ttl"><a href="https://pundit.jp/products/2025p2-8-30" target="_blank" class="bold">2025年8月30日（土）高円寺 Pundit'2</a></p>
+								<p class="ttl bold" style="margin-top: 0.5rem">開店！BARマッチャンの秘密クラブ<br>＜みなさんのおかげで55才！感謝を込めて1日店長を務めます！＞</p>
+								<p class="txt">
+									バースデー企画第二弾！<br>
+									みなさまへの感謝をこめて松本タカヒロが1日限定の”マスター”に！<br>
+									10席ほどの小さなバーで、アナタのココロのスキマをお埋めします。<br>
+									紳士・淑女の方々のご来店をお待ちしています！
+									<br><br>
+								◾️ 詳細は <a href="https://pundit.jp/products/2025p2-8-30" target="_blank" class="bold">高円寺Pundit'イベントページ</a> をご覧ください。<br>
+								◾️ 先行抽選　受付期間<br>
+								7/26(土) 10:00 ～ 7/31(木) 23:59まで<br>
+								* 抽選結果発表日時：2025/8/4(月) 15:00頃<br>
+								◾️ 受付予約は<a href="https://t.livepocket.jp/e/35gg5" target="_blank" class="bold">こちら</a>から
+								</p>
+								<a href="https://pundit.jp/products/2025p2-8-30" target="_blank" style="display: block; margin: 20px 0;"><img src="img/bar_mattyan.jpg" style="width: 100%;"></a>
+							</div>
+						</td>
+					</tr>
+
 					<tr>
 						<td>
 							<p class="cdtitle">
 								<span style="background-color:#70b539">You Tube</span>
-								<br class="sp">■ TAKAHIROID 新曲 YouTubeプレミア公開決定！
+								<br class="sp">■ TAKAHIROID 新曲「ROCK STAR」公開中！
 							</p>
 							<p style="color: #666; font-size: 12px; margin: 5px 0;">2025/07/15</p>
 							<p></p>
 							<div class="txtBloc">
 								<p class="txt">									
 								松本タカヒロのソロプロジェクト「TAKAHIROID」<br>
-								最新曲「ROCK STAR (demo take)」を<br>
-								 7/18（金）21:00〜YouTubeプレミア公開！<br><br>
+								最新曲「ROCK STAR（Bedroom Take）」が<br>
+								 YouTubeで公開中です！<br><br>
 								▶️ <a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank">YouTubeで視聴</a><br><br>
-								一緒にリアルタイムで観てください！<br>
+								ぜひご視聴ください！<br>
 								チャンネル登録もお願いします！<br><br>
 								<a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank"><img src="img/rockstar.jpg" style="width: 100%;"></a>
 								</p>
