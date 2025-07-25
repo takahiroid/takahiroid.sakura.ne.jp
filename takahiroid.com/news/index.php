@@ -154,6 +154,9 @@
 									■ チケット：イープラス→7/12 10:00発売<br>
 									■ 問い合わせ：<a href="https://club251.com/" target="_blank">CLUB251</a><br>
 								</p>
+								<div>
+									<img src="images/20251005.jpg" style="width: 100%;">
+								</div>
 							</div>
 						</td>
 					</tr>
