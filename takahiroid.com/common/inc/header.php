@@ -13,9 +13,9 @@
 
 	<ul class="gnavi_pc pc">
 	  <li class="news_btn"><a href="/news/">Live & News</a></li>
+		<li class="bio_btn"><a href="/bio/">Profile</a></li>
 	  <li class="works_btn"><a href="/works/">Works</a></li>
-	  <li class="bio_btn"><a href="/bio/">Bio</a></li>
-	  <li class="shop_btn"><a href="https://turtle-mania.stores.jp/" target="_blank">Shop</a></li>
+	  <li class="shop_btn"><a href="https://turtle-mania.stores.jp/" target="_blank">Goods</a></li>
 	  <li class="twitter_btn"><a href="http://twitter.com/takahiroid" target="_blank"><img src="/common/img/x.png" alt="X" width="22"></a></li>
 		<li class="insta_btn"><a href="https://www.instagram.com/takahiroid/" Target="_blank"><img src="/common/img/instagram.svg" alt="Instagram" width="25"></a></li>
 		<li class="youtube_btn"><a href="https://www.youtube.com/@takahiroid" target="_blank"><span class="youtube-icon">▶</span> YouTube</a></li>
@@ -31,9 +31,9 @@
 	<nav class="gnavi_sp sp">
 		<ul class="menu">
 	  <li class="news_btn"><a href="/news/">Live & News</a></li>
-	  <li class="works_btn"><a href="/works/">Works</a></li>
-	  <li class="bio_btn"><a href="/bio/">Bio</a></li>
-	  <li class="shop_btn"><a href="https://turtle-mania.stores.jp/" target="_blank">Shop</a></li>
+	  <li class="bio_btn"><a href="/bio/">Profile</a></li>
+		<li class="works_btn"><a href="/works/">Works</a></li>
+	  <li class="shop_btn"><a href="https://turtle-mania.stores.jp/" target="_blank">Goods</a></li>
 	  <li class="twitter_btn"><a href="http://twitter.com/takahiroid" target="_blank"><img src="/common/img/x.png" alt="X" width="22"></a></li>
 		<li class="insta_btn"><a href="https://www.instagram.com/takahiroid/" Target="_blank"><img src="/common/img/instagram.svg" alt="Instagram" width="25"></a></li>
 		<li class="youtube_btn"><a href="https://www.youtube.com/@takahiroid" target="_blank"><span class="youtube-icon">▶</span> YouTube</a></li>

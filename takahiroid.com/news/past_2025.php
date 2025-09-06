@@ -50,7 +50,30 @@
               <strong>ROLLY&松本タカヒロ</strong><br>
               2025年4月28日（月）荻窪 Top Beat Club（東京）<br>「Double Fantasy」<br>
             </div>
-          </div>		
+          </div>	
+					
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>NOB FROM CURIO [Guiter]</strong><br>
+              2025年8月16日（土）渋谷La.ma.ma（東京）<br>「La.ma.maで昼間のONE-MAN-SHOW!!」<br>
+            </div>
+          </div>
+
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>松本タカヒロ[Solo One-Man Live]</strong><br>
+              2025年8月19日（火）荻窪 Top Beat Club（東京）<br>55th Anniversary 「ゴー！ゴー！マッチャン！」<br>
+							■support member： Magixx[Gt.キタシンイチ/Ba.Matty/Dr.菅大智/Key.オオクボケイ]<br>
+							■GUEST：ダイナマイト☆ナオキ
+            </div>
+          </div>	
+
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>松本タカヒロ[Bar Event]</strong><br>
+              2025年8月30日（土）高円寺 Pundit'2<br>「開店！BARマッチャンの秘密クラブ」<br>
+            </div>
+          </div>	
         </div>
 
         <div class="news_right">

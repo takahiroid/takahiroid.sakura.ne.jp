@@ -235,6 +235,12 @@ body{
 	opacity: 0.7;
 	transform: translateY(-2px);
 }
+.mainvisual .ttl span{
+	color: #666;
+	font-size: 12px;
+	 margin: 5px 0;
+	 background-color: #fff;
+}
 .top_left{
 /*	float: left;*/
 	width:60%;

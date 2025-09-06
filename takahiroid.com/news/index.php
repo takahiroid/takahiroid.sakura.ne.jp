@@ -90,7 +90,7 @@
 
           <table border="0" class="news_table">
 
-					<td>
+					<!-- <td>
 							<p class="cdtitle">
 								<span style="background-color:#70b539">EVENT</span>
 								<br class="sp">みなさんのおかげで55才！感謝を込めてBARの1日店長を務めます
@@ -112,6 +112,46 @@
 								◾️ 受付予約は<a href="https://t.livepocket.jp/e/35gg5" target="_blank" class="bold">こちら</a>から
 								</p>
 								<a href="https://pundit.jp/products/2025p2-8-30" target="_blank" style="display: block; margin: 20px 0;"><img src="img/bar_mattyan.jpg" style="width: 100%;"></a>
+							</div>
+						</td>
+					</tr> -->
+					<td id="turtles-live">
+							<p class="cdtitle">
+								<span style="background-color:#70b539">LIVE</span>
+								<br class="sp">ザ・タートルズ ワンマンライブ決定！
+								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/07/12update</span>
+							</p>
+							<div class="txtBloc">
+								<p class="ttl"><a href="https://club251.com/" target="_blank" class="bold">2025年10月5日（日）下北沢CLUB251（東京）</a></p>
+								<p class="ttl bold" style="margin-top: 0.5rem">ザ•タートルズ ワンマンライブ<br>
+								“THIS BOYS NEED TO ROCK!!”</p>
+								<p class="txt">									
+									■ 時間：open 16:30 / start 17:00<br>
+									■ 料金：adv ￥4,500+D / day ￥5,00+D<br>
+									■ チケット：<a href="https://eplus.jp/sf/detail/4361450001-P0030001" target="_blank">イープラス</a>→7/12 10:00発売<br>
+									■ 問い合わせ：<a href="https://club251.com/" target="_blank">CLUB251</a><br>
+								</p>
+							</div>
+						</td>
+					</tr>
+
+					<td id="makuramoto">
+							<p class="cdtitle">
+								<span style="background-color:#70b539">LIVE</span>
+								<br class="sp">枕本バンドでイマフェスに出演決定！
+								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/09/02update</span>
+							</p>
+							
+							<div class="txtBloc">
+								<p class="ttl"><a href="https://www.lamama.net/" target="_blank" class="bold">2025年9月15日(月祝)渋谷La.mama（東京）</a></p>
+								<p class="ttl bold" style="margin-top: 0.5rem">スキップカウズ presents "イマフェス万博2025"</p>
+								<p class="txt">
+								■ 出演：スキップカウズ / ザ・キャプテンズ / PHONOPHONE / ダイナマイト☆ナオキ / Empty Black Box / 枕本トクロウ / ウラニーノ / 大森洋平 & 柴田拓也 / ニーネ	 / 特別ゲスト：NOB（NOB FROM CURIO）<br>
+									■ 時間：open 12:30 / start 13:00<br>
+									■ 料金：adv ￥4,000+D / day ￥4,500+D<br>
+									■ プレイガイド(ローソンチケット/イープラス)<br>
+									■ 問い合わせ：<a href="https://www.lamama.net/" target="_blank">渋谷La.mama</a><br>
+								</p>
 							</div>
 						</td>
 					</tr>
@@ -138,25 +178,7 @@
 						</td>
 					</tr>
 					<tr id="turtles-live">
-					<td>
-							<p class="cdtitle">
-								<span style="background-color:#70b539">LIVE</span>
-								<br class="sp">ザ・タートルズ ワンマンライブ決定！
-							</p>
-							<p style="color: #666; font-size: 12px; margin: 5px 0;">2025/07/12</p>
-							<div class="txtBloc">
-								<p class="ttl"><a href="https://club251.com/" target="_blank" class="bold">2025年10月5日（日）下北沢CLUB251（東京）</a></p>
-								<p class="ttl bold" style="margin-top: 0.5rem">ザ•タートルズ ワンマンライブ<br>
-								“THIS BOYS NEED TO ROCK!!”</p>
-								<p class="txt">									
-									■ 時間：open 16:30 / start 17:00<br>
-									■ 料金：adv ￥4,500+D / day ￥5,00+D<br>
-									■ チケット：<a href="https://eplus.jp/sf/detail/4361450001-P0030001" target="_blank">イープラス</a>→7/12 10:00発売<br>
-									■ 問い合わせ：<a href="https://club251.com/" target="_blank">CLUB251</a><br>
-								</p>
-							</div>
-						</td>
-					</tr>
+
 
 					<tr id="ukp-radio">
               <td>
@@ -174,7 +196,7 @@
               </td>
             </tr>
 
-					<tr id="solo-live">
+					<!-- <tr id="solo-live">
 						<td>
 							<p class="cdtitle">
 								<span style="background-color:#70b539">ワンマンLIVE</span>
@@ -205,7 +227,7 @@
 								</div>
 							</div>
 						</td>
-					</tr>
+					</tr> -->
 
 
 					<tr>

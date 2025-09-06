@@ -31,11 +31,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="mainvisual">
 			<a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank"><img src="/news/img/rockstar.jpg" style="width: 100%;"></a>
 			
-			<p class="ttl" style="margin-top: 10px;"><a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank">ソロプロジェクト「TAKAHIROID」の最新曲「ROCK STAR」が公開されました！</a></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="https://pundit.jp/products/2025p2-8-30" target="_blank">2025年08月30日 高円寺Pundit'2 バースデー企画第二弾！</a></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#solo-live">2025年08月19日 バースデー・ソロワンマンライブ決定！</a></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#turtles-live">2025年10月5日 ザ・タートルズ ワンマンライブ決定！</a></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#ukp-radio">2025年06月29日 UKPラジオ出演。配信中！</a></p>
+			<p class="ttl" style="margin-top: 10px;"><a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank">ソロプロジェクト「TAKAHIROID」の最新曲「ROCK STAR」公開！</a><span>【2025/7/15 update】</span></p>
+			<p class="ttl" style="margin-top: 10px;"><a href="/news/#turtles-live">ザ・タートルズ ワンマンライブ決定！</a><span>【2025/7/12 update】</span></p>
+			<p class="ttl" style="margin-top: 10px;"><a href="/news/#makuramoto">枕本バンドでイマフェスに出演決定！</a><span>【2025/9/2 update】</span></p>
 		</div>
     <div class="wrap_area">
       <div class="top_left">
