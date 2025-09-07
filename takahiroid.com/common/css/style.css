@@ -227,9 +227,9 @@ body{
 }
 .mainvisual .ttl a{
 	transition: all 0.3s ease;
-	color: #ff6b6b;
+	color: #e60617;
 	text-decoration: underline;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 .mainvisual .ttl a:hover{
 	opacity: 0.7;

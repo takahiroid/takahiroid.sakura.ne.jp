@@ -31,9 +31,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="mainvisual">
 			<a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank"><img src="/news/img/rockstar.jpg" style="width: 100%;"></a>
 			
+			<p class="ttl" style="margin-top: 10px;"><a href="/news/#brightmoon-live">2025/11/5（土）大阪ソロワンマンライブ決定！</a><span>【2025/9/6 update】</span></p>
+			<p class="ttl" style="margin-top: 10px;"><a href="/news/#makuramoto">2025/9/15（月祝）枕本バンドでイマフェスに出演！</a><span>【2025/9/2 update】</span></p>
 			<p class="ttl" style="margin-top: 10px;"><a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank">ソロプロジェクト「TAKAHIROID」の最新曲「ROCK STAR」公開！</a><span>【2025/7/15 update】</span></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#turtles-live">ザ・タートルズ ワンマンライブ決定！</a><span>【2025/7/12 update】</span></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#makuramoto">枕本バンドでイマフェスに出演決定！</a><span>【2025/9/2 update】</span></p>
+			<p class="ttl" style="margin-top: 10px;"><a href="/news/#turtles-live">2025/10/5（日）ザ・タートルズ ワンマンライブ決定！</a><span>【2025/7/12 update】</span></p>
 		</div>
     <div class="wrap_area">
       <div class="top_left">

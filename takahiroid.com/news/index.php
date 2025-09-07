@@ -115,14 +115,34 @@
 							</div>
 						</td>
 					</tr> -->
+					<td id="brightmoon-live">
+							<p class="cdtitle">
+								<span style="background-color:#70b539">LIVE</span>
+								今年もやるよ！大阪ソロワンマンライブ決定！
+								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/09/6 update</span>
+							</p>
+							<div class="txtBloc">
+								<p class="ttl">
+								<img src="img/20251115_osaka.png" style="width: 70%;" class="newsimg"><br><br>	
+								<a href="https://brightmoon.bar/" target="_blank" class="bold">2025年11月15日（土）<br class="sp">Bright Moon（大阪・心斎橋）</a></p>
+								<p class="ttl bold" style="margin-top: 0.5rem">松本タカヒロ 弾き語りワンマンライブ<br>『ROCKSTAR A GO! GO!』</p>
+								<p class="txt">	
+								■ 時間：open 16:30 / start 17:00<br>
+								■ 料金：前売り予約 : ¥5,000（1D別） / 当日券 : ¥5,500（1D別）<br>
+								■ チケット予約 : <a href="https://tiget.net/events/427381" target="_blank">TIGET</a> 9/13（土） 10:00〜<br><br>
+								問い合わせ : <a href="https://brightmoon.bar/" target="_blank">BRIGHT MOON</a>  06-6271-7771
+								</p>
+							</div>
+						</td>
+					</tr>
 					<td id="turtles-live">
 							<p class="cdtitle">
 								<span style="background-color:#70b539">LIVE</span>
-								<br class="sp">ザ・タートルズ ワンマンライブ決定！
+								ザ・タートルズ ワンマンライブ決定！
 								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/07/12update</span>
 							</p>
 							<div class="txtBloc">
-								<p class="ttl"><a href="https://club251.com/" target="_blank" class="bold">2025年10月5日（日）下北沢CLUB251（東京）</a></p>
+								<p class="ttl"><a href="https://club251.com/" target="_blank" class="bold">2025年10月5日（日）<br class="sp">下北沢CLUB251（東京）</a></p>
 								<p class="ttl bold" style="margin-top: 0.5rem">ザ•タートルズ ワンマンライブ<br>
 								“THIS BOYS NEED TO ROCK!!”</p>
 								<p class="txt">									
@@ -130,6 +150,7 @@
 									■ 料金：adv ￥4,500+D / day ￥5,00+D<br>
 									■ チケット：<a href="https://eplus.jp/sf/detail/4361450001-P0030001" target="_blank">イープラス</a>→7/12 10:00発売<br>
 									■ 問い合わせ：<a href="https://club251.com/" target="_blank">CLUB251</a><br>
+									
 								</p>
 							</div>
 						</td>
@@ -138,12 +159,12 @@
 					<td id="makuramoto">
 							<p class="cdtitle">
 								<span style="background-color:#70b539">LIVE</span>
-								<br class="sp">枕本バンドでイマフェスに出演決定！
+								枕本バンドでイマフェスに出演！
 								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/09/02update</span>
 							</p>
 							
 							<div class="txtBloc">
-								<p class="ttl"><a href="https://www.lamama.net/" target="_blank" class="bold">2025年9月15日(月祝)渋谷La.mama（東京）</a></p>
+								<p class="ttl"><a href="https://www.lamama.net/" target="_blank" class="bold">2025年9月15日(月祝)<br class="sp">渋谷La.mama（東京）</a></p>
 								<p class="ttl bold" style="margin-top: 0.5rem">スキップカウズ presents "イマフェス万博2025"</p>
 								<p class="txt">
 								■ 出演：スキップカウズ / ザ・キャプテンズ / PHONOPHONE / ダイナマイト☆ナオキ / Empty Black Box / 枕本トクロウ / ウラニーノ / 大森洋平 & 柴田拓也 / ニーネ	 / 特別ゲスト：NOB（NOB FROM CURIO）<br>
