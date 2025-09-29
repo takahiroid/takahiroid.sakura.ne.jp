@@ -89,55 +89,55 @@
         <div class="news_left">
 
           <table border="0" class="news_table">
-
-					<!-- <td>
+					<tr>
+					<td id="1229-live">
 							<p class="cdtitle">
-								<span style="background-color:#70b539">EVENT</span>
-								<br class="sp">みなさんのおかげで55才！感謝を込めてBARの1日店長を務めます
+								<span style="background-color:#70b539">LIVE SOLO BAND</span>
+								Double Fantasy
+								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/09/29 update</span>
 							</p>
-							<p style="color: #666; font-size: 12px; margin: 5px 0;">2025/07/22</p>
 							<div class="txtBloc">
-								<p class="ttl"><a href="https://pundit.jp/products/2025p2-8-30" target="_blank" class="bold">2025年8月30日（土）高円寺 Pundit'2</a></p>
-								<p class="ttl bold" style="margin-top: 0.5rem">開店！BARマッチャンの秘密クラブ<br>＜みなさんのおかげで55才！感謝を込めて1日店長を務めます！＞</p>
-								<p class="txt">
-									バースデー企画第二弾！<br>
-									みなさまへの感謝をこめて松本タカヒロが1日限定の”マスター”に！<br>
-									10席ほどの小さなバーで、アナタのココロのスキマをお埋めします。<br>
-									紳士・淑女の方々のご来店をお待ちしています！
-									<br><br>
-								◾️ 詳細は <a href="https://pundit.jp/products/2025p2-8-30" target="_blank" class="bold">高円寺Pundit'イベントページ</a> をご覧ください。<br>
-								◾️ 先行抽選　受付期間<br>
-								7/26(土) 10:00 ～ 7/31(木) 23:59まで<br>
-								* 抽選結果発表日時：2025/8/4(月) 15:00頃<br>
-								◾️ 受付予約は<a href="https://t.livepocket.jp/e/35gg5" target="_blank" class="bold">こちら</a>から
+								<p class="ttl">
+								<a href="https://topbeatclub.com/" target="_blank" class="bold">2025年12月29日（月）<br class="sp">Top Beat Club（東京）<br>「Double Fantasy」</a>
 								</p>
-								<a href="https://pundit.jp/products/2025p2-8-30" target="_blank" style="display: block; margin: 20px 0;"><img src="img/bar_mattyan.jpg" style="width: 100%;"></a>
+								<p class="txt">
+									今年のラストライブはバンド編成でのソロライブ！<br>ビートモーターズとのツーマンライブです。<br><br>
+								■ 出演：<br>松本タカヒロ&Magixx [Gt.キタシンイチ/Ba.Matty/Dr.菅大智/Key.オオクボケイ] <br>／ ザ・ビートモーターズ<br>
+								■ 時間：open 18:30 / start 19:00<br>
+								■ 料金：前売り : ¥4,300（1D別） / 当日 : ¥4,800（1D別）<br>
+								■ チケット発売 : <a href="https://peatix.com/event/4566023" target="_blank">Peatix</a> 2025.10.3 18:00〜<br>
+								■ 問い合わせ : <a href="https://topbeatclub.com/" target="_blank">TOP BEAT CLUB</a>
+								</p>
+								<br>
+								<a href="https://topbeatclub.com/" target="_blank"><img src="img/20251229_tokyo.jpg" style="width: 60%;" class="newsimg"></a>
 							</div>
 						</td>
-					</tr> -->
+					</tr>
+					<tr>
 					<td id="brightmoon-live">
 							<p class="cdtitle">
-								<span style="background-color:#70b539">LIVE</span>
+								<span style="background-color:#70b539">LIVE SOLO</span>
 								今年もやるよ！大阪ソロワンマンライブ決定！
 								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/09/6 update</span>
 							</p>
 							<div class="txtBloc">
 								<p class="ttl">
-								<img src="img/20251115_osaka.png" style="width: 70%;" class="newsimg"><br><br>	
 								<a href="https://brightmoon.bar/" target="_blank" class="bold">2025年11月15日（土）<br class="sp">Bright Moon（大阪・心斎橋）</a></p>
 								<p class="ttl bold" style="margin-top: 0.5rem">松本タカヒロ 弾き語りワンマンライブ<br>『ROCKSTAR A GO! GO!』</p>
 								<p class="txt">	
 								■ 時間：open 16:30 / start 17:00<br>
 								■ 料金：前売り予約 : ¥5,000（1D別） / 当日券 : ¥5,500（1D別）<br>
-								■ チケット予約 : <a href="https://tiget.net/events/427381" target="_blank">TIGET</a> 9/13（土） 10:00〜<br><br>
-								問い合わせ : <a href="https://brightmoon.bar/" target="_blank">BRIGHT MOON</a>  06-6271-7771
+								■ チケット予約 : <a href="https://tiget.net/events/427381" target="_blank">TIGET</a> 9/13（土） 10:00〜<br>
+								■ 問い合わせ : <a href="https://brightmoon.bar/" target="_blank">BRIGHT MOON</a>  06-6271-7771
 								</p>
+								<br>
+								<img src="img/20251115_osaka.png" style="width: 60%;" class="newsimg">
 							</div>
 						</td>
 					</tr>
 					<td id="turtles-live">
 							<p class="cdtitle">
-								<span style="background-color:#70b539">LIVE</span>
+								<span style="background-color:#70b539">LIVE タートルズ</span>
 								ザ・タートルズ ワンマンライブ決定！
 								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/07/12update</span>
 							</p>
@@ -155,27 +155,7 @@
 							</div>
 						</td>
 					</tr>
-
-					<td id="makuramoto">
-							<p class="cdtitle">
-								<span style="background-color:#70b539">LIVE</span>
-								枕本バンドでイマフェスに出演！
-								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/09/02update</span>
-							</p>
-							
-							<div class="txtBloc">
-								<p class="ttl"><a href="https://www.lamama.net/" target="_blank" class="bold">2025年9月15日(月祝)<br class="sp">渋谷La.mama（東京）</a></p>
-								<p class="ttl bold" style="margin-top: 0.5rem">スキップカウズ presents "イマフェス万博2025"</p>
-								<p class="txt">
-								■ 出演：スキップカウズ / ザ・キャプテンズ / PHONOPHONE / ダイナマイト☆ナオキ / Empty Black Box / 枕本トクロウ / ウラニーノ / 大森洋平 & 柴田拓也 / ニーネ	 / 特別ゲスト：NOB（NOB FROM CURIO）<br>
-									■ 時間：open 12:30 / start 13:00<br>
-									■ 料金：adv ￥4,000+D / day ￥4,500+D<br>
-									■ プレイガイド(ローソンチケット/イープラス)<br>
-									■ 問い合わせ：<a href="https://www.lamama.net/" target="_blank">渋谷La.mama</a><br>
-								</p>
-							</div>
-						</td>
-					</tr>
+					<tr>
 
 					<tr>
 						<td>
@@ -340,25 +320,13 @@
 
 
           </table>
-          <a href="past_2025.php">→過去のライブ - 2025年</a><br>
-					<a href="past_2024.php">→過去のライブ - 2024年</a><br>
-					<a href="past_2023.php">→過去のライブ - 2023年</a><br>
-          <a href="past_2022.php">→過去のライブ - 2022年</a><br>
-          <a href="past_2021.php">→過去のライブ - 2021年</a><br>
-          <a href="past_2020.php">→過去のライブ - 2020年</a><br>
-          <a href="past_2019.php">→過去のライブ - 2019年</a><br>
-          <a href="past_2018.php">→過去のライブ - 2018年</a><br>
-          <a href="past_2017.php">→過去のライブ - 2017年</a><br>
-          <a href="past_2016.php">→過去のライブ - 2016年</a>
 
+					<div class="sp">
+					<?php include("inc_sidebar_list.php"); ?>
+					</div>
         </div>
 
-        <div class="news_right pc">
-          <img src="img/news.gif" alt="NEWS" class="page_ttl" /><br />
-          <div class="spaceman">
-            <img src="/common/img/spaceman.gif">
-          </div>
-        </div>
+				<?php include("inc_sidebar.php"); ?>
       </div>
 
     </div>

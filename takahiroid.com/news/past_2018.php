@@ -122,20 +122,20 @@ Dr/松本淳<br>
 
 
 		</div>
-	</div>
+		<div class="sp">
+					<?php include("inc_sidebar_list.php"); ?>
+					</div>
 
-      <div class="news_right">
-        <img src="img/news.gif" alt="NEWS" class="page_ttl" /><br />
-        <div class="spaceman">
-          <img src="/common/img/spaceman.gif">
         </div>
+
+        <?php include("inc_sidebar.php"); ?>
       </div>
+
     </div>
+    <?php include("../common/inc/footer.php"); ?>
 
   </div>
-  <?php include("../common/inc/footer.php"); ?>
-
   </div>
-</div>
 </body>
+
 </html>

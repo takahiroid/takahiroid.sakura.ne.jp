@@ -74,14 +74,22 @@
               2025年8月30日（土）高円寺 Pundit'2<br>「開店！BARマッチャンの秘密クラブ」<br>
             </div>
           </div>	
+
+					<div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>枕本バンド[Guitar]</strong><br>
+              2025年9月15日(月祝) 渋谷La.mama（東京）<br>「スキップカウズ presents "イマフェス万博2025"」<br>
+							■ 出演：スキップカウズ / ザ・キャプテンズ / PHONOPHONE / ダイナマイト☆ナオキ / Empty Black Box / 枕本トクロウ / ウラニーノ / 大森洋平 & 柴田拓也 / ニーネ	 / 特別ゲスト：NOB（NOB FROM CURIO）
+            </div>
+          </div>	
+
+					<div class="sp">
+					<?php include("inc_sidebar_list.php"); ?>
+					</div>
+
         </div>
 
-        <div class="news_right">
-          <img src="img/news.gif" alt="NEWS" class="page_ttl" /><br />
-          <div class="spaceman">
-            <img src="/common/img/spaceman.gif">
-          </div>
-        </div>
+        <?php include("inc_sidebar.php"); ?>
       </div>
 
     </div>

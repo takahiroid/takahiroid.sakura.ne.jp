@@ -29,7 +29,7 @@
 
 		<div class="past_live_txt">
 <div class="boxPastLive">
-2019.01.05（日）@東京・下北沢CUB Que<br><strong>餃子大王『お昼の大新年会!　東京編』</strong>
+2020.01.05（日）@東京・下北沢CUB Que<br><strong>餃子大王『お昼の大新年会!　東京編』</strong>
 </div>
 <div class="boxPastLive">
 2020.07.12(日) @東京・新宿SACT!<br><strong>松酒屋「番外編」LIVE＆配信LIVE「松酒屋番外編　さらば新宿SACT! 〜愛の戦士たち〜」</strong>
@@ -41,20 +41,20 @@
 12月11日(金) Streaming+ 配信ライブ@吉祥寺スターパインズカフェ<br><strong>ROLLY ＆ GlimRockers</strong>
 </div>
 		</div>
-	</div>
+		<div class="sp">
+					<?php include("inc_sidebar_list.php"); ?>
+					</div>
 
-      <div class="news_right">
-        <img src="img/news.gif" alt="NEWS" class="page_ttl" /><br />
-        <div class="spaceman">
-          <img src="/common/img/spaceman.gif">
         </div>
+
+        <?php include("inc_sidebar.php"); ?>
       </div>
+
     </div>
+    <?php include("../common/inc/footer.php"); ?>
 
   </div>
-  <?php include("../common/inc/footer.php"); ?>
-
   </div>
-</div>
 </body>
+
 </html>
