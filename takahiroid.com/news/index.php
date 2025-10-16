@@ -98,7 +98,7 @@
 							</p>
 							<div class="txtBloc">
 								<p class="ttl">
-								<a href="https://topbeatclub.com/" target="_blank" class="bold">2025年12月29日（月）<br class="sp">Top Beat Club（東京）<br>「Double Fantasy」</a>
+								<a href="https://topbeatclub.com/" target="_blank" class="bold">2025年12月29日（月）Top Beat Club（東京）<br>「Double Fantasy」</a>
 								</p>
 								<p class="txt">
 									今年のラストライブはバンド編成でのソロライブ！<br>ビートモーターズとのツーマンライブです。<br><br>
@@ -122,7 +122,7 @@
 							</p>
 							<div class="txtBloc">
 								<p class="ttl">
-								<a href="https://brightmoon.bar/" target="_blank" class="bold">2025年11月15日（土）<br class="sp">Bright Moon（大阪・心斎橋）</a></p>
+								<a href="https://brightmoon.bar/" target="_blank" class="bold">2025年11月15日（土）Bright Moon（大阪・心斎橋）</a></p>
 								<p class="ttl bold" style="margin-top: 0.5rem">松本タカヒロ 弾き語りワンマンライブ<br>『ROCKSTAR A GO! GO!』</p>
 								<p class="txt">	
 								■ 時間：open 16:30 / start 17:00<br>
@@ -138,11 +138,11 @@
 					<td id="turtles-live">
 							<p class="cdtitle">
 								<span style="background-color:#70b539">LIVE タートルズ</span>
-								ザ・タートルズ ワンマンライブ決定！
+								ザ・タートルズ ワンマン！
 								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/07/12update</span>
 							</p>
 							<div class="txtBloc">
-								<p class="ttl"><a href="https://club251.com/" target="_blank" class="bold">2025年10月5日（日）<br class="sp">下北沢CLUB251（東京）</a></p>
+								<p class="ttl"><a href="https://club251.com/" target="_blank" class="bold">2025年10月5日（日）下北沢CLUB251（東京）</a></p>
 								<p class="ttl bold" style="margin-top: 0.5rem">ザ•タートルズ ワンマンライブ<br>
 								“THIS BOYS NEED TO ROCK!!”</p>
 								<p class="txt">									
