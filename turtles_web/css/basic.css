@@ -34,15 +34,19 @@ list-style:none;
 
 img{
 	border:none;
+	max-width: 100%;
+	height: auto;
+}
+
+.news-logo-container{
+	border-bottom: 3px solid #FF5A00;
 }
 /* ================================================= */
 /*__FONT指定 */
 /* ================================================= */
 body {
-    font:13px "ＭＳ Ｐゴシック",arial,helvetica,clean,sans-serif;
-    *font-size:small;
-    *font:x-small;
-	line-height:1.4;
+    font:16px "ＭＳ Ｐゴシック",arial,helvetica,clean,sans-serif;
+    line-height:1.6;
 }
 
 /* ================================================= */
@@ -53,14 +57,15 @@ body {
 }
 
 #header_wrapper{
-	width:960px;
+	/* width:960px; */
+	width: 100%;
 	height:87px;
 	background:url(../images/header_logo.png) no-repeat;
 	margin:0 auto 0 auto;
 }
 
 #menu{
-	width:411px;
+	/* width:411px; */
 	height:36px;
 	margin-left:547px;
 	padding-top:39px
@@ -119,7 +124,9 @@ body {
 	text-align:center;
 }
 #contents{
-	width:960px;
+	max-width: 960px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin:0 auto 0 auto;
 }
 /* ================================================= */
@@ -127,24 +134,27 @@ body {
 	margin-top:23px;
 }
 #Main{
-	width:920px;
+	/* width:920px; */
+	width: 100%;
 	margin:14px auto 0 auto;
 	text-align:left;
 }
 #Top #Left{
-	width:440px;
-	float:left;
-
+	/* width:440px;
+	float:left; */
+	width: 100%;
 }
 #Top #Right{
-	width:440px;
+	/* width:440px;
 	float:left;
-	margin-left:35px;
+	margin-left:35px; */
+	width: 100%;
 }
 
 /* ================================================= */
 #footer{
-	width:960px;
+	/* width:960px; */
+	width: 100%;
 	height:39px;
 	background: url(../images/footer_bg.png) no-repeat;
 	margin:50px auto 0 auto;
@@ -153,10 +163,24 @@ body {
 
 /* ================================================= */
 .txtBoxHalf{
-	margin-left:7px;
-	margin-right:10px;
 	padding-bottom:20px;
 	margin-bottom:20px;
+}
+.news-content{
+	font-size: 15px;
+	margin: 0 auto 0 auto;
+	width: 96%;
+}
+.news-content-date{
+	color: #FF5A00;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.news-content-title{
+	font-weight: bold;
+	color: #FF5A00;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 .txtBoxHalf a{
 	color:#ff5a00;
@@ -170,18 +194,18 @@ body {
 }
 .txtNewsTitle{
 	font-weight:bold;
-	font-size:14px;
+	font-size:18px;
 	/*color:#ff5a00;*/
 	color:#FFF;
 	margin:10px 0 10px 0;
-	width:415px;;
+	/* width:415px;; */
 	display:block;
 	padding:3px 7px;
 	line-height:2em;
 	background-color:#F90;
 }
 .txtBlogTitle{
-	font-size:12px;
+	font-size:15px;
 	color:#ff5a00;
 	margin:10px 0 10px 20px;
 }
@@ -194,7 +218,7 @@ body {
 	text-decoration:underline;
 }
 p.alert_txt{
-	font-size: 12px;
+	font-size: 15px;
 	border-top:1px dotted #CCC;
 	border-bottom:1px dotted #CCC;
 }
@@ -202,9 +226,35 @@ p.alert_txt{
 .YouTube{
 	margin:25px 0 0 15px;
 }
-.borderHalf{
-	border-bottom:dotted 1px #999;
+
+/* レスポンシブ対応のYouTube動画 */
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9のアスペクト比 */
+	height: 0;
+	overflow: hidden;
+	margin: 10px 0;
+	width: 100%;
 }
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* PCの場合、YouTube動画のサイズを小さくする */
+@media screen and (min-width: 769px) {
+	.video-container {
+		width: 70%; /* PCでは幅を70%に縮小 */
+		margin: 10px 0; /* 左寄せ */
+	}
+}
+/* .borderHalf{
+	border-bottom:dotted 1px #999;
+} */
 
 /* ================================================= */
 #profBox{
