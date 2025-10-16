@@ -89,6 +89,38 @@
         <div class="news_left">
 
           <table border="0" class="news_table">
+
+          <tr>
+					  <td id="turtles-live">
+							<p class="cdtitle">
+								<span style="background-color:#70b539">LIVE タートルズ</span>
+								The LOVE vs ザ・タートルズ
+								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/10/15update</span>
+							</p>
+							<div class="txtBloc">
+								<p class="ttl"><a href="https://mandala.gr.jp/SPC/" target="_blank" class="bold">2026年2月20日（金）吉祥寺 STAR PINE'S CAFE</a></p>
+								<p class="ttl bold" style="margin-top: 0.5rem">「タイムカプセルファクトリーVol.1」
+								The LOVE vs ザ・タートルズ</p>
+								<p class="txt">
+                  ■ 出演：The LOVE / ザ・タートルズ<br>
+									■ 開場 18:30 / 開演 19:00（整理番号順入場・全自由）<br>
+									■ 料金：前売¥5000+1drink / 当日¥5500+1drink<br>
+									■ チケット発売：
+                  <a href="https://eplus.jp/sf/detail/4416190001-P0030001" target="_blank">e+</a> / <a href="https://tiget.net/events/434177" target="_blank">Tiget</a><br>
+                  ■ 発売日：11月1日(土)10:00〜<br><br>
+                  ■ 入場順<br>
+                  1）e+<br>
+                  2）Tiget<br>
+                  3）アーティスト予約来店順<br><br>
+									■ お問い合わせ：スターパインズカフェ [<a href="mailto:info@mandala.gr.jp">info@mandala.gr.jp</a>]
+                  <br>
+                  〒180-0004 東京都武蔵野市吉祥寺本町1-20-16 B1<br>
+									
+								</p>
+							</div>
+						</td>
+					</tr>
+
 					<tr>
 					<td id="1229-live">
 							<p class="cdtitle">
@@ -135,27 +167,7 @@
 							</div>
 						</td>
 					</tr>
-					<td id="turtles-live">
-							<p class="cdtitle">
-								<span style="background-color:#70b539">LIVE タートルズ</span>
-								ザ・タートルズ ワンマン！
-								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/07/12update</span>
-							</p>
-							<div class="txtBloc">
-								<p class="ttl"><a href="https://club251.com/" target="_blank" class="bold">2025年10月5日（日）下北沢CLUB251（東京）</a></p>
-								<p class="ttl bold" style="margin-top: 0.5rem">ザ•タートルズ ワンマンライブ<br>
-								“THIS BOYS NEED TO ROCK!!”</p>
-								<p class="txt">									
-									■ 時間：open 16:30 / start 17:00<br>
-									■ 料金：adv ￥4,500+D / day ￥5,00+D<br>
-									■ チケット：<a href="https://eplus.jp/sf/detail/4361450001-P0030001" target="_blank">イープラス</a>→7/12 10:00発売<br>
-									■ 問い合わせ：<a href="https://club251.com/" target="_blank">CLUB251</a><br>
-									
-								</p>
-							</div>
-						</td>
-					</tr>
-					<tr>
+
 
 					<tr>
 						<td>

@@ -81,7 +81,14 @@
               2025年9月15日(月祝) 渋谷La.mama（東京）<br>「スキップカウズ presents "イマフェス万博2025"」<br>
 							■ 出演：スキップカウズ / ザ・キャプテンズ / PHONOPHONE / ダイナマイト☆ナオキ / Empty Black Box / 枕本トクロウ / ウラニーノ / 大森洋平 & 柴田拓也 / ニーネ	 / 特別ゲスト：NOB（NOB FROM CURIO）
             </div>
-          </div>	
+          </div>
+          
+          <div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>ザ•タートルズ</strong><br>
+              2025年10月5日（日）下北沢CLUB251（東京）<br>ザ•タートルズ ワンマンライブ“THIS BOYS NEED TO ROCK!!”
+            </div>
+          </div>
 
 					<div class="sp">
 					<?php include("inc_sidebar_list.php"); ?>
