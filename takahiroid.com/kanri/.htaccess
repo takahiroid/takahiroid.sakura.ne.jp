@@ -1,0 +1,9 @@
+# データディレクトリへのアクセスを制限
+<FilesMatch "\.(json)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ディレクトリ一覧を非表示
+Options -Indexes
+

@@ -90,6 +90,32 @@
 
           <table border="0" class="news_table">
 
+					<tr>
+					<td id="0128-live">
+							<p class="cdtitle">
+								<span style="background-color:#70b539">LIVE SOLO ACOUSTIC DJ</span>
+								松本タカヒロのRock’nRoll Cafe
+								<span style="color: #666; font-size: 12px; margin: 5px 0;background-color: #fff;">2025/12/08 update</span>
+							</p>
+							<div class="txtBloc">
+								<p class="ttl">
+								<a href="https://topbeatclub.com/" target="_blank" class="bold">2026年1月28日(水) Top Beat Club 1F CAFE（東京）</a>
+								</p>
+								<p class="txt">
+									DJにマティをお迎えして、1Fカフェにてアコースティックライブをします！<br><br>
+								■ LIVE：松本タカヒロ<br>
+								■ DJ：Matty06<br>
+								■ 時間：open 19:00 / start 19:30<br>
+								■ 料金：前売り : ¥3,000（1D別） / 当日 : ¥3,500（要1 Drink + 1 Food Order）<br>
+								■ チケット発売 : <a href="https://peatix.com/event/4731747" target="_blank">Peatix</a> 2025.12.13 土18:00〜<br>
+								■ 問い合わせ : <a href="https://topbeatclub.com/" target="_blank">TOP BEAT CLUB</a>
+								</p>
+								<br>
+								<!-- <a href="https://topbeatclub.com/" target="_blank"><img src="img/20251229_tokyo.jpg" style="width: 60%;" class="newsimg"></a> -->
+							</div>
+						</td>
+					</tr>
+
           <tr>
 					  <td id="turtles-live">
 							<p class="cdtitle">

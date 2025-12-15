@@ -1,0 +1,4 @@
+# データディレクトリへのアクセスを完全に拒否
+Order allow,deny
+Deny from all
+

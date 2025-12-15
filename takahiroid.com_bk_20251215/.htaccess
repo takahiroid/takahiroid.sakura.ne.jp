@@ -1,0 +1,9 @@
+<ifModule mod_rewrite.c>
+RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^takahiroid.com
+#RewriteRule (.*) http://www.takahiroid.com/$1 [R=301,L]
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+RewriteRule test.php test2.php [L]
+</ifModule>
