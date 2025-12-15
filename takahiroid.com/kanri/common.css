@@ -193,7 +193,8 @@ body {
 }
 
 .sidebar-panel select,
-.sidebar-panel input[type="date"] {
+.sidebar-panel input[type="date"],
+.sidebar-panel input[type="datetime-local"] {
     width: 100%;
     padding: 10px;
     border: 2px solid #e0e0e0;
@@ -205,7 +206,8 @@ body {
 }
 
 .sidebar-panel select:focus,
-.sidebar-panel input[type="date"]:focus {
+.sidebar-panel input[type="date"]:focus,
+.sidebar-panel input[type="datetime-local"]:focus {
     outline: none;
     border-color: #667eea;
     background-color: #fff;
@@ -267,8 +269,8 @@ body {
 }
 
 .btn-small {
-    padding: 6px 12px;
-    font-size: 12px;
+    padding: 5px 10px;
+    font-size: 11px;
 }
 
 .btn-edit {
@@ -317,11 +319,22 @@ body {
 }
 
 .news-item {
-    padding: 20px;
+    padding: 12px 15px;
     border-bottom: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
+}
+
+.news-item.sortable-ghost {
+    opacity: 0.4;
+}
+
+.news-drag-handle {
+    font-size: 16px;
+    line-height: 1;
+    padding: 6px !important;
 }
 
 .news-item:last-child {
@@ -332,15 +345,26 @@ body {
     background: #f9f9f9;
 }
 
+.news-item.news-expired {
+    background: #f0f0f0;
+    opacity: 0.7;
+}
+
+.news-item.news-expired:hover {
+    background: #e8e8e8;
+    opacity: 0.8;
+}
+
 .news-info {
     flex: 1;
 }
 
 .news-title {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     color: #333;
+    line-height: 1.4;
 }
 
 .news-meta {
@@ -355,11 +379,11 @@ body {
 
 .badge {
     display: inline-block;
-    padding: 4px 8px;
+    padding: 3px 6px;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 .badge-published {
@@ -370,6 +394,38 @@ body {
 .badge-draft {
     background: #fff3cd;
     color: #856404;
+}
+
+.badge-expired {
+    background: #6c757d;
+    color: white;
+}
+
+/* カテゴリ・サブカテゴリバッジ */
+.category-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #667eea;
+    color: white;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+.subcategory-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #48bb78;
+    color: white;
+    white-space: nowrap;
+    line-height: 1.4;
 }
 
 .empty-state {

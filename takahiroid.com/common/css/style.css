@@ -529,7 +529,7 @@ NEWS
 					line-height: 1.7;
 				}
 			.news_left .txtBloc .txt,.news_left .txtBloc .txt a{
-				margin-top:10px;
+				margin-top:0;
 				font-size: 13px;
 				line-height: 1.6em;
 			}

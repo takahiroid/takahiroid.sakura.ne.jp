@@ -3,6 +3,8 @@ require_once dirname(__DIR__) . '/config.php';
 requireLogin();
 
 $newsData = loadNewsData();
+$categories = loadCategories();
+$subcategories = loadSubcategories();
 $news = null;
 $isEdit = false;
 $error = '';
@@ -22,9 +24,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title_url = trim($_POST['title_url'] ?? '');
     $lead = $_POST['lead'] ?? '';
     $category = $_POST['category'] ?? '';
+    $subcategory = trim($_POST['subcategory'] ?? '');
     $date_input = $_POST['date'] ?? date('Y-m-d');
-    // YYYY-MM-DD形式をYYYY/MM/DD形式に変換
-    $date = str_replace('-', '/', $date_input);
+    $date_time = $_POST['date_time'] ?? '00';
+    // YYYY-MM-DD形式をYYYY/MM/DD形式に変換し、時間を追加
+    $date = str_replace('-', '/', $date_input) . ' ' . sprintf('%02d', (int)$date_time) . ':00';
+    $end_date_input = $_POST['end_date'] ?? '';
+    $end_date_time = $_POST['end_date_time'] ?? '';
+    if ($end_date_input) {
+        $end_date = str_replace('-', '/', $end_date_input) . ' ' . sprintf('%02d', (int)$end_date_time) . ':00';
+    } else {
+        $end_date = '';
+    }
     $content = $_POST['content'] ?? '';
     $published = isset($_POST['published']) ? true : false;
     $id = $_POST['id'] ?? null;
@@ -33,8 +44,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $delete_image = isset($_POST['delete_image']) ? true : false;
     
     // LIVE記事用のフィールド
-    $live_performers = $_POST['live_performers'] ?? '';
+    $live_date_input = $_POST['live_date'] ?? '';
+    $live_date = $live_date_input ? str_replace('-', '/', $live_date_input) : '';
     $live_time = $_POST['live_time'] ?? '';
+    $live_performers = $_POST['live_performers'] ?? '';
     $live_price = $_POST['live_price'] ?? '';
     $live_ticket_sales = [];
     if (isset($_POST['ticket_name']) && is_array($_POST['ticket_name'])) {
@@ -101,7 +114,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'title_url' => $title_url,
             'lead' => $lead,
             'category' => $category,
+            'subcategory' => $subcategory,
             'date' => $date,
+            'end_date' => $end_date,
             'content' => $content,
             'published' => $published,
             'image' => $image_path,
@@ -112,6 +127,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ];
         // LIVE記事の場合のみ追加フィールドを保存
         if ($category === 'LIVE') {
+            $newNews['live_date'] = $live_date;
             $newNews['live_performers'] = $live_performers;
             $newNews['live_time'] = $live_time;
             $newNews['live_price'] = $live_price;
@@ -131,7 +147,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $newsData[$id]['title_url'] = $title_url;
             $newsData[$id]['lead'] = $lead;
             $newsData[$id]['category'] = $category;
+            $newsData[$id]['subcategory'] = $subcategory;
             $newsData[$id]['date'] = $date;
+            $newsData[$id]['end_date'] = $end_date;
             $newsData[$id]['content'] = $content;
             $newsData[$id]['published'] = $published;
             $newsData[$id]['image'] = $image_path;
@@ -140,6 +158,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $newsData[$id]['updated_at'] = date('Y-m-d H:i:s');
             // LIVE記事の場合のみ追加フィールドを保存
             if ($category === 'LIVE') {
+                $newsData[$id]['live_date'] = $live_date;
                 $newsData[$id]['live_performers'] = $live_performers;
                 $newsData[$id]['live_time'] = $live_time;
                 $newsData[$id]['live_price'] = $live_price;
@@ -150,6 +169,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $newsData[$id]['live_other'] = $live_other;
             } else {
                 // LIVE以外のカテゴリに変更した場合は削除
+                unset($newsData[$id]['live_date']);
                 unset($newsData[$id]['live_performers']);
                 unset($newsData[$id]['live_time']);
                 unset($newsData[$id]['live_price']);
@@ -175,12 +195,15 @@ if (!$news) {
         'title_url' => '',
         'lead' => '',
         'category' => 'LIVE',
-        'date' => date('Y/m/d'),
+        'subcategory' => '',
+        'date' => date('Y/m/d H:i'),
+        'end_date' => '',
         'content' => '',
         'published' => true,
         'image' => '',
         'youtube_url' => '',
         'youtube_id' => null,
+        'live_date' => '',
         'live_performers' => '',
         'live_time' => '',
         'live_price' => '',
@@ -199,6 +222,7 @@ if (!$news) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $isEdit ? '記事編集' : '新規記事作成'; ?> - TAKAHIROID.COM</title>
     <link rel="stylesheet" href="/kanri/common.css">
+    <script src="https://cdn.tiny.cloud/1/x532xptb4sf4peadechzdffgx3n0y9uvfdt7tlu72pg98vw6/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
     <?php include dirname(__DIR__) . '/sidebar.php'; ?>
@@ -240,13 +264,18 @@ if (!$news) {
                     
                     <div class="form-group">
                         <label for="content">本文</label>
-                        <textarea id="content" name="content" rows="3"><?php echo h($news['content']); ?></textarea>
-                        <div class="help-text">HTMLタグを使用できます。改行は&lt;br&gt;タグを使用してください。</div>
+                        <textarea id="content" name="content"><?php echo h($news['content']); ?></textarea>
                     </div>
                     
                     <!-- LIVE記事用のフィールド -->
                     <div id="live-fields" class="live-fields" style="display: none;">
                         <h3 style="margin: 30px 0 20px; padding-bottom: 10px; border-bottom: 2px solid #667eea; color: #333;">LIVE情報</h3>
+                        
+                        <div class="form-group">
+                            <label for="live_date">ライブ日時 *</label>
+                            <input type="date" id="live_date" name="live_date" value="<?php echo h(!empty($news['live_date'] ?? '') ? str_replace('/', '-', $news['live_date']) : ''); ?>">
+                            <div id="live_date_weekday" style="margin-top: 5px; font-size: 13px; color: #666;"></div>
+                        </div>
                         
                         <div class="form-group">
                             <label for="live_performers">出演</label>
@@ -345,19 +374,87 @@ if (!$news) {
                             <div class="form-group">
                                 <label for="category">カテゴリ *</label>
                                 <select id="category" name="category" required>
-                                    <option value="LIVE" <?php echo ($news['category'] === 'LIVE') ? 'selected' : ''; ?>>LIVE</option>
-                                    <option value="RELEASE" <?php echo ($news['category'] === 'RELEASE') ? 'selected' : ''; ?>>RELEASE</option>
-                                    <option value="You Tube" <?php echo ($news['category'] === 'You Tube') ? 'selected' : ''; ?>>You Tube</option>
-                                    <option value="TV・GUITAR" <?php echo ($news['category'] === 'TV・GUITAR') ? 'selected' : ''; ?>>TV・GUITAR</option>
-                                    <option value="ラジオ出演" <?php echo ($news['category'] === 'ラジオ出演') ? 'selected' : ''; ?>>ラジオ出演</option>
-                                    <option value="SHOP・GOODS" <?php echo ($news['category'] === 'SHOP・GOODS') ? 'selected' : ''; ?>>SHOP・GOODS</option>
-                                    <option value="その他" <?php echo ($news['category'] === 'その他') ? 'selected' : ''; ?>>その他</option>
+                                    <?php foreach ($categories as $category): ?>
+                                        <option value="<?php echo h($category); ?>" <?php echo ($news['category'] === $category) ? 'selected' : ''; ?>><?php echo h($category); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <div style="margin-top: 5px;">
+                                    <a href="/kanri/categories.php" target="_blank" style="font-size: 12px; color: #667eea; text-decoration: none;">カテゴリを管理</a>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subcategory">サブカテゴリ</label>
+                                <select id="subcategory" name="subcategory">
+                                    <option value="">選択なし</option>
+                                    <?php foreach ($subcategories as $subcategory): ?>
+                                        <option value="<?php echo h($subcategory); ?>" <?php echo (isset($news['subcategory']) && $news['subcategory'] === $subcategory) ? 'selected' : ''; ?>><?php echo h($subcategory); ?></option>
+                                    <?php endforeach; ?>
                                 </select>
                             </div>
                             
                             <div class="form-group">
                                 <label for="date">公開日 *</label>
-                                <input type="date" id="date" name="date" value="<?php echo h(str_replace('/', '-', $news['date'])); ?>" required>
+                                <div style="display: flex; gap: 10px; align-items: center;">
+                                    <input type="date" id="date" name="date" value="<?php 
+                                        $dateValue = $news['date'] ?? date('Y/m/d H:i');
+                                        if (strpos($dateValue, ' ') !== false) {
+                                            list($date_part, $time_part) = explode(' ', $dateValue);
+                                            echo h(str_replace('/', '-', $date_part));
+                                        } else {
+                                            echo h(str_replace('/', '-', $dateValue));
+                                        }
+                                    ?>" required style="flex: 1;">
+                                    <span style="color: #666;">時</span>
+                                    <input type="number" id="date_time" name="date_time" min="0" max="23" value="<?php 
+                                        $dateValue = $news['date'] ?? date('Y/m/d H:i');
+                                        if (strpos($dateValue, ' ') !== false) {
+                                            list($date_part, $time_part) = explode(' ', $dateValue);
+                                            if (strpos($time_part, ':') !== false) {
+                                                list($hour, $min) = explode(':', $time_part);
+                                                echo h((int)$hour);
+                                            } else {
+                                                echo '0';
+                                            }
+                                        } else {
+                                            echo '0';
+                                        }
+                                    ?>" style="width: 60px; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px; font-size: 14px; background-color: #f0f8ff;">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="end_date">公開終了日（任意）</label>
+                                <div style="display: flex; gap: 10px; align-items: center;">
+                                    <input type="date" id="end_date" name="end_date" value="<?php 
+                                        if (!empty($news['end_date'])) {
+                                            $endDateValue = $news['end_date'];
+                                            if (strpos($endDateValue, ' ') !== false) {
+                                                list($date_part, $time_part) = explode(' ', $endDateValue);
+                                                echo h(str_replace('/', '-', $date_part));
+                                            } else {
+                                                echo h(str_replace('/', '-', $endDateValue));
+                                            }
+                                        }
+                                    ?>" style="flex: 1;">
+                                    <span style="color: #666;">時</span>
+                                    <input type="number" id="end_date_time" name="end_date_time" min="0" max="23" value="<?php 
+                                        if (!empty($news['end_date'])) {
+                                            $endDateValue = $news['end_date'];
+                                            if (strpos($endDateValue, ' ') !== false) {
+                                                list($date_part, $time_part) = explode(' ', $endDateValue);
+                                                if (strpos($time_part, ':') !== false) {
+                                                    list($hour, $min) = explode(':', $time_part);
+                                                    echo h((int)$hour);
+                                                } else {
+                                                    echo '0';
+                                                }
+                                            } else {
+                                                echo '0';
+                                            }
+                                        }
+                                    ?>" style="width: 60px; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px; font-size: 14px; background-color: #f0f8ff;">
+                                </div>
                             </div>
                             
                             <div class="form-group">
@@ -379,6 +476,27 @@ if (!$news) {
     </div>
     
     <script>
+        // TinyMCE初期化
+        tinymce.init({
+            selector: '#content',
+            language: 'ja',
+            height: 400,
+            menubar: false,
+            plugins: [
+                'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+                'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+                'insertdatetime', 'media', 'table', 'code', 'help', 'wordcount'
+            ],
+            toolbar: 'undo redo | blocks | ' +
+                'bold italic forecolor | alignleft aligncenter ' +
+                'alignright alignjustify | bullist numlist outdent indent | ' +
+                'link | removeformat | help',
+            link_assume_external_targets: true,
+            link_default_target: '_blank',
+            link_title: false,
+            content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-size: 14px; }'
+        });
+        
         // 画像プレビュー機能
         document.getElementById('image').addEventListener('change', function(e) {
             const file = e.target.files[0];
@@ -412,10 +530,17 @@ if (!$news) {
         const liveFields = document.getElementById('live-fields');
         
         function toggleLiveFields() {
+            const liveDateInput = document.getElementById('live_date');
             if (categorySelect.value === 'LIVE') {
                 liveFields.style.display = 'block';
+                if (liveDateInput) {
+                    liveDateInput.setAttribute('required', 'required');
+                }
             } else {
                 liveFields.style.display = 'none';
+                if (liveDateInput) {
+                    liveDateInput.removeAttribute('required');
+                }
             }
         }
         
@@ -424,6 +549,32 @@ if (!$news) {
         
         // カテゴリ変更時の処理
         categorySelect.addEventListener('change', toggleLiveFields);
+        
+        // ライブ日時の曜日表示
+        const liveDateInput = document.getElementById('live_date');
+        const liveDateWeekday = document.getElementById('live_date_weekday');
+        
+        function updateLiveDateWeekday() {
+            if (liveDateInput && liveDateWeekday && liveDateInput.value) {
+                const date = new Date(liveDateInput.value + 'T00:00:00');
+                const weekdays = ['日', '月', '火', '水', '木', '金', '土'];
+                const weekday = weekdays[date.getDay()];
+                const year = date.getFullYear();
+                const month = date.getMonth() + 1;
+                const day = date.getDate();
+                liveDateWeekday.textContent = year + '年' + month + '月' + day + '日(' + weekday + ')';
+                liveDateWeekday.style.fontWeight = '500';
+                liveDateWeekday.style.color = '#333';
+            } else if (liveDateWeekday) {
+                liveDateWeekday.textContent = '';
+            }
+        }
+        
+        if (liveDateInput) {
+            liveDateInput.addEventListener('change', updateLiveDateWeekday);
+            // 初期表示時にも曜日を表示
+            updateLiveDateWeekday();
+        }
         
         // チケット発売先の追加
         document.getElementById('add-ticket').addEventListener('click', function() {

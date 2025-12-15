@@ -7,6 +7,8 @@ define('ADMIN_USERNAME', 'admin');
 define('ADMIN_PASSWORD', 'admin123'); // 本番環境では変更してください
 define('DATA_DIR', __DIR__ . '/data/');
 define('NEWS_DATA_FILE', DATA_DIR . 'news.json');
+define('CATEGORIES_DATA_FILE', DATA_DIR . 'categories.json');
+define('SUBCATEGORIES_DATA_FILE', DATA_DIR . 'subcategories.json');
 define('UPLOAD_DIR', dirname(__DIR__) . '/news/img/');
 define('MAX_FILE_SIZE', 5 * 1024 * 1024); // 5MB
 
@@ -47,23 +49,39 @@ function loadNewsData() {
     if (file_exists(NEWS_DATA_FILE)) {
         $json = file_get_contents(NEWS_DATA_FILE);
         $data = json_decode($json, true);
-        return $data ? $data : [];
+        if (!$data) {
+            return [];
+        }
+        // データ構造が["news": {...}, "index": 0]形式の場合は変換
+        if (isset($data[0]['news'])) {
+            $normalizedData = [];
+            foreach ($data as $item) {
+                if (isset($item['news'])) {
+                    $normalizedData[] = $item['news'];
+                } else {
+                    $normalizedData[] = $item;
+                }
+            }
+            return $normalizedData;
+        }
+        return $data;
     }
     return [];
 }
 
 // ニュースデータを保存する
 function saveNewsData($data) {
-    // 日付順にソート（新しい順）
-    usort($data, function($a, $b) {
-        return strtotime($b['date']) - strtotime($a['date']);
-    });
+    // 手動で並び替えが設定されていない場合のみ、日付順にソート（新しい順）
+    // 並び替え機能で順序が保持されるため、ここではソートしない
     file_put_contents(NEWS_DATA_FILE, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 }
 
 // XSS対策
 function h($str) {
-    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+    if ($str === null || $str === '') {
+        return '';
+    }
+    return htmlspecialchars((string)$str, ENT_QUOTES, 'UTF-8');
 }
 
 // 画像アップロード処理
@@ -118,5 +136,50 @@ function extractYouTubeId($url) {
         return $matches[1];
     }
     return null;
+}
+
+// カテゴリデータを読み込む
+function loadCategories() {
+    if (file_exists(CATEGORIES_DATA_FILE)) {
+        $json = file_get_contents(CATEGORIES_DATA_FILE);
+        $data = json_decode($json, true);
+        return $data ? $data : [];
+    }
+    // デフォルトカテゴリを返す
+    return [
+        'LIVE',
+        'RELEASE',
+        'You Tube',
+        'TV・GUITAR',
+        'ラジオ出演',
+        'SHOP・GOODS',
+        'その他'
+    ];
+}
+
+// カテゴリデータを保存する
+function saveCategories($categories) {
+    file_put_contents(CATEGORIES_DATA_FILE, json_encode($categories, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+}
+
+// サブカテゴリデータを読み込む
+function loadSubcategories() {
+    if (file_exists(SUBCATEGORIES_DATA_FILE)) {
+        $json = file_get_contents(SUBCATEGORIES_DATA_FILE);
+        $data = json_decode($json, true);
+        return $data ? $data : [];
+    }
+    // デフォルトサブカテゴリを返す
+    return [
+        'ザ・タートルズ',
+        'TAKAHIROID',
+        'SPARKY',
+        '世良公則'
+    ];
+}
+
+// サブカテゴリデータを保存する
+function saveSubcategories($subcategories) {
+    file_put_contents(SUBCATEGORIES_DATA_FILE, json_encode($subcategories, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 }
 ?>
