@@ -3,10 +3,22 @@
         "id": "693f760142397",
         "title": "テスト",
         "category": "LIVE",
-        "date": "2025\/12\/15",
+        "date": "2025\/12\/16",
         "content": "本文 *本文 *本文 *本文 *本文 *",
         "published": true,
         "created_at": "2025-12-15 11:44:17",
-        "updated_at": "2025-12-15 11:44:17"
+        "updated_at": "2025-12-15 12:44:03",
+        "image": "",
+        "youtube_id": null,
+        "youtube_url": "",
+        "title_url": "",
+        "live_performers": "",
+        "live_time": "",
+        "live_price": "",
+        "live_ticket_sales": [],
+        "live_sale_date": "",
+        "live_contact": "",
+        "live_contact_url": "",
+        "live_other": ""
     }
 ]
