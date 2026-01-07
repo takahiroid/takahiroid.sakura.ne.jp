@@ -136,7 +136,11 @@ foreach ($allNewsData as $news) {
 									<?php if (!empty($news['title'] ?? '')): ?>
 										<p class="ttl">
 											<?php 
-											// LIVEカテゴリの場合、ライブ日時をタイトルの前に表示（曜日付き）
+											// イベントタイトルを表示（日付の上）
+											if (!empty($news['title'] ?? '')) {
+												echo '<span class="bold" style="display: block; margin-bottom: 4px;">' . str_replace('<br>', '<br>', $news['title']) . '</span>';
+											}
+											// LIVEカテゴリの場合、ライブ日時をタイトルの後に表示（曜日付き）
 											if ($category === 'LIVE' && !empty($news['live_date'] ?? '')) {
 												$liveDateStr = $news['live_date'];
 												// YYYY/MM/DD形式から曜日を取得
