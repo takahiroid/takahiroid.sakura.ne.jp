@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="contents" >
 		<div class="mainvisual">
 			<a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank"><img src="/news/img/rockstar.jpg" style="width: 100%;"></a>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#turtles-live">2026/2/20（金）ザ・タートルズ vs The LOVE </a><span>【2025/10/15 update】</span></p>
+			<p class="ttl" style="margin-top: 10px;"><a href="/news/#0128-live">2026年1月28日(水) 松本タカヒロのRock’nRoll Cafe </a><span>【2025/12/15 update】</span></p>
       <p class="ttl" style="margin-top: 10px;"><a href="/news/#turtles-live">2026/2/20（金）ザ・タートルズ vs The LOVE </a><span>【2025/10/15 update】</span></p>
 			<p class="ttl" style="margin-top: 10px;"><a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank">ソロプロジェクト「TAKAHIROID」の最新曲「ROCK STAR」公開！</a><span>【2025/7/15 update】</span></p>
 		</div>
