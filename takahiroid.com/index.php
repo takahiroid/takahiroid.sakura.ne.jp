@@ -31,8 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="mainvisual">
 			<a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank"><img src="/news/img/rockstar.jpg" style="width: 100%;"></a>
 			<p class="ttl" style="margin-top: 10px;"><a href="/news/#turtles-live">2026/2/20（金）ザ・タートルズ vs The LOVE </a><span>【2025/10/15 update】</span></p>
-      <p class="ttl" style="margin-top: 10px;"><a href="/news/#1229-live">2025/12/29（月）ソロライブ with ザ・ビートモーターズ</a><span>【2025/9/29 update】</span></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#brightmoon-live">2025/11/5（土）弾き語りソロワンマン at 大阪</a><span>【2025/9/6 update】</span></p>
+      <p class="ttl" style="margin-top: 10px;"><a href="/news/#turtles-live">2026/2/20（金）ザ・タートルズ vs The LOVE </a><span>【2025/10/15 update】</span></p>
 			<p class="ttl" style="margin-top: 10px;"><a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank">ソロプロジェクト「TAKAHIROID」の最新曲「ROCK STAR」公開！</a><span>【2025/7/15 update】</span></p>
 		</div>
     <div class="wrap_area">

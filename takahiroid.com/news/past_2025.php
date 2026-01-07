@@ -90,6 +90,22 @@
             </div>
           </div>
 
+          <div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>松本タカヒロ[Solo]</strong><br>
+              2025年11月15日（土）Bright Moon（大阪・心斎橋）<br>松本タカヒロ 弾き語りワンマンライブ<br>『ROCKSTAR A GO! GO!』
+            </div>
+          </div>
+
+          <div class="past_live_txt">
+            <div class="boxPastLive">
+              <strong>松本タカヒロ[Solo]</strong><br>
+              2025年12月29日（月）Top Beat Club（東京）<br>「Double Fantasy」<br>
+              ■出演：松本タカヒロ&Magixx [Gt.キタシンイチ/Ba.Matty/Dr.菅大智/Key.オオクボケイ] <br>／ ザ・ビートモーターズ<br>
+            </div>
+          </div>
+
+
 					<div class="sp">
 					<?php include("inc_sidebar_list.php"); ?>
 					</div>
