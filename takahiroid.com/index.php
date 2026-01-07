@@ -31,77 +31,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="mainvisual">
 			<a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank"><img src="/news/img/rockstar.jpg" style="width: 100%;"></a>
 
-      <div class="news_area">
-<?php
-// 管理画面のニュースデータを読み込み
-$newsJsonPath = __DIR__ . '/kanri/data/news.json';
-if (file_exists($newsJsonPath)) {
-    $newsData = json_decode(file_get_contents($newsJsonPath), true);
-    if ($newsData) {
-        $today = date('Y/m/d');
-        $displayCount = 0;
-        $maxDisplay = 5; // 表示するニュース数
+      <?php include("inc/news_area.php"); ?>
 
-        foreach ($newsData as $news) {
-            // 公開されていないものはスキップ
-            if (!isset($news['published']) || $news['published'] !== true) {
-                continue;
-            }
-
-            // 終了日が過ぎているものはスキップ
-            if (!empty($news['end_date'])) {
-                $endDate = date('Y/m/d', strtotime($news['end_date']));
-                if ($endDate < $today) {
-                    continue;
-                }
-            }
-
-            if ($displayCount >= $maxDisplay) {
-                break;
-            }
-
-            // 表示するタイトルを決定
-            $displayTitle = '';
-            if (!empty($news['live_date'])) {
-                // ライブ情報の場合
-                $liveDateFormatted = date('Y/n/j（' . ['日','月','火','水','木','金','土'][date('w', strtotime($news['live_date']))] . '）', strtotime($news['live_date']));
-                $displayTitle = $liveDateFormatted;
-                if (!empty($news['lead'])) {
-                    $displayTitle .= ' ' . htmlspecialchars($news['lead'], ENT_QUOTES, 'UTF-8');
-                } elseif (!empty($news['title'])) {
-                    $displayTitle .= ' ' . htmlspecialchars($news['title'], ENT_QUOTES, 'UTF-8');
-                }
-            } else {
-                // その他のニュース
-                if (!empty($news['lead'])) {
-                    $displayTitle = htmlspecialchars($news['lead'], ENT_QUOTES, 'UTF-8');
-                } elseif (!empty($news['title'])) {
-                    $displayTitle = htmlspecialchars($news['title'], ENT_QUOTES, 'UTF-8');
-                }
-            }
-
-            // リンク先を決定
-            $linkUrl = '/news/#' . htmlspecialchars($news['id'], ENT_QUOTES, 'UTF-8');
-            $linkTarget = '';
-            if (!empty($news['youtube_url'])) {
-                $linkUrl = htmlspecialchars($news['youtube_url'], ENT_QUOTES, 'UTF-8');
-                $linkTarget = ' target="_blank"';
-            }
-
-            // 更新日
-            $updateDate = '';
-            if (!empty($news['date'])) {
-                $updateDate = date('Y/n/j', strtotime($news['date']));
-            }
-
-            echo '<p class="ttl" style="margin-top: 10px;"><a href="' . $linkUrl . '"' . $linkTarget . '>' . $displayTitle . '</a><span>【' . $updateDate . ' update】</span></p>' . "\n";
-
-            $displayCount++;
-        }
-    }
-}
-?>
-			</div>
+      
 		</div>
     <div class="wrap_area">
       <div class="top_left">

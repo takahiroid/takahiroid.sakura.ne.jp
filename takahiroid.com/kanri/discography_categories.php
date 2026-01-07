@@ -2,7 +2,7 @@
 require_once __DIR__ . '/config.php';
 requireLogin();
 
-$categories = loadCategories();
+$categories = loadDiscographyCategories();
 $message = '';
 $error = '';
 
@@ -24,7 +24,7 @@ function findCategoryIndex($categories, $categoryName) {
 // カテゴリ追加処理
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'add') {
     $newCategory = trim($_POST['new_category'] ?? '');
-    $newColor = trim($_POST['new_color'] ?? '#70b539');
+    $newColor = trim($_POST['new_color'] ?? '#667eea');
     
     if (empty($newCategory)) {
         $error = 'カテゴリ名を入力してください';
@@ -45,9 +45,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                 'name' => $newCategory,
                 'color' => $newColor
             ];
-            saveCategories($categories);
+            saveDiscographyCategories($categories);
             $message = 'カテゴリを追加しました';
-            $categories = loadCategories(); // 再読み込み
+            $categories = loadDiscographyCategories(); // 再読み込み
         }
     }
 }
@@ -58,24 +58,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     if (!empty($categoryToDelete)) {
         $key = findCategoryIndex($categories, $categoryToDelete);
         if ($key !== false) {
-            // このカテゴリを使用している記事があるかチェック
-            $newsData = loadNewsData();
+            // このカテゴリを使用しているディスコグラフィーがあるかチェック
+            $discographyData = loadDiscographyData();
             $isUsed = false;
-            foreach ($newsData as $news) {
-                if (($news['category'] ?? '') === $categoryToDelete) {
+            foreach ($discographyData as $disc) {
+                if (($disc['category'] ?? '') === $categoryToDelete) {
                     $isUsed = true;
                     break;
                 }
             }
             
             if ($isUsed) {
-                $error = 'このカテゴリは記事で使用されているため削除できません';
+                $error = 'このカテゴリはディスコグラフィーで使用されているため削除できません';
             } else {
                 unset($categories[$key]);
                 $categories = array_values($categories); // インデックスを再構築
-                saveCategories($categories);
+                saveDiscographyCategories($categories);
                 $message = 'カテゴリを削除しました';
-                $categories = loadCategories(); // 再読み込み
+                $categories = loadDiscographyCategories(); // 再読み込み
             }
         }
     }
@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'edit') {
     $oldCategory = $_POST['old_category'] ?? '';
     $newCategory = trim($_POST['new_category'] ?? '');
-    $newColor = trim($_POST['new_color'] ?? '#70b539');
+    $newColor = trim($_POST['new_color'] ?? '#667eea');
     
     if (empty($newCategory)) {
         $error = 'カテゴリ名を入力してください';
@@ -104,14 +104,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                 if ($exists) {
                     $error = 'このカテゴリ名は既に存在します';
                 } else {
-                    // 記事データのカテゴリも更新
-                    $newsData = loadNewsData();
-                    foreach ($newsData as $index => $news) {
-                        if (($news['category'] ?? '') === $oldCategory) {
-                            $newsData[$index]['category'] = $newCategory;
+                    // ディスコグラフィーデータのカテゴリも更新
+                    $discographyData = loadDiscographyData();
+                    foreach ($discographyData as $index => $disc) {
+                        if (($disc['category'] ?? '') === $oldCategory) {
+                            $discographyData[$index]['category'] = $newCategory;
                         }
                     }
-                    saveNewsData($newsData);
+                    saveDiscographyData($discographyData);
                 }
             }
             
@@ -120,9 +120,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                     'name' => $newCategory,
                     'color' => $newColor
                 ];
-                saveCategories($categories);
+                saveDiscographyCategories($categories);
                 $message = 'カテゴリを更新しました';
-                $categories = loadCategories(); // 再読み込み
+                $categories = loadDiscographyCategories(); // 再読み込み
             }
         }
     }
@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>カテゴリ管理 - TAKAHIROID.COM</title>
+    <title>ディスコグラフィーカテゴリ管理 - TAKAHIROID.COM</title>
     <link rel="stylesheet" href="/kanri/common.css">
     <style>
         .color-picker-wrapper {
@@ -168,9 +168,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     
     <div class="main-content">
         <div class="header">
-            <h1>カテゴリ管理</h1>
+            <h1>ディスコグラフィーカテゴリ管理</h1>
             <div class="header-actions">
-                <a href="/kanri/news/" class="btn btn-secondary">ニュース記事に戻る</a>
+                <a href="/kanri/discography/" class="btn btn-secondary">ディスコグラフィーに戻る</a>
             </div>
         </div>
         
@@ -185,19 +185,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             
             <!-- カテゴリ追加フォーム -->
             <div class="form-container" style="margin-bottom: 30px;">
-                <h2 style="margin-bottom: 20px;">カテゴリを追加</h2>
+                <h2 style="margin-bottom: 20px;">カテゴリ（アーティスト名）を追加</h2>
                 <form method="POST" action="">
                     <input type="hidden" name="action" value="add">
                     <div class="category-form-row">
                         <div class="form-group">
-                            <label for="new_category">カテゴリ名</label>
-                            <input type="text" id="new_category" name="new_category" required placeholder="例: イベント">
+                            <label for="new_category">カテゴリ名（アーティスト名）</label>
+                            <input type="text" id="new_category" name="new_category" required placeholder="例: 松本タカヒロ">
                         </div>
                         <div class="form-group color-group">
                             <label for="new_color">背景色</label>
                             <div class="color-picker-wrapper">
-                                <input type="color" id="new_color" name="new_color" value="#70b539" style="width: 60px; height: 30px; border: 2px solid #e0e0e0; border-radius: 4px; cursor: pointer;">
-                                <span class="color-preview" id="new_color_preview" style="background-color: #70b539;"></span>
+                                <input type="color" id="new_color" name="new_color" value="#667eea" style="width: 60px; height: 30px; border: 2px solid #e0e0e0; border-radius: 4px; cursor: pointer;">
+                                <span class="color-preview" id="new_color_preview" style="background-color: #667eea;"></span>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary" style="height: fit-content; margin-top: 24px;">追加</button>
@@ -216,7 +216,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                     <div class="category-list">
                         <?php foreach ($categories as $index => $category): 
                             $categoryName = getCategoryName($category);
-                            $categoryColor = is_array($category) ? ($category['color'] ?? '#70b539') : '#70b539';
+                            $categoryColor = is_array($category) ? ($category['color'] ?? '#667eea') : '#667eea';
                         ?>
                             <div class="category-item" style="display: flex; align-items: center; justify-content: space-between; padding: 15px; border: 1px solid #e0e0e0; border-radius: 5px; margin-bottom: 10px; background: #fff;">
                                 <div style="flex: 1;">
@@ -237,7 +237,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                                         <button type="submit" class="btn btn-edit btn-small" style="height: fit-content; margin-top: 24px;">更新</button>
                                     </form>
                                 </div>
-                                <form method="POST" action="" style="margin-left: 10px; align-self: flex-end;" onsubmit="return confirm('本当に削除しますか？\nこのカテゴリを使用している記事がある場合は削除できません。');">
+                                <form method="POST" action="" style="margin-left: 10px; align-self: flex-end;" onsubmit="return confirm('本当に削除しますか？\nこのカテゴリを使用しているディスコグラフィーがある場合は削除できません。');">
                                     <input type="hidden" name="action" value="delete">
                                     <input type="hidden" name="category" value="<?php echo h($categoryName); ?>">
                                     <button type="submit" class="btn btn-delete btn-small">削除</button>
@@ -276,3 +276,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     </script>
 </body>
 </html>
+

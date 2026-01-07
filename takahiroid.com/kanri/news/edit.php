@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     $content = $_POST['content'] ?? '';
     $published = isset($_POST['published']) ? true : false;
+    $show_on_top = isset($_POST['show_on_top']) ? true : false;
     $id = $_POST['id'] ?? null;
     $youtube_url = trim($_POST['youtube_url'] ?? '');
     $existing_image = $_POST['existing_image'] ?? '';
@@ -126,6 +127,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'end_date' => $end_date,
                 'content' => $content,
                 'published' => $published,
+                'show_on_top' => $show_on_top,
                 'image' => $image_path,
                 'youtube_id' => $youtube_id,
                 'youtube_url' => $youtube_url,
@@ -160,6 +162,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $newsData[$id]['end_date'] = $end_date;
                 $newsData[$id]['content'] = $content;
                 $newsData[$id]['published'] = $published;
+                $newsData[$id]['show_on_top'] = $show_on_top;
                 $newsData[$id]['image'] = $image_path;
                 $newsData[$id]['youtube_id'] = $youtube_id;
                 $newsData[$id]['youtube_url'] = $youtube_url;
@@ -208,6 +211,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'end_date' => $end_date,
             'content' => $content,
             'published' => $published,
+            'show_on_top' => $show_on_top,
             'image' => $image_path,
             'youtube_id' => $youtube_id,
             'youtube_url' => $youtube_url,
@@ -237,6 +241,7 @@ if (!$news) {
         'end_date' => '',
         'content' => '',
         'published' => false,
+        'show_on_top' => false,
         'image' => '',
         'youtube_url' => '',
         'youtube_id' => null,
@@ -418,8 +423,10 @@ if (!$news) {
                             <div class="form-group">
                                 <label for="category">カテゴリ <span style="color: #e11d48;">*</span></label>
                                 <select id="category" name="category" required>
-                                    <?php foreach ($categories as $category): ?>
-                                        <option value="<?php echo h($category); ?>" <?php echo ($news['category'] === $category) ? 'selected' : ''; ?>><?php echo h($category); ?></option>
+                                    <?php foreach ($categories as $category): 
+                                        $catName = is_array($category) ? ($category['name'] ?? '') : $category;
+                                    ?>
+                                        <option value="<?php echo h($catName); ?>" <?php echo (isset($news['category']) && $news['category'] === $catName) ? 'selected' : ''; ?>><?php echo h($catName); ?></option>
                                     <?php endforeach; ?>
                                 </select>
                                 <div style="margin-top: 5px;">
@@ -505,6 +512,13 @@ if (!$news) {
                                 <div class="checkbox-group">
                                     <input type="checkbox" id="published" name="published" <?php echo ($news['published'] ?? false) ? 'checked' : ''; ?>>
                                     <label for="published" style="margin: 0; font-weight: normal;">公開する</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="show_on_top" name="show_on_top" <?php echo ($news['show_on_top'] ?? false) ? 'checked' : ''; ?>>
+                                    <label for="show_on_top" style="margin: 0; font-weight: normal;">TOPページに表示する</label>
                                 </div>
                             </div>
                             

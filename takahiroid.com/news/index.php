@@ -154,7 +154,23 @@ foreach ($allNewsData as $news) {
 					<?php foreach ($newsData as $news): ?>
 						<?php
 						$category = $news['category'] ?? '';
-						$categoryBgColor = '#70b539';
+						// 管理画面で設定されたカテゴリの色を取得
+						$categoryBgColor = '#70b539'; // デフォルト色
+						if (!empty($category)) {
+							$categoriesJsonPath = __DIR__ . '/../kanri/data/categories.json';
+							if (file_exists($categoriesJsonPath)) {
+								$categoriesData = json_decode(file_get_contents($categoriesJsonPath), true);
+								if ($categoriesData) {
+									foreach ($categoriesData as $cat) {
+										$catName = is_array($cat) ? ($cat['name'] ?? '') : $cat;
+										if ($catName === $category) {
+											$categoryBgColor = is_array($cat) ? ($cat['color'] ?? '#70b539') : '#70b539';
+											break;
+										}
+									}
+								}
+							}
+						}
 						$dateStr = $news['date'] ?? '';
 						$dateDisplay = '';
 						if (!empty($dateStr)) {
@@ -243,7 +259,7 @@ foreach ($allNewsData as $news) {
 											<?php if (!empty($news['title_url'] ?? '')): ?>
 												<a href="<?php echo h($news['title_url']); ?>" target="_blank">
 											<?php endif; ?>
-											<img src="<?php echo h($news['image']); ?>" style="width: 60%;" class="newsimg">
+											<img src="<?php echo h($news['image']); ?>" class="newsimg">
 											<?php if (!empty($news['title_url'] ?? '')): ?>
 												</a>
 											<?php endif; ?>
@@ -266,7 +282,7 @@ foreach ($allNewsData as $news) {
 											<?php if (!empty($news['youtube_url'] ?? '')): ?>
 												<a href="<?php echo h($news['youtube_url']); ?>" target="_blank">
 											<?php endif; ?>
-											<img src="<?php echo h($news['image']); ?>" style="width: 100%;">
+											<img src="<?php echo h($news['image']); ?>" class="newsimg">
 											<?php if (!empty($news['youtube_url'] ?? '')): ?>
 												</a>
 											<?php endif; ?>
@@ -277,7 +293,7 @@ foreach ($allNewsData as $news) {
 										<?php endif; ?>
 										<?php if (!empty($news['image'] ?? '')): ?>
 											<br>
-											<img src="<?php echo h($news['image']); ?>" style="width: 100%;">
+											<img src="<?php echo h($news['image']); ?>" class="newsimg">
 										<?php endif; ?>
 									<?php endif; ?>
 								</div>

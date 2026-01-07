@@ -105,9 +105,11 @@ if (isset($_GET['msg'])) {
                         <label for="category" style="display: block; margin-bottom: 5px; font-size: 14px; font-weight: 600; color: #333;">カテゴリ</label>
                         <select id="category" name="category" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;">
                             <option value="">すべて</option>
-                            <?php foreach ($categories as $category): ?>
-                                <option value="<?php echo h($category); ?>" <?php echo $filterCategory === $category ? 'selected' : ''; ?>>
-                                    <?php echo h($category); ?>
+                            <?php foreach ($categories as $category): 
+                                $catName = is_array($category) ? ($category['name'] ?? '') : $category;
+                            ?>
+                                <option value="<?php echo h($catName); ?>" <?php echo $filterCategory === $catName ? 'selected' : ''; ?>>
+                                    <?php echo h($catName); ?>
                                 </option>
                             <?php endforeach; ?>
                         </select>
@@ -175,8 +177,18 @@ if (isset($_GET['msg'])) {
                                 $isExpired = true;
                             }
                         }
+                        // 下書きの判定
+                        $isDraft = !($news['published'] ?? true);
+                        // クラスの組み立て
+                        $itemClasses = [];
+                        if ($isExpired) {
+                            $itemClasses[] = 'news-expired';
+                        }
+                        if ($isDraft) {
+                            $itemClasses[] = 'news-draft';
+                        }
                         ?>
-                        <div class="news-item <?php echo $isExpired ? 'news-expired' : ''; ?>" data-id="<?php echo h($news['id'] ?? $index); ?>">
+                        <div class="news-item <?php echo implode(' ', $itemClasses); ?>" data-id="<?php echo h($news['id'] ?? $index); ?>">
                             <div class="news-drag-handle" style="cursor: move; color: #999; user-select: none;">☰</div>
                             <div class="news-info">
                                 <div class="news-title">
@@ -237,18 +249,32 @@ if (isset($_GET['msg'])) {
                                             echo h($displayText);
                                         }
                                     ?>
-                                    <span class="badge <?php echo ($news['published'] ?? true) ? 'badge-published' : 'badge-draft'; ?>">
-                                        <?php echo ($news['published'] ?? true) ? '公開中' : '下書き'; ?>
-                                    </span>
+                                    <?php if (!($isExpired && ($news['published'] ?? true))): ?>
+                                        <span class="badge <?php echo ($news['published'] ?? true) ? 'badge-published' : 'badge-draft'; ?>">
+                                            <?php echo ($news['published'] ?? true) ? '公開中' : '下書き'; ?>
+                                        </span>
+                                    <?php endif; ?>
                                     <?php if ($isExpired): ?>
                                         <span class="badge badge-expired" title="公開終了日を過ぎています">
-                                            非公開
+                                        公開終了
                                         </span>
                                     <?php endif; ?>
                                 </div>
                                 <div class="news-meta">
                                     <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; color: #888;">
-                                        <span class="category-badge" style="background: #fb923c; border-color: #f97316; color: #fff;" title="<?php echo h($news['category'] ?? '未設定'); ?>">
+                                        <?php
+                                            // カテゴリ管理で設定したカラーを反映
+                                            $categoryNameForBadge = $news['category'] ?? '未設定';
+                                            $categoryColorForBadge = '#fb923c'; // デフォルト（既存色を踏襲）
+                                            foreach ($categories as $cat) {
+                                                $catName = is_array($cat) ? ($cat['name'] ?? '') : $cat;
+                                                if ($catName === $categoryNameForBadge && is_array($cat)) {
+                                                    $categoryColorForBadge = $cat['color'] ?? $categoryColorForBadge;
+                                                    break;
+                                                }
+                                            }
+                                        ?>
+                                        <span class="category-badge" style="background: <?php echo h($categoryColorForBadge); ?>; border-color: <?php echo h($categoryColorForBadge); ?>; color: #fff;" title="<?php echo h($news['category'] ?? '未設定'); ?>">
                                             <?php echo h($news['category'] ?? '未設定'); ?>
                                         </span>
                                         <?php if (!empty($news['subcategory'] ?? '')): ?>

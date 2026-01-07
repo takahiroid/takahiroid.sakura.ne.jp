@@ -16,6 +16,9 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '';
         <li><a href="/kanri/news/" class="<?php echo (strpos($request_uri, '/kanri/news/') !== false) ? 'active' : ''; ?>">ニュース記事</a></li>
         <li><a href="/kanri/categories.php" class="<?php echo ($current_page === 'categories.php') ? 'active' : ''; ?>">カテゴリ管理</a></li>
         <li><a href="/kanri/subcategories.php" class="<?php echo ($current_page === 'subcategories.php') ? 'active' : ''; ?>">サブカテゴリ管理</a></li>
+        <li class="menu-section">コンテンツ</li>
+        <li><a href="/kanri/discography/" class="<?php echo (strpos($request_uri, '/kanri/discography/') !== false && strpos($request_uri, '/kanri/discography_categories') === false) ? 'active' : ''; ?>">ディスコグラフィー</a></li>
+        <li><a href="/kanri/discography_categories.php" class="<?php echo ($current_page === 'discography_categories.php') ? 'active' : ''; ?>">ディスコグラフィーカテゴリ</a></li>
         <!-- 将来的に他のメニューを追加可能 -->
         <!-- <li><a href="/kanri/works/">作品管理</a></li> -->
         <!-- <li><a href="/kanri/bio/">プロフィール管理</a></li> -->

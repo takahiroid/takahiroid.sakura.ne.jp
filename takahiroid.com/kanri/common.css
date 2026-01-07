@@ -355,6 +355,16 @@ body {
     opacity: 0.8;
 }
 
+.news-item.news-draft {
+    background: #f0f0f0;
+    opacity: 0.7;
+}
+
+.news-item.news-draft:hover {
+    background: #e8e8e8;
+    opacity: 0.8;
+}
+
 .news-info {
     flex: 1;
 }

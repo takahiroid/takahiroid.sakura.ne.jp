@@ -1,10 +1,30 @@
 [
-    "LIVE",
-    "RELEASE",
-    "You Tube",
-    "TV・GUITAR",
-    "ラジオ出演",
-    "SHOP・GOODS",
-    "その他"
+    {
+        "name": "LIVE",
+        "color": "#18bf71"
+    },
+    {
+        "name": "RELEASE",
+        "color": "#3498db"
+    },
+    {
+        "name": "You Tube",
+        "color": "#FF0000"
+    },
+    {
+        "name": "TV・GUITAR",
+        "color": "#9b59b6"
+    },
+    {
+        "name": "ラジオ出演",
+        "color": "#f39c12"
+    },
+    {
+        "name": "SHOP・GOODS",
+        "color": "#1abc9c"
+    },
+    {
+        "name": "その他",
+        "color": "#95a5a6"
+    }
 ]
-

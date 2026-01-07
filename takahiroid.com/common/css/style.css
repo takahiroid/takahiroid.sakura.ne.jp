@@ -161,9 +161,12 @@ body{
 					font-size: 0.8em;
 					margin-right: 2px;
 				}
-				.header ul.gnavi_pc li.shop_btn a{
-					color:#cc6600;
-				}
+			.header ul.gnavi_pc li.disc_btn a{
+				color:#9b59b6;
+			}
+			.header ul.gnavi_pc li.shop_btn a{
+				color:#cc6600;
+			}
 					.header ul.gnavi_pc li a:hover{
 						opacity:0.50;
 						filter:alpha(opacity=50);
@@ -568,7 +571,7 @@ p.alert_txt{
 	border-bottom:1px dotted #CCC;
 }
 .newsimg{
-	width:70%;
+	width:60%;
 }
 
 /*------------------------------------------------------
