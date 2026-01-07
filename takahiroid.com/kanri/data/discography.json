@@ -1,5 +1,19 @@
 [
     {
+        "id": 15,
+        "title": "spacelab",
+        "subtitle": "SPARKLY 1stアルバム（配信）",
+        "release_date": "2025.5.21",
+        "release_type": "デジタル配信",
+        "price": "",
+        "image": "\/discography\/img\/disc_20260107173305_695e1a414988a.jpg",
+        "content": "<p>配信曲（CD収録曲と異なる）<\/p><p>1. LABORATORY<\/p><p>2. HEAVY METAL KIDS ARE ALLRIGHT<\/p><p>3. 1986 WONDER GIRL<\/p><p>4. トゲトゲ<\/p><p>5. リモコン<\/p><p>6. アイニイクヨ<\/p><p>7. ロビタ<\/p><p>8. パーティー バーディー<\/p><p>9. RAINBOW EXPRESS<\/p><p>10. MUTEKI ROCKET BOY<\/p><p>11. FLASH BACK<\/p><p><br><\/p><p><span style=\"color: rgb(44, 56, 51);\">◾️Linkfire<\/span><\/p><p><a href=\"https:\/\/sparky.lnk.to\/spacelab\" target=\"_blank\" style=\"color: rgb(52, 182, 129);\">https:\/\/sparky.lnk.to\/spacelab<\/a><\/p>",
+        "published": true,
+        "created_at": "2026-01-07 17:33:05",
+        "updated_at": "2026-01-07 17:33:27",
+        "category": "SPARKY"
+    },
+    {
         "id": 14,
         "title": "タートルマニア",
         "subtitle": "ザ・タートルズ   BEST ALBUM",
@@ -147,10 +161,10 @@
         "release_type": "CD",
         "price": "",
         "image": "\/discography\/img\/disc_20260107154606_695e012e15a40.jpg",
-        "content": "<p><a href=\"https:\/\/sparky.lnk.to\/spacelab\" target=\"_blank\">各種配信サイトへのリンクはこちら<\/a><\/p><p><br><\/p><p>01. LABORATORY<\/p><p>02. HEAVY METAL KIDS ARE ALLRIGHT<\/p><p>03. 1986 WONDER GIRL<\/p><p>04. トゲトゲ<\/p><p>05. リモコン<\/p><p>06. アイニイクヨ<\/p><p>07. ロビタ<\/p><p>08. バイシクル<\/p><p>09. パーティー･バディー<\/p><p>10. RAINBOW EXPRESS<\/p><p>11. MUTEKI ROCKET BOY<\/p><p>12. FLASH BACK<\/p>",
+        "content": "<p>01. LABORATORY<\/p><p>02. HEAVY METAL KIDS ARE ALLRIGHT<\/p><p>03. 1986 WONDER GIRL<\/p><p>04. トゲトゲ<\/p><p>05. リモコン<\/p><p>06. アイニイクヨ<\/p><p>07. ロビタ<\/p><p>08. バイシクル<\/p><p>09. パーティー･バディー<\/p><p>10. RAINBOW EXPRESS<\/p><p>11. MUTEKI ROCKET BOY<\/p><p>12. FLASH BACK<\/p><p><br><\/p><p><span style=\"color: rgb(44, 56, 51);\">◾️Linkfire<\/span><\/p><p><a href=\"https:\/\/sparky.lnk.to\/spacelab\" target=\"_blank\" style=\"color: rgb(52, 182, 129);\">https:\/\/sparky.lnk.to\/spacelab<\/a><\/p>",
         "published": true,
         "created_at": "2024-01-01 00:00:00",
-        "updated_at": "2026-01-07 16:05:26",
+        "updated_at": "2026-01-07 17:33:56",
         "category": "SPARKY"
     },
     {

@@ -212,6 +212,23 @@ NEWS (PC)
   text-decoration: underline;
   background-color: #f0f0f0;
 }
+.news-body {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.news-thumb {
+  flex-shrink: 0;
+  width: 250px;
+}
+.news-thumb .newsimg {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  display: block;
+}
 
 span.complete {
   margin-top: 10px;
@@ -396,6 +413,12 @@ NEWS (SP)
 
   .news_left .txtBloc .txt {
     margin-top: 5px;
+  }
+  .news-body {
+    flex-direction: column;
+  }
+  .news-thumb {
+    width: 100%;
   }
 
   span.complete {

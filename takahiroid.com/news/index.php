@@ -133,139 +133,152 @@ foreach ($allNewsData as $news) {
 						<tr>
 							<td id="<?php echo h($news['id'] ?? ''); ?>" class="news-item">
 								<hr class="news-divider">
-								<!-- カテゴリアイコン・サブカテゴリアイコン・更新日（同じ行） -->
-								<p class="cdtitle">
-									<span class="category-badge"><?php echo h($category); ?></span>
-									<?php if (!empty($news['subcategory'] ?? '')): ?>
-										<span class="subcategory-badge"><?php echo h($news['subcategory']); ?></span>
-									<?php endif; ?>
-									<?php if (!empty($dateDisplay)): ?>
-										<span class="date-display"><?php echo h($dateDisplay); ?></span>
-									<?php endif; ?>
-								</p>
-								<div class="txtBloc">
-									<!-- イベントタイトル（改行） -->
-									<?php if (!empty($news['title'] ?? '')): ?>
-										<p class="ttl event-title">
-											<?php echo str_replace('<br>', '<br>', $news['title']); ?>
-										</p>
-									<?php endif; ?>
-									<!-- 日付と会場（1行） -->
-									<?php if ($category === 'LIVE'): ?>
-										<?php
-										$liveDateStr = $news['live_date'] ?? '';
-										$liveDateDisplay = '';
-										if (!empty($liveDateStr)) {
-											// YYYY/MM/DD形式から曜日を取得
-											$liveDateFormatted = str_replace('/', '-', $liveDateStr);
-											$timestamp = strtotime($liveDateFormatted);
-											if ($timestamp !== false) {
-												$weekdays = ['日', '月', '火', '水', '木', '金', '土'];
-												$weekday = $weekdays[date('w', $timestamp)];
-												$liveDateDisplay = h($liveDateStr) . '(' . $weekday . ')';
-											} else {
-												$liveDateDisplay = h($liveDateStr);
-											}
-										}
-										?>
-										<?php if (!empty($liveDateDisplay) || !empty($news['live_venue'] ?? '')): ?>
-											<p class="live-date-venue">
-												<?php if (!empty($liveDateDisplay)): ?>
-													<span class="live-date-text"><?php echo $liveDateDisplay; ?></span>
-												<?php endif; ?>
-												<?php if (!empty($news['live_venue'] ?? '')): ?>
-													<span class="venue-text">
-														<?php if (!empty($news['title_url'] ?? '')): ?>
-															<a href="<?php echo h($news['title_url']); ?>" target="_blank" class="bold"><?php echo str_replace('<br>', '<br>', $news['live_venue']); ?></a>
-														<?php else: ?>
-															<span class="bold"><?php echo str_replace('<br>', '<br>', $news['live_venue']); ?></span>
-														<?php endif; ?>
-													</span>
-												<?php endif; ?>
-											</p>
-										<?php endif; ?>
-									<?php endif; ?>
-									
-									<?php if ($category === 'LIVE'): ?>
-										<?php if (!empty($news['live_performers'] ?? '')): ?>
-											<p class="txt"><?php echo str_replace('<br>', '<br>', $news['live_performers']); ?><br></p>
-										<?php endif; ?>
-										<?php if (!empty($news['live_time'] ?? '')): ?>
-											<p class="txt">■ 時間：<?php echo h($news['live_time']); ?><br></p>
-										<?php endif; ?>
-										<?php if (!empty($news['live_price'] ?? '')): ?>
-											<p class="txt">■ 料金：<?php echo h($news['live_price']); ?><br></p>
-										<?php endif; ?>
-										<?php if (!empty($news['live_ticket_sales'] ?? []) && is_array($news['live_ticket_sales'])): ?>
-											<p class="txt">■ チケット発売：
-											<?php 
-											$ticketLinks = [];
-											foreach ($news['live_ticket_sales'] as $ticket) {
-												if (!empty($ticket['name']) && !empty($ticket['url'])) {
-													$ticketLinks[] = '<a href="' . h($ticket['url']) . '" target="_blank">' . h($ticket['name']) . '</a>';
-												}
-											}
-											echo implode(' / ', $ticketLinks);
-											?>
-											<?php if (!empty($news['live_sale_date'] ?? '')): ?>
-												<?php echo ' ' . h($news['live_sale_date']); ?>
-											<?php endif; ?>
-											<br></p>
-										<?php endif; ?>
-										<?php if (!empty($news['live_contact'] ?? '') || !empty($news['live_contact_url'] ?? '')): ?>
-											<p class="txt">■ 問い合わせ：
-											<?php if (!empty($news['live_contact_url'] ?? '')): ?>
-												<a href="<?php echo h($news['live_contact_url']); ?>" target="_blank"><?php echo h($news['live_contact'] ?? $news['live_contact_url']); ?></a>
-											<?php else: ?>
-												<?php echo h($news['live_contact']); ?>
-											<?php endif; ?>
-											<br></p>
-										<?php endif; ?>
-										<?php if (!empty($news['live_other'] ?? '')): ?>
-											<p class="txt"><?php echo str_replace('<br>', '<br>', $news['live_other']); ?></p>
-										<?php endif; ?>
-										<?php if (!empty($news['image'] ?? '')): ?>
-											<br>
+								<div class="news-body">
+									<?php if (!empty($news['thumbnail'] ?? '')): ?>
+										<div class="news-thumb">
 											<?php if (!empty($news['title_url'] ?? '')): ?>
 												<a href="<?php echo h($news['title_url']); ?>" target="_blank">
 											<?php endif; ?>
-											<img src="<?php echo h($news['image']); ?>" class="newsimg">
+											<img src="<?php echo h($news['thumbnail']); ?>" class="newsimg" alt="">
 											<?php if (!empty($news['title_url'] ?? '')): ?>
 												</a>
 											<?php endif; ?>
-										<?php endif; ?>
-									<?php elseif ($category === 'You Tube'): ?>
-										<?php if (!empty($news['youtube_id'] ?? '')): ?>
-											<div style="margin: 15px 0;">
-												<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo h($news['youtube_id']); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%;"></iframe>
-											</div>
-										<?php elseif (!empty($news['youtube_url'] ?? '')): ?>
-											<p class="txt">
-												▶️ <a href="<?php echo h($news['youtube_url']); ?>" target="_blank" class="bold">YouTubeで視聴</a><br><br>
+										</div>
+									<?php endif; ?>
+									<div class="txtBloc">
+										<!-- カテゴリアイコン・サブカテゴリアイコン・更新日（同じ行） -->
+										<p class="cdtitle">
+											<span class="category-badge"><?php echo h($category); ?></span>
+											<?php if (!empty($news['subcategory'] ?? '')): ?>
+												<span class="subcategory-badge"><?php echo h($news['subcategory']); ?></span>
+											<?php endif; ?>
+											<?php if (!empty($dateDisplay)): ?>
+												<span class="date-display"><?php echo h($dateDisplay); ?></span>
+											<?php endif; ?>
+										</p>
+										<!-- イベントタイトル（改行） -->
+										<?php if (!empty($news['title'] ?? '')): ?>
+											<p class="ttl event-title">
+												<?php echo str_replace('<br>', '<br>', $news['title']); ?>
 											</p>
 										<?php endif; ?>
-										<?php if (!empty($news['content'] ?? '')): ?>
-											<p class="txt"><?php echo str_replace('<br>', '<br>', $news['content']); ?></p>
-										<?php endif; ?>
-										<?php if (!empty($news['image'] ?? '')): ?>
-											<br>
-											<?php if (!empty($news['youtube_url'] ?? '')): ?>
-												<a href="<?php echo h($news['youtube_url']); ?>" target="_blank">
+										<!-- 日付と会場（1行） -->
+										<?php if ($category === 'LIVE'): ?>
+											<?php
+											$liveDateStr = $news['live_date'] ?? '';
+											$liveDateDisplay = '';
+											if (!empty($liveDateStr)) {
+												// YYYY/MM/DD形式から曜日を取得
+												$liveDateFormatted = str_replace('/', '-', $liveDateStr);
+												$timestamp = strtotime($liveDateFormatted);
+												if ($timestamp !== false) {
+													$weekdays = ['日', '月', '火', '水', '木', '金', '土'];
+													$weekday = $weekdays[date('w', $timestamp)];
+													$liveDateDisplay = h($liveDateStr) . '(' . $weekday . ')';
+												} else {
+													$liveDateDisplay = h($liveDateStr);
+												}
+											}
+											?>
+											<?php if (!empty($liveDateDisplay) || !empty($news['live_venue'] ?? '')): ?>
+												<p class="live-date-venue">
+													<?php if (!empty($liveDateDisplay)): ?>
+														<span class="live-date-text"><?php echo $liveDateDisplay; ?></span>
+													<?php endif; ?>
+													<?php if (!empty($news['live_venue'] ?? '')): ?>
+														<span class="venue-text">
+															<?php if (!empty($news['title_url'] ?? '')): ?>
+																<a href="<?php echo h($news['title_url']); ?>" target="_blank" class="bold"><?php echo str_replace('<br>', '<br>', $news['live_venue']); ?></a>
+															<?php else: ?>
+																<span class="bold"><?php echo str_replace('<br>', '<br>', $news['live_venue']); ?></span>
+															<?php endif; ?>
+														</span>
+													<?php endif; ?>
+												</p>
 											<?php endif; ?>
-											<img src="<?php echo h($news['image']); ?>" class="newsimg">
-											<?php if (!empty($news['youtube_url'] ?? '')): ?>
-												</a>
+										<?php endif; ?>
+										
+										<?php if ($category === 'LIVE'): ?>
+											<?php if (!empty($news['live_performers'] ?? '')): ?>
+												<p class="txt"><?php echo str_replace('<br>', '<br>', $news['live_performers']); ?><br></p>
+											<?php endif; ?>
+											<?php if (!empty($news['live_time'] ?? '')): ?>
+												<p class="txt">■ 時間：<?php echo h($news['live_time']); ?><br></p>
+											<?php endif; ?>
+											<?php if (!empty($news['live_price'] ?? '')): ?>
+												<p class="txt">■ 料金：<?php echo h($news['live_price']); ?><br></p>
+											<?php endif; ?>
+											<?php if (!empty($news['live_ticket_sales'] ?? []) && is_array($news['live_ticket_sales'])): ?>
+												<p class="txt">■ チケット発売：
+												<?php 
+												$ticketLinks = [];
+												foreach ($news['live_ticket_sales'] as $ticket) {
+													if (!empty($ticket['name']) && !empty($ticket['url'])) {
+														$ticketLinks[] = '<a href="' . h($ticket['url']) . '" target="_blank">' . h($ticket['name']) . '</a>';
+													}
+												}
+												echo implode(' / ', $ticketLinks);
+												?>
+												<?php if (!empty($news['live_sale_date'] ?? '')): ?>
+													<?php echo ' ' . h($news['live_sale_date']); ?>
+												<?php endif; ?>
+												<br></p>
+											<?php endif; ?>
+											<?php if (!empty($news['live_contact'] ?? '') || !empty($news['live_contact_url'] ?? '')): ?>
+												<p class="txt">■ 問い合わせ：
+												<?php if (!empty($news['live_contact_url'] ?? '')): ?>
+													<a href="<?php echo h($news['live_contact_url']); ?>" target="_blank"><?php echo h($news['live_contact'] ?? $news['live_contact_url']); ?></a>
+												<?php else: ?>
+													<?php echo h($news['live_contact']); ?>
+												<?php endif; ?>
+												<br></p>
+											<?php endif; ?>
+											<?php if (!empty($news['live_other'] ?? '')): ?>
+												<p class="txt"><?php echo str_replace('<br>', '<br>', $news['live_other']); ?></p>
+											<?php endif; ?>
+											<?php if (!empty($news['image'] ?? '')): ?>
+												<br>
+												<?php if (!empty($news['title_url'] ?? '')): ?>
+													<a href="<?php echo h($news['title_url']); ?>" target="_blank">
+												<?php endif; ?>
+												<img src="<?php echo h($news['image']); ?>" class="newsimg">
+												<?php if (!empty($news['title_url'] ?? '')): ?>
+													</a>
+												<?php endif; ?>
+											<?php endif; ?>
+										<?php elseif ($category === 'You Tube'): ?>
+											<?php if (!empty($news['content'] ?? '')): ?>
+												<p class="txt"><?php echo str_replace('<br>', '<br>', $news['content']); ?></p>
+											<?php endif; ?>
+											<?php if (!empty($news['image'] ?? '')): ?>
+												<br>
+												<?php if (!empty($news['youtube_url'] ?? '')): ?>
+													<a href="<?php echo h($news['youtube_url']); ?>" target="_blank">
+												<?php endif; ?>
+												<img src="<?php echo h($news['image']); ?>" class="newsimg">
+												<?php if (!empty($news['youtube_url'] ?? '')): ?>
+													</a>
+												<?php endif; ?>
+											<?php endif; ?>
+											<?php if (!empty($news['youtube_id'] ?? '')): ?>
+												<div style="margin: 15px 0;">
+													<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo h($news['youtube_id']); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%;"></iframe>
+												</div>
+											<?php elseif (!empty($news['youtube_url'] ?? '')): ?>
+												<p class="txt">
+													▶️ <a href="<?php echo h($news['youtube_url']); ?>" target="_blank" class="bold">YouTubeで視聴</a><br><br>
+												</p>
+											<?php endif; ?>
+										<?php else: ?>
+											<?php if (!empty($news['content'] ?? '')): ?>
+												<p class="txt"><?php echo str_replace('<br>', '<br>', $news['content']); ?></p>
+											<?php endif; ?>
+											<?php if (!empty($news['image'] ?? '')): ?>
+												<br>
+												<img src="<?php echo h($news['image']); ?>" class="newsimg">
 											<?php endif; ?>
 										<?php endif; ?>
-									<?php else: ?>
-										<?php if (!empty($news['content'] ?? '')): ?>
-											<p class="txt"><?php echo str_replace('<br>', '<br>', $news['content']); ?></p>
-										<?php endif; ?>
-										<?php if (!empty($news['image'] ?? '')): ?>
-											<br>
-											<img src="<?php echo h($news['image']); ?>" class="newsimg">
-										<?php endif; ?>
-									<?php endif; ?>
+									</div>
 								</div>
 								<?php if ($index === $totalNews - 1): ?>
 									<hr class="news-divider">
