@@ -332,4 +332,9 @@ function getDiscographyCategoryColor($categoryName) {
     }
     return '#667eea'; // デフォルト色
 }
+
+// リリース形態の選択肢を取得する
+function getReleaseTypes() {
+    return ['CD', 'デジタル配信', 'DVD'];
+}
 ?>

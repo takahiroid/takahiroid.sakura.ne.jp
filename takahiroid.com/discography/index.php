@@ -52,13 +52,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
         }
         
-        // リリース形態でフィルター
-        $filterType = isset($_GET['type']) ? $_GET['type'] : '';
-        if (!empty($filterType)) {
-            $publishedData = array_filter($publishedData, function($item) use ($filterType) {
-                return ($item['release_type'] ?? '') === $filterType;
-            });
-        }
+        // 発売日の降順でソート
+        usort($publishedData, function($a, $b) {
+            $dateA = $a['release_date'] ?? '';
+            $dateB = $b['release_date'] ?? '';
+            
+            // 日付を統一形式（YYYY-MM-DD）に変換
+            $normalizeDate = function($date) {
+                if (empty($date)) return '0000-00-00';
+                // "YYYY.MM.DD" 形式を "YYYY-MM-DD" に変換
+                $date = str_replace('.', '-', $date);
+                // "YYYY/MM/DD" 形式を "YYYY-MM-DD" に変換
+                $date = str_replace('/', '-', $date);
+                return $date;
+            };
+            
+            $normalizedA = $normalizeDate($dateA);
+            $normalizedB = $normalizeDate($dateB);
+            
+            // 降順（新しい日付が先）
+            return strcmp($normalizedB, $normalizedA);
+        });
         
         // カテゴリの一覧を取得
         $categories = [];
@@ -67,59 +81,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 $categories[$item['category']] = ($categories[$item['category']] ?? 0) + 1;
             }
         }
-        
-        // リリース形態の一覧を取得
-        $releaseTypes = [];
-        foreach ($discographyData as $item) {
-            if (!empty($item['release_type']) && ($item['published'] ?? true)) {
-                $releaseTypes[$item['release_type']] = ($releaseTypes[$item['release_type']] ?? 0) + 1;
-            }
-        }
         ?>
         
-        <?php if (count($categories) > 1 || count($releaseTypes) > 1): ?>
+        <?php if (count($categories) > 1): ?>
         <div class="disc-filter">
-            <?php if (count($categories) > 1): ?>
-                <label>CATEGORY</label>
-                <select onchange="updateFilter(this.value, 'category')" style="margin-right: 15px;">
-                    <option value="">ALL</option>
-                    <?php foreach ($categories as $cat => $count): ?>
-                        <option value="<?php echo htmlspecialchars($cat, ENT_QUOTES, 'UTF-8'); ?>" <?php echo $filterCategory === $cat ? 'selected' : ''; ?>>
-                            <?php echo htmlspecialchars($cat, ENT_QUOTES, 'UTF-8'); ?>(<?php echo $count; ?>)
-                        </option>
-                    <?php endforeach; ?>
-                </select>
-            <?php endif; ?>
-            <?php if (count($releaseTypes) > 1): ?>
-                <label>SORT BY</label>
-                <select onchange="updateFilter(this.value, 'type')">
-                    <option value="">ALL</option>
-                    <?php foreach ($releaseTypes as $type => $count): ?>
-                        <option value="<?php echo htmlspecialchars($type, ENT_QUOTES, 'UTF-8'); ?>" <?php echo $filterType === $type ? 'selected' : ''; ?>>
-                            <?php echo htmlspecialchars($type, ENT_QUOTES, 'UTF-8'); ?>(<?php echo $count; ?>)
-                        </option>
-                    <?php endforeach; ?>
-                </select>
-            <?php endif; ?>
+            <label>CATEGORY</label>
+            <select onchange="updateFilter(this.value, 'category')">
+                <option value="">ALL</option>
+                <?php foreach ($categories as $cat => $count): ?>
+                    <option value="<?php echo htmlspecialchars($cat, ENT_QUOTES, 'UTF-8'); ?>" <?php echo $filterCategory === $cat ? 'selected' : ''; ?>>
+                        <?php echo htmlspecialchars($cat, ENT_QUOTES, 'UTF-8'); ?>(<?php echo $count; ?>)
+                    </option>
+                <?php endforeach; ?>
+            </select>
         </div>
         <script>
         function updateFilter(value, param) {
-            const url = new URL(window.location);
-            if (value) {
-                url.searchParams.set(param, value);
-            } else {
-                url.searchParams.delete(param);
-            }
-            // 他のパラメータも保持
-            const category = url.searchParams.get('category') || '';
-            const type = url.searchParams.get('type') || '';
-            
             let newUrl = '/discography/';
-            const params = [];
-            if (category) params.push('category=' + encodeURIComponent(category));
-            if (type) params.push('type=' + encodeURIComponent(type));
-            if (params.length > 0) {
-                newUrl += '?' + params.join('&');
+            if (value) {
+                newUrl += '?category=' + encodeURIComponent(value);
             }
             location.href = newUrl;
         }

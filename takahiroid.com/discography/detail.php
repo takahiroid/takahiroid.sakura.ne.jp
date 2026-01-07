@@ -62,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 $categoryColor = getDiscographyCategoryColor($disc['category']);
             ?>
                 <div class="disc-subtitle" style="margin-bottom: 5px;">
-                    <span style="display: inline-block; padding: 4px 12px; background: <?php echo htmlspecialchars($categoryColor, ENT_QUOTES, 'UTF-8'); ?>; color: #fff; font-size: 12px; border-radius: 4px;">
+                    <span class="category-badge" style="background: <?php echo htmlspecialchars($categoryColor, ENT_QUOTES, 'UTF-8'); ?>;">
                         <?php echo htmlspecialchars($disc['category'], ENT_QUOTES, 'UTF-8'); ?>
                     </span>
                 </div>
@@ -90,10 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="disc-detail-info">
                     <?php if (!empty($disc['release_date'])): ?>
                         <div class="disc-release-info">
-                            <?php echo htmlspecialchars($disc['release_date'], ENT_QUOTES, 'UTF-8'); ?>
-                            <?php if (!empty($disc['release_type'])): ?>
-                                <?php echo htmlspecialchars($disc['release_type'], ENT_QUOTES, 'UTF-8'); ?>リリース
-                            <?php endif; ?>
+                            <?php echo htmlspecialchars($disc['release_date'], ENT_QUOTES, 'UTF-8'); ?> 発売
                         </div>
                     <?php endif; ?>
                     

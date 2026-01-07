@@ -82,8 +82,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// リリース形態の選択肢
-$releaseTypes = ['CD', 'LP/Vinyl', 'デジタル配信', 'DVD', 'Blu-ray', 'その他'];
+// リリース形態の選択肢を取得
+$releaseTypes = getReleaseTypes();
 
 // カテゴリ一覧を読み込み
 $discographyCategories = loadDiscographyCategories();

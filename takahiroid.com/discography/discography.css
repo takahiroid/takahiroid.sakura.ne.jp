@@ -55,19 +55,21 @@
 .disc-image {
     position: relative;
     width: 100%;
-    padding-bottom: 100%;
-    background: #f5f5f5;
-    overflow: hidden;
+    height: 300px;
+    background: #fff;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .disc-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
-    object-fit: cover;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
     transition: opacity 0.3s ease;
+    border: 2px solid #000;
+    box-sizing: border-box;
 }
 .disc-image-placeholder {
     position: absolute;
@@ -129,8 +131,15 @@
 .disc-detail-header .disc-subtitle {
     font-size: 13px;
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     letter-spacing: 1px;
+}
+.category-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
 }
 .disc-detail-header h1 {
     font-family: 'Quicksand', sans-serif;
@@ -166,6 +175,7 @@
     width: 100%;
     height: auto;
     display: block;
+    border: 2px solid #000;
 }
 .disc-detail-image-placeholder {
     width: 100%;
@@ -205,14 +215,14 @@
 }
 
 .disc-detail-info {
-    padding-top: 10px;
+
 }
 
 .disc-release-info {
     font-size: 14px;
     font-weight: 600;
     color: #333;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding-bottom: 15px;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -235,7 +245,6 @@
     color: #333;
 }
 .disc-body p {
-    margin-bottom: 1em;
     font-size: 14px;
     line-height: 1.8;
 }
@@ -267,8 +276,9 @@
 }
 
 .disc-back-link {
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
 }
 .disc-back-link a {
     display: inline-flex;
