@@ -3,14 +3,14 @@
         "id": "0128-live",
         "title": "松本タカヒロのRock’nRoll Cafe ",
         "title_url": "https:\/\/topbeatclub.com\/",
-        "lead": "Top Beat Club Cafe ライブ決定",
+        "lead": "松本タカヒロのRock’nRoll Cafe",
         "category": "LIVE",
         "subcategory": "TAKAHIROID",
         "date": "2025\/12\/08 00:00",
         "end_date": "",
         "content": "<p>DJにマティをお迎えして、1Fカフェにてアコースティックライブをします！<\/p>",
         "published": true,
-        "image": "",
+        "image": "\/news\/img\/news_20260107181814_695e24d60bf6c.jpg",
         "youtube_id": null,
         "youtube_url": "",
         "live_date": "2026\/01\/28",
@@ -29,9 +29,9 @@
         "live_contact_url": "https:\/\/topbeatclub.com\/",
         "live_other": "",
         "created_at": "2025-12-08 00:00:00",
-        "updated_at": "2026-01-07 17:10:12",
+        "updated_at": "2026-01-07 18:46:55",
         "show_on_top": true,
-        "thumbnail": "\/news\/img\/news_20260107153442_695dfe8298401.jpg"
+        "thumbnail": "\/news\/img\/news_20260107181814_695e24d60c852.jpg"
     },
     {
         "id": "turtles-live",
@@ -67,8 +67,9 @@
         "live_contact_url": "https:\/\/mandala.gr.jp\/SPC\/",
         "live_other": "■ 入場順<br>1）e+<br>2）Tiget<br>3）アーティスト予約来店順<br><br>〒180-0004 東京都武蔵野市吉祥寺本町1-20-16 B1",
         "created_at": "2025-10-15 00:00:00",
-        "updated_at": "2026-01-07 12:12:30",
-        "show_on_top": true
+        "updated_at": "2026-01-07 18:03:04",
+        "show_on_top": true,
+        "thumbnail": "\/news\/img\/news_20260107180304_695e2148c8906.jpg"
     },
     {
         "id": "rockstar-youtube",
@@ -85,9 +86,9 @@
         "youtube_id": "zfTbmuIzyUg",
         "youtube_url": "https:\/\/youtube.com\/watch?v=zfTbmuIzyUg&t=1s",
         "created_at": "2025-07-15 00:00:00",
-        "updated_at": "2026-01-07 17:30:22",
+        "updated_at": "2026-01-07 17:56:38",
         "show_on_top": true,
-        "thumbnail": "\/news\/img\/news_20260107172946_695e197a6e79d.png"
+        "thumbnail": "\/news\/img\/news_20260107175638_695e1fc6bef2c.png"
     },
     {
         "id": "sparky-release",
@@ -100,11 +101,11 @@
         "end_date": "",
         "content": "<p class=\"txt\">▼配信開始日：2025年5月21日（水）<br><br><a class=\"button-link\" href=\"https:\/\/sparky.lnk.to\/spacelab\" target=\"_blank\" rel=\"noopener\">各種配信サイトへのリンクはこちら<\/a><br><br>▼各種配信サイトのPreAdd方法<br>・楽曲配信日にライブラリやプレイリストに自動で追加され、聴き逃しを防ぐことができます。<br><br>―2000年代初頭に輝いたスペーシー・ポップが、再び音楽の軌道へ―<br><br>2000年代前半、その独自のサウンドスケープでシーンに鮮烈な印象を残したエレクトリック・ポップバンド SPARKY。その名盤とも言える2002年リリースのアルバム『spacelab』が、2025年5月21日（水）より主要サブスクリプションサービスで配信解禁される。<br><br>SPARKYは、ザ・タートルズの松本タカヒロ（Vo, Gt）を中心に結成。<br>初期メンバーには、イワイエイキチ（Ba／2004年脱退）、皆川真人（Syn）、BRITAIN（Dr）という、ジャンルを横断する高い音楽性を持つ面々が揃い、その幅広いアプローチとスペーシーなエレクトロサウンドで、多くの音楽リスナーを魅了した。<br><br>『spacelab』は、時代を超えて色褪せないメロディとサウンドメイキングが詰まった、まさに未来の記録。現在もなお新鮮に響くその音楽は、当時を知るファンには懐かしさとともに、そして今の音楽を愛する世代にも新しい刺激を届けるだろう。<br><br>かつて宇宙（音楽）を旅したあなたへ。そして、これからその旅に出るすべてのリスナーへ。<\/p>",
         "published": true,
-        "image": "",
+        "image": "\/news\/img\/news_20260107180853_695e22a5abdcb.jpg",
         "youtube_id": null,
         "youtube_url": "",
         "created_at": "2025-05-21 00:00:00",
-        "updated_at": "2026-01-07 17:14:15",
+        "updated_at": "2026-01-07 18:08:53",
         "show_on_top": true,
         "thumbnail": "\/news\/img\/news_20260107171415_695e15d723b05.jpg"
     },

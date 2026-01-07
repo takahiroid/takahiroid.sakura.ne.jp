@@ -73,7 +73,7 @@ body {
    レイアウト
    ======================================== */
 .wrapper {
-	margin: 20px auto 0px;
+	margin: 10px auto 0px;
 	text-align: left;
 	max-width: 1000px;
 	position: relative;
@@ -116,11 +116,11 @@ body {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 13px;
 	color: #666;
-	padding: 5px 5px 0 5px;
+	padding:0px 5px 0 5px;
 }
 
 .header ul.gnavi_pc {
-	margin-top: 10px;
+	margin-top: 7px;
 	margin-left: 0;
 	display: inline-block;
 	text-align: center;
@@ -146,6 +146,9 @@ body {
 	line-height: 1;
 	color: #000;
 }
+.header ul.gnavi_pc li.current a {
+	color: #c40021;
+}
 .header ul.gnavi_pc li.news_btn a,
 .header ul.gnavi_pc li.works_btn a,
 .header ul.gnavi_pc li.bio_btn a,
@@ -154,6 +157,7 @@ body {
 .header ul.gnavi_pc li.shop_btn a {
 	color: #000;
 }
+.header ul.gnavi_pc li.music_btn a,
 .header ul.gnavi_pc li.twitter_btn a,
 .header ul.gnavi_pc li.insta_btn a,
 .header ul.gnavi_pc li.youtube_btn a {
@@ -162,14 +166,14 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+.header ul.gnavi_pc li.music_btn a img,
 .header ul.gnavi_pc li.twitter_btn a img,
 .header ul.gnavi_pc li.insta_btn a img,
 .header ul.gnavi_pc li.youtube_btn a img {
 	vertical-align: middle;
 	padding-top: 2px;
-	filter: brightness(0);
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
 }
 .header ul.gnavi_pc li a:hover {
 	opacity: 0.50;
@@ -431,7 +435,7 @@ body {
    ======================================== */
 .page-title {
 	text-align: center;
-	margin: 20px 0 40px;
+	margin: 10px 0 10px;
 }
 .page-title h1 {
 	font-family: 'Quicksand', sans-serif;
@@ -498,4 +502,78 @@ body {
 	position: absolute;
 	left: -9999px;
 	bottom: 100px;
+}
+
+/* ========================================
+   画像ポップアップモーダル
+   ======================================== */
+/* サムネイル画像をクリック可能にする */
+.thumbnail-clickable {
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+.thumbnail-clickable:hover {
+	opacity: 0.8;
+}
+
+/* 画像ポップアップモーダル */
+.image-modal {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	overflow: auto;
+}
+
+.image-modal-content {
+	margin: auto;
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+	margin-top: 5%;
+	animation: zoom 0.3s;
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+.image-modal-close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.image-modal-close:hover,
+.image-modal-close:focus {
+	color: #bbb;
+}
+
+/* スマートフォン対応 */
+@media screen and (max-width: 896px) {
+	.image-modal-content {
+		max-width: 95%;
+		max-height: 95%;
+		margin-top: 10%;
+	}
+
+	.image-modal-close {
+		top: 10px;
+		right: 20px;
+		font-size: 35px;
+	}
 }

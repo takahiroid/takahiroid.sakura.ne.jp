@@ -299,6 +299,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .disc-filter {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
     .disc-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px 15px;

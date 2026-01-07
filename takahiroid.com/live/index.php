@@ -88,7 +88,7 @@ foreach ($allNewsData as $news) {
   <title>TAKAHIROID.COM -松本タカヒロ- LIVE</title>
 </head>
 
-<body id="news">
+<body id="live">
   <div class="wrapper">
     <?php include("../common/inc/header.php"); ?>
 
@@ -136,13 +136,7 @@ foreach ($allNewsData as $news) {
 								<div class="news-body">
 									<?php if (!empty($news['thumbnail'] ?? '')): ?>
 										<div class="news-thumb">
-											<?php if (!empty($news['title_url'] ?? '')): ?>
-												<a href="<?php echo h($news['title_url']); ?>" target="_blank">
-											<?php endif; ?>
-											<img src="<?php echo h($news['thumbnail']); ?>" class="newsimg" alt="">
-											<?php if (!empty($news['title_url'] ?? '')): ?>
-												</a>
-											<?php endif; ?>
+											<img src="<?php echo h($news['thumbnail']); ?>" class="newsimg thumbnail-clickable" alt="" data-full-image="<?php echo h($news['thumbnail']); ?>">
 										</div>
 									<?php endif; ?>
 									<div class="txtBloc">
@@ -236,6 +230,10 @@ foreach ($allNewsData as $news) {
 											<?php if (!empty($news['live_other'] ?? '')): ?>
 												<p class="txt"><?php echo str_replace('<br>', '<br>', $news['live_other']); ?></p>
 											<?php endif; ?>
+											<?php if (!empty($news['image'] ?? '')): ?>
+												<br>
+												<img src="<?php echo h($news['image']); ?>" class="newsimg article-image-clickable" alt="" data-full-image="<?php echo h($news['image']); ?>" style="cursor: pointer;">
+											<?php endif; ?>
 										<?php endif; ?>
 									</div>
 								</div>
@@ -256,6 +254,54 @@ foreach ($allNewsData as $news) {
 
   </div>
   </div>
+
+  <!-- 画像ポップアップモーダル -->
+  <div id="imageModal" class="image-modal">
+    <span class="image-modal-close">&times;</span>
+    <img class="image-modal-content" id="modalImage">
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      // サムネイル画像をクリックしたとき
+      $('.thumbnail-clickable').on('click', function() {
+        var fullImageSrc = $(this).data('full-image');
+        $('#modalImage').attr('src', fullImageSrc);
+        $('#imageModal').fadeIn(200);
+        $('body').css('overflow', 'hidden'); // 背景のスクロールを無効化
+      });
+
+      // 記事下の画像をクリックしたとき
+      $('.article-image-clickable').on('click', function() {
+        var fullImageSrc = $(this).data('full-image');
+        $('#modalImage').attr('src', fullImageSrc);
+        $('#imageModal').fadeIn(200);
+        $('body').css('overflow', 'hidden'); // 背景のスクロールを無効化
+      });
+
+      // 閉じるボタンをクリックしたとき
+      $('.image-modal-close').on('click', function() {
+        $('#imageModal').fadeOut(200);
+        $('body').css('overflow', 'auto'); // 背景のスクロールを有効化
+      });
+
+      // モーダル背景をクリックしたとき
+      $('#imageModal').on('click', function(e) {
+        if ($(e.target).is('#imageModal')) {
+          $('#imageModal').fadeOut(200);
+          $('body').css('overflow', 'auto');
+        }
+      });
+
+      // ESCキーで閉じる
+      $(document).on('keydown', function(e) {
+        if (e.key === 'Escape' && $('#imageModal').is(':visible')) {
+          $('#imageModal').fadeOut(200);
+          $('body').css('overflow', 'auto');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

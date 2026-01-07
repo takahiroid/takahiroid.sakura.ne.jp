@@ -134,17 +134,7 @@ foreach ($allNewsData as $news) {
 							<td id="<?php echo h($news['id'] ?? ''); ?>" class="news-item">
 								<hr class="news-divider">
 								<div class="news-body">
-									<?php if (!empty($news['thumbnail'] ?? '')): ?>
-										<div class="news-thumb">
-											<?php if (!empty($news['title_url'] ?? '')): ?>
-												<a href="<?php echo h($news['title_url']); ?>" target="_blank">
-											<?php endif; ?>
-											<img src="<?php echo h($news['thumbnail']); ?>" class="newsimg" alt="">
-											<?php if (!empty($news['title_url'] ?? '')): ?>
-												</a>
-											<?php endif; ?>
-										</div>
-									<?php endif; ?>
+
 									<div class="txtBloc">
 										<!-- カテゴリアイコン・サブカテゴリアイコン・更新日（同じ行） -->
 										<p class="cdtitle">

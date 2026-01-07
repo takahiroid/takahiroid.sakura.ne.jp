@@ -91,7 +91,7 @@
    ======================================== */
 @media (max-width: 768px) {
 	.page-title {
-		margin: 20px 0 35px;
+		margin: 7px 0 4px;
 	}
 	.page-title h1 {
 		font-size: 28px;
@@ -169,6 +169,14 @@
 	width: 100%;
 	list-style: none;
 	box-shadow: 0 11px 10px -10px #666666;
+	margin: 0;
+	padding: 0;
+	background: #FFF;
+}
+
+.gnavi_sp .menu li {
+	margin: 0;
+	padding: 0;
 }
 
 .gnavi_sp .menu li a {
@@ -185,6 +193,9 @@
 	text-align: center;
 	text-decoration: none;
 }
+.gnavi_sp .menu li.current a {
+	color: #c40021;
+}
 
 .gnavi_sp .menu li.top_btn a {
 	padding-top: 10px;
@@ -194,6 +205,7 @@
 .gnavi_sp .menu li.works_btn a,
 .gnavi_sp .menu li.bio_btn a,
 .gnavi_sp .menu li.disc_btn a,
+.gnavi_sp .menu li.music_btn a,
 .gnavi_sp .menu li.insta_btn a,
 .gnavi_sp .menu li.twitter_btn a,
 .gnavi_sp .menu li.youtube_btn a,
@@ -211,10 +223,10 @@
 	margin-right: 2px;
 }
 
+.gnavi_sp .menu li.music_btn a img,
 .gnavi_sp .menu li.twitter_btn a img,
 .gnavi_sp .menu li.insta_btn a img,
 .gnavi_sp .menu li.youtube_btn a img {
-	filter: brightness(0);
 	width: 16px;
 	height: 16px;
 }
