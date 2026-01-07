@@ -15,7 +15,7 @@
 /* Discography Styles */
 .disc-page-title {
     text-align: center;
-    margin: 60px 0 50px;
+    margin: 20px 0 50px;
 }
 .disc-page-title h1 {
     font-family: 'Quicksand', sans-serif;

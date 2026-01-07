@@ -133,9 +133,11 @@
 
 			.gnavi_sp .menu li a{
 				text-decoration: none;
-				font-size:25px;
-				font-family: 'Dosis', sans-serif;
-				letter-spacing: 1px;
+				font-size:16px;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+				font-weight: normal;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
 				line-height: 1;
         background: #FFF;
         color: #000;
@@ -148,13 +150,16 @@
 					padding-top:10px;
 				}
 				.gnavi_sp .menu li.news_btn a{
-					color: #0bf;
+					color: #000;
 				}
 				.gnavi_sp .menu li.works_btn a{
-					color:#70b539;
+					color:#000;
 				}
 				.gnavi_sp .menu li.bio_btn a{
-					color:#f39806;
+					color:#000;
+				}
+				.gnavi_sp .menu li.disc_btn a{
+					color:#000;
 				}
 				.gnavi_sp .menu li.insta_btn a{
 					color: #000;
@@ -163,18 +168,48 @@
 					color: #000;
 				}
 				.gnavi_sp .menu li.youtube_btn a{
-					color: #CC0000;
+					color: #000;
 				}
 				.gnavi_sp .menu li.youtube_btn .youtube-icon{
 					font-size: 0.8em;
 					margin-right: 2px;
 				}
+				.gnavi_sp .menu li.twitter_btn a img,
+				.gnavi_sp .menu li.insta_btn a img,
+				.gnavi_sp .menu li.youtube_btn a img{
+					filter: brightness(0);
+					width: 16px;
+					height: 16px;
+				}
 				.gnavi_sp .menu li.inst_btn a{
-					color:#920783;
+					color:#000;
 					padding-bottom: 20px;
 				}
 				.gnavi_sp .menu li.shop_btn a{
-					color:#cc6600;
+					color:#000;
+				}
+				.gnavi_sp .menu li.sns_icons_wrap{
+					padding: 0;
+					background: #FFF;
+				}
+				.gnavi_sp .menu li.sns_icons_wrap .sns_icons{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					list-style: none;
+					margin: 0;
+					padding: 2vw 0.4em;
+					gap: 20px;
+					background: #FFF;
+				}
+				.gnavi_sp .menu li.sns_icons_wrap .sns_icons li{
+					padding: 0;
+				}
+				.gnavi_sp .menu li.sns_icons_wrap .sns_icons li a{
+					padding: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
 				}
 		.active.menu-trigger span:nth-child(1) {
 		    top: 11px;

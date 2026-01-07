@@ -25,7 +25,7 @@
 
 
       <div class="bio_left pc">
-        <p id="pageTitle">Biography</p>
+        <p id="pageTitle">PROFILE</p>
         <div class="spaceman">
           <img src="/common/img/spaceman.gif">
         </div>

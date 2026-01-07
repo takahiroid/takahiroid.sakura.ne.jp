@@ -87,7 +87,7 @@ body{
 /*HEADER*/
 /*--------------------------------*/
 .header{
-
+	text-align: center;
 }
 	.header a.ttl_main{
 		font-family: 'Quicksand', sans-serif;
@@ -110,62 +110,64 @@ body{
 }
 .header ul.gnavi_pc{
 	margin-top: 10px;
-	margin-left: 5px;
+	margin-left: 0;
+	display: inline-block;
+	text-align: center;
 }
 	.header ul.gnavi_pc li{
 		list-style: none;
-		float: left;
+		display: inline-block;
 		height: 30px;
 		padding: 0 10px;
-		border-right:1px solid #d8d8d8;
 	}
 		.header ul.gnavi_pc li.news_btn{
 			padding-left: 0;
 		}
 			.header ul.gnavi_pc li a{
 				text-decoration: none;
-				font-size:25px;
-				font-family: 'Dosis', sans-serif;
-				letter-spacing: 1px;
+				font-size:16px;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+				font-weight: normal;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
 				line-height: 1;
+				color: #000;
 			}
 				.header ul.gnavi_pc li.news_btn a{
-					color: #0bf;
+					color: #000;
 				}
 				.header ul.gnavi_pc li.works_btn a{
-					color:#70b539;
+					color:#000;
 
 				}
 				.header ul.gnavi_pc li.bio_btn a{
-					color:#f39806;
+					color:#000;
 				}
 				.header ul.gnavi_pc li.insta_btn a{
-					color:#CC3366;
+					color:#000;
 				}
 				.header ul.gnavi_pc li.twitter_btn a,
-				.header ul.gnavi_pc li.insta_btn a{
+				.header ul.gnavi_pc li.insta_btn a,
+				.header ul.gnavi_pc li.youtube_btn a{
 					color: #000;
 					display: flex;
 					align-items: center;
 					justify-content: center;
 				}
 				.header ul.gnavi_pc li.twitter_btn a img,
-				.header ul.gnavi_pc li.insta_btn a img{
+				.header ul.gnavi_pc li.insta_btn a img,
+				.header ul.gnavi_pc li.youtube_btn a img{
 					vertical-align: middle;
 					padding-top: 2px;
-				}
-				.header ul.gnavi_pc li.youtube_btn a{
-					color: #ff0000;
-				}
-				.header ul.gnavi_pc li.youtube_btn .youtube-icon{
-					font-size: 0.8em;
-					margin-right: 2px;
+					filter: brightness(0);
+					width: 16px;
+					height: 16px;
 				}
 			.header ul.gnavi_pc li.disc_btn a{
-				color:#9b59b6;
+				color:#000;
 			}
 			.header ul.gnavi_pc li.shop_btn a{
-				color:#cc6600;
+				color:#000;
 			}
 					.header ul.gnavi_pc li a:hover{
 						opacity:0.50;
@@ -177,7 +179,6 @@ body{
 .contents{
 	width: 100%;
 	margin: 0;
-	padding-top: 20px;
 }
 .wrap_area{
 	display: flex;
@@ -217,8 +218,8 @@ body{
 /*--------------------------------*/
 .mainvisual{
 	width: 100%;
-	margin-top: 2rem;
 	margin-bottom: 2rem;
+	margin-top: 1rem;
 }
 .mainvisual img{
 	width: 100%;

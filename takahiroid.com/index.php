@@ -35,7 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
 		</div>
-    <div class="wrap_area">
+    <!-- <div class="wrap_area">
       <div class="top_left">
         <img src="bio/img/photo_5.jpg">
       </div>
@@ -43,10 +43,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="profTxt">
           <p class="name"><span>Takahiro Matsumoto</span> <br> 松本タカヒロ</p>
           <p class="credit">Produce / Compose / Arrangement / Lyrics / Guitar / Vocal</p>
-          <div class="txt">
-          <!-- <div class="link band">
-            <p>E-MAIL：<a href="mailto:takahiroid@gmail.com" class="itoi">takahiroid@gmail.com</a></p>
-          </div> -->
 
           <div class="hyakka pc">
             <p class="ttl"><a href="http://www.takahiroid.com/40sbook.pdf" target="_blank">「松本タカヒロ大百科 2010年版」Free Download</a></p>
@@ -61,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- <iframe class="soundcloud" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/82747181&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe> -->
     <!-- <div class="spaceman pc">

@@ -135,6 +135,41 @@ foreach ($allNewsData as $news) {
       text-decoration: none;
       color: white;
     }
+    
+    /* News Page Title Styles */
+    .news-page-title {
+      text-align: center;
+      margin: 20px 0 50px;
+    }
+    .news-page-title h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 42px;
+      font-weight: 400;
+      letter-spacing: 8px;
+      color: #333;
+      position: relative;
+      display: inline-block;
+    }
+    .news-page-title h1::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 2px;
+      background: #333;
+    }
+    
+    @media (max-width: 768px) {
+      .news-page-title h1 {
+        font-size: 28px;
+        letter-spacing: 4px;
+      }
+      .news-page-title {
+        margin: 40px 0 35px;
+      }
+    }
   </style>
 </head>
 
@@ -142,13 +177,13 @@ foreach ($allNewsData as $news) {
   <div class="wrapper">
     <?php include("../common/inc/header.php"); ?>
 
-    <div class="sp_title sp">
-      <p>Live&Media</p>
-    </div>
-
     <div class="contents">
+      <div class="news-page-title">
+        <h1>LIVE & MEDIA</h1>
+      </div>
+      
       <div class="wrap_area">
-        <div class="news_left">
+        <div class="news_left" style="width: 100%;">
 
           <table border="0" class="news_table">
 					<?php foreach ($newsData as $news): ?>
@@ -349,12 +384,7 @@ foreach ($allNewsData as $news) {
 
           </table>
 
-					<div class="sp">
-					<?php include("inc_sidebar_list.php"); ?>
-					</div>
         </div>
-
-				<?php include("inc_sidebar.php"); ?>
       </div>
 
     </div>
