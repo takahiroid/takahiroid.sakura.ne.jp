@@ -71,7 +71,23 @@ NEWS (PC)
 }
 
 .news_left .news_table tr td {
-  padding-bottom: 4rem;
+  padding-bottom: 0;
+}
+
+.news_left .news_table tr td.news-item {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.news-divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.news_left .news_table tr:last-child td.news-item {
+  padding-bottom: 2rem;
 }
 
 .news_left .news_table tr td span.songtxt {
@@ -81,26 +97,43 @@ NEWS (PC)
 }
 
 .news_left .cdtitle {
-  margin-bottom: 15px;
-  padding-bottom: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 0;
   padding-left: 5px;
   font-size: 16px;
   font-weight: bold;
-  border-bottom: #666 1px solid;
+  border-bottom: none;
+  color: #000;
 }
 
 .news_left .cdtitle span {
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
-  background-color: #ff0000;
-  border-radius: 0.4em;
-  color: #FFF;
   display: inline-block;
   position: relative;
   top: -0.1rem;
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
   line-height: 1;
   margin-right: 0.7rem;
+}
+
+.news_left .cdtitle .category-badge {
+  background-color: #000;
+  color: #FFF;
+  border-radius: 0.4em;
+}
+
+.news_left .cdtitle .subcategory-badge {
+  background-color: #FFF;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 0.4em;
+}
+
+.news_left .cdtitle .date-display {
+  color: #000;
+  font-size: 12px;
+  margin-left: -0.7rem;
 }
 
 .news_left .txtBloc {
@@ -110,18 +143,74 @@ NEWS (PC)
 .news_left .txtBloc .ttl {
   font-size: 15px;
   line-height: 1.7;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.news_left .txtBloc .ttl.event-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #000;
+}
+
+.news_left .txtBloc .live-date {
+  font-size: 15px;
+  margin-bottom: 8px;
+  margin-top: 5px;
+  color: #000;
+}
+
+.news_left .txtBloc .live-date-venue {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.news_left .txtBloc .live-date-venue .live-date-text {
+  color: #000;
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.news_left .txtBloc .live-date-venue .venue-text {
+  color: #000;
+}
+
+.news_left .txtBloc .live-date-venue .venue-text {
+  color: #000;
+}
+
+.news_left .txtBloc .ttl.venue {
+  margin-top: 5px;
+  color: #000;
 }
 
 .news_left .txtBloc .ttl a {
   font-size: 15px;
   line-height: 1.7;
+  color: #000;
 }
 
 .news_left .txtBloc .txt,
 .news_left .txtBloc .txt a {
   margin-top: 0;
   font-size: 13px;
-  line-height: 1.6em;
+  line-height: 1.7em;
+  color: #000;
+}
+
+/* 記事内のすべてのリンクにスタイルを適用 */
+.news_left .txtBloc a {
+  color: #000;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.news_left .txtBloc a:hover {
+  color: #333;
+  text-decoration: underline;
+  background-color: #f0f0f0;
 }
 
 span.complete {
@@ -223,6 +312,17 @@ NEWS (SP)
     margin-bottom: 0.2rem;
   }
 
+  .news_left .cdtitle .category-badge {
+    background-color: #000;
+    color: #FFF;
+  }
+
+  .news_left .cdtitle .subcategory-badge {
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+  }
+
   .news_left .txtBloc {
     margin: 0 10px 0 10px;
     font-size: 14px;
@@ -234,6 +334,39 @@ NEWS (SP)
     font-size: 15px;
     font-weight: bold;
     line-height: 1.5em;
+    margin-bottom: 8px;
+  }
+
+  .news_left .txtBloc .ttl.event-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .news_left .txtBloc .live-date {
+    font-size: 15px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+  }
+
+  .news_left .txtBloc .live-date-venue {
+    font-size: 15px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+  }
+
+  .news_left .txtBloc .live-date-venue .live-date-text {
+    display: block;
+    margin-bottom: 0.3em;
+  }
+
+  .news_left .txtBloc .live-date-venue .venue-text {
+    display: block;
+  }
+
+  .news-divider {
+    margin: 1.5rem 0;
   }
 
   .news_left .txtBloc .ttl a {
@@ -241,11 +374,24 @@ NEWS (SP)
     font-weight: bold;
   }
 
+  /* 記事内のすべてのリンクにスタイルを適用（スマートフォン版） */
+  .news_left .txtBloc a {
+    color: #000;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+  }
+
+  .news_left .txtBloc a:hover {
+    color: #333;
+    text-decoration: underline;
+    background-color: #f0f0f0;
+  }
+
   .news_left .txtBloc .txt,
   .news_left .txtBloc .txt a {
     margin-top: 10px;
     font-size: 14px;
-    line-height: 1.6em;
+    line-height: 2em;
   }
 
   .news_left .txtBloc .txt {

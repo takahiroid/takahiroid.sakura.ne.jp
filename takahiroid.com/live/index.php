@@ -38,7 +38,7 @@ $allNewsData = loadNewsDataForFront();
 $currentTime = time();
 
 // 公開されている記事のみフィルタリング（元の順序を保持）
-// NEWSページではLIVEカテゴリを除外
+// LIVEページではLIVEカテゴリのみ表示
 $newsData = [];
 foreach ($allNewsData as $news) {
     // publishedがtrueでない場合はスキップ
@@ -46,9 +46,9 @@ foreach ($allNewsData as $news) {
         continue;
     }
     
-    // LIVEカテゴリは除外（LIVEページで表示）
+    // LIVEカテゴリのみ表示
     $category = $news['category'] ?? '';
-    if ($category === 'LIVE') {
+    if ($category !== 'LIVE') {
         continue;
     }
     
@@ -85,7 +85,7 @@ foreach ($allNewsData as $news) {
   <!-- PAGE TOPに戻るボタン -->
   <script type="text/javascript" src="../common/js/back_top.js"></script>
 
-  <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
+  <title>TAKAHIROID.COM -松本タカヒロ- LIVE</title>
 </head>
 
 <body id="news">
@@ -94,7 +94,7 @@ foreach ($allNewsData as $news) {
 
     <div class="contents">
       <div class="page-title">
-        <h1>NEWS</h1>
+        <h1>LIVE</h1>
       </div>
       
       <div class="wrap_area">
@@ -234,37 +234,6 @@ foreach ($allNewsData as $news) {
 												</a>
 											<?php endif; ?>
 										<?php endif; ?>
-									<?php elseif ($category === 'You Tube'): ?>
-										<?php if (!empty($news['youtube_id'] ?? '')): ?>
-											<div style="margin: 15px 0;">
-												<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo h($news['youtube_id']); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%;"></iframe>
-											</div>
-										<?php elseif (!empty($news['youtube_url'] ?? '')): ?>
-											<p class="txt">
-												▶️ <a href="<?php echo h($news['youtube_url']); ?>" target="_blank" class="bold">YouTubeで視聴</a><br><br>
-											</p>
-										<?php endif; ?>
-										<?php if (!empty($news['content'] ?? '')): ?>
-											<p class="txt"><?php echo str_replace('<br>', '<br>', $news['content']); ?></p>
-										<?php endif; ?>
-										<?php if (!empty($news['image'] ?? '')): ?>
-											<br>
-											<?php if (!empty($news['youtube_url'] ?? '')): ?>
-												<a href="<?php echo h($news['youtube_url']); ?>" target="_blank">
-											<?php endif; ?>
-											<img src="<?php echo h($news['image']); ?>" class="newsimg">
-											<?php if (!empty($news['youtube_url'] ?? '')): ?>
-												</a>
-											<?php endif; ?>
-										<?php endif; ?>
-									<?php else: ?>
-										<?php if (!empty($news['content'] ?? '')): ?>
-											<p class="txt"><?php echo str_replace('<br>', '<br>', $news['content']); ?></p>
-										<?php endif; ?>
-										<?php if (!empty($news['image'] ?? '')): ?>
-											<br>
-											<img src="<?php echo h($news['image']); ?>" class="newsimg">
-										<?php endif; ?>
 									<?php endif; ?>
 								</div>
 								<?php if ($index === $totalNews - 1): ?>
@@ -287,3 +256,4 @@ foreach ($allNewsData as $news) {
 </body>
 
 </html>
+

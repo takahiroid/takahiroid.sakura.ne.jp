@@ -53,7 +53,10 @@ if (file_exists($newsJsonPath)) {
             }
 
             // リンク先を決定
-            $linkUrl = '/news/#' . htmlspecialchars($news['id'], ENT_QUOTES, 'UTF-8');
+            // LIVEカテゴリの場合は/live/、それ以外は/news/にリンク
+            $category = $news['category'] ?? '';
+            $baseUrl = ($category === 'LIVE') ? '/live/' : '/news/';
+            $linkUrl = $baseUrl . '#' . htmlspecialchars($news['id'], ENT_QUOTES, 'UTF-8');
             $linkTarget = '';
             if (!empty($news['youtube_url'])) {
                 $linkUrl = htmlspecialchars($news['youtube_url'], ENT_QUOTES, 'UTF-8');

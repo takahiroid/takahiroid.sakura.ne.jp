@@ -43,6 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $youtube_url = trim($_POST['youtube_url'] ?? '');
     $existing_image = $_POST['existing_image'] ?? '';
     $delete_image = isset($_POST['delete_image']) ? true : false;
+    $existing_thumbnail = $_POST['existing_thumbnail'] ?? '';
+    $delete_thumbnail = isset($_POST['delete_thumbnail']) ? true : false;
     
     // LIVE記事用のフィールド
     $live_date_input = $_POST['live_date'] ?? '';
@@ -100,6 +102,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $image_path = '';
     }
     
+    // サムネイル画像アップロード処理
+    $thumbnail_path = $existing_thumbnail;
+    if (isset($_FILES['thumbnail']) && $_FILES['thumbnail']['error'] === UPLOAD_ERR_OK) {
+        $uploadResult = uploadImage($_FILES['thumbnail']);
+        if ($uploadResult['success']) {
+            // 既存のサムネイル画像を削除
+            if (!empty($existing_thumbnail) && !$delete_thumbnail) {
+                deleteImage(basename($existing_thumbnail));
+            }
+            $thumbnail_path = $uploadResult['path'];
+        } else {
+            $error = $uploadResult['error'] ?? 'サムネイル画像のアップロードに失敗しました';
+        }
+    } elseif (isset($_FILES['thumbnail']) && $_FILES['thumbnail']['error'] !== UPLOAD_ERR_NO_FILE) {
+        // アップロードエラー
+        switch ($_FILES['thumbnail']['error']) {
+            case UPLOAD_ERR_INI_SIZE:
+            case UPLOAD_ERR_FORM_SIZE:
+                $error = 'サムネイル画像のファイルサイズが大きすぎます';
+                break;
+            case UPLOAD_ERR_PARTIAL:
+                $error = 'サムネイル画像のアップロードが完了しませんでした';
+                break;
+            default:
+                $error = 'サムネイル画像のアップロードに失敗しました';
+        }
+    } elseif ($delete_thumbnail && !empty($existing_thumbnail)) {
+        // サムネイル画像削除がリクエストされた場合
+        deleteImage(basename($existing_thumbnail));
+        $thumbnail_path = '';
+    }
+    
     // エラーがある場合は処理を中断しない（エラーメッセージを表示するため）
     
     // YouTube URLからIDを抽出
@@ -129,6 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'published' => $published,
                 'show_on_top' => $show_on_top,
                 'image' => $image_path,
+                'thumbnail' => $thumbnail_path,
                 'youtube_id' => $youtube_id,
                 'youtube_url' => $youtube_url,
                 'created_at' => date('Y-m-d H:i:s'),
@@ -164,6 +199,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $newsData[$id]['published'] = $published;
                 $newsData[$id]['show_on_top'] = $show_on_top;
                 $newsData[$id]['image'] = $image_path;
+                $newsData[$id]['thumbnail'] = $thumbnail_path;
                 $newsData[$id]['youtube_id'] = $youtube_id;
                 $newsData[$id]['youtube_url'] = $youtube_url;
                 $newsData[$id]['updated_at'] = date('Y-m-d H:i:s');
@@ -213,6 +249,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'published' => $published,
             'show_on_top' => $show_on_top,
             'image' => $image_path,
+            'thumbnail' => $thumbnail_path,
             'youtube_id' => $youtube_id,
             'youtube_url' => $youtube_url,
             'live_date' => $live_date,
@@ -243,6 +280,7 @@ if (!$news) {
         'published' => false,
         'show_on_top' => false,
         'image' => '',
+        'thumbnail' => '',
         'youtube_url' => '',
         'youtube_id' => null,
         'live_date' => '',
@@ -382,6 +420,28 @@ if (!$news) {
                         </div>
                     </div>
                     <h3 style="margin: 30px 0 20px; padding-bottom: 10px; border-bottom: 2px solid #667eea; color: #333;">MEDIA</h3>
+                    <div class="form-group">
+                        <label for="thumbnail">サムネイル画像（記事一覧やTOPページに表示されます）</label>
+                        <?php if (!empty($news['thumbnail'])): ?>
+                            <div class="current-image">
+                                <p>現在のサムネイル画像:</p>
+                                <img src="<?php echo h($news['thumbnail']); ?>" alt="現在のサムネイル画像" style="max-width: 300px;">
+                                <input type="hidden" name="existing_thumbnail" value="<?php echo h($news['thumbnail']); ?>">
+                                <div class="delete-image-checkbox">
+                                    <input type="checkbox" id="delete_thumbnail" name="delete_thumbnail">
+                                    <label for="delete_thumbnail" style="margin: 0; font-weight: normal; color: #dc3545;">このサムネイル画像を削除する</label>
+                                </div>
+                            </div>
+                            <p style="margin-top: 10px; color: #666;">新しいサムネイル画像をアップロードすると、現在のサムネイル画像が置き換えられます。</p>
+                        <?php endif; ?>
+                        <input type="file" id="thumbnail" name="thumbnail" accept="image/jpeg,image/jpg,image/png,image/gif,image/webp">
+                        <div class="help-text">JPEG, PNG, GIF, WebP形式、最大5MB</div>
+                        <div id="thumbnail-preview" class="image-preview" style="display: none;">
+                            <p>プレビュー:</p>
+                            <img id="preview-thumbnail-img" src="" alt="プレビュー" style="max-width: 300px;">
+                        </div>
+                    </div>
+                    
                     <div class="form-group">
                         <label for="image">画像（記事の下に表示されます）</label>
                         <?php if (!empty($news['image'])): ?>
@@ -555,6 +615,21 @@ if (!$news) {
             content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-size: 14px; }'
         });
         
+        // サムネイル画像プレビュー機能
+        document.getElementById('thumbnail').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview-thumbnail-img').src = e.target.result;
+                    document.getElementById('thumbnail-preview').style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            } else {
+                document.getElementById('thumbnail-preview').style.display = 'none';
+            }
+        });
+        
         // 画像プレビュー機能
         document.getElementById('image').addEventListener('change', function(e) {
             const file = e.target.files[0];
@@ -569,6 +644,19 @@ if (!$news) {
                 document.getElementById('image-preview').style.display = 'none';
             }
         });
+        
+        // サムネイル画像削除チェックボックスの処理
+        const deleteThumbnailCheckbox = document.getElementById('delete_thumbnail');
+        if (deleteThumbnailCheckbox) {
+            deleteThumbnailCheckbox.addEventListener('change', function() {
+                const fileInput = document.getElementById('thumbnail');
+                if (this.checked) {
+                    fileInput.disabled = true;
+                } else {
+                    fileInput.disabled = false;
+                }
+            });
+        }
         
         // 画像削除チェックボックスの処理
         const deleteCheckbox = document.getElementById('delete_image');
