@@ -193,9 +193,9 @@ foreach ($allNewsData as $news) {
 											}
 											?>
 											<?php if (!empty($news['title_url'] ?? '')): ?>
-												<a href="<?php echo h($news['title_url']); ?>" target="_blank" class="bold"><?php echo str_replace('<br>', '<br>', $news['title']); ?></a>
+												<a href="<?php echo h($news['title_url']); ?>" target="_blank" class="bold"><?php echo str_replace('<br>', '<br>', $news['live_venue']); ?></a>
 											<?php else: ?>
-												<span class="bold"><?php echo str_replace('<br>', '<br>', $news['title']); ?></span>
+												<span class="bold"><?php echo str_replace('<br>', '<br>', $news['live_venue']); ?></span>
 											<?php endif; ?>
 										</p>
 									<?php endif; ?>

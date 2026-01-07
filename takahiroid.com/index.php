@@ -30,11 +30,78 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="contents" >
 		<div class="mainvisual">
 			<a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank"><img src="/news/img/rockstar.jpg" style="width: 100%;"></a>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#0128-live">2026/1/28（水）アコースティックライブ with Matty06</a><span>【2025/12/08 update】</span></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#turtles-live">2026/2/20（金）ザ・タートルズ vs The LOVE </a><span>【2025/10/15 update】</span></p>
-      <p class="ttl" style="margin-top: 10px;"><a href="/news/#1229-live">2025/12/29（月）ソロライブ with ザ・ビートモーターズ</a><span>【2025/9/29 update】</span></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="/news/#brightmoon-live">2025/11/5（土）弾き語りソロワンマン at 大阪</a><span>【2025/9/6 update】</span></p>
-			<p class="ttl" style="margin-top: 10px;"><a href="https://youtube.com/watch?v=zfTbmuIzyUg&t=1s" target="_blank">ソロプロジェクト「TAKAHIROID」の最新曲「ROCK STAR」公開！</a><span>【2025/7/15 update】</span></p>
+
+      <div class="news_area">
+<?php
+// 管理画面のニュースデータを読み込み
+$newsJsonPath = __DIR__ . '/kanri/data/news.json';
+if (file_exists($newsJsonPath)) {
+    $newsData = json_decode(file_get_contents($newsJsonPath), true);
+    if ($newsData) {
+        $today = date('Y/m/d');
+        $displayCount = 0;
+        $maxDisplay = 5; // 表示するニュース数
+
+        foreach ($newsData as $news) {
+            // 公開されていないものはスキップ
+            if (!isset($news['published']) || $news['published'] !== true) {
+                continue;
+            }
+
+            // 終了日が過ぎているものはスキップ
+            if (!empty($news['end_date'])) {
+                $endDate = date('Y/m/d', strtotime($news['end_date']));
+                if ($endDate < $today) {
+                    continue;
+                }
+            }
+
+            if ($displayCount >= $maxDisplay) {
+                break;
+            }
+
+            // 表示するタイトルを決定
+            $displayTitle = '';
+            if (!empty($news['live_date'])) {
+                // ライブ情報の場合
+                $liveDateFormatted = date('Y/n/j（' . ['日','月','火','水','木','金','土'][date('w', strtotime($news['live_date']))] . '）', strtotime($news['live_date']));
+                $displayTitle = $liveDateFormatted;
+                if (!empty($news['lead'])) {
+                    $displayTitle .= ' ' . htmlspecialchars($news['lead'], ENT_QUOTES, 'UTF-8');
+                } elseif (!empty($news['title'])) {
+                    $displayTitle .= ' ' . htmlspecialchars($news['title'], ENT_QUOTES, 'UTF-8');
+                }
+            } else {
+                // その他のニュース
+                if (!empty($news['lead'])) {
+                    $displayTitle = htmlspecialchars($news['lead'], ENT_QUOTES, 'UTF-8');
+                } elseif (!empty($news['title'])) {
+                    $displayTitle = htmlspecialchars($news['title'], ENT_QUOTES, 'UTF-8');
+                }
+            }
+
+            // リンク先を決定
+            $linkUrl = '/news/#' . htmlspecialchars($news['id'], ENT_QUOTES, 'UTF-8');
+            $linkTarget = '';
+            if (!empty($news['youtube_url'])) {
+                $linkUrl = htmlspecialchars($news['youtube_url'], ENT_QUOTES, 'UTF-8');
+                $linkTarget = ' target="_blank"';
+            }
+
+            // 更新日
+            $updateDate = '';
+            if (!empty($news['date'])) {
+                $updateDate = date('Y/n/j', strtotime($news['date']));
+            }
+
+            echo '<p class="ttl" style="margin-top: 10px;"><a href="' . $linkUrl . '"' . $linkTarget . '>' . $displayTitle . '</a><span>【' . $updateDate . ' update】</span></p>' . "\n";
+
+            $displayCount++;
+        }
+    }
+}
+?>
+			</div>
 		</div>
     <div class="wrap_area">
       <div class="top_left">

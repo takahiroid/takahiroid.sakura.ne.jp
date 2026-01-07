@@ -4,7 +4,7 @@ session_start();
 
 // 設定
 define('ADMIN_USERNAME', 'admin');
-define('ADMIN_PASSWORD', 'admin123'); // 本番環境では変更してください
+define('ADMIN_PASSWORD', '#0821Rock'); // 本番環境では変更してください
 define('DATA_DIR', __DIR__ . '/data/');
 define('NEWS_DATA_FILE', DATA_DIR . 'news.json');
 define('CATEGORIES_DATA_FILE', DATA_DIR . 'categories.json');

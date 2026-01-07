@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['title'] ?? '';
     $title_url = trim($_POST['title_url'] ?? '');
-    $lead = $_POST['lead'] ?? '';
+    $lead = trim($_POST['lead'] ?? '');
     $category = $_POST['category'] ?? '';
     $subcategory = trim($_POST['subcategory'] ?? '');
     $date_input = $_POST['date'] ?? date('Y-m-d');
@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $live_date_input = $_POST['live_date'] ?? '';
     $live_date = $live_date_input ? str_replace('-', '/', $live_date_input) : '';
     $live_time = $_POST['live_time'] ?? '';
+    $live_venue = $_POST['live_venue'] ?? '';
     $live_performers = $_POST['live_performers'] ?? '';
     $live_price = $_POST['live_price'] ?? '';
     $live_ticket_sales = [];
@@ -106,10 +107,98 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $youtube_id = extractYouTubeId($youtube_url);
     }
     
-    // 新規作成
-    if ($id === null || $id === '') {
-        $newNews = [
-            'id' => uniqid(),
+    // バリデーション
+    if ($lead === '') {
+        $error = 'リード文は必須です';
+    }
+    
+    if (empty($error)) {
+        // 新規作成
+        if ($id === null || $id === '') {
+            $newNews = [
+                'id' => uniqid(),
+                'title' => $title,
+                'title_url' => $title_url,
+                'lead' => $lead,
+                'category' => $category,
+                'subcategory' => $subcategory,
+                'date' => $date,
+                'end_date' => $end_date,
+                'content' => $content,
+                'published' => $published,
+                'image' => $image_path,
+                'youtube_id' => $youtube_id,
+                'youtube_url' => $youtube_url,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ];
+            // LIVE記事の場合のみ追加フィールドを保存
+            if ($category === 'LIVE') {
+                $newNews['live_date'] = $live_date;
+                $newNews['live_venue'] = $live_venue;
+                $newNews['live_performers'] = $live_performers;
+                $newNews['live_time'] = $live_time;
+                $newNews['live_price'] = $live_price;
+                $newNews['live_ticket_sales'] = $live_ticket_sales;
+                $newNews['live_sale_date'] = $live_sale_date;
+                $newNews['live_contact'] = $live_contact;
+                $newNews['live_contact_url'] = $live_contact_url;
+                $newNews['live_other'] = $live_other;
+            }
+            $newsData[] = $newNews;
+            $msg = 'created';
+        } else {
+            // 編集
+            $id = (int)$id;
+            if (isset($newsData[$id])) {
+                $newsData[$id]['title'] = $title;
+                $newsData[$id]['title_url'] = $title_url;
+                $newsData[$id]['lead'] = $lead;
+                $newsData[$id]['category'] = $category;
+                $newsData[$id]['subcategory'] = $subcategory;
+                $newsData[$id]['date'] = $date;
+                $newsData[$id]['end_date'] = $end_date;
+                $newsData[$id]['content'] = $content;
+                $newsData[$id]['published'] = $published;
+                $newsData[$id]['image'] = $image_path;
+                $newsData[$id]['youtube_id'] = $youtube_id;
+                $newsData[$id]['youtube_url'] = $youtube_url;
+                $newsData[$id]['updated_at'] = date('Y-m-d H:i:s');
+                // LIVE記事の場合のみ追加フィールドを保存
+                if ($category === 'LIVE') {
+                    $newsData[$id]['live_date'] = $live_date;
+                    $newsData[$id]['live_venue'] = $live_venue;
+                    $newsData[$id]['live_performers'] = $live_performers;
+                    $newsData[$id]['live_time'] = $live_time;
+                    $newsData[$id]['live_price'] = $live_price;
+                    $newsData[$id]['live_ticket_sales'] = $live_ticket_sales;
+                    $newsData[$id]['live_sale_date'] = $live_sale_date;
+                    $newsData[$id]['live_contact'] = $live_contact;
+                    $newsData[$id]['live_contact_url'] = $live_contact_url;
+                    $newsData[$id]['live_other'] = $live_other;
+                } else {
+                    // LIVE以外のカテゴリに変更した場合は削除
+                    unset($newsData[$id]['live_date']);
+                    unset($newsData[$id]['live_venue']);
+                    unset($newsData[$id]['live_performers']);
+                    unset($newsData[$id]['live_time']);
+                    unset($newsData[$id]['live_price']);
+                    unset($newsData[$id]['live_ticket_sales']);
+                    unset($newsData[$id]['live_sale_date']);
+                    unset($newsData[$id]['live_contact']);
+                    unset($newsData[$id]['live_contact_url']);
+                    unset($newsData[$id]['live_other']);
+                }
+            }
+            $msg = 'updated';
+        }
+        
+        saveNewsData($newsData);
+        header('Location: /kanri/news/?msg=' . $msg);
+        exit;
+    } else {
+        // 入力値を維持して再表示
+        $news = [
             'title' => $title,
             'title_url' => $title_url,
             'lead' => $lead,
@@ -122,70 +211,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'image' => $image_path,
             'youtube_id' => $youtube_id,
             'youtube_url' => $youtube_url,
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s')
+            'live_date' => $live_date,
+            'live_venue' => $live_venue,
+            'live_performers' => $live_performers,
+            'live_time' => $live_time,
+            'live_price' => $live_price,
+            'live_ticket_sales' => $live_ticket_sales,
+            'live_sale_date' => $live_sale_date,
+            'live_contact' => $live_contact,
+            'live_contact_url' => $live_contact_url,
+            'live_other' => $live_other
         ];
-        // LIVE記事の場合のみ追加フィールドを保存
-        if ($category === 'LIVE') {
-            $newNews['live_date'] = $live_date;
-            $newNews['live_performers'] = $live_performers;
-            $newNews['live_time'] = $live_time;
-            $newNews['live_price'] = $live_price;
-            $newNews['live_ticket_sales'] = $live_ticket_sales;
-            $newNews['live_sale_date'] = $live_sale_date;
-            $newNews['live_contact'] = $live_contact;
-            $newNews['live_contact_url'] = $live_contact_url;
-            $newNews['live_other'] = $live_other;
-        }
-        $newsData[] = $newNews;
-        $msg = 'created';
-    } else {
-        // 編集
-        $id = (int)$id;
-        if (isset($newsData[$id])) {
-            $newsData[$id]['title'] = $title;
-            $newsData[$id]['title_url'] = $title_url;
-            $newsData[$id]['lead'] = $lead;
-            $newsData[$id]['category'] = $category;
-            $newsData[$id]['subcategory'] = $subcategory;
-            $newsData[$id]['date'] = $date;
-            $newsData[$id]['end_date'] = $end_date;
-            $newsData[$id]['content'] = $content;
-            $newsData[$id]['published'] = $published;
-            $newsData[$id]['image'] = $image_path;
-            $newsData[$id]['youtube_id'] = $youtube_id;
-            $newsData[$id]['youtube_url'] = $youtube_url;
-            $newsData[$id]['updated_at'] = date('Y-m-d H:i:s');
-            // LIVE記事の場合のみ追加フィールドを保存
-            if ($category === 'LIVE') {
-                $newsData[$id]['live_date'] = $live_date;
-                $newsData[$id]['live_performers'] = $live_performers;
-                $newsData[$id]['live_time'] = $live_time;
-                $newsData[$id]['live_price'] = $live_price;
-                $newsData[$id]['live_ticket_sales'] = $live_ticket_sales;
-                $newsData[$id]['live_sale_date'] = $live_sale_date;
-                $newsData[$id]['live_contact'] = $live_contact;
-                $newsData[$id]['live_contact_url'] = $live_contact_url;
-                $newsData[$id]['live_other'] = $live_other;
-            } else {
-                // LIVE以外のカテゴリに変更した場合は削除
-                unset($newsData[$id]['live_date']);
-                unset($newsData[$id]['live_performers']);
-                unset($newsData[$id]['live_time']);
-                unset($newsData[$id]['live_price']);
-                unset($newsData[$id]['live_ticket_sales']);
-                unset($newsData[$id]['live_sale_date']);
-                unset($newsData[$id]['live_contact']);
-                unset($newsData[$id]['live_contact_url']);
-                unset($newsData[$id]['live_other']);
-            }
-        }
-        $msg = 'updated';
     }
-    
-    saveNewsData($newsData);
-    header('Location: /kanri/news/?msg=' . $msg);
-    exit;
 }
 
 // デフォルト値
@@ -199,11 +236,12 @@ if (!$news) {
         'date' => date('Y/m/d H:i'),
         'end_date' => '',
         'content' => '',
-        'published' => true,
+        'published' => false,
         'image' => '',
         'youtube_url' => '',
         'youtube_id' => null,
         'live_date' => '',
+        'live_venue' => '',
         'live_performers' => '',
         'live_time' => '',
         'live_price' => '',
@@ -249,17 +287,17 @@ if (!$news) {
                             <?php endif; ?>
                             
                             <div class="form-group">
-                                <label for="title">タイトル *</label>
-                                <input type="text" id="title" name="title" value="<?php echo h($news['title']); ?>" required>
+                                <label for="lead">リード文 <span style="color: #e11d48;">*</span></label>
+                                <input type="text" id="lead" name="lead" value="<?php echo h($news['lead'] ?? ''); ?>" placeholder="記事の要約や導入文を入力してください" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="title">イベントタイトル</label>
+                                <input type="text" id="title" name="title" value="<?php echo h($news['title']); ?>">
                                 <div class="url-field-group">
                                     <label for="title_url">リンク先URL（任意）</label>
                                     <input type="url" id="title_url" name="title_url" value="<?php echo h($news['title_url'] ?? ''); ?>" placeholder="https://...">
                                 </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="lead">リード文</label>
-                                <input type="text" id="lead" name="lead" value="<?php echo h($news['lead'] ?? ''); ?>" placeholder="記事の要約や導入文を入力してください">
                             </div>
                     
                     <div class="form-group">
@@ -272,14 +310,20 @@ if (!$news) {
                         <h3 style="margin: 30px 0 20px; padding-bottom: 10px; border-bottom: 2px solid #667eea; color: #333;">LIVE情報</h3>
                         
                         <div class="form-group">
-                            <label for="live_date">ライブ日時 *</label>
+                            <label for="live_date">ライブ日時 <span style="color: #e11d48;">*</span></label>
                             <input type="date" id="live_date" name="live_date" value="<?php echo h(!empty($news['live_date'] ?? '') ? str_replace('/', '-', $news['live_date']) : ''); ?>">
                             <div id="live_date_weekday" style="margin-top: 5px; font-size: 13px; color: #666;"></div>
                         </div>
                         
                         <div class="form-group">
+                            <label for="live_venue">会場</label>
+                            <input type="text" id="live_venue" name="live_venue" value="<?php echo h($news['live_venue'] ?? ''); ?>" placeholder="会場名を入力してください">
+                        </div>
+                        
+                        <div class="form-group">
                             <label for="live_performers">出演</label>
                             <textarea id="live_performers" name="live_performers" rows="3"><?php echo h($news['live_performers'] ?? ''); ?></textarea>
+                            <div class="help-text">（例）■ 出演：</div>
                         </div>
                         
                         <div class="form-group">
@@ -372,7 +416,7 @@ if (!$news) {
                         <div class="sidebar-panel">
                             <h3>公開設定</h3>
                             <div class="form-group">
-                                <label for="category">カテゴリ *</label>
+                                <label for="category">カテゴリ <span style="color: #e11d48;">*</span></label>
                                 <select id="category" name="category" required>
                                     <?php foreach ($categories as $category): ?>
                                         <option value="<?php echo h($category); ?>" <?php echo ($news['category'] === $category) ? 'selected' : ''; ?>><?php echo h($category); ?></option>
@@ -394,7 +438,7 @@ if (!$news) {
                             </div>
                             
                             <div class="form-group">
-                                <label for="date">公開日 *</label>
+                                <label for="date">公開日 <span style="color: #e11d48;">*</span></label>
                                 <div style="display: flex; gap: 10px; align-items: center;">
                                     <input type="date" id="date" name="date" value="<?php 
                                         $dateValue = $news['date'] ?? date('Y/m/d H:i');
@@ -459,7 +503,7 @@ if (!$news) {
                             
                             <div class="form-group">
                                 <div class="checkbox-group">
-                                    <input type="checkbox" id="published" name="published" <?php echo ($news['published'] ?? true) ? 'checked' : ''; ?>>
+                                    <input type="checkbox" id="published" name="published" <?php echo ($news['published'] ?? false) ? 'checked' : ''; ?>>
                                     <label for="published" style="margin: 0; font-weight: normal;">公開する</label>
                                 </div>
                             </div>

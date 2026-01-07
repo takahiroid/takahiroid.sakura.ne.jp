@@ -180,23 +180,63 @@ if (isset($_GET['msg'])) {
                             <div class="news-drag-handle" style="cursor: move; color: #999; user-select: none;">☰</div>
                             <div class="news-info">
                                 <div class="news-title">
-                                    <?php 
-                                    // ライブ日時の表示（曜日付き）
-                                    if (!empty($news['live_date'] ?? '')) {
-                                        $liveDateStr = $news['live_date'];
-                                        // YYYY/MM/DD形式から曜日を取得
-                                        $liveDateFormatted = str_replace('/', '-', $liveDateStr);
-                                        $timestamp = strtotime($liveDateFormatted);
-                                        if ($timestamp !== false) {
-                                            $weekdays = ['日', '月', '火', '水', '木', '金', '土'];
-                                            $weekday = $weekdays[date('w', $timestamp)];
-                                            echo '<span style="color: #667eea; font-weight: 600; margin-right: 8px;">' . h($liveDateStr) . '(' . $weekday . ')</span>';
+                                    <?php
+                                        $isLive = ($news['category'] ?? '') === 'LIVE';
+                                        if ($isLive) {
+                                            // ライブ用タイトル: ライブ日時 + 会場 + 「タイトル」
+                                            $liveParts = [];
+                                            if (!empty($news['live_date'] ?? '')) {
+                                                $liveDateStr = $news['live_date'];
+                                                $liveDateFormatted = str_replace('/', '-', $liveDateStr);
+                                                $timestamp = strtotime($liveDateFormatted);
+                                                if ($timestamp !== false) {
+                                                    $weekdays = ['日', '月', '火', '水', '木', '金', '土'];
+                                                    $weekday = $weekdays[date('w', $timestamp)];
+                                                    $liveParts[] = '<span style="color: #667eea;">' . h($liveDateStr . '(' . $weekday . ')') . '</span>';
+                                                } else {
+                                                    $liveParts[] = '<span style="color: #667eea;">' . h($liveDateStr) . '</span>';
+                                                }
+                                            }
+                                            if (!empty($news['live_venue'] ?? '')) {
+                                                // 日付の直後はスラッシュを入れずスペースで接続
+                                                if (!empty($liveParts)) {
+                                                    $liveParts[] = h($news['live_venue']);
+                                                } else {
+                                                    $liveParts[] = h($news['live_venue']);
+                                                }
+                                            }
+                                            $liveMainTitle = $news['live_title'] ?? '';
+                                            if (empty($liveMainTitle)) {
+                                                $liveMainTitle = $news['title'] ?? '';
+                                            }
+                                            $titlePart = '「' . h($liveMainTitle) . '」';
+                                            
+                                            // 日付後はスラッシュを入れないで連結し、その後タイトルはスラッシュで区切る
+                                            $lineHead = '';
+                                            if (!empty($liveParts)) {
+                                                // 最初の要素は日付（青字）になる想定
+                                                $lineHead = $liveParts[0];
+                                                if (isset($liveParts[1])) {
+                                                    $lineHead .= ' ' . $liveParts[1];
+                                                }
+                                            }
+                                            
+                                            if ($lineHead !== '') {
+                                                // 会場の後もスラッシュなしでタイトルを続ける
+                                                echo $lineHead . ' ' . $titlePart;
+                                            } else {
+                                                // 日付・会場が無ければタイトルのみ
+                                                echo $titlePart;
+                                            }
                                         } else {
-                                            echo '<span style="color: #667eea; font-weight: 600; margin-right: 8px;">' . h($liveDateStr) . '</span>';
+                                            // その他: リード文のみ表示（なければタイトル）
+                                            $displayText = $news['lead'] ?? '';
+                                            if ($displayText === '') {
+                                                $displayText = $news['title'] ?? '';
+                                            }
+                                            echo h($displayText);
                                         }
-                                    }
                                     ?>
-                                    <?php echo h($news['title'] ?? ''); ?>
                                     <span class="badge <?php echo ($news['published'] ?? true) ? 'badge-published' : 'badge-draft'; ?>">
                                         <?php echo ($news['published'] ?? true) ? '公開中' : '下書き'; ?>
                                     </span>
@@ -207,22 +247,16 @@ if (isset($_GET['msg'])) {
                                     <?php endif; ?>
                                 </div>
                                 <div class="news-meta">
-                                    <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 3px;">
-                                        <span class="category-badge" title="<?php echo h($news['category'] ?? '未設定'); ?>">
+                                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; color: #888;">
+                                        <span class="category-badge" style="background: #fb923c; border-color: #f97316; color: #fff;" title="<?php echo h($news['category'] ?? '未設定'); ?>">
                                             <?php echo h($news['category'] ?? '未設定'); ?>
                                         </span>
                                         <?php if (!empty($news['subcategory'] ?? '')): ?>
-                                            <span class="subcategory-badge" title="<?php echo h($news['subcategory']); ?>">
+                                            <span class="subcategory-badge" style="background: #facc15; border-color: #eab308; color: #7c2d12;" title="<?php echo h($news['subcategory']); ?>">
                                                 <?php echo h($news['subcategory']); ?>
                                             </span>
                                         <?php endif; ?>
-                                    </div>
-                                    <div style="font-size: 12px; color: #888;">
-                                        公開日: <?php echo h($news['date']); ?>
-                                        <?php if (($news['category'] ?? '') === 'LIVE' && !empty($news['live_date'] ?? '')): ?>
-                                            | ライブ日時: <?php echo h($news['live_date']); ?>
-                                        <?php endif; ?>
-                                        | ID: <?php echo h($news['id'] ?? $index); ?>
+                                        <span>ID: <?php echo h($news['id'] ?? $index); ?></span>
                                     </div>
                                 </div>
                             </div>
