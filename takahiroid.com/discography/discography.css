@@ -1,0 +1,326 @@
+/* Discography Styles */
+/* 共通のページタイトルスタイルは /common/css/style.css の .page-title を使用してください */
+
+.disc-filter {
+    text-align: right;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.disc-filter label {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #666;
+}
+.disc-filter select {
+    padding: 8px 30px 8px 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23fff' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.disc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+    margin-bottom: 60px;
+}
+
+.disc-item {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.disc-item:hover {
+    transform: translateY(-5px);
+}
+.disc-item:hover .disc-image img {
+    opacity: 0.85;
+}
+.disc-item:hover .disc-arrow {
+    transform: translateX(5px);
+}
+
+.disc-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background: #f5f5f5;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.disc-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+.disc-image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8e8e8;
+    color: #999;
+    font-size: 14px;
+}
+
+.disc-arrow {
+    display: inline-block;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+.disc-arrow svg {
+    width: 30px;
+    height: 10px;
+}
+
+.disc-subtitle {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.disc-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+.disc-empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: #999;
+}
+.disc-empty h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Discography Detail Styles */
+.disc-detail-header {
+    text-align: center;
+    margin: 50px 0 40px;
+}
+.disc-detail-header .disc-subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.disc-detail-header h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+.disc-detail-content {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.disc-detail-left {
+    flex: 0 0 45%;
+    max-width: 500px;
+}
+
+.disc-detail-right {
+    flex: 1;
+    min-width: 0;
+}
+
+.disc-detail-image {
+    position: relative;
+    width: 100%;
+    background: #f5f5f5;
+}
+.disc-detail-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.disc-detail-image-placeholder {
+    width: 100%;
+    padding-bottom: 100%;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 16px;
+    position: relative;
+}
+.disc-detail-image-placeholder span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 画像ナビゲーション（将来的に複数画像対応用） */
+.disc-image-nav {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+.disc-image-nav-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.disc-image-nav-dot.active {
+    background: #333;
+}
+
+.disc-detail-info {
+    padding-top: 10px;
+}
+
+.disc-release-info {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.disc-tracklist {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.disc-tracklist-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.disc-body {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #333;
+}
+.disc-body p {
+    margin-bottom: 1em;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.disc-body a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+.disc-body a:hover {
+    text-decoration: none;
+}
+.disc-body strong {
+    font-weight: 600;
+}
+.disc-body ul, .disc-body ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+.disc-body li {
+    margin-bottom: 0.5em;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.disc-price {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.disc-back-link {
+    margin-top: 50px;
+    text-align: center;
+}
+.disc-back-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 1px solid #333;
+    transition: all 0.3s;
+}
+.disc-back-link a:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .disc-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+    }
+    .disc-title {
+        font-size: 13px;
+    }
+    .disc-subtitle {
+        font-size: 11px;
+    }
+    .disc-detail-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .disc-detail-left {
+        flex: none;
+        max-width: 100%;
+    }
+    .disc-detail-header h1 {
+        font-size: 24px;
+    }
+    .disc-detail-header {
+        margin: 30px 0 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .disc-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        max-width: 300px;
+        margin: 0 auto 60px;
+    }
+}
+

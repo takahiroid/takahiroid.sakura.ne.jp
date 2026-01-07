@@ -8,6 +8,7 @@
 <script type="text/javascript" src="/common/js/common.js"></script>
 <link rel="stylesheet" href="/common/css/style.css" type="text/css"/>
 <link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
+<link rel="stylesheet" href="/works/works.css" type="text/css" />
 <script src="../common/js/rollover.js" type="text/javascript"></script>
 <!-- PAGE TOPに戻るボタン -->
 <script type="text/javascript" src="../common/js/back_top.js"></script>
@@ -19,9 +20,11 @@
 <div class="wrapper">
   <?php include("../common/inc/header.php"); ?>
 
-  <div class="sp_title sp"><p>Works</p></div>
-
   <div class="contents">
+    <div class="page-title">
+      <h1>WORKS</h1>
+    </div>
+    
     <div class="wrap_area">
       <div class="works_left">
         <table border="0">
@@ -525,14 +528,6 @@
 
       </div>
       <!-- //works_left -->
-
-      <div class="works_right pc">
-        <img src="img/works.gif" alt="WORKS" />
-        <div class="spaceman">
-          <img src="/common/img/spaceman.gif">
-        </div>
-      </div>
-      <!-- //works_right -->
 
     </div>
     <!-- //wrap_area -->

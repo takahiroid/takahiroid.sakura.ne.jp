@@ -1,0 +1,306 @@
+.alert {
+  font-size: 16px;
+  border: 2px solid #ff0000;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 98%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.button-link {
+  display: inline-block;
+  background-color: #70b539;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #5a9a2e;
+  text-decoration: none;
+  color: white;
+}
+
+.streaming-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.streaming-button {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 1px solid #555;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.streaming-button:hover {
+  background-color: #555;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-decoration: none;
+  color: white;
+}
+
+/* News Page Title Styles */
+/* 共通のページタイトルスタイルは /common/css/style.css の .page-title を使用してください */
+
+/*------------------------------------------------------
+NEWS (PC)
+------------------------------------------------------*/
+.news_left {
+  width: 75%;
+  margin: 0px 0 30px;
+}
+
+.news_left .news_table {
+  width: 100%;
+}
+
+.news_left .news_table tr td {
+  padding-bottom: 4rem;
+}
+
+.news_left .news_table tr td span.songtxt {
+  margin: 0 0 0 18px;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.news_left .cdtitle {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: #666 1px solid;
+}
+
+.news_left .cdtitle span {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  background-color: #ff0000;
+  border-radius: 0.4em;
+  color: #FFF;
+  display: inline-block;
+  position: relative;
+  top: -0.1rem;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  line-height: 1;
+  margin-right: 0.7rem;
+}
+
+.news_left .txtBloc {
+  margin: 0 10px 0 10px;
+}
+
+.news_left .txtBloc .ttl {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.news_left .txtBloc .ttl a {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.news_left .txtBloc .txt,
+.news_left .txtBloc .txt a {
+  margin-top: 0;
+  font-size: 13px;
+  line-height: 1.6em;
+}
+
+span.complete {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.6em;
+  background-image: url(/news/img/border_w_red.png);
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+span.thankyou {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.6em;
+  color: #F00;
+}
+
+.news_right .page_ttl {
+  width: 100%;
+  max-width: 214px;
+}
+
+.news_right .spaceman {
+  width: 100%;
+  max-width: 190px;
+}
+
+.news_right img {
+  width: 100%;
+}
+
+p.alert_txt {
+  font-size: 12px;
+  border-top: 1px dotted #CCC;
+  border-bottom: 1px dotted #CCC;
+}
+
+.newsimg {
+  width: 60%;
+}
+
+/*------------------------------------------------------
+NEWS（アーカイブ）
+------------------------------------------------------*/
+.ttl_year {
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  background-color: #ff0000;
+  border-radius: 0.4em;
+  color: #FFF;
+  display: inline-block;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.boxPastLive {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  line-height: 2;
+}
+
+.boxPastLive strong {
+  font-weight: bold;
+  color: #CC3366;
+}
+
+/*------------------------------------------------------
+NEWS (SP)
+------------------------------------------------------*/
+@media screen and (max-width: 896px) {
+  #news .sp_title p {
+    color: #0bf;
+  }
+
+  #news .wrap_area {
+    display: block;
+  }
+
+  .news_left {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .news_right {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .news_left .cdtitle {
+    font-size: 17px;
+  }
+
+  .news_left .cdtitle span {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    margin-bottom: 0.2rem;
+  }
+
+  .news_left .txtBloc {
+    margin: 0 10px 0 10px;
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+
+  .news_left .txtBloc .ttl {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+
+  .news_left .txtBloc .ttl a {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .news_left .txtBloc .txt,
+  .news_left .txtBloc .txt a {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+
+  .news_left .txtBloc .txt {
+    margin-top: 5px;
+  }
+
+  span.complete {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6em;
+    background-image: url(/news/img/border_w_red.png);
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
+  span.thankyou {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #F00;
+  }
+
+  .newsimg {
+    width: 100% !important;
+  }
+
+  .txtBack {
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+
+  .txtBack a {
+    font-size: 0.8em;
+    color: #F00;
+  }
+
+  .ttl_year {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 0.4em;
+    color: #FFF;
+    display: inline-block;
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+
+  .boxPastLive {
+    font-size: 16px;
+  }
+
+  .boxPastLive strong {
+    font-size: 16px;
+  }
+}
+

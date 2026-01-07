@@ -1,0 +1,97 @@
+/*------------------------------------------------------
+WORKS (PC)
+------------------------------------------------------*/
+.works_left{
+	width: 100%;
+	margin:0px 0 30px;
+}
+
+.works_left table{
+	width: 100%;
+}
+	.works_left table tr td{
+		padding-bottom:30px;
+
+	}
+		.works_left table tr td span.songtxt{
+			margin:0 0 0 18px;
+			font-size:1em;
+			line-height:1.4em;;
+		}
+
+		.works_left .cdtitle{
+			margin-bottom:15px;
+			padding-left:5px;
+			padding-bottom: 5px;
+			/*font-weight:bold;*/
+			font-size:1.1em;
+			font-size: 15px;
+			border-bottom:#666 1px solid;
+		}
+		.works_left .cdtitle span{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 15px;
+			color: #e60617;
+
+		}
+		.works_left .txtBloc{
+			margin: 0 10px 0 10px;
+			font-size: 13px;
+			line-height: 1.8em;
+		}
+
+	.songTxtList{
+	margin:10px 0 0 15px;
+	}
+	.songTxtList li{
+	 list-style-type:none;
+	}
+
+	.works_left table tr td iframe{
+		width: 560px;
+		height: 315px;
+	}
+
+/*------------------------------------------------------
+WORKS (SP)
+------------------------------------------------------*/
+@media screen and (max-width: 896px) {
+	#works .sp_title p{
+		color: #70b539;
+	}
+	#works .wrap_area{
+		display: block;
+	}
+	.works_left{
+		width: 100%;
+		margin-top:0rem;
+	}
+		.works_left table tr td iframe{
+			width: 100%;
+			height: 315px;
+		}
+		.works_left table tr td img{
+			width: 100%;
+			height: auto;
+		}
+		.works_left .cdtitle{
+			padding-left: 0;
+		}
+		.works_left .txtBloc{
+			margin-left: 0;
+		}
+		.works_left  p,
+		.works_left  a{
+			font-size: 16px;
+		}
+		.works_left .cdtitle{
+			font-size: 17px;
+		}
+		.works_left .cdtitle span{
+			font-size: 18px;
+		}
+		.works_left .txtBloc{
+			font-size: 16px;
+		}
+}
+

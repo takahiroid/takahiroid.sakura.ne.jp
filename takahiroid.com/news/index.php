@@ -71,6 +71,7 @@ foreach ($allNewsData as $news) {
   <script type="text/javascript" src="/common/js/common.js"></script>
   <link rel="stylesheet" href="/common/css/style.css" type="text/css" />
   <link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
+  <link rel="stylesheet" href="/news/news.css" type="text/css" />
   <script src="../common/js/rollover.js" type="text/javascript"></script>
 
 
@@ -78,99 +79,6 @@ foreach ($allNewsData as $news) {
   <script type="text/javascript" src="../common/js/back_top.js"></script>
 
   <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
-  <style type="text/css">
-    .alert {
-      font-size: 16px;
-      border: 2px solid #ff0000;
-      border-radius: 4px;
-      padding: 1rem;
-      width: 98%;
-      margin: 0 auto;
-      box-sizing: border-box;
-    }
-    
-    .button-link {
-      display: inline-block;
-      background-color: #70b539;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 10px 0;
-      transition: background-color 0.3s;
-    }
-    
-    .button-link:hover {
-      background-color: #5a9a2e;
-      text-decoration: none;
-      color: white;
-    }
-    
-    .streaming-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 15px 0;
-    }
-    
-    .streaming-button {
-      display: inline-block;
-      background-color: #333;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 3px;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      border: 1px solid #555;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    }
-    
-    .streaming-button:hover {
-      background-color: #555;
-      transform: translateY(-1px);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-      text-decoration: none;
-      color: white;
-    }
-    
-    /* News Page Title Styles */
-    .news-page-title {
-      text-align: center;
-      margin: 20px 0 50px;
-    }
-    .news-page-title h1 {
-      font-family: 'Quicksand', sans-serif;
-      font-size: 42px;
-      font-weight: 400;
-      letter-spacing: 8px;
-      color: #333;
-      position: relative;
-      display: inline-block;
-    }
-    .news-page-title h1::after {
-      content: '';
-      position: absolute;
-      bottom: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 60px;
-      height: 2px;
-      background: #333;
-    }
-    
-    @media (max-width: 768px) {
-      .news-page-title h1 {
-        font-size: 28px;
-        letter-spacing: 4px;
-      }
-      .news-page-title {
-        margin: 40px 0 35px;
-      }
-    }
-  </style>
 </head>
 
 <body id="news">
@@ -178,7 +86,7 @@ foreach ($allNewsData as $news) {
     <?php include("../common/inc/header.php"); ?>
 
     <div class="contents">
-      <div class="news-page-title">
+      <div class="page-title">
         <h1>LIVE & MEDIA</h1>
       </div>
       
@@ -335,52 +243,6 @@ foreach ($allNewsData as $news) {
 							</td>
 						</tr>
 					<?php endforeach; ?>
-
-					<!-- 
-
-
-						<tr>
-              <td>
-                <p class="cdtitle">
-                  <span style="background-color:#70b539">TV・GUITAR</span>
-                  <br class="sp">NHK「うたコン」世良公則バンドのギターで生演奏で出演します。
-                </p>
-                <div class="txtBloc">
-                  <p class="ttl"><a href="https://www.nhk.jp/p/utacon/ts/1J9MXY5QX2/episode/te/92PXLRWQN9/" target="_blank" class="bold">2024年7月9日（火）午後7:57〜午後8:42</a></p>
-                  <p class="ttl bold" style="margin-top: 0.5rem">NHK「うたコン」<br>コラボ祭り!野口五郎×世良公則▽INI×新妻×クリスでBTS</p>
-                  <p class="txt">
-
-									野口五郎×世良公則が代表曲「私鉄沿線」「銃爪」でコラボ▽細川たかし×武田真治がチェッカーズ「ジュリアに傷心」▽渡辺美里×ＩＮＩ「Ｍｙ　Ｒｅｖｏｌｕｔｉｏｎ」▽丘みどり×すぎもとまさと・ちあきなおみ名曲「かもめの街」▽新妻聖子×クリス・ハート×ＩＮＩがＢＴＳ「Ｄｙｎａｍｉｔｅ」▽ＭＩＮＭＩ代表曲「シャナナ☆」▽細川たかし「男船」▽真田ナオキ「２４６」▽ＩＮＩ「ＬＯＵＤ」▽ＮＨＫホールから生放送
-                  </p>
-                </div>
-              </td>
-            </tr> -->
-
-            <!-- <tr>
-              <td>
-                <p class="cdtitle"><span style="background-color:#70b539">SHOP・GOODS</span><br>ヴィレッジヴァンガードの新型ショッピングプラットホーム「voon」にて「松本タカヒロ」書き下ろしキャラのセレクトショップがスタートしました</p>
-                <div class="txtBloc">
-                  <p class="ttl"><a href="https://voon.shop/users/12896fc9-3ed3-44b8-85db-71d6c5e267df" target="_blank" class="bold">Village Vangurd 「voon」</a></p>
-                  <p class="ttl bold" style="margin-top: 0.5rem"></p>
-                  <p class="txt">
-                    以前にSNSで公開した落書きキャラ。なんと！<br>
-                    ヴィレッジヴァンガードさんから、商品化のオファーを頂きました。<br>
-                    <br>
-                    ヴィレヴァンの新型ショッピングプラットホーム「voon」にて<br>
-                    松本タカヒロオリジナルキャラクターのセレクトショップがスタートしました<br>
-                    今回の為に描き下ろしました、是非ヴィレヴァンでチェックしてねー
-                    <br><br>
-                    サイトはこちら<br>
-                    <a href="https://voon.shop/users/12896fc9-3ed3-44b8-85db-71d6c5e267df" target="_blank">Village Vangurd 「voon」</a>
-                    <br>
-
-                  </p>
-                  <div style="width: 100%;"><img src="img/voon.jpeg" style="width: 100%;"></div>
-                </div>
-              </td>
-            </tr> -->
-
-
 
           </table>
 
