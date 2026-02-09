@@ -222,6 +222,40 @@ NEWS (PC)
   width: 250px;
   border-radius: 8px;
   overflow: hidden;
+  position: relative;
+}
+.news-thumb::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+.news-thumb::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+.news-thumb:hover::before,
+.news-thumb:hover::after {
+  opacity: 0.9;
 }
 .news-thumb a {
   display: block;
@@ -438,6 +472,10 @@ NEWS (SP)
     width: 100%;
     max-width: 120px;
     margin: 0 auto;
+  }
+  .news-thumb::before,
+  .news-thumb::after {
+    display: none;
   }
   .news-thumb .newsimg,
   .news-thumb img.newsimg {

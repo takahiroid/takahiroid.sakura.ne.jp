@@ -78,6 +78,11 @@ body {
 	max-width: 1000px;
 	position: relative;
 	box-sizing: border-box;
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+.wrapper.loaded {
+	opacity: 1;
 }
 
 .contents {
@@ -433,10 +438,11 @@ body {
 /* サムネイル画像をクリック可能にする */
 .thumbnail-clickable {
 	cursor: pointer;
-	transition: opacity 0.3s ease;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .thumbnail-clickable:hover {
-	opacity: 0.8;
+	transform: scale(1.03);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* 画像ポップアップモーダル */

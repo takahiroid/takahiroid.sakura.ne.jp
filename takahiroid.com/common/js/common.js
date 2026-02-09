@@ -10,3 +10,8 @@ $(function() {
     $('.gnavi_sp .menu').removeClass("open");
   });
 });
+
+// ページ読み込み完了後にフェードイン
+$(window).on('load', function() {
+  $('.wrapper').addClass('loaded');
+});
