@@ -113,8 +113,11 @@
 }
 
 .bio_right {
-	width: 100%;
+	width: 94%;
 	margin-top: 0rem;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-top: 2rem;
 }
 
 #bio .bio_right p,

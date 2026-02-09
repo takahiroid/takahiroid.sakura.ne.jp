@@ -105,11 +105,13 @@
    ======================================== */
 /* メニュートリガー */
 .menu-trigger-wrap {
-	position: absolute;
-	right: 1%;
-	top: 7px;
-	padding: 10px;
-	z-index: 9999;
+	position: fixed;
+	right: 8px;
+	top: 11px;
+	padding: 7px;
+	z-index: 10000;
+	background-color: #000;
+	border-radius: 5px;
 }
 
 .menu-trigger,
@@ -121,8 +123,8 @@
 
 .menu-trigger {
 	position: relative;
-	width: 35px;
-	height: 24px;
+	width: 26px;
+	height: 21px;
 }
 
 .menu-trigger span {
@@ -130,14 +132,14 @@
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background-color: #000;
+	background-color: #fff;
 	border-radius: 4px;
 }
 .menu-trigger span:nth-of-type(1) {
 	top: 0;
 }
 .menu-trigger span:nth-of-type(2) {
-	top: 11px;
+	top: 9px;
 }
 .menu-trigger span:nth-of-type(3) {
 	bottom: 0;
@@ -145,7 +147,7 @@
 
 /* アクティブ状態 */
 .active.menu-trigger span:nth-child(1) {
-	top: 11px;
+	top: 9px;
 	transform: rotate(315deg);
 }
 .active.menu-trigger span:nth-child(2) {
@@ -153,7 +155,7 @@
 	left: 50%;
 }
 .active.menu-trigger span:nth-child(3) {
-	top: 11px;
+	top: 9px;
 	transform: rotate(-315deg);
 }
 
@@ -163,16 +165,24 @@
 }
 
 .gnavi_sp .menu {
-	display: none;
-	position: absolute;
-	left: 0%;
-	top: 58px;
+	position: fixed;
+	top: 0;
+	right: 0;
 	width: 100%;
+	height: 100%;
 	list-style: none;
-	box-shadow: 0 11px 10px -10px #666666;
 	margin: 0;
-	padding: 0.5rem 0;
-	background: #FFF;
+	padding: 50px 0 2rem;
+	background-color: #FFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	transform: translateX(100%);
+	transition: transform 0.4s ease;
+}
+.gnavi_sp .menu.open {
+	transform: translateX(0);
 }
 
 .gnavi_sp .menu li {
@@ -187,10 +197,10 @@
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: 1;
-	background: #FFF;
+	background: transparent;
 	color: #000;
 	display: block;
-	padding: 2vw 0.4em;
+	padding: 5vw 0.4em;
 	text-align: center;
 	text-decoration: none;
 }
@@ -211,11 +221,11 @@
 .gnavi_sp .menu li.twitter_btn a,
 .gnavi_sp .menu li.youtube_btn a,
 .gnavi_sp .menu li.shop_btn a {
-	color: #000;
+	color: #fff;
 }
 
 .gnavi_sp .menu li.inst_btn a {
-	color: #000;
+	color: #fff;
 	padding-bottom: 20px;
 }
 
@@ -228,13 +238,13 @@
 .gnavi_sp .menu li.twitter_btn a img,
 .gnavi_sp .menu li.insta_btn a img,
 .gnavi_sp .menu li.youtube_btn a img {
-	width: 16px;
-	height: 16px;
+	width: 24px;
+	height: 24px;
 }
 
 .gnavi_sp .menu li.sns_icons_wrap {
 	padding: 0;
-	background: #FFF;
+	background: transparent;
 }
 
 .gnavi_sp .menu li.sns_icons_wrap .sns_icons {
@@ -244,8 +254,8 @@
 	list-style: none;
 	margin: 0;
 	padding: 2vw 0.4em;
-	gap: 20px;
-	background: #FFF;
+	gap: 28px;
+	background: transparent;
 }
 
 .gnavi_sp .menu li.sns_icons_wrap .sns_icons li {
