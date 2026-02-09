@@ -268,6 +268,7 @@ foreach ($allNewsData as $news) {
   <div id="imageModal" class="image-modal">
     <span class="image-modal-close">&times;</span>
     <img class="image-modal-content" id="modalImage">
+    <button class="image-modal-close-btn">CLOSE</button>
   </div>
 
   <script>
@@ -288,10 +289,16 @@ foreach ($allNewsData as $news) {
         $('body').css('overflow', 'hidden'); // 背景のスクロールを無効化
       });
 
-      // 閉じるボタンをクリックしたとき
+      // 閉じるボタン（×）をクリックしたとき
       $('.image-modal-close').on('click', function() {
         $('#imageModal').fadeOut(200);
         $('body').css('overflow', 'auto'); // 背景のスクロールを有効化
+      });
+
+      // CLOSEボタンをクリックしたとき
+      $('.image-modal-close-btn').on('click', function() {
+        $('#imageModal').fadeOut(200);
+        $('body').css('overflow', 'auto');
       });
 
       // モーダル背景をクリックしたとき

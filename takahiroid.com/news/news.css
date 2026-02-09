@@ -437,7 +437,7 @@ NEWS (SP)
     display: block;
     width: 100%;
     max-width: 120px;
-    margin: 0 10px 0 10px;
+    margin: 0 auto;
   }
   .news-thumb .newsimg,
   .news-thumb img.newsimg {

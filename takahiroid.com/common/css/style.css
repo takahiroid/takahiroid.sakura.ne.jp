@@ -443,7 +443,7 @@ body {
 .image-modal {
 	display: none;
 	position: fixed;
-	z-index: 9999;
+	z-index: 10001;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -484,6 +484,23 @@ body {
 .image-modal-close:hover,
 .image-modal-close:focus {
 	color: #bbb;
+}
+
+.image-modal-close-btn {
+	display: block;
+	margin: 20px auto 0;
+	padding: 8px 32px;
+	background: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 14px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	transition: background 0.3s ease, color 0.3s ease;
+}
+.image-modal-close-btn:hover {
+	background: #fff;
+	color: #000;
 }
 
 /* スマートフォン対応 */
