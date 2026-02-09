@@ -3,7 +3,7 @@ WORKS (PC)
 ------------------------------------------------------*/
 .works_left{
 	width: 100%;
-	margin:0px 0 30px;
+	margin:30px 0 30px!important;
 }
 
 .works_left table{
@@ -14,9 +14,18 @@ WORKS (PC)
 
 	}
 		.works_left table tr td span.songtxt{
-			margin:0 0 0 18px;
-			font-size:1em;
-			line-height:1.4em;;
+			display: block;
+			margin: 0;
+			padding: 5px 8px;
+			font-size: 0.85em;
+			line-height:1.4em;
+			border-bottom: 1px dotted #ddd;
+		}
+		.works_left table tr td span.songtxt:nth-of-type(even){
+			background-color: #f7f7f7;
+		}
+		.works_left table tr td span.songtxt:last-of-type{
+			border-bottom: none;
 		}
 
 		.works_left .cdtitle{
@@ -36,8 +45,20 @@ WORKS (PC)
 		}
 		.works_left .txtBloc{
 			margin: 0 10px 0 10px;
-			font-size: 13px;
+			
 			line-height: 1.8em;
+		}
+		.works_left .txtBloc p{
+			font-size: 14px;
+			margin: 0;
+			padding: 5px 8px;
+			border-bottom: 1px dotted #ddd;
+		}
+		.works_left .txtBloc p:nth-child(even){
+			background-color: #f7f7f7;
+		}
+		.works_left .txtBloc p:last-child{
+			border-bottom: none;
 		}
 
 	.songTxtList{
@@ -91,7 +112,10 @@ WORKS (SP)
 			font-size: 18px;
 		}
 		.works_left .txtBloc{
-			font-size: 16px;
+			font-size: 14px;
+		}
+		.works_left .txtBloc p{
+			padding: 8px 10px;
 		}
 }
 

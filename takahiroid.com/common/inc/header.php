@@ -13,13 +13,16 @@ $navIsCurrent = function ($target) use ($firstSegment) {
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
 <div class="header">
 
-	<h1>
-		<a href="/" target="_self" class="ttl_main">TAKAHIROID.COM</a>
-		<p class="ttl_sub">TAKAHIRO MATSUMOTO OFFICIAL WEB</p>
-	</h1>
-	<div class="header_icon sp"><img src="/common/img/spaceman.gif"></div>
+	<div class="header_title">
+		<img src="/common/img/mv_red.png" class="header_icon" alt="">
+		<h1>
+			<a href="/" target="_self" class="ttl_main">TAKAHIROID.COM</a>
+			<p class="ttl_sub">TAKAHIRO MATSUMOTO OFFICIAL WEB</p>
+		</h1>
+	</div>
 
 	<ul class="gnavi_pc pc">
+	<li class="<?= $navIsCurrent('') ? 'current' : '' ?>"><a href="/">HOME</a></li>
 	  <li class="<?= $navIsCurrent('live') ? 'current' : '' ?>"><a href="/live/">LIVE</a></li>
 	  <li class="<?= $navIsCurrent('news') ? 'current' : '' ?>"><a href="/news/">NEWS</a></li>
 	  <li class="<?= $navIsCurrent('discography') ? 'current' : '' ?>"><a href="/discography/">Discography</a></li>
@@ -42,6 +45,7 @@ $navIsCurrent = function ($target) use ($firstSegment) {
 	</div>
 	<nav class="gnavi_sp sp">
 		<ul class="menu">
+		<li class="<?= $navIsCurrent('') ? 'current' : '' ?>"><a href="/">HOME</a></li>
 	  <li class="<?= $navIsCurrent('live') ? 'current' : '' ?>"><a href="/live/">LIVE</a></li>
 	  <li class="<?= $navIsCurrent('news') ? 'current' : '' ?>"><a href="/news/">NEWS</a></li>
 	  <li class="<?= $navIsCurrent('discography') ? 'current' : '' ?>"><a href="/discography/">Discography</a></li>

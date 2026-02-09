@@ -115,7 +115,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <line x1="20" y1="5" x2="2" y2="5" stroke="currentColor" stroke-width="1"/>
                     <path d="M7 1L2 5L7 9" stroke="currentColor" stroke-width="1" fill="none"/>
                 </svg>
-                DISCOGRAPHY一覧に戻る
+                BACK
             </a>
         </div>
     </div>

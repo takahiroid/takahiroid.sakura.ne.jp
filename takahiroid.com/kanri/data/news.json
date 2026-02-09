@@ -1,37 +1,37 @@
 [
     {
-        "id": "0128-live",
-        "title": "松本タカヒロのRock’nRoll Cafe ",
+        "id": "6989504f14aa9",
+        "title": "松本タカヒロのRock’nRoll Cafe vol.2",
         "title_url": "https:\/\/topbeatclub.com\/",
-        "lead": "松本タカヒロのRock’nRoll Cafe",
+        "lead": "松本タカヒロのRock’nRoll Cafe vol.2",
         "category": "LIVE",
         "subcategory": "TAKAHIROID",
-        "date": "2025\/12\/08 00:00",
-        "end_date": "",
-        "content": "<p>DJにマティをお迎えして、1Fカフェにてアコースティックライブをします！<\/p>",
+        "date": "2026\/02\/09 12:00",
+        "end_date": "2026\/03\/25 00:00",
+        "content": "",
         "published": true,
-        "image": "\/news\/img\/news_20260107181814_695e24d60bf6c.jpg",
+        "show_on_top": true,
+        "image": "",
+        "thumbnail": "\/news\/img\/news_20260209121111_6989504f142b5.jpg",
         "youtube_id": null,
         "youtube_url": "",
-        "live_date": "2026\/01\/28",
+        "created_at": "2026-02-09 12:11:11",
+        "updated_at": "2026-02-09 13:17:08",
+        "live_date": "2026\/03\/24",
         "live_venue": "Top Beat Club 1F CAFE（東京）",
         "live_performers": "■ 出演：松本タカヒロ ／■ DJ：Matty06",
         "live_time": "open 19:00 \/ start 19:30",
-        "live_price": "前売り : ¥3,000（1D別） \/ 当日 : ¥3,500（要1 Drink + 1 Food Order）",
+        "live_price": "前売り : ¥3,500 \/ 当日 : ¥3,500（+1 Drink）",
         "live_ticket_sales": [
             {
                 "name": "Peatix",
-                "url": "https:\/\/peatix.com\/event\/4731747"
+                "url": "https:\/\/peatix.com\/event\/4863009"
             }
         ],
-        "live_sale_date": "2025.12.13 土18:00〜",
+        "live_sale_date": "2026.2.13(金) 18:00〜",
         "live_contact": "TOP BEAT CLUB",
         "live_contact_url": "https:\/\/topbeatclub.com\/",
-        "live_other": "",
-        "created_at": "2025-12-08 00:00:00",
-        "updated_at": "2026-01-07 18:46:55",
-        "show_on_top": true,
-        "thumbnail": "\/news\/img\/news_20260107181814_695e24d60c852.jpg"
+        "live_other": ""
     },
     {
         "id": "turtles-live",
@@ -108,6 +108,40 @@
         "updated_at": "2026-01-07 18:08:53",
         "show_on_top": true,
         "thumbnail": "\/news\/img\/news_20260107171415_695e15d723b05.jpg"
+    },
+    {
+        "id": "0128-live",
+        "title": "松本タカヒロのRock’nRoll Cafe ",
+        "title_url": "https:\/\/topbeatclub.com\/",
+        "lead": "松本タカヒロのRock’nRoll Cafe",
+        "category": "LIVE",
+        "subcategory": "TAKAHIROID",
+        "date": "2025\/12\/08 00:00",
+        "end_date": "2025\/02\/09 00:00",
+        "content": "<p>DJにマティをお迎えして、1Fカフェにてアコースティックライブをします！<\/p>",
+        "published": true,
+        "image": "\/news\/img\/news_20260107181814_695e24d60bf6c.jpg",
+        "youtube_id": null,
+        "youtube_url": "",
+        "live_date": "2026\/01\/28",
+        "live_venue": "Top Beat Club 1F CAFE（東京）",
+        "live_performers": "■ 出演：松本タカヒロ ／■ DJ：Matty06",
+        "live_time": "open 19:00 \/ start 19:30",
+        "live_price": "前売り : ¥3,000（1D別） \/ 当日 : ¥3,500（要1 Drink + 1 Food Order）",
+        "live_ticket_sales": [
+            {
+                "name": "Peatix",
+                "url": "https:\/\/peatix.com\/event\/4731747"
+            }
+        ],
+        "live_sale_date": "2025.12.13 土18:00〜",
+        "live_contact": "TOP BEAT CLUB",
+        "live_contact_url": "https:\/\/topbeatclub.com\/",
+        "live_other": "",
+        "created_at": "2025-12-08 00:00:00",
+        "updated_at": "2026-02-09 12:07:11",
+        "show_on_top": true,
+        "thumbnail": "\/news\/img\/news_20260107181814_695e24d60c852.jpg"
     },
     {
         "id": "ukp-radio",

@@ -8,6 +8,7 @@
 <script type="text/javascript" src="/common/js/common.js"></script>
 <link rel="stylesheet" href="/common/css/style.css" type="text/css"/>
 <link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
+<link rel="stylesheet" href="/bio/bio.css" type="text/css" />
 <script src="../common/js/rollover.js" type="text/javascript"></script>
 <!-- PAGE TOPに戻るボタン -->
 <script type="text/javascript" src="../common/js/back_top.js"></script>
@@ -16,30 +17,22 @@
 <body id="bio">
 <div class="wrapper">
 <?php include("../common/inc/header.php"); ?>
-
-  <div class="sp_title sp"><p>Biography</p></div>
-
   <div class="contents">
-    <div class="wrap_area">
 
-
-
-      <div class="bio_left pc">
-        <p id="pageTitle">PROFILE</p>
-        <div class="spaceman">
-          <img src="/common/img/spaceman.gif">
-        </div>
+  <div class="page-title">
+        <h1>PROFILE</h1>
       </div>
 
-
-
+    <div class="wrap_area">
       <div class="bio_right">
-
-        <div class="photo"><img src="img/097.jpg"/></div>
+        <div class="photo"><img src="img/photo2.jpg"/></div>
 
         <div class="profTxt">
           <p class="name"><span>Takahiro Matsumoto</span> / 松本タカヒロ</p>
           <p class="credit">Produce / Compose / Arrangement / Lyrics / Guitar / Vocal</p>
+          <div class="hyakka">
+              <p class="ttl"><a href="http://www.takahiroid.com/40sbook.pdf" target="_blank">→ 松本タカヒロ大百科（2010年版ダウンロード）</a></p>
+            </div>
           <div class="txtBox">
 
             <p class="txt">
@@ -79,10 +72,6 @@
             SPARKY・
             餃子大王
             </p>
-
-            <div class="hyakka">
-              <p class="ttl"><a href="http://www.takahiroid.com/40sbook.pdf" target="_blank">→ 松本タカヒロ大百科（2010年版ダウンロード）</a></p>
-            </div>
           </div>
           <!-- /txt -->
         </div>

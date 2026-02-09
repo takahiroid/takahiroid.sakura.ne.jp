@@ -60,8 +60,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
     
-    // 画像削除チェック
-    if (isset($_POST['delete_image']) && !empty($disc['image'])) {
+    // 画像削除チェック（新しい画像がアップロードされていない場合のみ）
+    if (isset($_POST['delete_image']) && !empty($disc['image']) && empty($_FILES['image']['name'])) {
         deleteDiscographyImage(basename($disc['image']));
         $disc['image'] = '';
     }
@@ -123,6 +123,13 @@ $discographyCategories = loadDiscographyCategories();
             background: #fff5f5;
             border-radius: 5px;
             border: 1px solid #fed7d7;
+        }
+        .new-image-preview {
+            margin-top: 10px;
+            padding: 15px;
+            background: #f0fff4;
+            border-radius: 5px;
+            border: 1px solid #c6f6d5;
         }
         /* Quill Editor Styles */
         #content-editor {
@@ -200,13 +207,22 @@ $discographyCategories = loadDiscographyCategories();
                                 <input type="file" id="image" name="image" accept="image/*">
                                 <p class="help-text">JPEG, PNG, GIF, WebP形式（最大5MB）</p>
                                 
+                                <!-- 新しい画像のプレビュー -->
+                                <div id="new-image-preview" class="new-image-preview" style="display: none;">
+                                    <p><strong>新しい画像（プレビュー）:</strong></p>
+                                    <div class="image-preview-container">
+                                        <img id="new-image-preview-img" src="" alt="新しいジャケット画像プレビュー">
+                                    </div>
+                                    <button type="button" id="cancel-new-image" class="btn btn-secondary" style="margin-top: 10px; font-size: 12px; padding: 4px 12px;">選択を取り消す</button>
+                                </div>
+                                
                                 <?php if (!empty($disc['image'])): ?>
-                                    <div class="current-image-info">
+                                    <div class="current-image-info" id="current-image-info">
                                         <p><strong>現在の画像:</strong></p>
                                         <div class="image-preview-container">
                                             <img src="<?php echo h($disc['image']); ?>" alt="現在のジャケット画像">
                                         </div>
-                                        <div class="delete-image-option">
+                                        <div class="delete-image-option" id="delete-image-option">
                                             <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; margin: 0;">
                                                 <input type="checkbox" name="delete_image" value="1">
                                                 <span style="color: #c53030;">この画像を削除する</span>
@@ -307,6 +323,50 @@ $discographyCategories = loadDiscographyCategories();
         quill.on('text-change', function() {
             contentTextarea.value = quill.root.innerHTML;
         });
+        
+        // 画像プレビュー機能
+        (function() {
+            var imageInput = document.getElementById('image');
+            var newPreview = document.getElementById('new-image-preview');
+            var newPreviewImg = document.getElementById('new-image-preview-img');
+            var cancelBtn = document.getElementById('cancel-new-image');
+            var currentImageInfo = document.getElementById('current-image-info');
+            
+            imageInput.addEventListener('change', function() {
+                var file = this.files[0];
+                if (file && file.type.startsWith('image/')) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        newPreviewImg.src = e.target.result;
+                        newPreview.style.display = 'block';
+                        // 現在の画像エリアを非表示
+                        if (currentImageInfo) {
+                            currentImageInfo.style.display = 'none';
+                        }
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    resetPreview();
+                }
+            });
+            
+            // 選択取り消しボタン
+            if (cancelBtn) {
+                cancelBtn.addEventListener('click', function() {
+                    imageInput.value = '';
+                    resetPreview();
+                });
+            }
+            
+            function resetPreview() {
+                newPreview.style.display = 'none';
+                newPreviewImg.src = '';
+                // 現在の画像エリアを再表示
+                if (currentImageInfo) {
+                    currentImageInfo.style.display = 'block';
+                }
+            }
+        })();
     </script>
 </body>
 </html>

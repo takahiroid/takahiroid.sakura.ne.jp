@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* BIO - PC */
+
+.bio_left {
+	width: 30%;
+	margin: 40px 0 30px;
+}
+.bio_left #pageTitle {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	letter-spacing: -3px;
+	text-decoration: none;
+	padding: 0;
+	line-height: 1.5em;
+	text-align: left;
+}
+.bio_left .spaceman {
+	padding-top: 100px;
+}
+
+#bio .photo {
+	width: 100%;
+}
+#bio .photo img {
+	width: 100%;
+}
+
+.bio_right {
+	width: 60%;
+	margin: 40px auto 30px;
+}
+.bio_right .profTxt {
+	padding: 10px 0px 30px;
+}
+.bio_right .name {
+	font-size: 20px;
+}
+.bio_right .name span {
+	font-size: 20px;
+}
+.bio_right .credit {
+	margin-top: 8px;
+	line-height: 1.4em;
+}
+.bio_right .txtBox {
+	margin-top: 2rem;
+}
+.bio_right .txt,
+.bio_right .txt a {
+	padding-bottom: 2rem;
+	line-height: 1.7em;
+}
+.bio_right .txt a:hover {
+	text-decoration: none;
+}
+.bio_right .office {
+	margin-top: 10px;
+}
+.bio_right .link .itoi {
+	font-size: 15px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	line-height: 1.6em;
+}
+.bio_right .link .itoi:hover {
+	text-decoration: none;
+}
+.bio_right .hyakka {
+	padding-top: 10px;
+	text-align: left;
+	line-height: 1.6em;
+}
+.bio_right .hyakka .ttl {
+	margin-bottom: 7px;
+}
+.bio_right .hyakka .ttl a {
+	font-size: 15px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+.bio_right .hyakka .ttl a:hover {
+	text-decoration: none;
+}
+.bio_right .icon {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+	background-color: #777;
+	color: #FFF;
+	display: inline-block;
+	position: relative;
+	top: -0.1rem;
+	padding: 0.5rem 1rem;
+	line-height: 1;
+	margin-right: 0.7rem;
+}
+
+/* ========================================
+   BIO - SP
+   ======================================== */
+@media screen and (max-width: 896px) {
+
+#bio .sp_title p {
+	color: #f39806;
+}
+
+#bio .wrap_area {
+	display: block;
+}
+
+.bio_left {
+	width: 100%;
+}
+
+.bio_right {
+	width: 100%;
+	margin-top: 0rem;
+}
+
+#bio .bio_right p,
+#bio .bio_right a {
+	font-size: 14px;
+}
+
+.bio_right .icon {
+	font-size: 16px;
+}
+
+}

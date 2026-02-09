@@ -45,6 +45,17 @@
 	border-bottom: 1px solid #e5e5e5;
 }
 
+.header .header_title {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.header .header_icon {
+	width: 7vw;
+	height: auto;
+}
+
 .header a.ttl_main {
 	font-size: 27px;
 	font-weight: 500;
@@ -54,13 +65,6 @@
 .header .ttl_sub {
 	font-size: 12px;
 	padding: 0px 5px 0 5px;
-}
-
-.header .header_icon {
-	width: 10%;
-}
-.header .header_icon img {
-	width: 100%;
 }
 
 /* ========================================
@@ -81,10 +85,7 @@
 	text-decoration: none;
 }
 /* #news .sp_title p は /news/news.css に移動しました */
-
-#bio .sp_title p {
-	color: #f39806;
-}
+/* #bio .sp_title p は /bio/bio.css に移動しました */
 
 /* ========================================
    共通ページタイトル（レスポンシブ）
@@ -381,26 +382,6 @@
 /* ========================================
    BIO
    ======================================== */
-#bio .wrap_area {
-	display: block;
-}
-
-.bio_left {
-	width: 100%;
-}
-
-.bio_right {
-	width: 100%;
-	margin-top: 0rem;
-}
-
-#bio .bio_right p,
-#bio .bio_right a {
-	font-size: 16px;
-}
-
-.bio_right .icon {
-	font-size: 16px;
-}
+/* BIO関連のCSSは /bio/bio.css に移動しました */
 
 }

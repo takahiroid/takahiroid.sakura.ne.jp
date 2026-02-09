@@ -32,12 +32,14 @@
           <td>
             <p class="cdtitle"><span>Recent Live REC Guitar Play</span></p>
             <div class="txtBloc">
-            	ROLLY ALL STARS＜2021＞<br>
-              世良公則＜JET ROX TOUR 2011〜2021＞<br>
-              世良公則 feat. マーティ・フリードマン＜フジテレビ　名曲お宝音楽祭＞<br>
-              ROLLY＜2019 ROLLY'S ROCK SHOW TOUR 2019＞<br>
-              鈴木茂 with Glimrockers＜HALLOWEEN NIGHT TOUR 2017＞<br>
-              大槻ｹﾝｼﾞwith Glimrockers<br>山下智久<br>
+              <p>世良公則 & 野口五郎<br class="sp_only">＜NHK うたコン 2024.8.21＞</p>
+              <p>ROLLY ALL STARS＜2021＞</p>
+              <p>世良公則＜JET ROX TOUR 2011〜2021＞</p>
+              <p>世良公則 feat. マーティ・フリードマン<br class="sp_only">＜フジテレビ　名曲お宝音楽祭＞</p>
+              <p>ROLLY<br class="sp_only">＜2019 ROLLY'S ROCK SHOW TOUR 2019＞</p>
+              <p>鈴木茂 with Glimrockers<br class="sp_only">＜HALLOWEEN NIGHT TOUR 2017＞</p>
+              <p>大槻ｹﾝｼﾞwith Glimrockers</p>
+              <p>山下智久</p>
             </div>
         </td>
         </tr>
@@ -46,10 +48,12 @@
           <td>
             <p class="cdtitle"><span>ギター指導</span></p>
             <div class="txtBloc">
-            コンサート『ジャニーズWEST LIVE TOUR 2023 W Power』(2023)<br>
-             コンサート『ジャニーズWEST LIVE TOUR 2022 Mixed Juice』(2022)<br>
-             コンサート『ジャニーズWEST LIVE TOUR 2020 W trouble』(2020)<br>
-             舞台『正しいロックバンドの作り方 夏』(2020)<br>
+              <p>コンサート『WEST. LIVE TOUR 2025 A.H.O. -Audio Hang Out』(2025)</p>
+              <p>コンサート『WEST. 10th Anniversary LIVE TOUR AWARD - ELOV-Label』(2024)</p>
+              <p>コンサート『ジャニーズWEST LIVE TOUR 2023 W Power』(2023)</p>
+              <p>コンサート『ジャニーズWEST LIVE TOUR 2022 Mixed Juice』(2022)</p>
+              <p>コンサート『ジャニーズWEST LIVE TOUR 2020 W trouble』(2020)</p>
+              <p>舞台『正しいロックバンドの作り方 夏』(2020)</p>
             </div>
         </td>
         </tr>
@@ -58,57 +62,67 @@
             <td>
                 <p class="cdtitle"><span>テレビ東京「ゴッドタン マジ歌選手権」</span>【楽曲制作】</p>
                 <div class="txtBloc">
-        岩井勇気（ハライチ）「Good bye」（楽曲制作）(2023)<br>
-        錦鯉「売れたなぁ」（楽曲制作）(2023)<br>
-        岩井勇気（ハライチ）「テレビのバケモノ」（楽曲制作）(2021)<br>
-        イワクラ（蛙亭）「生きた心地のしない世界」（楽曲制作）(2021)<br>
-        岩井勇気（ハライチ）「ありがとうテレビマン」（楽曲制作）(2020)<br>
-        阿佐谷姉妹「頑張れ北口商店街」（楽曲制作）(2020)<br>
-        ほしのディスコ「僕の幸せ」（楽曲制作）(2020)<br>
-        岩井勇気（ハライチ）「逃がさねぇからな」（楽曲制作）(2020)<br>
-        ダイノジ＆EXIT「俺の生き様」（楽曲制作）2020<br>
-        岩井勇気（ハライチ）「やめちまえよ」（楽曲制作）(2019)<br>
-        角田 晃広（東京03）「手に入らないもの」（楽曲制作）(2019)<br>
-        岩井勇気（ハライチ）「ゴッドタンマジ歌選手権 - 忘れねえからな」（楽曲制作）(2018)
+                  <p>マユリカ<br class="sp_only">「離れられない」（楽曲制作）(2025)</p>
+                  <p>岩井勇気（ハライチ）<br class="sp_only">「マイファーストレディ」（楽曲制作）(2024)</p>
+                  <p>岩井勇気（ハライチ）<br class="sp_only">「Good bye」（楽曲制作）(2023)</p>
+                  <p>錦鯉<br class="sp_only">「売れたなぁ」（楽曲制作）(2023)</p>
+                  <p>岩井勇気（ハライチ）<br class="sp_only">「テレビのバケモノ」（楽曲制作）(2021)</p>
+                  <p>イワクラ（蛙亭）<br class="sp_only">「生きた心地のしない世界」（楽曲制作）(2021)</p>
+                  <p>岩井勇気（ハライチ）<br class="sp_only">「ありがとうテレビマン」（楽曲制作）(2020)</p>
+                  <p>阿佐谷姉妹<br class="sp_only">「頑張れ北口商店街」（楽曲制作）(2020)</p>
+                  <p>ほしのディスコ<br class="sp_only">「僕の幸せ」（楽曲制作）(2020)</p>
+                  <p>岩井勇気（ハライチ）<br class="sp_only">「逃がさねぇからな」（楽曲制作）(2020)</p>
+                  <p>ダイノジ＆EXIT<br class="sp_only">「俺の生き様」（楽曲制作）(2020)</p>
+                  <p>岩井勇気（ハライチ）<br class="sp_only">「やめちまえよ」（楽曲制作）(2019)</p>
+                  <p>角田 晃広（東京03）<br class="sp_only">「手に入らないもの」（楽曲制作）(2019)</p>
+                  <p>岩井勇気（ハライチ）<br class="sp_only">「忘れねえからな」（楽曲制作）(2018)</p>
+                </div>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <p class="cdtitle"><span>東京みじんこガールズ</span></p>
+                <div class="txtBloc">
+                  <p>「東京みじんこガールズ」（作曲・編曲）2024</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="cdtitle"><span>宍戸留美</span></p>
+                <div class="txtBloc">
+                  <p>「あなたはサンタクロース」（編曲）2023</p>
                 </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <p class="cdtitle"><span>Vtuber 響木アオ</span>【編曲】</p>
+                <p class="cdtitle"><span>Vtuber 響木アオ</span></p>
                 <div class="txtBloc">
-        Vtuber 響木アオ「ユメスクリーム」（編曲）2019<br>
-        テレビ朝日系全国放送musicるTV「トップライナーをさがせ！」タイアップ楽曲<br>
-        <a href="https://www.youtube.com/watch?v=5wSb6I_Btpk" target="_blank">https://www.youtube.com/watch?v=5wSb6I_Btpk</a>
-                </div>
-            </td>
-        </tr>
-
-<!--           <tr>
-            <td>
-              <p class="cdtitle"><span>【Live Guitar Play】</span></p>
-              <div class="txtBloc">
-                鈴木茂 ・ 世良公則 ・ 大槻ケンヂ ・ 本田恭章 ・ 高橋優
-              </div>
-          </td>
-          </tr> -->
-
-
-        <tr>
-            <td>
-                <p class="cdtitle"><span>ジャニーズWEST Album「WESTV」</span>【作詞・作曲】</p>
-                <div class="txtBloc">
-        　「考えるな、燃えろ!!」（作詞・作曲）2018.12.5
+                  <p>Vtuber 響木アオ「ユメスクリーム」（編曲）2019</p>
+                  <p>テレビ朝日系全国放送musicるTV「トップライナーをさがせ！」タイアップ楽曲</p>
+                  <p><a href="https://www.youtube.com/watch?v=5wSb6I_Btpk" target="_blank">https://www.youtube.com/watch?v=5wSb6I_Btpk</a></p>
                 </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <p class="cdtitle"><span>「また来てマチ子の、恋はもうたくさんよ」Blu-ray・BOX</span>【劇判音楽】</p>
+                <p class="cdtitle"><span>ジャニーズWEST Album「WESTV」</span></p>
                 <div class="txtBloc">
-        　　劇判音楽 全曲 2018.12.5
+                  <p>「考えるな、燃えろ!!」（作詞・作曲）2018.12.5</p>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p class="cdtitle"><span>「また来てマチ子の、恋はもうたくさんよ」Blu-ray・BOX</span></p>
+                <div class="txtBloc">
+                  <p>劇判音楽 全曲 2018.12.5</p>
                 </div>
             </td>
         </tr>
@@ -117,101 +131,98 @@
             <td>
                 <p class="cdtitle"><span>山下智久 Album「UNLEASHED」</span>【ギター】</p>
                 <div class="txtBloc">
-        　「Right Moves」（ギター）2018.11.28
+                  <p>「Right Moves」（ギター）2018.11.28</p>
                 </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <p class="cdtitle"><span>高崎美佳</span>【作曲・編曲】</p>
+                <p class="cdtitle"><span>高崎美佳</span></p>
                 <div class="txtBloc">
-        　「MIKA」（作曲・編曲）2018<br />
-        　「夜の雨は寂しすぎて」（編曲）2018<br />
-        　「ミカヅキ」（編曲）2018<br />
-        　「置き手紙」（編曲）2018<br />
+                  <p>「MIKA」（作曲・編曲）2018</p>
+                  <p>「夜の雨は寂しすぎて」（編曲）2018</p>
+                  <p>「ミカヅキ」（編曲）2018</p>
+                  <p>「置き手紙」（編曲）2018</p>
                 </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <p class="cdtitle"><span>ドラマ 「また来てマチ子の、恋はもうたくさんよ」</span>【劇判音楽】</p>
+                <p class="cdtitle"><span>ドラマ 「また来てマチ子の、恋はもうたくさんよ」</span></p>
                 <div class="txtBloc">
-        　音楽を担当いたしました。<br /><br />
-        　主演：小林歌穂（私立恵比寿中学）<br />
-        　脚本：土屋亮一（シベリア少女鉄道）、福田晶平<br />
-        　演出・編集：金井純一<br /><br />
-        　tvk：2018年1月11日 毎週木曜23:00〜23:30スタート<br />
-        　GYAO!：木曜23:30（放送直後に見逃し配信）<br />
-          <a href="http://www.tvk-yokohama.com/machiko/" target="_blank">http://www.tvk-yokohama.com/machiko/</a><br><br>
-          <iframe src="https://www.youtube.com/embed/Ybn9n2OsYrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <p>劇伴音楽を担当いたしました。</p>
+                  <p>主演：小林歌穂（私立恵比寿中学）</p>
+                  <p>脚本：土屋亮一（シベリア少女鉄道）、福田晶平</p>
+                  <p>演出・編集：金井純一</p>
+                  <p>tvk：2018年1月11日 毎週木曜23:00〜23:30スタート</p>
+                  <p>GYAO!：木曜23:30（放送直後に見逃し配信）</p>
+                  <p><a href="http://www.tvk-yokohama.com/machiko/" target="_blank">http://www.tvk-yokohama.com/machiko/</a></p>
+                  <p><iframe src="https://www.youtube.com/embed/Ybn9n2OsYrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                 </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <p class="cdtitle"><span>舞祭組 「春夏秋冬、漢歌」</span>【作詞・作曲・編曲】</p>
+                <p class="cdtitle"><span>舞祭組 「春夏秋冬、漢歌」</span></p>
                 <div class="txtBloc">
-                舞祭組 「春夏秋冬、漢歌」<br>
-                （舞祭組 アルバム「舞祭組の、わっ! 」収録曲）<br /><br />
-                作詞・作曲：PA-NON・ha-j・松本タカヒロ<br />
-                編曲：ha-j・松本タカヒロ<br /><br />
-                2017.12.13 Release
+                  <p>アルバム「舞祭組の、わっ! 」収録曲</p>
+                  <p>作詞・作曲：PA-NON・ha-j・松本タカヒロ</p>
+                  <p>編曲：ha-j・松本タカヒロ</p>
+                  <p>2017.12.13 Release</p>
                 </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <p class="cdtitle"><span>ジャニーズWEST 「考えるな、燃えろ!!」</span>【作詞・作曲】</p>
+                <p class="cdtitle"><span>ジャニーズWEST 「考えるな、燃えろ!!」</span></p>
                 <div class="txtBloc">
-                ジャニーズWEST シングル「考えるな、燃えろ!!」<br />
-                （Netflixオリジナルドラマ『<a href="http://www.tenkousei-netflix.jp/" target="_blank">炎の転校生 REBORN</a>』主題歌）<br /><br />
-                作詞・作曲：PA-NON・ha-j・松本タカヒロ<br />
-                編曲：ha-j<br /><br />
-                2017.11.22 Release
+                  <p>Netflixオリジナルドラマ『<a href="http://www.tenkousei-netflix.jp/" target="_blank">炎の転校生 REBORN</a>』主題歌</p>
+                  <p>作詞・作曲：PA-NON・ha-j・松本タカヒロ</p>
+                  <p>編曲：ha-j</p>
+                  <p>2017.11.22 Release</p>
                 </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <p class="cdtitle"><span>ギンギン♂ガールズ</span>【作曲・編曲】</p>
+                <p class="cdtitle"><span>ギンギン♂ガールズ</span></p>
                 <div class="txtBloc">
-        　「Are You GinGin?」（作曲・編曲）2016<br />
-        　「ギンギンハリケーン」（作曲・編曲）2017<br />
-        　「今夜はPush It!」2017（作曲・編曲）2017<br />
+                  <p>「Are You GinGin?」（作曲・編曲）2016</p>
+                  <p>「ギンギンハリケーン」（作曲・編曲）2017</p>
+                  <p>「今夜はPush It!」（作曲・編曲）2017</p>
                 </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <p class="cdtitle"><span>短編映画「Cycle Cycle」</span>【劇判音楽】</p>
+                <p class="cdtitle"><span>短編映画「Cycle Cycle」</span></p>
                 <div class="txtBloc">
-                音楽を担当いたしました。<br />
-                ドイツ映画祭「<a href="http://www.b3biennale.de/id/7975/B3-BEN-AWARD-2017-Congratulations-to-the-winner/ target="_blank">B3 biennale short film 2017</a>」ノミネート最優秀賞受賞
-                <br>
-                大阪アジアン映画祭 《芳泉短編賞》受賞<br><br>
-                出演：M!LK<br />
-                監督・脚本：金井純一<br />
-                2017年
+                  <p>劇伴音楽を担当いたしました。</p>
+                  <p>ドイツ映画祭「<a href="http://www.b3biennale.de/id/7975/B3-BEN-AWARD-2017-Congratulations-to-the-winner/ target="_blank">B3 biennale short film 2017</a>」ノミネート最優秀賞受賞</p>
+                  <p>大阪アジアン映画祭 《芳泉短編賞》受賞</p>
+                  <p>出演：M!LK</p>
+                  <p>監督・脚本：金井純一</p>
+                  <p>2017年</p>
                 </div>
             </td>
         </tr>
 
         <tr>
             <td>
-                <p class="cdtitle"><span>映画「やまない雨はない」</span>【劇判音楽】</p>
+                <p class="cdtitle"><span>映画「やまない雨はない」</span></p>
                 <div class="txtBloc">
-                音楽を担当いたしました。<br /><br />
-                出演：川上麻衣子/永井大/島津健太郎<br />
-                原作：マダム信子<br />
-                監督：北崎一教<br />
-                2017.12 公開<br /><br />
-        <iframe src="https://www.youtube.com/embed/mqvjw9TZlPA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                  <p>劇伴音楽を担当いたしました。</p>
+                  <p>出演：川上麻衣子/永井大/島津健太郎</p>
+                  <p>原作：マダム信子</p>
+                  <p>監督：北崎一教</p>
+                  <p>2017.12 公開</p>
+                  <p><iframe src="https://www.youtube.com/embed/mqvjw9TZlPA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></p>
                 </div>
             </td>
         </tr>
@@ -219,11 +230,12 @@
         <tr>
             <td>
                 <p class="cdtitle"><span>Malcolm Mask McLaren</span>【作詞・作曲・編曲】</p>
-                <div class="txtBloc">エイジアプロモーションが送りだすパンクアイドルグループ、Malcolm Mask McLarenマルコム・マスク・マクラーレン<br><br>
-        「乙女クライマー」（作詞・作曲・編曲）<br>
-        「ROX」（作曲・編曲）<br>
-        「じるみー」（作詞・作曲・編曲）<br>
-        「ハイジャンプレイヤー」（作曲・編曲）<br>
+                <div class="txtBloc">
+                  <p>エイジアプロモーションが送りだすパンクアイドルグループ、Malcolm Mask McLarenマルコム・マスク・マクラーレン</p>
+                  <p>「乙女クライマー」（作詞・作曲・編曲）</p>
+                  <p>「ROX」（作曲・編曲）</p>
+                  <p>「じるみー」（作詞・作曲・編曲）</p>
+                  <p>「ハイジャンプレイヤー」（作曲・編曲）</p>
                 </div>
             </td>
         </tr>
@@ -232,12 +244,12 @@
             <td>
                 <p class="cdtitle"><span>ぱちんこ CR聖戦士ダンバイン オリジナルソング｜Sammy</span><br>【作詞・作曲・編曲・歌唱】</p>
                 <div class="txtBloc">
-        「誓いの荒野」（歌唱）<br>
-        「Part of You」（作曲・編曲）<br>
-        「Changing The World」（作詞・作曲・編曲）<br>
-        「I’m gonna…」（作曲・編曲）<br>
-        「カナシミノハテ」（編曲）<br>
-        「ダンバインとぶ（MIQ 2015 Ver.）」（編曲）<br><br>
+                  <p>「誓いの荒野」（歌唱）</p>
+                  <p>「Part of You」（作曲・編曲）</p>
+                  <p>「Changing The World」（作詞・作曲・編曲）</p>
+                  <p>「I’m gonna…」（作曲・編曲）</p>
+                  <p>「カナシミノハテ」（編曲）</p>
+                  <p>「ダンバインとぶ（MIQ 2015 Ver.）」（編曲）</p>
                 </div>
             </td>
         </tr>
@@ -247,9 +259,10 @@
         <tr>
             <td>
                 <p class="cdtitle"><span>WEBドラマ　LOTTE SWEET FILMS 「ふたりだけの声」</span>【劇判音楽】</p>
-                <div class="txtBloc">ロッテの人気商品のトッポをモチーフにした短編映画「ふたりだけの声」の音楽を担当いたしました。2015年2月16日（月）公開。<br>
-                「ふたりだけの声」　トッポ　×　山口まゆ　×　監督：金井順一<br>
-                <iframe src="https://www.youtube.com/embed/fvjMSiKdFtQ" frameborder="0" allowfullscreen style="margin-top:8px;"></iframe>
+                <div class="txtBloc">
+                  <p>ロッテの人気商品のトッポをモチーフにした短編映画「ふたりだけの声」の音楽を担当いたしました。2015年2月16日（月）公開。</p>
+                  <p>「ふたりだけの声」　トッポ　×　山口まゆ　×　監督：金井順一</p>
+                  <p><iframe src="https://www.youtube.com/embed/fvjMSiKdFtQ" frameborder="0" allowfullscreen style="margin-top:8px;"></iframe></p>
                 </div>
             </td>
         </tr>
@@ -257,11 +270,12 @@
         <tr>
             <td>
                 <p class="cdtitle"><span>ドラマ「弱い男」</span>【劇判音楽】</p>
-                <div class="txtBloc">ＢＳ11 新番組ドラマ「弱い男」の音楽を担当いたしました。<br />
-                毎週月曜日 22時54分～23時（全13話）<br />
-                2014年12月15日より絶賛放映中<br />
-                主演：SECRET GUYZ（吉原シュート・池田タイキ・諭吉）
-                <iframe src="https://www.youtube.com/embed/i1usfxi0meQ" frameborder="0" allowfullscreen style="margin-top:8px;"></iframe>
+                <div class="txtBloc">
+                  <p>ＢＳ11 新番組ドラマ「弱い男」の音楽を担当いたしました。</p>
+                  <p>毎週月曜日 22時54分～23時（全13話）</p>
+                  <p>2014年12月15日より絶賛放映中</p>
+                  <p>主演：SECRET GUYZ（吉原シュート・池田タイキ・諭吉）</p>
+                  <p><iframe src="https://www.youtube.com/embed/i1usfxi0meQ" frameborder="0" allowfullscreen style="margin-top:8px;"></iframe></p>
                 </div>
             </td>
         </tr>
@@ -271,12 +285,12 @@
                 <p class="cdtitle"><span>「戦慄のグリムロッカーズ」／ROLLY＆GlimRockers</span>【CD】</p>
                 <img src="img/glim1.png"  />
                 <br /><br />
-                <div class="txtBloc">ロック業界のヘンゼルことROLLYと、グレーテルこと永井ルイ。<br />
-                そしてピーターパンこと松本タカヒロ（タートルズ）に三匹のこぶたから小畑ポンプが結集したのが『ROLLY＆GlimRockres』。<br />
-                メルヘンでメランコリックなメロディーと現実と妄想の狭間の世界観で、異次元ワールドへと誘う稀代のロックバンドの記念すべき1stアルバム。<br/>
-                ￥2,500 (税込)
-                <br />
-                <a href="http://www.rocket-exp.com/m/item/itemShw.php?site=R&ima=1822&cd=2347010155" target="_blank">ご購入はこちら</a>
+                <div class="txtBloc">
+                  <p>ロック業界のヘンゼルことROLLYと、グレーテルこと永井ルイ。</p>
+                  <p>そしてピーターパンこと松本タカヒロ（タートルズ）に三匹のこぶたから小畑ポンプが結集したのが『ROLLY＆GlimRockres』。</p>
+                  <p>メルヘンでメランコリックなメロディーと現実と妄想の狭間の世界観で、異次元ワールドへと誘う稀代のロックバンドの記念すべき1stアルバム。</p>
+                  <p>￥2,500 (税込)</p>
+                  <p><a href="http://www.rocket-exp.com/m/item/itemShw.php?site=R&ima=1822&cd=2347010155" target="_blank">ご購入はこちら</a></p>
                 </div>
             </td>
         </tr>
@@ -284,15 +298,13 @@
         <tr>
             <td>
                 <p class="cdtitle"><span>映画「さよならケーキとふしぎなランプ」</span>【劇判音楽】</p>
-                <div class="txtBloc"><iframe src="//www.youtube.com/embed/sd6fPl8gnLA" frameborder="0" allowfullscreen></iframe>
-                <br /><br />
-                映画「さよならケーキとふしぎなランプ」の音楽を担当いたしました。
-                <br /><br />
-                出演：堂島孝平/平田薫/ヨネスケ/坂田雅彦/田中世津子/広澤草/福場俊策/二宮慶多/梅垣義明<br />
-                監督・編集：金井純一　脚本：金井純一/ビーグル大塚<br />
-                音楽：松本タカヒロ(TheTurtles)<br />
-                2014年公開
-                <br />
+                <div class="txtBloc">
+                  <p><iframe src="//www.youtube.com/embed/sd6fPl8gnLA" frameborder="0" allowfullscreen></iframe></p>
+                  <p>映画「さよならケーキとふしぎなランプ」の音楽を担当いたしました。</p>
+                  <p>出演：堂島孝平/平田薫/ヨネスケ/坂田雅彦/田中世津子/広澤草/福場俊策/二宮慶多/梅垣義明</p>
+                  <p>監督・編集：金井純一　脚本：金井純一/ビーグル大塚</p>
+                  <p>音楽：松本タカヒロ(TheTurtles)</p>
+                  <p>2014年公開</p>
                 </div>
             </td>
         </tr>
@@ -314,8 +326,9 @@
             <td>
               <p class="cdtitle"><span>世良正則「小さな恋のうた」</span>【編曲・ギター】</p>
               <div class="txtBloc">
-        世良正則「小さな恋のうた」<br />（アルバム『BACKBONE』収録曲）<br />
-        2012.10.03 Release<br />
+                <p>世良正則「小さな恋のうた」</p>
+                <p>（アルバム『BACKBONE』収録曲）</p>
+                <p>2012.10.03 Release</p>
               </div>
           </td>
           </tr>
