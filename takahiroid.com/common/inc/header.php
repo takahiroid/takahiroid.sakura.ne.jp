@@ -7,7 +7,7 @@ $navIsCurrent = function ($target) use ($firstSegment) {
 ?>
 
 <!-- スムーススクロール -->
-<script type="text/javascript" src="../common/js/smooth-scroll.js"></script>
+<script type="text/javascript" src="../common/js/smooth-scroll.js?v=<?php echo filemtime(__DIR__ . '/../js/smooth-scroll.js'); ?>"></script>
 
 <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto:400,400italic,700,700italic|Dosis:500' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>

@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="Keywords" content="まつもと,マツモト,タカヒロ,松本タカヒロ,タートルズ,ザ・タートルズ,turtles,餃子大王,sparky,まっちゃん" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="/common/js/common.js"></script>
-<link rel="stylesheet" href="/common/css/style.css" type="text/css"/>
-<link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
+<script type="text/javascript" src="/common/js/common.js?v=<?php echo filemtime(__DIR__ . '/common/js/common.js'); ?>"></script>
+<link rel="stylesheet" href="/common/css/style.css?v=<?php echo filemtime(__DIR__ . '/common/css/style.css'); ?>" type="text/css"/>
+<link rel="stylesheet" href="/common/css/style_sp.css?v=<?php echo filemtime(__DIR__ . '/common/css/style_sp.css'); ?>" type="text/css" />
 <!-- PAGE TOPに戻るボタン -->
-<script type="text/javascript" src="/common/js/back_top.js"></script>
+<script type="text/javascript" src="/common/js/back_top.js?v=<?php echo filemtime(__DIR__ . '/common/js/back_top.js'); ?>"></script>
   <link rel="icon" href="/favicon.ico">
 <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
 </head>

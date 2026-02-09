@@ -31,11 +31,11 @@ $subtitle = htmlspecialchars($disc['subtitle'] ?? '', ENT_QUOTES, 'UTF-8');
 ?>
 <meta name="Keywords" content="まつもと,マツモト,タカヒロ,松本タカヒロ,<?php echo $title; ?>,ディスコグラフィー" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="/common/js/common.js"></script>
-<link rel="stylesheet" href="/common/css/style.css" type="text/css"/>
-<link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
-<link rel="stylesheet" href="/discography/discography.css" type="text/css" />
-<script type="text/javascript" src="/common/js/back_top.js"></script>
+<script type="text/javascript" src="/common/js/common.js?v=<?php echo filemtime(__DIR__ . '/../common/js/common.js'); ?>"></script>
+<link rel="stylesheet" href="/common/css/style.css?v=<?php echo filemtime(__DIR__ . '/../common/css/style.css'); ?>" type="text/css"/>
+<link rel="stylesheet" href="/common/css/style_sp.css?v=<?php echo filemtime(__DIR__ . '/../common/css/style_sp.css'); ?>" type="text/css" />
+<link rel="stylesheet" href="/discography/discography.css?v=<?php echo filemtime(__DIR__ . '/discography.css'); ?>" type="text/css" />
+<script type="text/javascript" src="/common/js/back_top.js?v=<?php echo filemtime(__DIR__ . '/../common/js/back_top.js'); ?>"></script>
 <link rel="icon" href="/favicon.ico">
 <title><?php echo $title; ?> - DISCOGRAPHY - TAKAHIROID.COM</title>
 </head>

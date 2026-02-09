@@ -1,7 +1,7 @@
 [
     {
         "name": "松本タカヒロ",
-        "color": "#667eea"
+        "color": "#ea668e"
     },
     {
         "name": "ザ・タートルズ",
@@ -14,5 +14,9 @@
     {
         "name": "ROLLY＆GlimRockers",
         "color": "#e866ea"
+    },
+    {
+        "name": "TAKAHIROID",
+        "color": "#f02461"
     }
 ]
