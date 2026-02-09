@@ -364,20 +364,20 @@ NEWS (SP)
   }
 
   .news_left .txtBloc .ttl.event-title {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   .news_left .txtBloc .live-date {
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 8px;
     margin-top: 5px;
   }
 
   .news_left .txtBloc .live-date-venue {
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 8px;
     margin-top: 5px;
   }
@@ -416,8 +416,12 @@ NEWS (SP)
   .news_left .txtBloc .txt,
   .news_left .txtBloc .txt a {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6em;
+  }
+
+  .news_left .txtBloc .txt a {
+    color: #e03060;
   }
 
   .news_left .txtBloc .txt {
@@ -432,7 +436,7 @@ NEWS (SP)
   .news-thumb {
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 120px;
     margin: 0 10px 0 10px;
   }
   .news-thumb .newsimg,
