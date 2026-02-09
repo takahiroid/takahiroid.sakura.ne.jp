@@ -15,6 +15,14 @@ if (file_exists($newsJsonPath)) {
                 continue;
             }
 
+            // 公開日が未来のものはスキップ
+            if (!empty($news['date'])) {
+                $publishDate = strtotime($news['date']);
+                if ($publishDate !== false && $publishDate > time()) {
+                    continue;
+                }
+            }
+
             // TOPページに表示する設定になっていないものはスキップ
             if (!isset($news['show_on_top']) || $news['show_on_top'] !== true) {
                 continue;

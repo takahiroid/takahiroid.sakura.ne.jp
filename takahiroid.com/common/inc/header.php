@@ -32,7 +32,7 @@ $navIsCurrent = function ($target) use ($firstSegment) {
 	  <li class=""><a href="https://turtle-mania.stores.jp/" target="_blank">Goods</a></li>
 	  <li class="music_btn"><a href="https://sparky.lnk.to/spacelab" target="_blank"><img src="/common/img/music.svg" alt="Music" width="16"></a></li>
 	  <li class="twitter_btn"><a href="http://twitter.com/takahiroid" target="_blank"><img src="/common/img/x.svg" alt="X" width="16"></a></li>
-		<li class="insta_btn"><a href="https://www.instagram.com/takahiroid/" Target="_blank"><img src="/common/img/instagram.svg" alt="Instagram" width="16"></a></li>
+		<li class="insta_btn"><a href="https://www.instagram.com/takahiroid/" Target="_blank"><img src="/common/img/instagram.png" alt="Instagram" width="16"></a></li>
 		<li class="youtube_btn"><a href="https://www.youtube.com/@takahiroid" target="_blank"><img src="/common/img/youtube.svg" alt="YouTube" width="16"></a></li>
 	</ul>
 
