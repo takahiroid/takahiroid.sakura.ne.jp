@@ -143,7 +143,7 @@ NEWS (PC)
 .news_left .txtBloc .ttl {
   font-size: 15px;
   line-height: 1.7;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   color: #000;
 }
 
@@ -366,8 +366,8 @@ NEWS (SP)
   .news_left .txtBloc .ttl.event-title {
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 
   .news_left .txtBloc .live-date {
@@ -433,7 +433,7 @@ NEWS (SP)
     display: block;
     width: 100%;
     max-width: 200px;
-    margin: 0 auto 10px;
+    margin: 0 10px 0 10px;
   }
   .news-thumb .newsimg,
   .news-thumb img.newsimg {
