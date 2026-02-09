@@ -138,7 +138,7 @@ foreach ($allNewsData as $news) {
 									<div class="txtBloc">
 										<!-- カテゴリアイコン・サブカテゴリアイコン・更新日（同じ行） -->
 										<p class="cdtitle">
-											<span class="category-badge"><?php echo h($category); ?></span>
+											<span class="category-badge" style="background-color: <?php echo h($categoryBgColor); ?>;"><?php echo h($category); ?></span>
 											<?php if (!empty($news['subcategory'] ?? '')): ?>
 												<span class="subcategory-badge"><?php echo h($news['subcategory']); ?></span>
 											<?php endif; ?>
