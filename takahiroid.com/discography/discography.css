@@ -127,7 +127,7 @@
 /* Discography Detail Styles */
 .disc-detail-header {
     text-align: center;
-    margin: 50px 0 40px;
+    margin: 0px 0 40px;
 }
 .disc-detail-header .disc-subtitle {
     font-size: 13px;
@@ -281,6 +281,23 @@
     margin-bottom: 30px;
     text-align: left;
 }
+.disc-back-link-top {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.disc-back-link-top a {
+    font-size: 12px;
+    padding: 8px 18px;
+    gap: 6px;
+}
+.disc-back-link-top .back-arrow {
+    width: 16px;
+    height: 8px;
+}
+.disc-back-link-top .back-arrow::after {
+    width: 5px;
+    height: 5px;
+}
 .disc-back-link a {
     display: inline-flex;
     align-items: center;
@@ -289,13 +306,41 @@
     font-size: 14px;
     color: #333;
     text-decoration: none;
-    padding: 12px 25px;
+    padding: 5px 12px;
     border: 1px solid #333;
+    border-radius: 5px;
     transition: all 0.3s;
 }
 .disc-back-link a:hover {
     background: #333;
     color: #fff;
+}
+
+.back-arrow {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    position: relative;
+}
+.back-arrow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid currentColor;
+}
+.back-arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    transform: translateY(-43%) rotate(45deg);
 }
 
 /* Responsive */
@@ -322,10 +367,7 @@
         font-size: 24px;
     }
     .disc-detail-header {
-        margin: 30px 0 25px;
-    }
-    .disc-back-link {
-        text-align: center;
+        margin: 0.5rem 0 25px;
     }
 }
 

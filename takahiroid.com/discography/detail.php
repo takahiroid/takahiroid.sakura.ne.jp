@@ -55,6 +55,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <?php include("../common/inc/header.php"); ?>
     
     <div class="contents">
+        <div class="disc-back-link disc-back-link-top">
+            <a href="/discography/">
+                <span class="back-arrow"></span>
+                BACK
+            </a>
+        </div>
+        
         <div class="disc-detail-header">
             <?php 
             // カテゴリを表示
@@ -111,10 +118,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         <div class="disc-back-link">
             <a href="/discography/">
-                <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="20" y1="5" x2="2" y2="5" stroke="currentColor" stroke-width="1"/>
-                    <path d="M7 1L2 5L7 9" stroke="currentColor" stroke-width="1" fill="none"/>
-                </svg>
+                <span class="back-arrow"></span>
                 BACK
             </a>
         </div>
