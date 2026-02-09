@@ -147,6 +147,134 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <?php include("../common/inc/footer.php"); ?>
 </div>
+
+<!-- Discography Detail Modal -->
+<div id="disc-modal-overlay" class="disc-modal-overlay">
+    <div class="disc-modal">
+        <button class="disc-modal-close" aria-label="CLOSE">&times;</button>
+        <div class="disc-modal-body">
+            <div class="disc-modal-loading">
+                <div class="disc-modal-spinner"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function($) {
+    var $overlay = $('#disc-modal-overlay');
+    var $modal = $overlay.find('.disc-modal');
+    var $body = $overlay.find('.disc-modal-body');
+    var isOpen = false;
+
+    // URLからIDを取得するヘルパー
+    function getIdFromUrl(url) {
+        var match = url.match(/[?&]id=([^&]+)/);
+        return match ? match[1] : '';
+    }
+
+    // アイテムクリックでモーダルを開く
+    $(document).on('click', '.disc-item', function(e) {
+        e.preventDefault();
+        var url = $(this).attr('href');
+        var id = getIdFromUrl(url);
+        if (id) {
+            location.hash = 'detail-' + id;
+        }
+    });
+
+    function openModal(id) {
+        var url = '/discography/detail.php?id=' + encodeURIComponent(id);
+
+        // ローディング表示
+        $body.html('<div class="disc-modal-loading"><div class="disc-modal-spinner"></div></div>');
+        $overlay.addClass('active');
+        $('body').css('overflow', 'hidden');
+        isOpen = true;
+
+        // AJAXでdetail.phpの中身を取得
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function(html) {
+                // レスポンスHTMLからcontentsの中身を抽出
+                var $html = $('<div>').html(html);
+                var $contents = $html.find('.contents');
+                
+                if ($contents.length) {
+                    // BACKリンクを削除（モーダル内では不要）
+                    $contents.find('.disc-back-link').remove();
+                    $body.html($contents.html());
+                    // 最下部に閉じるボタンを追加
+                    $body.append('<div class="disc-modal-close-bottom"><button class="disc-modal-close-btn">CLOSE</button></div>');
+                } else {
+                    $body.html('<p style="text-align:center;padding:40px;color:#999;">コンテンツを読み込めませんでした</p>');
+                }
+            },
+            error: function() {
+                $body.html('<p style="text-align:center;padding:40px;color:#999;">コンテンツを読み込めませんでした</p>');
+            }
+        });
+    }
+
+    function closeModal() {
+        if (!isOpen) return;
+        $overlay.removeClass('active');
+        $('body').css('overflow', '');
+        isOpen = false;
+
+        // ハッシュを除去
+        history.replaceState(null, '', location.pathname + location.search);
+    }
+
+    // ハッシュの変化を監視してモーダルの開閉を制御
+    function checkHash() {
+        var hash = location.hash;
+        var match = hash.match(/^#detail-(.+)$/);
+        if (match) {
+            openModal(decodeURIComponent(match[1]));
+        } else if (isOpen) {
+            $overlay.removeClass('active');
+            $('body').css('overflow', '');
+            isOpen = false;
+        }
+    }
+
+    // 閉じるボタン（右上×）
+    $overlay.on('click', '.disc-modal-close', function() {
+        closeModal();
+    });
+
+    // 閉じるボタン（最下部）
+    $overlay.on('click', '.disc-modal-close-btn', function() {
+        closeModal();
+    });
+
+    // オーバーレイクリック
+    $overlay.on('click', function(e) {
+        if ($(e.target).is($overlay)) {
+            closeModal();
+        }
+    });
+
+    // ESCキー
+    $(document).on('keydown', function(e) {
+        if (e.keyCode === 27 && isOpen) {
+            closeModal();
+        }
+    });
+
+    // ハッシュ変化イベント（戻るボタン対応含む）
+    $(window).on('hashchange', function() {
+        checkHash();
+    });
+
+    // ページ読み込み時にハッシュがあればモーダルを開く
+    $(function() {
+        checkHash();
+    });
+})(jQuery);
+</script>
 </body>
 </html>
 

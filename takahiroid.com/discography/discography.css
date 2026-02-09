@@ -42,6 +42,10 @@
     text-decoration: none;
     display: block;
     transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
 }
 .disc-item:hover {
     transform: translateY(-5px);
@@ -343,6 +347,126 @@
     transform: translateY(-43%) rotate(45deg);
 }
 
+/* ==================== */
+/* Discography Modal    */
+/* ==================== */
+.disc-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.disc-modal-overlay.active {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: 1;
+}
+
+.disc-modal {
+    position: relative;
+    background: #fff;
+    width: 90%;
+    max-width: 860px;
+    margin: 60px auto;
+    padding: 50px 50px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: disc-modal-slideIn 0.35s ease;
+}
+@keyframes disc-modal-slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.disc-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    line-height: 1;
+    color: #999;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.2s;
+    z-index: 1;
+}
+.disc-modal-close:hover {
+    color: #333;
+}
+
+.disc-modal-body {
+    min-height: 200px;
+}
+
+/* モーダル内の詳細ヘッダーの上マージン調整 */
+.disc-modal-body .disc-detail-header {
+    margin-top: 0;
+}
+
+/* ローディングスピナー */
+.disc-modal-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+.disc-modal-spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid #e0e0e0;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: disc-modal-spin 0.7s linear infinite;
+}
+@keyframes disc-modal-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* モーダル最下部の閉じるボタン */
+.disc-modal-close-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+.disc-modal-close-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+}
+.disc-modal-close-btn:hover {
+    background: #333;
+    color: #fff;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .disc-grid {
@@ -368,6 +492,17 @@
     }
     .disc-detail-header {
         margin: 0.5rem 0 25px;
+    }
+    /* モーダルSP対応 */
+    .disc-modal {
+        width: 95%;
+        margin: 20px auto;
+        padding: 40px 20px 30px;
+    }
+    .disc-modal-close {
+        top: 8px;
+        right: 8px;
+        font-size: 28px;
     }
 }
 
