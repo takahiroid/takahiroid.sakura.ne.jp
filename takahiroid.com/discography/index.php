@@ -81,6 +81,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 $categories[$item['category']] = ($categories[$item['category']] ?? 0) + 1;
             }
         }
+        // カテゴリ名の昇順で並び替え
+        ksort($categories);
         ?>
         
         <?php if (count($categories) > 1): ?>

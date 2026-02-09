@@ -219,16 +219,15 @@
     background: #333;
 }
 
-.disc-detail-info {
-
-}
-
 .disc-release-info {
     font-size: 14px;
     font-weight: 600;
     color: #333;
     margin-bottom: 20px;
     padding-bottom: 15px;
+    display: flex;
+    align-items: baseline;
+    gap: 2em;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -248,6 +247,7 @@
     line-height: 1.8;
     font-size: 14px;
     color: #333;
+    text-align: left;
 }
 .disc-body p {
     font-size: 14px;
@@ -274,10 +274,8 @@
 }
 
 .disc-price {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 14px;
     color: #333;
-    margin-bottom: 20px;
 }
 
 .disc-back-link {
@@ -510,8 +508,11 @@
     .disc-grid {
         grid-template-columns: 1fr;
         gap: 35px;
-        max-width: 300px;
         margin: 0 auto 60px;
+    }
+    .disc-image {
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 }
 

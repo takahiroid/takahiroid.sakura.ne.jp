@@ -95,15 +95,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             
             <div class="disc-detail-right">
                 <div class="disc-detail-info">
-                    <?php if (!empty($disc['release_date'])): ?>
+                    <?php if (!empty($disc['release_date']) || !empty($disc['price'])): ?>
                         <div class="disc-release-info">
-                            <?php echo htmlspecialchars($disc['release_date'], ENT_QUOTES, 'UTF-8'); ?> 発売
-                        </div>
-                    <?php endif; ?>
-                    
-                    <?php if (!empty($disc['price'])): ?>
-                        <div class="disc-price">
-                            ¥<?php echo htmlspecialchars($disc['price'], ENT_QUOTES, 'UTF-8'); ?>(税込)
+                            <?php if (!empty($disc['release_date'])): ?>
+                                <span>発売日：<?php echo htmlspecialchars($disc['release_date'], ENT_QUOTES, 'UTF-8'); ?></span>
+                            <?php endif; ?>
+                            <?php if (!empty($disc['price'])): ?>
+                                <span class="disc-price">価格：¥<?php echo htmlspecialchars($disc['price'], ENT_QUOTES, 'UTF-8'); ?>(税込)</span>
+                            <?php endif; ?>
                         </div>
                     <?php endif; ?>
                     
