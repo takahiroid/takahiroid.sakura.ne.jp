@@ -430,10 +430,14 @@ NEWS (SP)
     order: 1;
   }
   .news-thumb {
-    display: none;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 10px;
   }
   .news-thumb .newsimg,
   .news-thumb img.newsimg {
+    max-width: 100%;
     margin: 0 auto;
   }
 
