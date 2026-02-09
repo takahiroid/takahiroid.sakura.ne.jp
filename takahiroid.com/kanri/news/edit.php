@@ -303,7 +303,24 @@ if (!$news) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $isEdit ? '記事編集' : '新規記事作成'; ?> - TAKAHIROID.COM</title>
     <link rel="stylesheet" href="/kanri/common.css">
-    <script src="https://cdn.tiny.cloud/1/x532xptb4sf4peadechzdffgx3n0y9uvfdt7tlu72pg98vw6/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- Quill Editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <style>
+        /* Quill Editor Styles */
+        #content-editor {
+            height: 400px;
+            margin-bottom: 10px;
+        }
+        .ql-container {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .ql-editor {
+            min-height: 350px;
+        }
+    </style>
 </head>
 <body>
     <?php include dirname(__DIR__) . '/sidebar.php'; ?>
@@ -345,7 +362,8 @@ if (!$news) {
                     
                     <div class="form-group">
                         <label for="content">本文</label>
-                        <textarea id="content" name="content"><?php echo h($news['content']); ?></textarea>
+                        <div id="content-editor"></div>
+                        <textarea id="content" name="content" style="display: none;"><?php echo h($news['content']); ?></textarea>
                     </div>
                     
                     <!-- LIVE記事用のフィールド -->
@@ -594,25 +612,36 @@ if (!$news) {
     </div>
     
     <script>
-        // TinyMCE初期化
-        tinymce.init({
-            selector: '#content',
-            language: 'ja',
-            height: 400,
-            menubar: false,
-            plugins: [
-                'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-                'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-                'insertdatetime', 'media', 'table', 'code', 'help', 'wordcount'
-            ],
-            toolbar: 'undo redo | blocks | ' +
-                'bold italic forecolor | alignleft aligncenter ' +
-                'alignright alignjustify | bullist numlist outdent indent | ' +
-                'link | removeformat | help',
-            link_assume_external_targets: true,
-            link_default_target: '_blank',
-            link_title: false,
-            content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-size: 14px; }'
+        // Quill Editor初期化
+        var quill = new Quill('#content-editor', {
+            theme: 'snow',
+            modules: {
+                toolbar: [
+                    [{ 'header': [1, 2, 3, false] }],
+                    ['bold', 'italic', 'underline', 'strike'],
+                    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                    [{ 'align': [] }],
+                    ['link'],
+                    ['clean']
+                ]
+            },
+            placeholder: '内容を入力してください...'
+        });
+        
+        // 既存の内容をエディタに設定
+        var contentTextarea = document.getElementById('content');
+        if (contentTextarea.value) {
+            quill.root.innerHTML = contentTextarea.value;
+        }
+        
+        // フォーム送信時にエディタの内容をtextareaにコピー
+        document.querySelector('form').addEventListener('submit', function() {
+            contentTextarea.value = quill.root.innerHTML;
+        });
+        
+        // エディタの変更を監視してtextareaに反映（リアルタイム保存）
+        quill.on('text-change', function() {
+            contentTextarea.value = quill.root.innerHTML;
         });
         
         // サムネイル画像プレビュー機能
