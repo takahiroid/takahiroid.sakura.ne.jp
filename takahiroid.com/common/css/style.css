@@ -257,7 +257,7 @@ body {
 }
 .mainvisual .ttl a {
 	transition: all 0.3s ease;
-	color: #e60617;
+	color: #000;
 	text-decoration: underline;
 	/* font-weight: bold; */
 }
@@ -443,7 +443,7 @@ body {
 .image-modal {
 	display: none;
 	position: fixed;
-	z-index: 10001;
+	z-index: 9999;
 	left: 0;
 	top: 0;
 	width: 100%;
