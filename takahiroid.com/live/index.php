@@ -46,6 +46,15 @@ foreach ($allNewsData as $news) {
         continue;
     }
     
+    // 公開日が未来のものはスキップ
+    if (!empty($news['date'] ?? '')) {
+        $publishDateStr = str_replace('/', '-', $news['date']);
+        $publishTimestamp = strtotime($publishDateStr);
+        if ($publishTimestamp !== false && $currentTime < $publishTimestamp) {
+            continue;
+        }
+    }
+    
     // LIVEカテゴリのみ表示
     $category = $news['category'] ?? '';
     if ($category !== 'LIVE') {
