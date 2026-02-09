@@ -144,6 +144,44 @@ $discographyCategories = loadDiscographyCategories();
         .ql-editor {
             min-height: 350px;
         }
+        /* HTML Source Editor */
+        .editor-mode-toggle {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 8px;
+        }
+        .editor-mode-toggle button {
+            padding: 5px 14px;
+            font-size: 12px;
+            border: 1px solid #ccc;
+            background: #f5f5f5;
+            color: #555;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .editor-mode-toggle button:hover {
+            background: #e8e8e8;
+        }
+        .editor-mode-toggle button.active {
+            background: #667eea;
+            color: #fff;
+            border-color: #667eea;
+        }
+        #content-source {
+            width: 100%;
+            min-height: 460px;
+            padding: 12px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            border: 1px solid #ccc;
+            border-radius: 0 0 4px 4px;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            resize: vertical;
+            tab-size: 2;
+        }
     </style>
 </head>
 <body>
@@ -235,7 +273,14 @@ $discographyCategories = loadDiscographyCategories();
                             <!-- コメント（WYSIWYG） -->
                             <div class="form-group">
                                 <label for="content">コメント</label>
-                                <div id="content-editor"></div>
+                                <div class="editor-mode-toggle">
+                                    <button type="button" id="btn-mode-visual" class="active">ビジュアル</button>
+                                    <button type="button" id="btn-mode-source" style="margin-left: 4px;">HTMLソース</button>
+                                </div>
+                                <div id="content-editor-wrap">
+                                    <div id="content-editor"></div>
+                                </div>
+                                <textarea id="content-source" style="display: none;"></textarea>
                                 <textarea id="content" name="content" style="display: none;"><?php echo h($disc['content']); ?></textarea>
                                 <p class="help-text">詳細な説明、トラックリスト、購入リンクなどを記載</p>
                             </div>
@@ -316,12 +361,45 @@ $discographyCategories = loadDiscographyCategories();
         
         // フォーム送信時にエディタの内容をtextareaにコピー
         document.querySelector('form').addEventListener('submit', function() {
-            contentTextarea.value = quill.root.innerHTML;
+            // ソースモードの場合はソースtextareaの内容を反映
+            if (isSourceMode) {
+                contentTextarea.value = contentSource.value;
+            } else {
+                contentTextarea.value = quill.root.innerHTML;
+            }
         });
         
         // エディタの変更を監視してtextareaに反映（リアルタイム保存）
         quill.on('text-change', function() {
             contentTextarea.value = quill.root.innerHTML;
+        });
+        
+        // HTMLソース編集の切り替え
+        var btnVisual = document.getElementById('btn-mode-visual');
+        var btnSource = document.getElementById('btn-mode-source');
+        var editorWrap = document.getElementById('content-editor-wrap');
+        var contentSource = document.getElementById('content-source');
+        var isSourceMode = false;
+        
+        btnSource.addEventListener('click', function() {
+            // ビジュアル → ソースモード
+            contentSource.value = quill.root.innerHTML;
+            editorWrap.style.display = 'none';
+            contentSource.style.display = 'block';
+            btnSource.classList.add('active');
+            btnVisual.classList.remove('active');
+            isSourceMode = true;
+        });
+        
+        btnVisual.addEventListener('click', function() {
+            // ソース → ビジュアルモード
+            quill.root.innerHTML = contentSource.value;
+            contentTextarea.value = contentSource.value;
+            contentSource.style.display = 'none';
+            editorWrap.style.display = 'block';
+            btnVisual.classList.add('active');
+            btnSource.classList.remove('active');
+            isSourceMode = false;
         });
         
         // 画像プレビュー機能
