@@ -5,13 +5,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="Keywords" content="まつもと,マツモト,タカヒロ,松本タカヒロ,タートルズ,ザ・タートルズ,turtles,餃子大王,sparky,まっちゃん" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="/common/js/common.js?v=<?php echo filemtime(__DIR__ . '/../common/js/common.js'); ?>"></script>
-<link rel="stylesheet" href="/common/css/style.css?v=<?php echo filemtime(__DIR__ . '/../common/css/style.css'); ?>" type="text/css"/>
-<link rel="stylesheet" href="/common/css/style_sp.css?v=<?php echo filemtime(__DIR__ . '/../common/css/style_sp.css'); ?>" type="text/css" />
-<link rel="stylesheet" href="/bio/bio.css?v=<?php echo filemtime(__DIR__ . '/bio.css'); ?>" type="text/css" />
-<script src="../common/js/rollover.js?v=<?php echo filemtime(__DIR__ . '/../common/js/rollover.js'); ?>" type="text/javascript"></script>
+<script type="text/javascript" src="/common/js/common.js"></script>
+<link rel="stylesheet" href="/common/css/style.css" type="text/css"/>
+<link rel="stylesheet" href="/common/css/style_sp.css" type="text/css" />
+<link rel="stylesheet" href="/bio/bio.css" type="text/css" />
+<script src="../common/js/rollover.js" type="text/javascript"></script>
 <!-- PAGE TOPに戻るボタン -->
-<script type="text/javascript" src="../common/js/back_top.js?v=<?php echo filemtime(__DIR__ . '/../common/js/back_top.js'); ?>"></script>
+<script type="text/javascript" src="../common/js/back_top.js"></script>
 <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
 </head>
 <body id="bio">
