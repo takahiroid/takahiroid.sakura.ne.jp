@@ -177,7 +177,7 @@ foreach ($allNewsData as $news) {
 												if ($timestamp !== false) {
 													$weekdays = ['日', '月', '火', '水', '木', '金', '土'];
 													$weekday = $weekdays[date('w', $timestamp)];
-													$liveDateDisplay = h($liveDateStr) . '(' . $weekday . ')';
+													$liveDateDisplay = date('Y/n/j', $timestamp) . '(' . $weekday . ')';
 												} else {
 													$liveDateDisplay = h($liveDateStr);
 												}
@@ -203,7 +203,7 @@ foreach ($allNewsData as $news) {
 										
 										<?php if ($category === 'LIVE'): ?>
 											<?php if (!empty($news['live_performers'] ?? '')): ?>
-												<p class="txt"><?php echo str_replace('<br>', '<br>', $news['live_performers']); ?><br></p>
+												<p class="txt"><?php echo nl2br(htmlspecialchars($news['live_performers'])); ?></p>
 											<?php endif; ?>
 											<?php if (!empty($news['live_time'] ?? '')): ?>
 												<p class="txt">■ 時間：<?php echo h($news['live_time']); ?><br></p>
