@@ -118,7 +118,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <a href="/discography/detail.php?id=<?php echo htmlspecialchars($disc['id'] ?? $index, ENT_QUOTES, 'UTF-8'); ?>" class="disc-item">
                         <div class="disc-image">
                             <?php if (!empty($disc['image'])): ?>
-                                <img src="<?php echo htmlspecialchars($disc['image'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($disc['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                                <img src="<?php echo htmlspecialchars($disc['image'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($disc['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" loading="lazy">
                             <?php else: ?>
                                 <div class="disc-image-placeholder">No Image</div>
                             <?php endif; ?>

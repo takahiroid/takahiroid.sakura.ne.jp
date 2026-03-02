@@ -240,7 +240,7 @@ foreach ($allNewsData as $news) {
 												<?php if (!empty($news['title_url'] ?? '')): ?>
 													<a href="<?php echo h($news['title_url']); ?>" target="_blank">
 												<?php endif; ?>
-												<img src="<?php echo h($news['image']); ?>" class="newsimg">
+												<img src="<?php echo h($news['image']); ?>" class="newsimg" loading="lazy">
 												<?php if (!empty($news['title_url'] ?? '')): ?>
 													</a>
 												<?php endif; ?>
@@ -254,7 +254,7 @@ foreach ($allNewsData as $news) {
 												<?php if (!empty($news['youtube_url'] ?? '')): ?>
 													<a href="<?php echo h($news['youtube_url']); ?>" target="_blank">
 												<?php endif; ?>
-												<img src="<?php echo h($news['image']); ?>" class="newsimg">
+												<img src="<?php echo h($news['image']); ?>" class="newsimg" loading="lazy">
 												<?php if (!empty($news['youtube_url'] ?? '')): ?>
 													</a>
 												<?php endif; ?>
@@ -274,7 +274,7 @@ foreach ($allNewsData as $news) {
 											<?php endif; ?>
 											<?php if (!empty($news['image'] ?? '')): ?>
 												<br>
-												<img src="<?php echo h($news['image']); ?>" class="newsimg">
+												<img src="<?php echo h($news['image']); ?>" class="newsimg" loading="lazy">
 											<?php endif; ?>
 										<?php endif; ?>
 									</div>

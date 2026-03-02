@@ -145,7 +145,7 @@ foreach ($allNewsData as $news) {
 								<div class="news-body">
 									<?php if (!empty($news['thumbnail'] ?? '')): ?>
 										<div class="news-thumb">
-											<img src="<?php echo h($news['thumbnail']); ?>" class="newsimg thumbnail-clickable" alt="" data-full-image="<?php echo h($news['thumbnail']); ?>">
+											<img src="<?php echo h($news['thumbnail']); ?>" class="newsimg thumbnail-clickable" alt="" data-full-image="<?php echo h($news['thumbnail']); ?>" loading="lazy">
 										</div>
 									<?php endif; ?>
 									<div class="txtBloc">
@@ -241,7 +241,7 @@ foreach ($allNewsData as $news) {
 											<?php endif; ?>
 											<?php if (!empty($news['image'] ?? '')): ?>
 												<br>
-												<img src="<?php echo h($news['image']); ?>" class="newsimg article-image-clickable" alt="" data-full-image="<?php echo h($news['image']); ?>" style="cursor: pointer;">
+												<img src="<?php echo h($news['image']); ?>" class="newsimg article-image-clickable" alt="" data-full-image="<?php echo h($news['image']); ?>" style="cursor: pointer;" loading="lazy">
 											<?php endif; ?>
 										<?php endif; ?>
 									</div>
