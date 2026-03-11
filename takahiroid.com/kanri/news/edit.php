@@ -498,7 +498,7 @@ if (!$news) {
                             <p style="margin-top: 10px; color: #666;">新しいサムネイル画像をアップロードすると、現在のサムネイル画像が置き換えられます。</p>
                         <?php endif; ?>
                         <input type="file" id="thumbnail" name="thumbnail" accept="image/jpeg,image/jpg,image/png,image/gif,image/webp">
-                        <div class="help-text">JPEG, PNG, GIF, WebP形式、最大5MB</div>
+                        <div class="help-text">JPEG, PNG, GIF, WebP形式、最大20MB</div>
                         <div id="thumbnail-preview" class="image-preview" style="display: none;">
                             <p>プレビュー:</p>
                             <img id="preview-thumbnail-img" src="" alt="プレビュー" style="max-width: 300px;">
@@ -520,7 +520,7 @@ if (!$news) {
                             <p style="margin-top: 10px; color: #666;">新しい画像をアップロードすると、現在の画像が置き換えられます。</p>
                         <?php endif; ?>
                         <input type="file" id="image" name="image" accept="image/jpeg,image/jpg,image/png,image/gif,image/webp">
-                        <div class="help-text">JPEG, PNG, GIF, WebP形式、最大5MB</div>
+                        <div class="help-text">JPEG, PNG, GIF, WebP形式、最大20MB</div>
                         <div id="image-preview" class="image-preview" style="display: none;">
                             <p>プレビュー:</p>
                             <img id="preview-img" src="" alt="プレビュー">

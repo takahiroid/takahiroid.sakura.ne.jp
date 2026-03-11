@@ -30,7 +30,7 @@ $navIsCurrent = function ($target) use ($firstSegment) {
 	<li class="<?= $navIsCurrent('bio') ? 'current' : '' ?>"><a href="/bio/">Profile</a></li>
 	  <li class="<?= $navIsCurrent('works') ? 'current' : '' ?>"><a href="/works/">Works</a></li>
 	  <li class=""><a href="https://turtle-mania.stores.jp/" target="_blank">Goods</a></li>
-	  <li class="music_btn"><a href="https://sparky.lnk.to/spacelab" target="_blank"><img src="/common/img/music.svg" alt="Music" width="16"></a></li>
+	  <li class="music_btn"><a href="https://tunecore.co.jp/artists?id=1096989" target="_blank"><img src="/common/img/music.svg" alt="Music" width="16"></a></li>
 	  <li class="twitter_btn"><a href="http://twitter.com/takahiroid" target="_blank"><img src="/common/img/x.svg" alt="X" width="16"></a></li>
 		<li class="insta_btn"><a href="https://www.instagram.com/takahiroid/" Target="_blank"><img src="/common/img/instagram.png" alt="Instagram" width="16"></a></li>
 		<li class="youtube_btn"><a href="https://www.youtube.com/@takahiroid" target="_blank"><img src="/common/img/youtube.svg" alt="YouTube" width="16"></a></li>

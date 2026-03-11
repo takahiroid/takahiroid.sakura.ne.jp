@@ -13,7 +13,7 @@ define('DISCOGRAPHY_DATA_FILE', DATA_DIR . 'discography.json');
 define('DISCOGRAPHY_CATEGORIES_DATA_FILE', DATA_DIR . 'discography_categories.json');
 define('UPLOAD_DIR', dirname(__DIR__) . '/news/img/');
 define('DISCOGRAPHY_UPLOAD_DIR', dirname(__DIR__) . '/discography/img/');
-define('MAX_FILE_SIZE', 5 * 1024 * 1024); // 5MB
+define('MAX_FILE_SIZE', 20 * 1024 * 1024); // 20MB
 
 // データディレクトリが存在しない場合は作成
 if (!file_exists(DATA_DIR)) {
@@ -95,7 +95,7 @@ function uploadImage($file) {
     
     // ファイルサイズチェック
     if ($file['size'] > MAX_FILE_SIZE) {
-        return ['success' => false, 'error' => 'ファイルサイズが大きすぎます（最大5MB）'];
+        return ['success' => false, 'error' => 'ファイルサイズが大きすぎます（最大20MB）'];
     }
     
     // ファイルタイプチェック
@@ -252,7 +252,7 @@ function uploadDiscographyImage($file) {
     
     // ファイルサイズチェック
     if ($file['size'] > MAX_FILE_SIZE) {
-        return ['success' => false, 'error' => 'ファイルサイズが大きすぎます（最大5MB）'];
+        return ['success' => false, 'error' => 'ファイルサイズが大きすぎます（最大20MB）'];
     }
     
     // ファイルタイプチェック

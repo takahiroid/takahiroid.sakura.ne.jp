@@ -243,7 +243,7 @@ $discographyCategories = loadDiscographyCategories();
                             <div class="form-group">
                                 <label for="image">ジャケット画像</label>
                                 <input type="file" id="image" name="image" accept="image/*">
-                                <p class="help-text">JPEG, PNG, GIF, WebP形式（最大5MB）</p>
+                                <p class="help-text">JPEG, PNG, GIF, WebP形式（最大20MB）</p>
                                 
                                 <!-- 新しい画像のプレビュー -->
                                 <div id="new-image-preview" class="new-image-preview" style="display: none;">
