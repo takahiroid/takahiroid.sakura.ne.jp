@@ -12,6 +12,7 @@
 <script type="text/javascript" src="/common/js/back_top.js?v=<?php echo filemtime(__DIR__ . '/../common/js/back_top.js'); ?>"></script>
 <link rel="icon" href="/favicon.ico">
 <title>DISCOGRAPHY - TAKAHIROID.COM</title>
+<?php include("../common/inc/gtag.php"); ?>
 </head>
 
 <body id="discography">

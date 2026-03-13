@@ -38,6 +38,7 @@ $subtitle = htmlspecialchars($disc['subtitle'] ?? '', ENT_QUOTES, 'UTF-8');
 <script type="text/javascript" src="/common/js/back_top.js?v=<?php echo filemtime(__DIR__ . '/../common/js/back_top.js'); ?>"></script>
 <link rel="icon" href="/favicon.ico">
 <title><?php echo $title; ?> - DISCOGRAPHY - TAKAHIROID.COM</title>
+<?php include("../common/inc/gtag.php"); ?>
 </head>
 
 <body id="discography-detail">

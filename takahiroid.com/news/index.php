@@ -95,6 +95,7 @@ foreach ($allNewsData as $news) {
   <script type="text/javascript" src="../common/js/back_top.js"></script>
 
   <title>TAKAHIROID.COM -松本タカヒロ- Home Page</title>
+  <?php include("../common/inc/gtag.php"); ?>
 </head>
 
 <body id="news">

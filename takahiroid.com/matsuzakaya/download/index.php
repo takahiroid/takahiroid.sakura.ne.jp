@@ -11,6 +11,7 @@
 
 <link rel="icon" href="/favicon.ico">
 <title>創業三百十周年記念作品 「謝恩」松酒屋</title>
+<?php include("../../common/inc/gtag.php"); ?>
 </head>
 
 <body id="top">
