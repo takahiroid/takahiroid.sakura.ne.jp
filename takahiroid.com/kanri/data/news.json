@@ -273,5 +273,24 @@
         "live_contact": "",
         "live_contact_url": "",
         "live_other": ""
+    },
+    {
+        "id": "69ba1f5356531",
+        "title": "",
+        "title_url": "",
+        "lead": "テスト",
+        "category": "You Tube",
+        "subcategory": "TAKAHIROID",
+        "date": "2026\/03\/18 12:00",
+        "end_date": "",
+        "content": "<p><br><\/p>",
+        "published": false,
+        "show_on_top": false,
+        "image": "",
+        "thumbnail": "\/news\/img\/news_20260318124315_69ba1f5353f63.png",
+        "youtube_id": null,
+        "youtube_url": "",
+        "created_at": "2026-03-18 12:43:15",
+        "updated_at": "2026-03-18 12:43:15"
     }
 ]

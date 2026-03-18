@@ -20,6 +20,10 @@ if (isset($_GET['id'])) {
 
 // 保存処理
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // post_max_size 超過時は $_POST が空になる（アップロードが進まない原因）
+    if (empty($_POST) && empty($_FILES) && isset($_SERVER['CONTENT_LENGTH']) && (int)$_SERVER['CONTENT_LENGTH'] > 0) {
+        $error = '送信データが大きすぎます。サーバーの制限（post_max_size / upload_max_filesize）を超えている可能性があります。画像を5MB以下に圧縮するか、サーバーコントロールパネルで「upload_max_filesize」「post_max_size」を20MB以上に設定してください。';
+    } else {
     $title = $_POST['title'] ?? '';
     $title_url = trim($_POST['title_url'] ?? '');
     $lead = trim($_POST['lead'] ?? '');
@@ -264,6 +268,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'live_other' => $live_other
         ];
     }
+    }
 }
 
 // デフォルト値
@@ -498,7 +503,7 @@ if (!$news) {
                             <p style="margin-top: 10px; color: #666;">新しいサムネイル画像をアップロードすると、現在のサムネイル画像が置き換えられます。</p>
                         <?php endif; ?>
                         <input type="file" id="thumbnail" name="thumbnail" accept="image/jpeg,image/jpg,image/png,image/gif,image/webp">
-                        <div class="help-text">JPEG, PNG, GIF, WebP形式、最大20MB</div>
+                        <div class="help-text">JPEG, PNG, GIF, WebP形式、最大20MB（本番で5MB超がアップロードできない場合はサーバー設定を確認してください）</div>
                         <div id="thumbnail-preview" class="image-preview" style="display: none;">
                             <p>プレビュー:</p>
                             <img id="preview-thumbnail-img" src="" alt="プレビュー" style="max-width: 300px;">
@@ -520,7 +525,7 @@ if (!$news) {
                             <p style="margin-top: 10px; color: #666;">新しい画像をアップロードすると、現在の画像が置き換えられます。</p>
                         <?php endif; ?>
                         <input type="file" id="image" name="image" accept="image/jpeg,image/jpg,image/png,image/gif,image/webp">
-                        <div class="help-text">JPEG, PNG, GIF, WebP形式、最大20MB</div>
+                        <div class="help-text">JPEG, PNG, GIF, WebP形式、最大20MB（本番で5MB超がアップロードできない場合はサーバー設定を確認してください）</div>
                         <div id="image-preview" class="image-preview" style="display: none;">
                             <p>プレビュー:</p>
                             <img id="preview-img" src="" alt="プレビュー">
@@ -722,10 +727,17 @@ if (!$news) {
             isSourceMode = false;
         });
         
-        // サムネイル画像プレビュー機能
+        // サムネイル画像プレビュー機能（5MB超は本番でアップロードできないため警告）
+        const UPLOAD_LIMIT_BYTES = 5 * 1024 * 1024; // 5MB（本番の一般的な制限）
         document.getElementById('thumbnail').addEventListener('change', function(e) {
             const file = e.target.files[0];
             if (file) {
+                if (file.size > UPLOAD_LIMIT_BYTES) {
+                    alert('このファイルは5MBを超えています。本番環境のサーバー制限によりアップロードできません。\n\n画像を5MB以下に圧縮するか、サーバーコントロールパネルで「upload_max_filesize」「post_max_size」を20MB以上に設定してください。');
+                    e.target.value = '';
+                    document.getElementById('thumbnail-preview').style.display = 'none';
+                    return;
+                }
                 const reader = new FileReader();
                 reader.onload = function(e) {
                     document.getElementById('preview-thumbnail-img').src = e.target.result;
@@ -737,10 +749,16 @@ if (!$news) {
             }
         });
         
-        // 画像プレビュー機能
+        // 画像プレビュー機能（5MB超は本番でアップロードできないため警告）
         document.getElementById('image').addEventListener('change', function(e) {
             const file = e.target.files[0];
             if (file) {
+                if (file.size > UPLOAD_LIMIT_BYTES) {
+                    alert('このファイルは5MBを超えています。本番環境のサーバー制限によりアップロードできません。\n\n画像を5MB以下に圧縮するか、サーバーコントロールパネルで「upload_max_filesize」「post_max_size」を20MB以上に設定してください。');
+                    e.target.value = '';
+                    document.getElementById('image-preview').style.display = 'none';
+                    return;
+                }
                 const reader = new FileReader();
                 reader.onload = function(e) {
                     document.getElementById('preview-img').src = e.target.result;
