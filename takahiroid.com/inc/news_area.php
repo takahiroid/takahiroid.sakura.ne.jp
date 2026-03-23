@@ -7,7 +7,7 @@ if (file_exists($newsJsonPath)) {
     if ($newsData) {
         $today = date('Y/m/d');
         $displayCount = 0;
-        $maxDisplay = 5; // 表示するニュース数
+        $maxDisplay = 10; // 表示するニュース数
 
         foreach ($newsData as $news) {
             // 公開されていないものはスキップ
