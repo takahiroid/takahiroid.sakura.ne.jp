@@ -5,7 +5,6 @@ $newsJsonPath = __DIR__ . '/../kanri/data/news.json';
 if (file_exists($newsJsonPath)) {
     $newsData = json_decode(file_get_contents($newsJsonPath), true);
     if ($newsData) {
-        $today = date('Y/m/d');
         $displayCount = 0;
         $maxDisplay = 10; // 表示するニュース数
 
@@ -28,11 +27,13 @@ if (file_exists($newsJsonPath)) {
                 continue;
             }
 
-            // 終了日が過ぎているものはスキップ
+            // 公開終了日時が過ぎているものはスキップ
             if (!empty($news['end_date'])) {
-                $endDate = date('Y/m/d', strtotime($news['end_date']));
-                if ($endDate < $today) {
-                    continue;
+                $endDateTimestamp = strtotime(str_replace('/', '-', $news['end_date']));
+                if ($endDateTimestamp !== false) {
+                    if (time() > $endDateTimestamp) {
+                        continue;
+                    }
                 }
             }
 

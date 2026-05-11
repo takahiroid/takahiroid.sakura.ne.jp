@@ -186,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $newNews['live_contact_url'] = $live_contact_url;
                 $newNews['live_other'] = $live_other;
             }
-            $newsData[] = $newNews;
+            array_unshift($newsData, $newNews);
             $msg = 'created';
         } else {
             // 編集
