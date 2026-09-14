@@ -238,7 +238,7 @@ foreach ($allNewsData as $news) {
 												<br></p>
 											<?php endif; ?>
 											<?php if (!empty($news['live_other'] ?? '')): ?>
-												<p class="txt"><?php echo str_replace('<br>', '<br>', $news['live_other']); ?></p>
+												<p class="txt"><?php echo nl2br($news['live_other'], false); ?></p>
 											<?php endif; ?>
 											<?php if (!empty($news['image'] ?? '')): ?>
 												<br>
