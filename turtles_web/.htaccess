@@ -1,0 +1,6 @@
+DirectoryIndex index.php index.html
+
+RewriteEngine On
+
+# 以前の .html URL をそのまま使う
+RewriteRule ^(index|profile|disc)\.html$ $1.php [L]

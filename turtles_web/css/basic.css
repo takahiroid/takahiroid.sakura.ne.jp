@@ -22,11 +22,6 @@
 html {
 	scroll-behavior: smooth;
 	background-color: var(--bg);
-	/* 
-	background-image: url(../images/bg/AdobeStock_1392163125.jpeg);
-	background-repeat: repeat;
-	background-position: center top;
-	background-size: 720px auto; */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -63,20 +58,6 @@ img {
 	height: auto;
 }
 
-/* 画像リンクのホバー */
-a.hover:hover img {
-	opacity: 0.7;
-}
-
-/* float の解除 */
-.clearfix:after {
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-
 /* ========================================
    ヘッダー
    上下線は画像ではなく CSS で描く。
@@ -97,6 +78,7 @@ a.hover:hover img {
 }
 
 #live,
+#news,
 #sns,
 #contact {
 	scroll-margin-top: calc(var(--header-h) + 12px);
@@ -120,6 +102,25 @@ a.hover:hover img {
 	-webkit-mask: url(../images/header_logo.png) no-repeat left calc(50% - 1px) / auto 100%;
 	mask: url(../images/header_logo.png) no-repeat left calc(50% - 1px) / auto 100%;
 	pointer-events: none;
+}
+
+#header-logo {
+	position: absolute;
+	top: -1px;
+	left: 0;
+	z-index: 3;
+	width: calc(760 / 488 * (var(--header-h) - var(--bar)));
+	height: calc(var(--header-h) - var(--bar));
+}
+
+#header_wrapper:has(#header-logo:hover)::before,
+#header_wrapper:has(#header-logo:focus-visible)::before {
+	background-color: var(--accent);
+}
+
+#header-logo:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
 }
 
 #site-name {
@@ -147,6 +148,7 @@ a.hover:hover img {
 	line-height: 1;
 	letter-spacing: 0.05em;
 	white-space: nowrap;
+	text-decoration: none;
 }
 
 /* ========================================
@@ -190,7 +192,7 @@ a.hover:hover img {
 	background: none;
 	color: #E8C56E;
 	font-family: var(--font-mincho);
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
 	line-height: 1;
 	letter-spacing: 0.08em;
@@ -210,6 +212,18 @@ a.hover:hover img {
 	text-align: center;
 }
 
+#menu a.nav-external {
+	gap: 3px;
+}
+
+#menu a.nav-external svg {
+	display: block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	flex: none;
+}
+
 #menu a:hover,
 #menu a:focus-visible,
 #menu a[aria-current="page"] {
@@ -221,8 +235,8 @@ a.hover:hover img {
 	box-shadow: none;
 }
 
-/* スマホ：線の太さと高さを抑え、タイトルはボタンの手前で止める */
-@media screen and (max-width: 980px) {
+/* 狭い画面：線の太さと高さを抑え、タイトルはボタンの手前で止める */
+@media screen and (max-width: 1040px) {
 	body {
 		--header-h: clamp(50px, 14vw, 58px);
 	}
@@ -248,6 +262,10 @@ a.hover:hover img {
 	#header_wrapper::before {
 		-webkit-mask-position: left 50%;
 		mask-position: left 50%;
+	}
+
+	#header-logo {
+		top: 0;
 	}
 
 	#contents {
@@ -394,6 +412,14 @@ a.hover:hover img {
 		border-color: transparent transparent transparent #D95D67;
 	}
 
+	#menu a.nav-external {
+		justify-content: flex-start;
+	}
+
+	#menu a.nav-external::after {
+		margin-left: auto;
+	}
+
 	#menu a:hover,
 	#menu a:focus-visible,
 	#menu a[aria-current="page"] {
@@ -532,13 +558,6 @@ a.hover:hover img {
 	}
 }
 
-/* 画像を置いていないページは従来の帯を残す */
-#footer:not(:has(img)) {
-	height: 39px;
-	padding: 0;
-	background: url(../images/footer_bg.png) no-repeat center top;
-}
-
 /* ========================================
    ニュース
    ======================================== */
@@ -565,15 +584,10 @@ a.hover:hover img {
 	color: var(--band-text);
 	margin: 10px 0 10px 0;
 	display: block;
-	padding: 3px 7px;
+	padding: 3px 14px;
 	line-height: 1.6rem;
 	background-color: var(--band);
-}
-
-.news-content {
-	font-size: 15px;
-	margin: 0 auto 0 auto;
-	width: 96%;
+	border-radius: 6px;
 }
 
 .news-content-date {
@@ -592,13 +606,6 @@ a.hover:hover img {
 	line-height: 1.7;
 }
 
-/* ニュース内の区切り */
-.box_min {
-	border-bottom: 2px dotted #000;
-	padding: 15px 0;
-	background: #FEFFD4;
-}
-
 /* ========================================
    関連リンク
    ======================================== */
@@ -612,21 +619,6 @@ a.hover:hover img {
 	font-weight: bold;
 	line-height: 1.2;
 	letter-spacing: 0.01em;
-}
-
-.txtBlogTitle {
-	font-size: 15px;
-	color: var(--text);
-	margin: 10px 0 10px 20px;
-}
-
-.txtBlogTitle a {
-	color: inherit;
-	text-decoration: none;
-}
-
-.txtBlogTitle a:hover {
-	text-decoration: underline;
 }
 
 .sns-members {
@@ -690,11 +682,37 @@ a.hover:hover img {
 	}
 }
 
+@media screen and (max-width: 767px) {
+	.sns-icons {
+		display: grid;
+		grid-template-columns: max-content max-content;
+		justify-content: start;
+		gap: 8px;
+	}
+
+	.sns-icons .sns-icon-hp,
+	.sns-icons .sns-icon-blog {
+		grid-column: 1 / -1;
+		justify-self: start;
+	}
+
+	.txtBoxHalf .sns-icons a {
+		gap: 4px;
+		height: 28px;
+		padding: 0 10px 0 8px;
+		font-size: 11px;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.sns-members {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 28px 40px;
+	}
+
+	.sns-members > .sns-member:first-child {
+		grid-column: 1 / -1;
 	}
 }
 
@@ -705,42 +723,19 @@ a.hover:hover img {
 	fill: currentColor;
 }
 
-/* ========================================
-   YouTube
-   ======================================== */
-.YouTube {
-	margin: 25px 0 0 15px;
-}
-
-/* 16:9 を保ったまま幅いっぱいに広げる */
-.video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-	margin: 10px 0;
-	width: 100%;
-}
-
-.video-container iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border: 0;
+@media screen and (max-width: 767px) {
+	.sns-icons svg {
+		width: 13px;
+		height: 13px;
+	}
 }
 
 #contact {
 	margin-top: 30px;
 }
 
-/* PC では幅を抑えて左寄せ */
-@media screen and (min-width: 769px) {
-	.video-container {
-		width: 70%;
-		margin: 10px 0;
-	}
+#contact .sectionHeading:not(:first-child) {
+	margin-top: 64px;
 }
 
 /* ========================================
@@ -781,17 +776,45 @@ a.hover:hover img {
 
 .profBox p {
 	margin: 0;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.5;
+}
+
+.profBox .sns-icons {
+	justify-content: center;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 640px) {
 	.member-grid {
-		gap: 16px 10px;
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.profBox {
+		display: flex;
+		align-items: flex-start;
+		gap: 12px;
+		text-align: left;
+	}
+
+	.profBox::before {
+		flex: 0 0 112px;
+		width: 112px;
+		margin-bottom: 0;
+	}
+
+	.prof-body {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.profBox .sns-icons {
+		justify-content: flex-start;
 	}
 
 	.profBox p {
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 1.4;
 	}
 }
@@ -811,4 +834,238 @@ a.hover:hover img {
 
 .noboru {
 	--member-photo: url(../images/noboru.png);
+}
+
+/* ========================================
+   ライブ・ニュース
+   ======================================== */
+.news-headlines {
+	margin: 12px 10px 8px;
+	text-align: left;
+}
+
+.news-headline {
+	margin: 0 0 13px;
+	line-height: 1.6;
+}
+
+.news-headline .news-schedule + .news-lead::before {
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 0.85em;
+	margin: 0 0.65em 0 0.55em;
+	background-color: var(--accent);
+	vertical-align: -0.08em;
+}
+
+.news-headline a,
+.news-more a,
+.news-body a {
+	color: var(--link);
+}
+
+.txtNewsTitle a {
+	color: inherit;
+}
+
+.news-more,
+.news-empty {
+	margin: 0 10px 24px;
+	text-align: left;
+}
+
+.news-more {
+	text-align: right;
+}
+
+.news-headline .category-icon {
+	background-color: var(--band);
+}
+
+.category-icon {
+	display: inline-block;
+	margin-right: 6px;
+	padding: 1px 8px;
+	border-radius: 3px;
+	color: #fff;
+	font-family: var(--font-en);
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 1.6;
+	vertical-align: middle;
+}
+
+.news-article {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	margin: 0 10px 40px;
+	scroll-margin-top: calc(var(--header-h) + 12px);
+	text-align: left;
+}
+
+.news-thumb {
+	flex: 0 0 200px;
+	width: 200px;
+}
+
+.news-thumb img,
+.news-thumb-button img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.news-thumb-button {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	cursor: zoom-in;
+}
+
+.news-copy {
+	flex: 1;
+	min-width: 0;
+}
+
+.news-copy .txtNewsTitle {
+	margin-top: 0;
+}
+
+@media screen and (max-width: 560px) {
+	.news-article {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 12px;
+		align-items: start;
+		margin-bottom: 44px;
+	}
+
+	.news-copy {
+		display: contents;
+	}
+
+	.news-article .txtNewsTitle {
+		grid-column: 1;
+		grid-row: 1;
+		margin: 0;
+		padding-right: 10px;
+		padding-left: 10px;
+		font-size: 17px;
+	}
+
+	.news-thumb {
+		grid-column: 1;
+		grid-row: 2;
+		width: min(28%, 120px);
+		max-width: 120px;
+		align-self: start;
+		justify-self: center;
+	}
+
+	.news-thumb-button,
+	.news-thumb img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.news-article .news-body {
+		grid-column: 1;
+		grid-row: 3;
+		margin-left: 0;
+		min-width: 0;
+		font-size: 15px;
+	}
+
+	.news-article:not(.has-thumb) .news-body {
+		grid-row: 2;
+	}
+}
+
+.news-list-page .sectionHeading {
+	margin-bottom: 28px;
+}
+
+.news-list-page .sectionHeading#news {
+	margin-top: 36px;
+}
+
+.news-body,
+.news-body p,
+.news-content-html,
+.news-content-html p {
+	line-height: 1.7rem;
+}
+
+.news-body p,
+.news-content-html p,
+.news-body .news-content-date {
+	margin: 0;
+}
+
+.news-image {
+	display: block;
+	width: min(100%, 420px);
+	height: auto;
+	margin-top: 8px;
+}
+
+.txtNewsTitle .category-icon {
+	margin-right: 8px;
+}
+
+.news-lightbox {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 100vw;
+	height: 100%;
+	max-height: 100vh;
+	margin: 0;
+	padding: 64px 16px 16px;
+	border: none;
+	background: transparent;
+	overflow: hidden;
+}
+
+.news-lightbox::backdrop {
+	background: rgba(20, 16, 16, 0.86);
+}
+
+.news-lightbox img {
+	display: block;
+	width: auto;
+	height: auto;
+	max-width: min(920px, calc(100vw - 32px));
+	max-height: calc(100vh - 88px);
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+.news-lightbox-close {
+	position: fixed;
+	z-index: 5;
+	top: 12px;
+	right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border: 3px solid #232122;
+	border-radius: 999px;
+	background: #fff;
+	color: #232122;
+	font-size: 32px;
+	line-height: 1;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+	cursor: pointer;
 }
