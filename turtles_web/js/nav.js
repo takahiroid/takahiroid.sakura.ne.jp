@@ -8,6 +8,7 @@
 	function setOpen(open) {
 		menu.classList.toggle("is-open", open);
 		button.setAttribute("aria-expanded", open ? "true" : "false");
+		document.body.classList.toggle("nav-open", open);
 	}
 
 	button.addEventListener("click", function () {
@@ -18,6 +19,16 @@
 		if (event.target.closest("a")) {
 			setOpen(false);
 		}
+	});
+
+	document.addEventListener("click", function (event) {
+		if (button.getAttribute("aria-expanded") !== "true") {
+			return;
+		}
+		if (event.target.closest("#header")) {
+			return;
+		}
+		setOpen(false);
 	});
 
 	document.addEventListener("keydown", function (event) {
