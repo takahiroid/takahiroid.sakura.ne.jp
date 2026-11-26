@@ -2,7 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>タートルズ公式サイト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&amp;family=Kaisei+Opti:wght@700&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet" type="text/css" />
 <link href="css/basic.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="Keywords" content="まつもと,マツモト,タカヒロ,松本タカヒロ,タートルズ,ザ・タートルズ,turtles,餃子大王,sparky,まっちゃん" />
 <meta name="Description" content="タートルズ公式サイト" />
@@ -13,15 +17,18 @@
 
 <div id="header">
 	<div id="header_wrapper" >
+    	<p id="site-name">ザ・タートルズ　オフィシャルサイト</p>
+    	<p id="logo-title">Let's Do The Turtle!</p>
+    	<button type="button" class="nav-toggle" aria-label="メニュー" aria-expanded="false" aria-controls="menu">
+        	<span></span><span></span><span></span>
+    	</button>
     	<div id="menu">
         	<ul>
-            	<li id="menu_01"><a href="index.html" >NEWS</a></li>
-                <li id="menu_02"><a href="http://theturtles.exblog.jp/" target="_blank" >BLOG</a></li>
-                <li id="menu_03"><a href="profile.html" >PROFILE</a></li>
-                <!-- <li id="menu_04"><a href="disc.html" >DISC</a></li> -->
+            	<li id="menu_01"><a href="index.html#live">ライブ</a></li>
+                <li id="menu_02"><a href="index.html#sns">SNS</a></li>
+                <li id="menu_03"><a href="profile.html">アバウト</a></li>
+                <li id="menu_04"><a href="index.html#contact">コンタクト</a></li>
             </ul>
-            <div style="clear:both"></div>
-
     	</div>
     </div>
 </div>
@@ -40,7 +47,7 @@
            	    	<img src="images/member_logo.png" width="436" height="41" alt="NEWS" />
                   <div class="txtBoxHalf">
                   <br />
-                  	<p style=" font-weight:bold;color:#ff5a00">The Turtles（ザ・タートルズ）</p>
+                  	<p style="font-weight:bold">The Turtles（ザ・タートルズ）</p>
                     <p>
                     	1993年結成。1997年デビューの4人組。
 
@@ -163,5 +170,6 @@
 </div>
 
 
+<script src="js/nav.js"></script>
 </body>
 </html>
