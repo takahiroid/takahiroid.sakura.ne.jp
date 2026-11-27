@@ -18,6 +18,13 @@ foreach ($newsData as $news) {
         $draftCount++;
     }
 }
+$discographyData = loadDiscographyData();
+$discPublishedCount = 0;
+foreach ($discographyData as $disc) {
+    if ($disc['published'] ?? false) {
+        $discPublishedCount++;
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -52,13 +59,20 @@ foreach ($newsData as $news) {
                     <div class="stat"><?php echo $draftCount; ?></div>
                     <div class="description">下書きの記事</div>
                 </div>
+                <div class="dashboard-card">
+                    <h3>ディスコグラフィー</h3>
+                    <div class="stat"><?php echo count($discographyData); ?></div>
+                    <div class="description">公開中 <?php echo $discPublishedCount; ?>件</div>
+                    <a href="/kanri/discography/" class="action-link">作品一覧を見る →</a>
+                </div>
             </div>
             <div style="margin-top: 30px;">
                 <div class="dashboard-card">
                     <h3>クイックアクション</h3>
                     <div style="display: flex; gap: 10px; margin-top: 15px;">
                         <a href="/kanri/news/edit.php" class="btn btn-primary">新規記事作成</a>
-                        <a href="/news/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">公開ページを見る</a>
+                        <a href="/kanri/discography/edit.php" class="btn btn-primary">新規作品作成</a>
+                        <a href="/disc.php" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">ディスコグラフィーを見る</a>
                     </div>
                 </div>
             </div>

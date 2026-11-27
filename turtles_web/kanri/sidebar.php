@@ -11,6 +11,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '';
         <li class="menu-section">メニュー</li>
         <li><a href="/kanri/dashboard.php" class="<?php echo $current_page === 'dashboard.php' ? 'active' : ''; ?>">ダッシュボード</a></li>
         <li><a href="/kanri/news/" class="<?php echo strpos($request_uri, '/kanri/news/') !== false ? 'active' : ''; ?>">ライブ・ニュース</a></li>
+        <li><a href="/kanri/discography/" class="<?php echo strpos($request_uri, '/kanri/discography/') !== false ? 'active' : ''; ?>">ディスコグラフィー</a></li>
         <li><a href="/kanri/categories.php" class="<?php echo $current_page === 'categories.php' ? 'active' : ''; ?>">カテゴリ管理</a></li>
     </ul>
     <div class="sidebar-footer">

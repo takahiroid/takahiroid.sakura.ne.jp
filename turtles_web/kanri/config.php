@@ -7,8 +7,11 @@ define('ADMIN_PASSWORD', 'YA4jemBOaJ');
 define('DATA_DIR', __DIR__ . '/data/');
 define('NEWS_DATA_FILE', DATA_DIR . 'news.json');
 define('CATEGORIES_DATA_FILE', DATA_DIR . 'categories.json');
+define('DISCOGRAPHY_DATA_FILE', DATA_DIR . 'discography.json');
 define('UPLOAD_DIR', dirname(__DIR__) . '/news/img/');
 define('UPLOAD_URL_PREFIX', '/news/img/');
+define('DISCOGRAPHY_UPLOAD_DIR', dirname(__DIR__) . '/discography/img/');
+define('DISCOGRAPHY_UPLOAD_URL', '/discography/img/');
 define('MAX_FILE_SIZE', 20 * 1024 * 1024); // 20MB
 
 if (!file_exists(DATA_DIR)) {
@@ -16,6 +19,9 @@ if (!file_exists(DATA_DIR)) {
 }
 if (!file_exists(UPLOAD_DIR)) {
     mkdir(UPLOAD_DIR, 0755, true);
+}
+if (!file_exists(DISCOGRAPHY_UPLOAD_DIR)) {
+    mkdir(DISCOGRAPHY_UPLOAD_DIR, 0755, true);
 }
 
 function isLoggedIn() {
@@ -185,4 +191,102 @@ function extractYouTubeId($url) {
         return $matches[1];
     }
     return null;
+}
+
+function loadDiscographyData() {
+    if (!file_exists(DISCOGRAPHY_DATA_FILE)) {
+        return [];
+    }
+    $data = json_decode(file_get_contents(DISCOGRAPHY_DATA_FILE), true);
+    return is_array($data) ? $data : [];
+}
+
+function saveDiscographyData($data) {
+    $json = json_encode(array_values($data), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+    if ($json === false) {
+        return false;
+    }
+    return file_put_contents(DISCOGRAPHY_DATA_FILE, $json . "\n", LOCK_EX) !== false;
+}
+
+function findDiscographyIndex($data, $id) {
+    foreach ($data as $index => $item) {
+        if ((string)($item['id'] ?? '') === (string)$id) {
+            return $index;
+        }
+    }
+    return null;
+}
+
+function nextDiscographyId($data) {
+    $maxId = 0;
+    foreach ($data as $item) {
+        $maxId = max($maxId, (int)($item['id'] ?? 0));
+    }
+    return $maxId + 1;
+}
+
+function discographyReleaseTypes() {
+    return ['CD', 'デジタル配信', 'Download', 'DVD'];
+}
+
+function uploadDiscographyImage($file) {
+    if (!isset($file['tmp_name']) || !is_uploaded_file($file['tmp_name'])) {
+        return ['success' => false, 'error' => 'ファイルがアップロードされていません'];
+    }
+    if ($file['size'] > MAX_FILE_SIZE) {
+        return ['success' => false, 'error' => 'ファイルサイズが大きすぎます（最大20MB）'];
+    }
+
+    $allowed = [
+        'image/jpeg' => 'jpg',
+        'image/png' => 'png',
+        'image/gif' => 'gif',
+        'image/webp' => 'webp'
+    ];
+    $finfo = finfo_open(FILEINFO_MIME_TYPE);
+    $mimeType = finfo_file($finfo, $file['tmp_name']);
+    finfo_close($finfo);
+    if (!isset($allowed[$mimeType])) {
+        return ['success' => false, 'error' => '許可されていないファイル形式です（JPEG, PNG, GIF, WebPのみ）'];
+    }
+
+    $filename = 'disc_' . date('YmdHis') . '_' . uniqid() . '.' . $allowed[$mimeType];
+    if (!move_uploaded_file($file['tmp_name'], DISCOGRAPHY_UPLOAD_DIR . $filename)) {
+        return ['success' => false, 'error' => 'ファイルのアップロードに失敗しました'];
+    }
+    return ['success' => true, 'path' => DISCOGRAPHY_UPLOAD_URL . $filename];
+}
+
+function deleteDiscographyImage($path) {
+    if (!is_string($path) || $path === '' || strpos($path, DISCOGRAPHY_UPLOAD_URL) !== 0) {
+        return false;
+    }
+    $filepath = DISCOGRAPHY_UPLOAD_DIR . basename($path);
+    if (is_file($filepath)) {
+        return unlink($filepath);
+    }
+    return false;
+}
+
+function storeDiscographyImage($file, $existing, $deleteExisting) {
+    $path = $existing;
+    $error = '';
+    if (isset($file) && $file['error'] === UPLOAD_ERR_OK) {
+        $result = uploadDiscographyImage($file);
+        if ($result['success']) {
+            if ($existing !== '' && $existing !== $result['path']) {
+                deleteDiscographyImage($existing);
+            }
+            $path = $result['path'];
+        } else {
+            $error = $result['error'] ?? 'ジャケット画像のアップロードに失敗しました';
+        }
+    } elseif (isset($file) && $file['error'] !== UPLOAD_ERR_NO_FILE) {
+        $error = uploadErrorMessage($file['error'], 'ジャケット画像');
+    } elseif ($deleteExisting && $existing !== '') {
+        deleteDiscographyImage($existing);
+        $path = '';
+    }
+    return [$path, $error];
 }
