@@ -180,6 +180,7 @@ function renderNewsArticle(array $news) {
                 <?php $popupImage = !empty($news['image']) ? $news['image'] : $sideImage; ?>
                 <button type="button" class="news-thumb-button" data-full="<?php echo publicH($popupImage); ?>" aria-label="画像を拡大">
                 <img src="<?php echo publicH($sideImage); ?>" alt="<?php echo publicH(plainText($news['title'] ?? $news['lead'] ?? '')); ?>">
+                <span class="news-thumb-zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.2" cy="10.2" r="6.2" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.8 14.8 20 20M10.2 7.6v5.2M7.6 10.2h5.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
                 </button>
             </div>
         <?php endif; ?>
