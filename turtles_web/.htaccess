@@ -2,5 +2,15 @@ DirectoryIndex index.php index.html
 
 RewriteEngine On
 
-# 以前の .html URL をそのまま使う
-RewriteRule ^(index|profile|disc)\.html$ $1.php [L]
+# 同じ内容のURLを1本にまとめる
+RewriteCond %{THE_REQUEST} \s/+index\.(php|html)[\s?] [NC]
+RewriteRule ^index\.(php|html)$ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+news/index\.php[\s?] [NC]
+RewriteRule ^news/index\.php$ /news/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+profile\.html[\s?] [NC]
+RewriteRule ^profile\.html$ /profile.php [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+disc\.html[\s?] [NC]
+RewriteRule ^disc\.html$ /disc.php [R=301,L]

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /kanri/
+Disallow: /_bk/
+Disallow: /disc.php
+
+Sitemap: https://turtles-web.com/sitemap.xml

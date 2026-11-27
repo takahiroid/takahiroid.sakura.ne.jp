@@ -1,18 +1,18 @@
 <?php
 $page_scripts = ['js/mainv.js'];
+$page_path = '';
+$page_description = 'ザ・タートルズ（The Turtles）の公式サイトです。1994年に結成し、1997年にデビューした4人組。ライブ情報、ニュース、メンバー紹介を掲載しています。';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>タートルズ公式サイト</title>
+    <?php include __DIR__ . '/inc/meta.php'; ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&amp;family=Kaisei+Opti:wght@700&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
     <link href="css/basic.css" rel="stylesheet">
-    <meta name="keywords" content="まつもと,マツモト,タカヒロ,松本タカヒロ,タートルズ,ザ・タートルズ,turtles,餃子大王,sparky,まっちゃん">
-    <meta name="description" content="タートルズ公式サイト">
 </head>
 <body>
 <?php include __DIR__ . '/inc/header.php'; ?>

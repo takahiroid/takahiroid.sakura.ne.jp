@@ -1,15 +1,18 @@
+<?php
+$page_heading = 'お問い合わせ';
+$page_path = 'contact.php';
+$page_description = 'ザ・タートルズへのお問い合わせ窓口です。タートルマニア事務局のメールアドレスと、お手紙の送付先をご案内します。';
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ - タートルズ公式サイト</title>
+    <?php include __DIR__ . '/inc/meta.php'; ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&amp;family=Kaisei+Opti:wght@700&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
     <link href="css/basic.css" rel="stylesheet">
-    <meta name="keywords" content="まつもと,マツモト,タカヒロ,松本タカヒロ,タートルズ,ザ・タートルズ,turtles,餃子大王,sparky,まっちゃん">
-    <meta name="description" content="ザ・タートルズへのお問い合わせ、お手紙">
 </head>
 <body>
 <?php include __DIR__ . '/inc/header.php'; ?>

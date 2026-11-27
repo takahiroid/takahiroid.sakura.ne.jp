@@ -859,7 +859,10 @@ img {
 	vertical-align: -0.08em;
 }
 
-.news-headline a,
+.news-headline a {
+	color: #fff;
+}
+
 .news-more a,
 .news-body a {
 	color: var(--link);

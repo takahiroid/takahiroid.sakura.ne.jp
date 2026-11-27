@@ -1,19 +1,20 @@
 <?php
 require_once dirname(__DIR__) . '/inc/news_lib.php';
 [$liveItems, $infoItems] = splitPublicNews();
+$page_heading = 'ライブ・ニュース';
+$page_path = 'news/';
+$page_description = 'ザ・タートルズのライブ予定とニュースです。公演の日時、会場、チケット情報と、最新のお知らせを掲載しています。';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ライブ・ニュース - タートルズ公式サイト</title>
+    <?php include dirname(__DIR__) . '/inc/meta.php'; ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&amp;family=Kaisei+Opti:wght@700&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
     <link href="../css/basic.css" rel="stylesheet">
-    <meta name="keywords" content="まつもと,マツモト,タカヒロ,松本タカヒロ,タートルズ,ザ・タートルズ,turtles,餃子大王,sparky,まっちゃん">
-    <meta name="description" content="ザ・タートルズのライブとニュース">
 </head>
 <body>
 <?php include dirname(__DIR__) . '/inc/header.php'; ?>
